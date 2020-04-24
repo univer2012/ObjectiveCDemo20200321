@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>OC和JS的交互Block方式</h1>
+        <div>
+            <input type="button" value="JsToOcShare" onclick="callShare(shareContent)">
+                </div>
+        
+        <script>
+            var shareContent = JSON.stringify({"title":"分享", "desc":"分享内容", "shareUrl":"http://www.jianshu.com/users/774b1d5616a7/latest_articles"});
+            
+            function callShare(share) {
+                //share为形参，shareContent为实参，即要传递的参数
+            }
+        //  OC调JS message为传递的参数
+        function showAlert(message){
+            alert(message);
+        }
+        
+            </script>
+    </body>
+</html>

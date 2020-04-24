@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SGHSesstionDownloadViewController">
+            <connections>
+                <outlet property="backgroundDownload_barButtonItem" destination="MvU-bD-k6h" id="spk-P7-FRj"/>
+                <outlet property="cancelTask_barButtonItem" destination="xDu-Dp-A7M" id="4tx-ro-96z"/>
+                <outlet property="cancellableDownload_barButtonItem" destination="xjV-r0-tQt" id="CGc-hB-6eh"/>
+                <outlet property="currentProgress_label" destination="rAy-Uq-gQY" id="5zq-n0-eJC"/>
+                <outlet property="downloadedImageView" destination="EtB-ww-N9n" id="bfV-hq-Rrp"/>
+                <outlet property="downloadingProgressView" destination="ySJ-5k-ilG" id="nOB-oa-hr0"/>
+                <outlet property="resumableDownload_barButtonItem" destination="2XE-sp-ohv" id="wdz-M5-aqa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ySJ-5k-ilG">
+                    <rect key="frame" x="0.0" y="529" width="312" height="2"/>
+                </progressView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="下载进度：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9n-CJ-bxu">
+                    <rect key="frame" x="18" y="500" width="85" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EtB-ww-N9n">
+                    <rect key="frame" x="0.0" y="45" width="414" height="764"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="764" id="jec-zp-tNI"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAy-Uq-gQY">
+                    <rect key="frame" x="134" y="500" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SKe-Mf-rxA">
+                    <rect key="frame" x="0.0" y="809" width="414" height="44"/>
+                    <items>
+                        <barButtonItem title="普通下载" id="xjV-r0-tQt">
+                            <connections>
+                                <action selector="cancellableDownload:" destination="-1" id="V06-rl-UH5"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="断点续传" id="2XE-sp-ohv">
+                            <connections>
+                                <action selector="resumableDownload:" destination="-1" id="UKV-Kg-5Za"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="后台下载" id="MvU-bD-k6h">
+                            <connections>
+                                <action selector="backgroundDownload:" destination="-1" id="SsZ-wS-1r4"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="取消下载" id="xDu-Dp-A7M">
+                            <connections>
+                                <action selector="cancelDownloadTask:" destination="-1" id="TGt-2S-AUt"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="197" style="plain" systemItem="fixedSpace" id="GD5-BM-8zY"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EtB-ww-N9n" firstAttribute="trailing" secondItem="SKe-Mf-rxA" secondAttribute="trailing" id="34P-ru-IQL"/>
+                <constraint firstItem="ySJ-5k-ilG" firstAttribute="top" secondItem="A9n-CJ-bxu" secondAttribute="bottom" constant="8" symbolic="YES" id="8Yt-4T-6av"/>
+                <constraint firstItem="EtB-ww-N9n" firstAttribute="leading" secondItem="ySJ-5k-ilG" secondAttribute="leading" id="DRA-Rr-orZ"/>
+                <constraint firstItem="EtB-ww-N9n" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="45" id="Ms0-Kp-ZWj"/>
+                <constraint firstAttribute="trailing" secondItem="EtB-ww-N9n" secondAttribute="trailing" id="UfB-8z-Ccg"/>
+                <constraint firstItem="EtB-ww-N9n" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="V2A-K5-0OH"/>
+                <constraint firstItem="ySJ-5k-ilG" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" constant="-82" id="cPY-aG-aCy"/>
+                <constraint firstItem="A9n-CJ-bxu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="18" id="dWe-VQ-Q8A"/>
+                <constraint firstItem="rAy-Uq-gQY" firstAttribute="leading" secondItem="A9n-CJ-bxu" secondAttribute="trailing" constant="31" id="mdd-1z-F20"/>
+                <constraint firstItem="EtB-ww-N9n" firstAttribute="leading" secondItem="SKe-Mf-rxA" secondAttribute="leading" id="ntg-LI-7FT"/>
+                <constraint firstItem="ySJ-5k-ilG" firstAttribute="top" secondItem="rAy-Uq-gQY" secondAttribute="bottom" constant="8" symbolic="YES" id="uM4-bg-6pZ"/>
+                <constraint firstItem="EtB-ww-N9n" firstAttribute="bottom" secondItem="SKe-Mf-rxA" secondAttribute="top" id="wdg-3P-0Q8"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

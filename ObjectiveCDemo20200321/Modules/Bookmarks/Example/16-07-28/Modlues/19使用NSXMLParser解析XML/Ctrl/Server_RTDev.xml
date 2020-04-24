@@ -1,0 +1,108 @@
+<!--服务器地址配置-->
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rooms speedUrl="/speed.jsp" updateUrl="http://61.138.203.11:32971/servlet/json?funcNo=1108007" description="服务器地址配置，speedUrl为测速地址，updateUrl为更新地址">
+<!--<rooms speedUrl="" updateUrl="" description="服务器地址配置，speedUrl为测速地址，updateUrl为更新地址">-->
+    <room name="ios_room1" state="1" mainsite="TRADE_URL" description=“机房1”>
+        
+        <!--交易相关地址配置 -->
+        <server name="TRADE_URL" domain="http://61.138.203.11:32971" description="普通交易域名,多个用|分割"></server>
+        <server name="CREDIT_TRADE_URL" domain="http://61.138.203.11:32971" description="信用交易域名,多个用|分割"></server>
+
+        <!--行情相关地址配置-->
+        <server name="chooseAyncUrl" domain="http://61.138.203.11:32971/servlet/json" description="自选股同步服务器地址"></server>
+
+        <server name="hqOptionServerUrl" domain="http://61.138.203.11:8383/market/json" description="期权服务器地址"></server>
+        <server name="HQ_URL_HTTP" domain="quote_v3"  description="新行情服务器地址"></server>
+        <server name="HQ_PUSH_SOCKET" domain="quote_push"  description="新行情服务器地址"></server>
+        <server name="INFO_URL" domain="http://120.24.73.231:8089/servlet/json" description="个股资讯服务器地址"></server>
+        <server name="HQ_WEB_INFO" domain="http://218.17.161.51:32986" description="详情资讯web地址"></server>
+        <!--资讯模块-->
+        <server name="HQ_WEB_INFO" domain="http://218.17.161.51:32986" description="详情资讯web地址"></server>
+        
+        <!--综合-->
+        <server name="syntheticalUrl" domain="http://61.138.203.11:32971/servlet/json" description="综合业务服务器地址(和交易地址一样)"></server>
+        <server name="syntheticalImage" domain="http://61.138.203.11:32971" description="首页广告栏和菜单的服务器地址(和交易地址一样)"></server>
+
+        <!--统一登录 http://192.168.1.64:6003  -->
+        <server name="unilogin" domain="http://61.138.203.11:32969/servlet/call", description="统一账户"></server>
+        <!--统一登录验证码 -->
+        <server name="uniloginImage" domain="http://61.138.203.11:32969/servlet/sso/ImageServlet", description="统一登录验证码"></server>
+        
+        
+        <server name="HOME_MENU_INFORMCENTER_URL" domain="http://61.138.203.11:32986/data/info/index.html", description="首页菜单资讯跳转地址"></server>
+        
+        
+        <!-- ++++++++++++++ 一期不上的地址 ++++++++++++++ -->
+<!--        <server name="NEWSHARE_URL" domain="http://120.24.73.231:8089" description="新股申购域名,多个用|分割"></server>-->
+<!--        <server name="announcementUrl" domain="http://120.24.73.231:6005/servlet/json" description="公告升级服务器地址"></server>-->
+<!--        <server name="warnServerUrl" domain="http://183.57.43.60:8081/servlet/json" description="股票预警服务器地址"></server>-->
+
+        <!--商城地址-->
+<!--        <server name="mall" domain="http://218.17.161.51:32877/servlet/json" description="商城地址"></server>-->
+
+        <!--云投顾-->
+<!--        <server name="counselor" domain="http://www.thinkive.cn:8529/servlet/json" description="云投顾服务器地址"></server>-->
+<!--        <server name="counselorHImage" domain="http://www.thinkive.cn:8529" description="云投顾头像服务器地址"></server>-->
+
+    </room>
+    
+    
+    
+    
+    
+    <room name="ios_room2" state="1" mainsite="TRADE_URL" description=“机房1”>
+        
+        <!--交易相关地址配置 -->
+        <server name="TRADE_URL" domain="http://61.138.203.11:32971" description="普通交易域名,多个用|分割"></server>
+        <server name="CREDIT_TRADE_URL" domain="http://61.138.203.11:32971" description="信用交易域名,多个用|分割"></server>
+        
+        <!--行情相关地址配置-->
+        <server name="chooseAyncUrl" domain="http://61.138.203.11:32971/servlet/json" description="自选股同步服务器地址"></server>
+        
+        <server name="hqOptionServerUrl" domain="http://61.138.203.11:8383/market/json" description="期权服务器地址"></server>
+        <server name="HQ_URL_HTTP" domain="quote_v3"  description="新行情服务器地址"></server>
+        <server name="HQ_PUSH_SOCKET" domain="quote_push"  description="新行情服务器地址"></server>
+        <server name="INFO_URL" domain="http://120.24.73.231:8089/servlet/json" description="个股资讯服务器地址"></server>
+        <server name="HQ_WEB_INFO" domain="http://218.17.161.51:32986" description="详情资讯web地址"></server>
+        <!--资讯模块-->
+        <server name="HQ_WEB_INFO" domain="http://218.17.161.51:32986" description="详情资讯web地址"></server>
+        
+        <!--综合-->
+        <server name="syntheticalUrl" domain="http://61.138.203.11:32971/servlet/json" description="综合业务服务器地址(和交易地址一样)"></server>
+        <server name="syntheticalImage" domain="http://61.138.203.11:32971" description="首页广告栏和菜单的服务器地址(和交易地址一样)"></server>
+        
+        <!--统一登录 http://192.168.1.64:6003  -->
+        <server name="unilogin" domain="http://61.138.203.11:32969/servlet/call", description="统一账户"></server>
+        <!--统一登录验证码 -->
+        <server name="uniloginImage" domain="http://61.138.203.11:32969/servlet/sso/ImageServlet", description="统一登录验证码"></server>
+        
+        
+        <server name="HOME_MENU_INFORMCENTER_URL" domain="http://61.138.203.11:32986/data/info/index.html", description="首页菜单资讯跳转地址"></server>
+        
+        
+        <!-- ++++++++++++++ 一期不上的地址 ++++++++++++++ -->
+        <!--        <server name="NEWSHARE_URL" domain="http://120.24.73.231:8089" description="新股申购域名,多个用|分割"></server>-->
+        <!--        <server name="announcementUrl" domain="http://120.24.73.231:6005/servlet/json" description="公告升级服务器地址"></server>-->
+        <!--        <server name="warnServerUrl" domain="http://183.57.43.60:8081/servlet/json" description="股票预警服务器地址"></server>-->
+        
+        <!--商城地址-->
+        <!--        <server name="mall" domain="http://218.17.161.51:32877/servlet/json" description="商城地址"></server>-->
+        
+        <!--云投顾-->
+        <!--        <server name="counselor" domain="http://www.thinkive.cn:8529/servlet/json" description="云投顾服务器地址"></server>-->
+        <!--        <server name="counselorHImage" domain="http://www.thinkive.cn:8529" description="云投顾头像服务器地址"></server>-->
+        
+    </room>
+    
+    
+    
+</rooms>
+
+
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SGH0618MapNavigationViewController">
+            <connections>
+                <outlet property="addressTextField" destination="LXx-qW-nAY" id="pqi-4C-azv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="I2V-q7-0rm">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="CBQ-Yg-NWY">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="97"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LXx-qW-nAY">
+                                    <rect key="frame" x="0.0" y="67" width="187.5" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uq-kY-TUs">
+                                    <rect key="frame" x="187.5" y="67" width="187.5" height="30"/>
+                                    <state key="normal" title="开始导航"/>
+                                    <connections>
+                                        <action selector="begin:" destination="-1" eventType="touchUpInside" id="Jvb-tJ-ACt"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="INJ-Zq-ddx">
+                            <rect key="frame" x="0.0" y="97" width="375" height="506"/>
+                        </mapView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="INJ-Zq-ddx" secondAttribute="trailing" id="82W-D8-eN4"/>
+                        <constraint firstItem="CBQ-Yg-NWY" firstAttribute="leading" secondItem="I2V-q7-0rm" secondAttribute="leading" id="CI3-As-ej5"/>
+                        <constraint firstItem="INJ-Zq-ddx" firstAttribute="leading" secondItem="I2V-q7-0rm" secondAttribute="leading" id="ssh-r8-iUd"/>
+                        <constraint firstAttribute="trailing" secondItem="CBQ-Yg-NWY" secondAttribute="trailing" id="uc0-D3-IY0"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="I2V-q7-0rm" secondAttribute="bottom" id="03y-kq-XoA"/>
+                <constraint firstAttribute="trailing" secondItem="I2V-q7-0rm" secondAttribute="trailing" id="7PA-QN-HT0"/>
+                <constraint firstItem="I2V-q7-0rm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YSn-DD-vG4"/>
+                <constraint firstItem="I2V-q7-0rm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="wQ5-G4-26F"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

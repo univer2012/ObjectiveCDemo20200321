@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Core Text1 View Controller-->
+        <scene sceneID="Ay7-Qp-NBL">
+            <objects>
+                <viewController storyboardIdentifier="SGHCoreText1ViewController" id="aRg-6D-9pF" customClass="SGHCoreText1ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZCE-O4-XBc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kid-mR-Ah1" customClass="CTDisplayView">
+                                <rect key="frame" x="63" y="148" width="288" height="229"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="fwG-GL-xTU"/>
+                                    <constraint firstAttribute="height" constant="229" id="jUp-ac-ZOQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Kid-mR-Ah1" firstAttribute="top" secondItem="e4l-2C-9sa" secondAttribute="top" constant="60" id="NiT-A2-Ukl"/>
+                            <constraint firstItem="Kid-mR-Ah1" firstAttribute="centerX" secondItem="e4l-2C-9sa" secondAttribute="centerX" id="bUd-mt-fza"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e4l-2C-9sa"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="ctView" destination="Kid-mR-Ah1" id="Q6h-Es-7bk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AmB-M4-rBM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="152" y="15"/>
+        </scene>
+        <!--Core Text2 View Controller-->
+        <scene sceneID="vqv-Ce-zbD">
+            <objects>
+                <viewController storyboardIdentifier="SGHCoreText2ViewController" id="fTO-0G-zkm" customClass="SGHCoreText2ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wJX-FX-pxy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lrl-Xc-nP2" customClass="CTDisplayView">
+                                <rect key="frame" x="63" y="148" width="288" height="300"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="ESy-HE-SKF"/>
+                                    <constraint firstAttribute="width" constant="288" id="VCX-7Y-GQa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Lrl-Xc-nP2" firstAttribute="centerX" secondItem="PSQ-Mz-Shb" secondAttribute="centerX" id="daS-fG-lmo"/>
+                            <constraint firstItem="Lrl-Xc-nP2" firstAttribute="top" secondItem="PSQ-Mz-Shb" secondAttribute="top" constant="60" id="nfu-tm-SlY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PSQ-Mz-Shb"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="ctView" destination="Lrl-Xc-nP2" id="aE0-Cj-uNb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LPc-KH-i2M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1099" y="33"/>
+        </scene>
+        <!--Core Text3 View Controller-->
+        <scene sceneID="uD8-Ed-8Kz">
+            <objects>
+                <viewController storyboardIdentifier="SGHCoreText3ViewController" id="M2A-mX-weX" customClass="SGHCoreText3ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mko-Ew-iL7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s1i-SQ-JEP" customClass="CTDisplayView">
+                                <rect key="frame" x="63" y="148" width="288" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Udr-oh-taY"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="ctView" destination="s1i-SQ-JEP" id="Rvk-Md-bil"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FTp-se-bAV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1842" y="33"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SGH0618MapViewViewController">
+            <connections>
+                <outlet property="mapView" destination="NUN-Va-jA8" id="JCc-Zu-hcc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wz8-E3-uV3">
+                    <rect key="frame" x="0.0" y="64" width="375" height="593"/>
+                    <subviews>
+                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="NUN-Va-jA8">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="593"/>
+                        </mapView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="lQ5-Lh-YQe">
+                            <rect key="frame" x="10" y="496" width="355" height="97"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y03-ku-nDX">
+                                    <rect key="frame" x="0.0" y="0.0" width="115" height="97"/>
+                                    <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="BackCurrentLocation"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="backCurrentLocation:" destination="-1" eventType="touchUpInside" id="ooa-P9-fmM"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhQ-Gq-VUr">
+                                    <rect key="frame" x="120" y="0.0" width="115" height="97"/>
+                                    <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="MinMapView"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="minMapView:" destination="-1" eventType="touchUpInside" id="zhm-xR-j4q"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYV-vV-6Wz">
+                                    <rect key="frame" x="240" y="0.0" width="115" height="97"/>
+                                    <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="MaxMapView"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="maxMapView:" destination="-1" eventType="touchUpInside" id="MfY-CA-SZw"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="lQ5-Lh-YQe" secondAttribute="trailing" constant="10" id="12N-Qt-rkQ"/>
+                        <constraint firstItem="NUN-Va-jA8" firstAttribute="leading" secondItem="Wz8-E3-uV3" secondAttribute="leading" id="LJI-Os-4qf"/>
+                        <constraint firstItem="lQ5-Lh-YQe" firstAttribute="leading" secondItem="Wz8-E3-uV3" secondAttribute="leading" constant="10" id="MlC-lo-KdE"/>
+                        <constraint firstAttribute="trailing" secondItem="NUN-Va-jA8" secondAttribute="trailing" id="UfT-YH-Joa"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="lQ5-Lh-YQe"/>
+                        </mask>
+                    </variation>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Wz8-E3-uV3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="0u9-ux-G5D"/>
+                <constraint firstAttribute="trailing" secondItem="Wz8-E3-uV3" secondAttribute="trailing" id="Nfg-3D-GgE"/>
+                <constraint firstItem="Wz8-E3-uV3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Zya-EA-TfI"/>
+                <constraint firstAttribute="bottom" secondItem="Wz8-E3-uV3" secondAttribute="bottom" constant="10" id="dMq-cT-qGS"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,40 @@
+//
+//  ObjectiveCDemo20200321.pch
+//  ObjectiveCDemo20200321
+//
+//  Created by 远平 on 2020/3/21.
+//  Copyright © 2020 远平. All rights reserved.
+//
+
+#import "SHUtility.h"
+#import "SGHDeviceManager.h"
+
+#import "UIColor+Hex.h"
+#import "UIView+LCAdd.h"
+
+#import <ReactiveObjC.h>
+//#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <LxDBAnything/LxDBAnything.h>
+#import <Masonry/Masonry.h>
+
+#define RGB(A,B,C) [UIColor colorWithRed:A/255.0 green:B/255.0 blue:C/255.0 alpha:1.0]
+
+#ifdef DEBUG
+#define debugLog(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"%s", __func__)
+#else
+#define debugLog(...)
+#define debugMethod()
+#endif
+
+/** blockSelf和weakSelf 宏定义  */
+#define kWeakSelf __weak typeof(self) weakSelf = self;
+#define kBlockSelf __block typeof(self) blockSelf = self;
+
+#ifndef ObjectiveCDemo20200321_pch
+#define ObjectiveCDemo20200321_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* ObjectiveCDemo20200321_pch */

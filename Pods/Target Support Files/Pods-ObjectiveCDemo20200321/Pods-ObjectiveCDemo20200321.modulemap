@@ -1,0 +1,6 @@
+framework module Pods_ObjectiveCDemo20200321 {
+  umbrella header "Pods-ObjectiveCDemo20200321-umbrella.h"
+
+  export *
+  module * { export * }
+}
