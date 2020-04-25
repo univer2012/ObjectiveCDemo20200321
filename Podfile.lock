@@ -213,7 +213,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
   MMKV: 7bb6c30f9ff2ea45bc2398c86e66dd1cb63cfe20
-  MMKVCore: f1e0aad4fc330e7cbfbdff16720017bf0973db5a
+  MMKVCore: f455d4bf01bb5257511c1062fdbc3d7ebdec216b
   PluggableApplicationDelegate: 5144bff5ef6ea834a362341a65199b38912d7dd6
   PPSPing: f275a44303d6e1ebbd07b90fe8d29831838e58a7
   Protobuf: 176220c526ad8bd09ab1fb40a978eac3fef665f7

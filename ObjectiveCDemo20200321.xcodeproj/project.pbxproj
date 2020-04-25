@@ -361,6 +361,11 @@
 		8F72EFD32453F4650023060B /* SGH0425Leaks6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72EFD22453F4650023060B /* SGH0425Leaks6ViewController.m */; };
 		8F72EFD6245408880023060B /* UIViewController+ExecuteMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72EFD5245408880023060B /* UIViewController+ExecuteMethod.m */; };
 		8F72EFD92454111B0023060B /* SGHTimerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72EFD82454111B0023060B /* SGHTimerProxy.m */; };
+		8F72EFDD24545C180023060B /* SGHAOPLeakFinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72EFDC24545C180023060B /* SGHAOPLeakFinderViewController.m */; };
+		8F72EFE024545C330023060B /* UIViewController+LGLeaksTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72EFDF24545C330023060B /* UIViewController+LGLeaksTest.m */; };
+		8F72EFE324545DE80023060B /* NSObject+LGSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72EFE224545DE80023060B /* NSObject+LGSwizzling.m */; };
+		8F72EFE7245461110023060B /* UINavigationController+LGLeaksTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72EFE6245461110023060B /* UINavigationController+LGLeaksTest.m */; };
+		8F72EFEB24546F2A0023060B /* SGH0425SocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72EFEA24546F2A0023060B /* SGH0425SocketViewController.m */; };
 		8FF058B724381790006F74E9 /* SGH0404SequenceMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF058B62438178F006F74E9 /* SGH0404SequenceMapViewController.m */; };
 		8FF058BE2438215D006F74E9 /* SGH04LoginSuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF058BD2438215D006F74E9 /* SGH04LoginSuccessViewController.m */; };
 		8FF058C124382176006F74E9 /* SGH04RACLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF058C024382176006F74E9 /* SGH04RACLoginViewController.m */; };
@@ -1059,6 +1064,16 @@
 		8F72EFD5245408880023060B /* UIViewController+ExecuteMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ExecuteMethod.m"; sourceTree = "<group>"; };
 		8F72EFD72454111B0023060B /* SGHTimerProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHTimerProxy.h; sourceTree = "<group>"; };
 		8F72EFD82454111B0023060B /* SGHTimerProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHTimerProxy.m; sourceTree = "<group>"; };
+		8F72EFDB24545C180023060B /* SGHAOPLeakFinderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHAOPLeakFinderViewController.h; sourceTree = "<group>"; };
+		8F72EFDC24545C180023060B /* SGHAOPLeakFinderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHAOPLeakFinderViewController.m; sourceTree = "<group>"; };
+		8F72EFDE24545C330023060B /* UIViewController+LGLeaksTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LGLeaksTest.h"; sourceTree = "<group>"; };
+		8F72EFDF24545C330023060B /* UIViewController+LGLeaksTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LGLeaksTest.m"; sourceTree = "<group>"; };
+		8F72EFE124545DE80023060B /* NSObject+LGSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+LGSwizzling.h"; sourceTree = "<group>"; };
+		8F72EFE224545DE80023060B /* NSObject+LGSwizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LGSwizzling.m"; sourceTree = "<group>"; };
+		8F72EFE5245461110023060B /* UINavigationController+LGLeaksTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+LGLeaksTest.h"; sourceTree = "<group>"; };
+		8F72EFE6245461110023060B /* UINavigationController+LGLeaksTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+LGLeaksTest.m"; sourceTree = "<group>"; };
+		8F72EFE924546F290023060B /* SGH0425SocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH0425SocketViewController.h; sourceTree = "<group>"; };
+		8F72EFEA24546F2A0023060B /* SGH0425SocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0425SocketViewController.m; sourceTree = "<group>"; };
 		8FF058B52438178F006F74E9 /* SGH0404SequenceMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH0404SequenceMapViewController.h; sourceTree = "<group>"; };
 		8FF058B62438178F006F74E9 /* SGH0404SequenceMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0404SequenceMapViewController.m; sourceTree = "<group>"; };
 		8FF058BC2438215D006F74E9 /* SGH04LoginSuccessViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH04LoginSuccessViewController.h; sourceTree = "<group>"; };
@@ -4529,6 +4544,8 @@
 		8F72EFCE2453F3D80023060B /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				8F72EFE824546F080023060B /* 9Socket */,
+				8F72EFDA24545BE20023060B /* 8AOPLeakFinder */,
 				8F72EFD02453F4370023060B /* 5CycleNSTimer */,
 				8F72EFC62453EE4A0023060B /* 2CycleReference */,
 			);
@@ -4544,6 +4561,38 @@
 				8F72EFD82454111B0023060B /* SGHTimerProxy.m */,
 			);
 			path = 5CycleNSTimer;
+			sourceTree = "<group>";
+		};
+		8F72EFDA24545BE20023060B /* 8AOPLeakFinder */ = {
+			isa = PBXGroup;
+			children = (
+				8F72EFE4245460F10023060B /* Extension */,
+				8F72EFDB24545C180023060B /* SGHAOPLeakFinderViewController.h */,
+				8F72EFDC24545C180023060B /* SGHAOPLeakFinderViewController.m */,
+			);
+			path = 8AOPLeakFinder;
+			sourceTree = "<group>";
+		};
+		8F72EFE4245460F10023060B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8F72EFDE24545C330023060B /* UIViewController+LGLeaksTest.h */,
+				8F72EFDF24545C330023060B /* UIViewController+LGLeaksTest.m */,
+				8F72EFE124545DE80023060B /* NSObject+LGSwizzling.h */,
+				8F72EFE224545DE80023060B /* NSObject+LGSwizzling.m */,
+				8F72EFE5245461110023060B /* UINavigationController+LGLeaksTest.h */,
+				8F72EFE6245461110023060B /* UINavigationController+LGLeaksTest.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8F72EFE824546F080023060B /* 9Socket */ = {
+			isa = PBXGroup;
+			children = (
+				8F72EFE924546F290023060B /* SGH0425SocketViewController.h */,
+				8F72EFEA24546F2A0023060B /* SGH0425SocketViewController.m */,
+			);
+			path = 9Socket;
 			sourceTree = "<group>";
 		};
 		8FF058B4243816C6006F74E9 /* RAC_MVVM */ = {
@@ -4875,6 +4924,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F72EFE324545DE80023060B /* NSObject+LGSwizzling.m in Sources */,
 				8F31108924264FB100421E7A /* SHAlertViewSetModel.m in Sources */,
 				04801963244954CF0024FF51 /* SHBaseTableViewController.m in Sources */,
 				8F31109A24264FB100421E7A /* CAAnimation+WAnimation.m in Sources */,
@@ -4947,6 +4997,7 @@
 				8F3114962426EB4C00421E7A /* SGH0618Annotation.m in Sources */,
 				0457881D2427BA6300C2DF75 /* CTFrameParserConfig.m in Sources */,
 				8F3110A724264FB100421E7A /* WBTopic.m in Sources */,
+				8F72EFEB24546F2A0023060B /* SGH0425SocketViewController.m in Sources */,
 				8F31148A2426EB4C00421E7A /* SGH0618MapNavigationViewController.m in Sources */,
 				8F31109824264FB100421E7A /* SGH161223ComponentsDemoViewController.m in Sources */,
 				04F6ECB72429E87E00D7F1CB /* SGH0729Layer.m in Sources */,
@@ -4970,6 +5021,7 @@
 				8F3110A624264FB100421E7A /* WBButtonLink.m in Sources */,
 				045788232427BA6300C2DF75 /* MagnifiterView.m in Sources */,
 				8F311582242995AE00421E7A /* SGH0515Runtime6ViewController.m in Sources */,
+				8F72EFDD24545C180023060B /* SGHAOPLeakFinderViewController.m in Sources */,
 				045787F72427B62500C2DF75 /* NSObject+CYLRunAtDealloc.m in Sources */,
 				045787E82427B37B00C2DF75 /* NSDictionary+print.m in Sources */,
 				8F3110A324264FB100421E7A /* WBStatus.m in Sources */,
@@ -5060,6 +5112,7 @@
 				04F6ECB92429E87E00D7F1CB /* SGH0729TransitionGroupViewController.m in Sources */,
 				8F3110F224264FB100421E7A /* SGH1101DidScreenshotNotiViewController.m in Sources */,
 				8F31112D24264FB100421E7A /* SGH161128TabBarViewController.m in Sources */,
+				8F72EFE7245461110023060B /* UINavigationController+LGLeaksTest.m in Sources */,
 				8F3113512426E1D500421E7A /* NSString+Chinese.m in Sources */,
 				045787E42427B37B00C2DF75 /* Girl.m in Sources */,
 				8F31153E24298CDC00421E7A /* SGH0911CoreLocationViewController.m in Sources */,
@@ -5118,6 +5171,7 @@
 				8F31108B24264FB100421E7A /* SHUtility.m in Sources */,
 				8F311584242995AE00421E7A /* SGH0510Runtime2ViewController.m in Sources */,
 				0457881A2427BA6300C2DF75 /* CoreTextUtils.m in Sources */,
+				8F72EFE024545C330023060B /* UIViewController+LGLeaksTest.m in Sources */,
 				04F6ECBC2429E87E00D7F1CB /* SGH0729WheelViewController.m in Sources */,
 				8F3114162426E6EF00421E7A /* SGHAttributedStringViewController.m in Sources */,
 				04F6EC402429ACCB00D7F1CB /* UIButton+SGHHook.m in Sources */,
