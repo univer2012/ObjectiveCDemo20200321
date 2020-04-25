@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)addSectionDataWithClassNameArray:(NSArray *)classNameArray titleArray:(NSArray *)titleArray title:(NSString *)title;
 
+- (void)pushToNewVCWith:(NSString *)className title:(NSString *)title inBookmarkStoryboard:(BOOL)inBookmarkStoryboard selText:(NSString *)selText;
+
 @end
 
 NS_ASSUME_NONNULL_END

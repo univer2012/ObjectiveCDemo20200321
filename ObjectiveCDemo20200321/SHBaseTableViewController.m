@@ -8,6 +8,9 @@
 
 #import "SHBaseTableViewController.h"
 
+#import <ReactiveObjC/ReactiveObjC.h>
+#import "UIViewController+ExecuteMethod.h"
+
 @interface SHBaseTableViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 
@@ -38,10 +41,10 @@
     @autoreleasepool {
         NSMutableArray *firstArray=@[].mutableCopy;
         
-        [classNameArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [titleArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             SGHCellModel *cellModel = [SGHCellModel new];
-            cellModel.className=obj;
-            cellModel.title=titleArray[idx];
+            cellModel.className = classNameArray[idx];
+            cellModel.title = obj;
             [firstArray addObject:cellModel];
         }];
         
@@ -54,6 +57,37 @@
 -(void)p_addSectionTitle:(NSString *)sectionTitle dataArray:(NSMutableArray *)dataArray {
     [self.dataArray addObject:dataArray];
     [self.sectionTitle addObject:sectionTitle];
+}
+
+- (void)pushToNewVCWith:(NSString *)className title:(NSString *)title inBookmarkStoryboard:(BOOL)inBookmarkStoryboard selText:(NSString *)selText {
+    if (inBookmarkStoryboard) {
+        UIViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:className];
+        vc.title = title;
+        if (selText.length > 0) {
+            @weakify(vc)
+            [RACObserve(vc, viewDidLoad) subscribeNext:^(id  _Nullable x) {
+                @strongify(vc)
+                [vc executeSelectorWith:selText];
+            }];
+        }
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+    } else {
+        Class cls=NSClassFromString(className);
+        if (cls) {
+            UIViewController *vc = [cls new];
+            vc.title = title;
+            if (selText.length > 0) {
+                @weakify(vc)
+                [RACObserve(vc, viewDidLoad) subscribeNext:^(id  _Nullable x) {
+                    @strongify(vc)
+                    [vc executeSelectorWith:selText];
+                }];
+            }
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+    }
 }
 
 
@@ -92,27 +126,10 @@
     NSString *className = cellMoel.className;
     
     if (self.type == SHBaseTableTypeNewVC) {
-        if ([self.inStoryboardVCArray containsObject:className]) {
-            UIViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:className];
-            vc.title = cellMoel.title;
-            vc.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:vc animated:YES];
-        } else {
-            Class cls=NSClassFromString(className);
-            if (cls) {
-                UIViewController *vc = [cls new];
-                vc.title = cellMoel.title;
-                vc.hidesBottomBarWhenPushed = YES;
-                [self.navigationController pushViewController:vc animated:YES];
-            }
-        }
+        [self pushToNewVCWith:cellMoel.className title:cellMoel.title inBookmarkStoryboard:[self.inStoryboardVCArray containsObject:className] selText:@""];
     } else {
-        
-        SEL sel = NSSelectorFromString(className);
-        [self performSelector:sel];
+        [self executeSelectorWith:className];
     }
-    
-    
     
 }
 

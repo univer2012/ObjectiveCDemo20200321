@@ -355,6 +355,11 @@
 		8F311644242D01FA00421E7A /* SGHSchedulerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F311623242D01F900421E7A /* SGHSchedulerViewController.m */; };
 		8F311645242D01FA00421E7A /* SGHKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F311624242D01F900421E7A /* SGHKVOViewController.m */; };
 		8F311649242D031C00421E7A /* SGHAnythingTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F311647242D031C00421E7A /* SGHAnythingTestModel.m */; };
+		8F72EFC92453EE7A0023060B /* SGH0425LeaksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72EFC82453EE7A0023060B /* SGH0425LeaksViewController.m */; };
+		8F72EFCD2453F34E0023060B /* SGHAdvancedTrainingCampListDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72EFCC2453F34E0023060B /* SGHAdvancedTrainingCampListDemoViewController.m */; };
+		8F72EFD32453F4650023060B /* SGH0425Leaks6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72EFD22453F4650023060B /* SGH0425Leaks6ViewController.m */; };
+		8F72EFD6245408880023060B /* UIViewController+ExecuteMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72EFD5245408880023060B /* UIViewController+ExecuteMethod.m */; };
+		8F72EFD92454111B0023060B /* SGHTimerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72EFD82454111B0023060B /* SGHTimerProxy.m */; };
 		8FF058B724381790006F74E9 /* SGH0404SequenceMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF058B62438178F006F74E9 /* SGH0404SequenceMapViewController.m */; };
 		8FF058BE2438215D006F74E9 /* SGH04LoginSuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF058BD2438215D006F74E9 /* SGH04LoginSuccessViewController.m */; };
 		8FF058C124382176006F74E9 /* SGH04RACLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF058C024382176006F74E9 /* SGH04RACLoginViewController.m */; };
@@ -1041,6 +1046,16 @@
 		8F311625242D01F900421E7A /* SGHSwitchDelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHSwitchDelegateViewController.h; sourceTree = "<group>"; };
 		8F311647242D031C00421E7A /* SGHAnythingTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGHAnythingTestModel.m; sourceTree = "<group>"; };
 		8F311648242D031C00421E7A /* SGHAnythingTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHAnythingTestModel.h; sourceTree = "<group>"; };
+		8F72EFC72453EE7A0023060B /* SGH0425LeaksViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH0425LeaksViewController.h; sourceTree = "<group>"; };
+		8F72EFC82453EE7A0023060B /* SGH0425LeaksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0425LeaksViewController.m; sourceTree = "<group>"; };
+		8F72EFCB2453F34E0023060B /* SGHAdvancedTrainingCampListDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHAdvancedTrainingCampListDemoViewController.h; sourceTree = "<group>"; };
+		8F72EFCC2453F34E0023060B /* SGHAdvancedTrainingCampListDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHAdvancedTrainingCampListDemoViewController.m; sourceTree = "<group>"; };
+		8F72EFD12453F4650023060B /* SGH0425Leaks6ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH0425Leaks6ViewController.h; sourceTree = "<group>"; };
+		8F72EFD22453F4650023060B /* SGH0425Leaks6ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0425Leaks6ViewController.m; sourceTree = "<group>"; };
+		8F72EFD4245408880023060B /* UIViewController+ExecuteMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ExecuteMethod.h"; sourceTree = "<group>"; };
+		8F72EFD5245408880023060B /* UIViewController+ExecuteMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ExecuteMethod.m"; sourceTree = "<group>"; };
+		8F72EFD72454111B0023060B /* SGHTimerProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHTimerProxy.h; sourceTree = "<group>"; };
+		8F72EFD82454111B0023060B /* SGHTimerProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHTimerProxy.m; sourceTree = "<group>"; };
 		8FF058B52438178F006F74E9 /* SGH0404SequenceMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH0404SequenceMapViewController.h; sourceTree = "<group>"; };
 		8FF058B62438178F006F74E9 /* SGH0404SequenceMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0404SequenceMapViewController.m; sourceTree = "<group>"; };
 		8FF058BC2438215D006F74E9 /* SGH04LoginSuccessViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH04LoginSuccessViewController.h; sourceTree = "<group>"; };
@@ -1113,6 +1128,7 @@
 		043A635924532FCF00C5ADE6 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				8F72EFCA2453F3120023060B /* iOS_advanced_special_training_camp */,
 				043A636D2453318000C5ADE6 /* 1CyclesMemoryLeaks */,
 			);
 			path = Examples;
@@ -1763,6 +1779,8 @@
 				8F31108124264FB100421E7A /* SGH161128TabBarViewController.m */,
 				04801961244954CF0024FF51 /* SHBaseTableViewController.h */,
 				04801962244954CF0024FF51 /* SHBaseTableViewController.m */,
+				8F72EFD4245408880023060B /* UIViewController+ExecuteMethod.h */,
+				8F72EFD5245408880023060B /* UIViewController+ExecuteMethod.m */,
 				8F310B7F2425B28900421E7A /* AppDelegate.h */,
 				8F310B802425B28900421E7A /* AppDelegate.m */,
 				8F310B882425B28900421E7A /* Main.storyboard */,
@@ -4484,6 +4502,45 @@
 			path = "16ignore(即时搜索优化改进2)";
 			sourceTree = "<group>";
 		};
+		8F72EFC62453EE4A0023060B /* 2CycleReference */ = {
+			isa = PBXGroup;
+			children = (
+				8F72EFC72453EE7A0023060B /* SGH0425LeaksViewController.h */,
+				8F72EFC82453EE7A0023060B /* SGH0425LeaksViewController.m */,
+			);
+			path = 2CycleReference;
+			sourceTree = "<group>";
+		};
+		8F72EFCA2453F3120023060B /* iOS_advanced_special_training_camp */ = {
+			isa = PBXGroup;
+			children = (
+				8F72EFCB2453F34E0023060B /* SGHAdvancedTrainingCampListDemoViewController.h */,
+				8F72EFCC2453F34E0023060B /* SGHAdvancedTrainingCampListDemoViewController.m */,
+				8F72EFCE2453F3D80023060B /* Examples */,
+			);
+			path = iOS_advanced_special_training_camp;
+			sourceTree = "<group>";
+		};
+		8F72EFCE2453F3D80023060B /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				8F72EFD02453F4370023060B /* 5CycleNSTimer */,
+				8F72EFC62453EE4A0023060B /* 2CycleReference */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		8F72EFD02453F4370023060B /* 5CycleNSTimer */ = {
+			isa = PBXGroup;
+			children = (
+				8F72EFD12453F4650023060B /* SGH0425Leaks6ViewController.h */,
+				8F72EFD22453F4650023060B /* SGH0425Leaks6ViewController.m */,
+				8F72EFD72454111B0023060B /* SGHTimerProxy.h */,
+				8F72EFD82454111B0023060B /* SGHTimerProxy.m */,
+			);
+			path = 5CycleNSTimer;
+			sourceTree = "<group>";
+		};
 		8FF058B4243816C6006F74E9 /* RAC_MVVM */ = {
 			isa = PBXGroup;
 			children = (
@@ -4922,6 +4979,7 @@
 				8F31162C242D01FA00421E7A /* SGHMergeViewController.m in Sources */,
 				8F3115462429944C00421E7A /* SGHPerformanceAnalysisAndOptimizationVC.m in Sources */,
 				8F3115522429948900421E7A /* SGHPrincipleOfInquiryViewController.m in Sources */,
+				8F72EFC92453EE7A0023060B /* SGH0425LeaksViewController.m in Sources */,
 				8F311580242995AE00421E7A /* UIViewController+SGH0512Tracking.m in Sources */,
 				8F3110E824264FB100421E7A /* SHFetchFutureDateViewController.m in Sources */,
 				8F311644242D01FA00421E7A /* SGHSchedulerViewController.m in Sources */,
@@ -4970,6 +5028,7 @@
 				8F3114982426EB4C00421E7A /* SGH0618GeocodeViewController.m in Sources */,
 				049678F92427C56100F2FD83 /* SGHCoreText2ViewController.m in Sources */,
 				8F3110F924264FB100421E7A /* UITableView+SHDefaultDisplay.m in Sources */,
+				8F72EFCD2453F34E0023060B /* SGHAdvancedTrainingCampListDemoViewController.m in Sources */,
 				8F3115DF242A60F500421E7A /* PersonModel.m in Sources */,
 				043A63692453310800C5ADE6 /* SGHBlockLeakViewController.m in Sources */,
 				8FF058D3243D5B46006F74E9 /* SGHSocket.m in Sources */,
@@ -4984,6 +5043,8 @@
 				045787E92427B37B00C2DF75 /* FKUser.m in Sources */,
 				8F311636242D01FA00421E7A /* SGHSkipWhileBlockViewController.m in Sources */,
 				049678FE2427C98D00F2FD83 /* SGHCoreText3ViewController.m in Sources */,
+				8F72EFD6245408880023060B /* UIViewController+ExecuteMethod.m in Sources */,
+				8F72EFD32453F4650023060B /* SGH0425Leaks6ViewController.m in Sources */,
 				8F31154F2429947C00421E7A /* SGHAboutKVOAndKVCViewController.m in Sources */,
 				8F3110D124264FB100421E7A /* SGHXMPPFrameworkViewController.m in Sources */,
 				8F311632242D01FA00421E7A /* SGHDistinctUntilChangedViewController.m in Sources */,
@@ -5014,6 +5075,7 @@
 				8F31163B242D01FA00421E7A /* SGHSkipViewController.m in Sources */,
 				8F3110B424264FB100421E7A /* SHUnfixedHeightTableViewController.m in Sources */,
 				8F3110F824264FB100421E7A /* UIViewController+SHLeaksTest.m in Sources */,
+				8F72EFD92454111B0023060B /* SGHTimerProxy.m in Sources */,
 				8F31110924264FB100421E7A /* SGH1125XMLParserViewController.m in Sources */,
 				8F311588242995AE00421E7A /* SGH0511RuntimeMethod.m in Sources */,
 				8F3110E624264FB100421E7A /* UIButton+SHDistribute.m in Sources */,

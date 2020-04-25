@@ -21,9 +21,13 @@
     
     NSArray *tempTitleArray = @[
         @"1.iOS检测内存泄漏的方法 \n请结合文章《iOS检测内存泄漏的方法》操作来看，效果更好",
+        @"2.iOS中高级特训营--系列代码",
+        
     ];
     NSArray *tempClassNameArray = @[
         @"SGHCyclesMemoryLeaksVC",
+        @"SGHAdvancedTrainingCampListDemoViewController",
+        
     ];
     
     [self addSectionDataWithClassNameArray:tempClassNameArray titleArray:tempTitleArray title:@"APM 系列"];
