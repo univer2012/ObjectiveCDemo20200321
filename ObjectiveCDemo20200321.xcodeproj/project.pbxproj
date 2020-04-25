@@ -1949,26 +1949,19 @@
 		8F310E9A24264FAF00421E7A /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
-				8F311193242651DD00421E7A /* Example */,
-				8F310E9B24264FAF00421E7A /* Ctrl */,
-			);
-			path = Contacts;
-			sourceTree = "<group>";
-		};
-		8F310E9B24264FAF00421E7A /* Ctrl */ = {
-			isa = PBXGroup;
-			children = (
 				8F310E9C24264FAF00421E7A /* SGH1128ContactsViewController.h */,
 				8F310E9D24264FAF00421E7A /* SGH1128ContactsViewController.m */,
+				8F311193242651DD00421E7A /* Example */,
 			);
-			path = Ctrl;
+			path = Contacts;
 			sourceTree = "<group>";
 		};
 		8F310E9E24264FAF00421E7A /* Bookmarks */ = {
 			isa = PBXGroup;
 			children = (
+				8F31107F24264FB100421E7A /* SGH1128BookmarksViewController.h */,
+				8F31108024264FB100421E7A /* SGH1128BookmarksViewController.m */,
 				8F310E9F24264FAF00421E7A /* Example */,
-				8F31107E24264FB100421E7A /* Ctrl */,
 			);
 			path = Bookmarks;
 			sourceTree = "<group>";
@@ -3281,15 +3274,6 @@
 			children = (
 				8F31107C24264FB100421E7A /* SGH160728ViewController.h */,
 				8F31107D24264FB100421E7A /* SGH160728ViewController.m */,
-			);
-			path = Ctrl;
-			sourceTree = "<group>";
-		};
-		8F31107E24264FB100421E7A /* Ctrl */ = {
-			isa = PBXGroup;
-			children = (
-				8F31107F24264FB100421E7A /* SGH1128BookmarksViewController.h */,
-				8F31108024264FB100421E7A /* SGH1128BookmarksViewController.m */,
 			);
 			path = Ctrl;
 			sourceTree = "<group>";
