@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042421FB24542969004DD1AC /* SGHDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042421FA24542969004DD1AC /* SGHDemoViewController.swift */; };
 		043A635824532F1B00C5ADE6 /* SGH0424HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A635724532F1B00C5ADE6 /* SGH0424HistoryViewController.m */; };
 		043A635F2453301B00C5ADE6 /* SGHReferenceCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A635E2453301B00C5ADE6 /* SGHReferenceCycleViewController.m */; };
 		043A6362245330B600C5ADE6 /* SGHNameListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A6361245330B600C5ADE6 /* SGHNameListViewController.m */; };
@@ -395,6 +396,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042421F924542968004DD1AC /* ObjectiveCDemo20200321-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectiveCDemo20200321-Bridging-Header.h"; sourceTree = "<group>"; };
+		042421FA24542969004DD1AC /* SGHDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGHDemoViewController.swift; sourceTree = "<group>"; };
 		043A635624532F1B00C5ADE6 /* SGH0424HistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH0424HistoryViewController.h; sourceTree = "<group>"; };
 		043A635724532F1B00C5ADE6 /* SGH0424HistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0424HistoryViewController.m; sourceTree = "<group>"; };
 		043A635D2453301B00C5ADE6 /* SGHReferenceCycleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHReferenceCycleViewController.h; sourceTree = "<group>"; };
@@ -1790,6 +1793,8 @@
 				8F310B942425B29300421E7A /* main.m */,
 				8F310B8B2425B28900421E7A /* ObjectiveCDemo20200321.xcdatamodeld */,
 				8F310BB72425B37800421E7A /* ObjectiveCDemo20200321.pch */,
+				042421FA24542969004DD1AC /* SGHDemoViewController.swift */,
+				042421F924542968004DD1AC /* ObjectiveCDemo20200321-Bridging-Header.h */,
 			);
 			path = ObjectiveCDemo20200321;
 			sourceTree = "<group>";
@@ -4713,6 +4718,7 @@
 				TargetAttributes = {
 					8F310B7B2425B28900421E7A = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1140;
 					};
 					8F310B992425B29400421E7A = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -5033,6 +5039,7 @@
 				043A63692453310800C5ADE6 /* SGHBlockLeakViewController.m in Sources */,
 				8FF058D3243D5B46006F74E9 /* SGHSocket.m in Sources */,
 				043A636C2453313800C5ADE6 /* SGHStaticAnalysisViewController.m in Sources */,
+				042421FB24542969004DD1AC /* SGHDemoViewController.swift in Sources */,
 				8F3110F624264FB100421E7A /* SGH1108ActivityShareViewController.m in Sources */,
 				8F31163E242D01FA00421E7A /* SGHTimeoutViewController.m in Sources */,
 				8F311645242D01FA00421E7A /* SGHKVOViewController.m in Sources */,
@@ -5287,6 +5294,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -5338,6 +5346,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -5348,6 +5357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U5ZV6BBJ6N;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
@@ -5391,6 +5401,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sengoln.ObjectiveCDemo20200321;
 				PRODUCT_NAME = OCDemo20200321;
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjectiveCDemo20200321/ObjectiveCDemo20200321-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -5401,6 +5414,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U5ZV6BBJ6N;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
@@ -5444,6 +5458,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sengoln.ObjectiveCDemo20200321;
 				PRODUCT_NAME = OCDemo20200321;
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjectiveCDemo20200321/ObjectiveCDemo20200321-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -5451,6 +5467,7 @@
 		8F310BB22425B29400421E7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U5ZV6BBJ6N;
@@ -5471,6 +5488,7 @@
 		8F310BB32425B29400421E7A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U5ZV6BBJ6N;
@@ -5491,6 +5509,7 @@
 		8F310BB52425B29400421E7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U5ZV6BBJ6N;
 				INFOPLIST_FILE = ObjectiveCDemo20200321UITests/Info.plist;
@@ -5509,6 +5528,7 @@
 		8F310BB62425B29400421E7A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U5ZV6BBJ6N;
 				INFOPLIST_FILE = ObjectiveCDemo20200321UITests/Info.plist;

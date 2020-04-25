@@ -1,68 +1,249 @@
 PODS:
-  - AFNetworking (3.2.1):
-    - AFNetworking/NSURLSession (= 3.2.1)
-    - AFNetworking/Reachability (= 3.2.1)
-    - AFNetworking/Security (= 3.2.1)
-    - AFNetworking/Serialization (= 3.2.1)
-    - AFNetworking/UIKit (= 3.2.1)
-  - AFNetworking/NSURLSession (3.2.1):
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.1)
-  - AFNetworking/Security (3.2.1)
-  - AFNetworking/Serialization (3.2.1)
-  - AFNetworking/UIKit (3.2.1):
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - Charts (3.4.0):
+    - Charts/Core (= 3.4.0)
+  - Charts/Core (3.4.0)
   - CocoaAsyncSocket (7.6.4)
+  - CYLTabBarController/Core (1.28.5)
+  - CYLTabBarController/Lottie (1.28.5):
+    - CYLTabBarController/Core
+    - lottie-ios (~> 2.5.3)
+  - DTCoreText (1.6.23):
+    - DTCoreText/Core (= 1.6.23)
+    - DTFoundation/Core (~> 1.7.5)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
+    - DTFoundation/DTHTMLParser (~> 1.7.5)
+    - DTFoundation/UIKit (~> 1.7.5)
+  - DTCoreText/Core (1.6.23):
+    - DTFoundation/Core (~> 1.7.5)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
+    - DTFoundation/DTHTMLParser (~> 1.7.5)
+    - DTFoundation/UIKit (~> 1.7.5)
+  - DTFoundation/Core (1.7.14)
+  - DTFoundation/DTAnimatedGIF (1.7.14)
+  - DTFoundation/DTHTMLParser (1.7.14):
+    - DTFoundation/Core
+  - DTFoundation/UIKit (1.7.14):
+    - DTFoundation/Core
+  - DZNEmptyDataSet (1.8.1)
+  - FLAnimatedImage (1.0.12)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - IQKeyboardManager (6.5.5)
+  - lottie-ios (2.5.3)
   - LxDBAnything (1.0.0)
   - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.3.1)
+  - MMKV (1.1.0):
+    - MMKVCore (~> 1.1.0)
+  - MMKVCore (1.1.0)
+  - PluggableApplicationDelegate (0.2.0)
+  - PPSPing (0.3.0)
+  - Protobuf (3.11.4)
+  - QCloudCore/WithoutMTA (5.7.1)
+  - QCloudCOSXML/Transfer (5.7.1):
+    - QCloudCore/WithoutMTA
+  - ReactiveCocoa (10.2.0):
+    - ReactiveSwift (~> 6.2)
   - ReactiveObjC (3.1.1)
+  - ReactiveObjCBridge (6.0.0):
+    - ReactiveObjC (~> 3.1)
+    - ReactiveSwift (~> 6.1)
+  - ReactiveSwift (6.2.1)
+  - SAMKeychain (1.5.3)
+  - SDCycleScrollView (1.80):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.6.1):
+    - SDWebImage/Core (= 5.6.1)
+  - SDWebImage/Core (5.6.1)
+  - SensorsAnalyticsSDK (2.0.1):
+    - SensorsAnalyticsSDK/core (= 2.0.1)
+  - SensorsAnalyticsSDK/core (2.0.1)
+  - SnapKit (4.2.0)
+  - SQLiteRepairKit (1.2.2):
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - SSZipArchive (2.2.2)
+  - STRFTimeFormatter (1.1)
+  - SwiftProtobuf (1.8.0)
   - TTTAttributedLabel (2.0.0)
+  - TYAlertController (1.2.0)
   - TYAttributedLabel (2.6.6)
+  - "UITableView+FDTemplateLayoutCell (1.6)"
+  - WCDB (1.0.7.5):
+    - SQLiteRepairKit (~> 1.2.0)
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - WCDBOptimizedSQLCipher (1.2.1)
   - YBAttributeTextTapAction (3.0.3)
+  - YTKNetwork (2.1.4):
+    - AFNetworking/NSURLSession (~> 3.0)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
   - YYModel (1.0.4)
+  - YYText (1.0.7)
 
 DEPENDENCIES:
-  - AFNetworking (~> 3.0)
+  - AFNetworking (= 3.1.0)
+  - Charts
   - CocoaAsyncSocket
+  - CYLTabBarController/Lottie (~> 1.28.0)
+  - DTCoreText (~> 1.6.21)
+  - DZNEmptyDataSet
+  - FLAnimatedImage
   - FMDB
+  - IQKeyboardManager
   - LxDBAnything
   - Masonry
+  - MBProgressHUD
+  - MJRefresh
+  - MMKV
+  - PluggableApplicationDelegate (from `https://github.com/fmo91/PluggableApplicationDelegate.git`)
+  - PPSPing (~> 0.3.0)
+  - Protobuf
+  - QCloudCOSXML/Transfer
+  - ReactiveCocoa
   - ReactiveObjC
+  - ReactiveObjCBridge
+  - SAMKeychain
+  - SDCycleScrollView (~> 1.80)
+  - SDWebImage (~> 5.0)
+  - SensorsAnalyticsSDK
+  - SnapKit (~> 4.2.0)
+  - SSZipArchive
+  - STRFTimeFormatter
+  - SwiftProtobuf (~> 1.0)
   - TTTAttributedLabel
+  - TYAlertController
   - TYAttributedLabel
+  - "UITableView+FDTemplateLayoutCell (~> 1.6)"
+  - WCDB
   - YBAttributeTextTapAction
+  - YTKNetwork
+  - YYCategories
   - YYModel
+  - YYText
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - AFNetworking
+    - Charts
     - CocoaAsyncSocket
+    - CYLTabBarController
+    - DTCoreText
+    - DTFoundation
+    - DZNEmptyDataSet
+    - FLAnimatedImage
     - FMDB
+    - IQKeyboardManager
+    - lottie-ios
     - LxDBAnything
     - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - MMKV
+    - MMKVCore
+    - PPSPing
+    - Protobuf
+    - QCloudCore
+    - QCloudCOSXML
+    - ReactiveCocoa
     - ReactiveObjC
+    - ReactiveObjCBridge
+    - ReactiveSwift
+    - SAMKeychain
+    - SDCycleScrollView
+    - SDWebImage
+    - SensorsAnalyticsSDK
+    - SnapKit
+    - SQLiteRepairKit
+    - SSZipArchive
+    - STRFTimeFormatter
+    - SwiftProtobuf
     - TTTAttributedLabel
+    - TYAlertController
     - TYAttributedLabel
+    - "UITableView+FDTemplateLayoutCell"
+    - WCDB
+    - WCDBOptimizedSQLCipher
     - YBAttributeTextTapAction
+    - YTKNetwork
+    - YYCategories
     - YYModel
+    - YYText
+
+EXTERNAL SOURCES:
+  PluggableApplicationDelegate:
+    :git: https://github.com/fmo91/PluggableApplicationDelegate.git
+
+CHECKOUT OPTIONS:
+  PluggableApplicationDelegate:
+    :commit: 465ebe3f6441f48f2a2144b59c0459c8f6cb7564
+    :git: https://github.com/fmo91/PluggableApplicationDelegate.git
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Charts: 74c9f256eaf0460c0c416522d1cf8c634ea6b286
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
+  CYLTabBarController: edd9fecba9afa3f2e9e44ed50ca6dde69941f25f
+  DTCoreText: 67023bb51b26711d5f640c851f4845aea14c24c9
+  DTFoundation: 25aa19bb7c6e225b1dfae195604fb8cf1da0ab4c
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
   LxDBAnything: 1bb5e0312799c571a33f0ef5d56efb096f27d3a1
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  MMKV: 7bb6c30f9ff2ea45bc2398c86e66dd1cb63cfe20
+  MMKVCore: f1e0aad4fc330e7cbfbdff16720017bf0973db5a
+  PluggableApplicationDelegate: 5144bff5ef6ea834a362341a65199b38912d7dd6
+  PPSPing: f275a44303d6e1ebbd07b90fe8d29831838e58a7
+  Protobuf: 176220c526ad8bd09ab1fb40a978eac3fef665f7
+  QCloudCore: bcea9653ea15dc6ade056fb506a0747aa151db22
+  QCloudCOSXML: 788031930816474d8eff6cb73906a5a2a2e392ce
+  ReactiveCocoa: a123c42f449c552460a4ee217dd49c76a17c8204
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  ReactiveObjCBridge: 5502e3da1f092d39953ac27816f3441e01eb875a
+  ReactiveSwift: 07ddf579f4eb3ee3bd656214f0461aaf2c0fd639
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
+  SDWebImage: 7edb9c3ea661e77a66661f7f044de8c1b55d1120
+  SensorsAnalyticsSDK: f0d26b2baa4704e958544f77338b11a1ee166961
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
+  SSZipArchive: fa16b8cc4cdeceb698e5e5d9f67e9558532fbf23
+  STRFTimeFormatter: 426a398955a01ce6e29e8fb48e97df00e6d0e4b6
+  SwiftProtobuf: 2cbd9409689b7df170d82a92a33443c8e3e14a70
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  TYAlertController: c121090edb0bea7426f987da94cdddd81eef4231
   TYAttributedLabel: cb8fc910d97eb5224936d4f692a78e042af691b2
+  "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
+  WCDB: 8e90babdeb7784c569353a4bd22a66c0a175a882
+  WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
   YBAttributeTextTapAction: b7e61f0265b5673e7ce7bad7319e8eff9e209a2b
+  YTKNetwork: 19be749c30f0512ada07180f4637b4b67bc8ddc2
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: a4c13cdb009de222b2c69b1dbe85d29a5f4ff7db
+PODFILE CHECKSUM: 0f595df1ede2c8636b98ab7a4cbf0d39fbf01732
 
 COCOAPODS: 1.9.1
