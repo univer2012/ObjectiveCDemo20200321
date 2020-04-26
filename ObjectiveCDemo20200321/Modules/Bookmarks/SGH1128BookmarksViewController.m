@@ -45,6 +45,7 @@
         @"SGH190129YYKitViewController",
         @"SHReactiveCocoaViewController",
         @"SGHSocketListViewController",
+        @"SGHMultithreadProgramViewController",
     ] mutableCopy];
     
     
@@ -54,7 +55,8 @@
         @"4、2017-02-08",
         @"5、YYKit",
         @"6、ReactiveCocoa",
-        @"7.Socket",
+        @"7、Socket",
+        @"8、多线程编程",
     ] mutableCopy];
     
     

@@ -38,7 +38,6 @@
         @"SGHPresentTransitionStyleViewController",
         @"SGHPickerViewViewController",
         @"SGHTableViewStyleGroupedViewController",
-        @"SGH0409ThreadViewController",
         @"SGH0413URLCacheViewController",
     ] mutableCopy];
     
@@ -51,7 +50,6 @@
         @"presentViewController转场样式",
         @"UIPickerView的使用",
         @"tableViewStyleGrouped的使用",
-        @"多线程篇：NSThread",
         @"NSURLCache、缓存机制的理解与实现，数据库离线缓存和多图片缓存；",
     ] mutableCopy];
 }

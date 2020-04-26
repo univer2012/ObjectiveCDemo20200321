@@ -5,7 +5,9 @@
 //  Created by 远平 on 2020/4/9.
 //  Copyright © 2020 远平. All rights reserved.
 //
-
+/*
+ 来自：[iOS多线程篇：NSThread](https://www.jianshu.com/p/334bde6790be)
+ */
 #import "SGH0409ThreadViewController.h"
 
 @interface SGH0409ThreadViewController ()

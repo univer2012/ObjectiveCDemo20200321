@@ -14,6 +14,13 @@
 		0424221024549526004DD1AC /* SGHSocketSeverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424220C24549525004DD1AC /* SGHSocketSeverViewController.m */; };
 		0424221124549526004DD1AC /* SGHSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424220D24549525004DD1AC /* SGHSocket.m */; };
 		0424221524549788004DD1AC /* SGHAsyncSocketClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424221424549788004DD1AC /* SGHAsyncSocketClientViewController.m */; };
+		0424221924552ACC004DD1AC /* SGHMultithreadProgramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424221824552ACC004DD1AC /* SGHMultithreadProgramViewController.m */; };
+		0424222024552C30004DD1AC /* SGHAboutNSOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424221C24552C30004DD1AC /* SGHAboutNSOperationViewController.m */; };
+		0424222124552C30004DD1AC /* FKGeometryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424221F24552C30004DD1AC /* FKGeometryView.m */; };
+		0424222B245533D0004DD1AC /* SGHGoBackMainThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424222A245533D0004DD1AC /* SGHGoBackMainThreadViewController.m */; };
+		0424222F24553726004DD1AC /* SGH0409ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424222E24553726004DD1AC /* SGH0409ThreadViewController.m */; };
+		0424223324553819004DD1AC /* SGH0426GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424223224553819004DD1AC /* SGH0426GCDViewController.m */; };
+		04242237245563D8004DD1AC /* SGH0426OperationQueueDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04242236245563D8004DD1AC /* SGH0426OperationQueueDemoViewController.m */; };
 		043A635824532F1B00C5ADE6 /* SGH0424HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A635724532F1B00C5ADE6 /* SGH0424HistoryViewController.m */; };
 		043A635F2453301B00C5ADE6 /* SGHReferenceCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A635E2453301B00C5ADE6 /* SGHReferenceCycleViewController.m */; };
 		043A6362245330B600C5ADE6 /* SGHNameListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A6361245330B600C5ADE6 /* SGHNameListViewController.m */; };
@@ -29,7 +36,6 @@
 		045787E92427B37B00C2DF75 /* FKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 045787DF2427B37B00C2DF75 /* FKUser.m */; };
 		045787EC2427B4AA00C2DF75 /* SGHReliableiOSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 045787EA2427B4AA00C2DF75 /* SGHReliableiOSPerson.m */; };
 		045787EF2427B53300C2DF75 /* ReliableiOSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 045787ED2427B53300C2DF75 /* ReliableiOSPerson.m */; };
-		045787F22427B5DA00C2DF75 /* FKGeometryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045787F12427B5DA00C2DF75 /* FKGeometryView.m */; };
 		045787F72427B62500C2DF75 /* NSObject+CYLRunAtDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 045787F42427B62500C2DF75 /* NSObject+CYLRunAtDealloc.m */; };
 		045787F82427B62500C2DF75 /* CYLBlockExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 045787F62427B62500C2DF75 /* CYLBlockExecutor.m */; };
 		045787FC2427B88100C2DF75 /* SGHCoreTextListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045787FB2427B88100C2DF75 /* SGHCoreTextListViewController.m */; };
@@ -46,7 +52,6 @@
 		045788272427BAF100C2DF75 /* SGHCoreText1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045788262427BAF100C2DF75 /* SGHCoreText1ViewController.m */; };
 		0457882B2427C03B00C2DF75 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0457882A2427C03B00C2DF75 /* CoreText.framework */; };
 		04801963244954CF0024FF51 /* SHBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04801962244954CF0024FF51 /* SHBaseTableViewController.m */; };
-		048706322427670A00CCABC9 /* SGHAboutNSOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048706312427670A00CCABC9 /* SGHAboutNSOperationViewController.m */; };
 		049678F62427C37300F2FD83 /* CoreText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049678F52427C37300F2FD83 /* CoreText.storyboard */; };
 		049678F92427C56100F2FD83 /* SGHCoreText2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049678F82427C56100F2FD83 /* SGHCoreText2ViewController.m */; };
 		049678FB2427C6E900F2FD83 /* demo2_content.json in Resources */ = {isa = PBXBuildFile; fileRef = 049678FA2427C6E900F2FD83 /* demo2_content.json */; };
@@ -379,7 +384,6 @@
 		8FF058C8243873AD006F74E9 /* SGHCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF058C7243873AD006F74E9 /* SGHCellModel.m */; };
 		8FF058CE243884C2006F74E9 /* SHAnimationMasonryLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF058CA243884C2006F74E9 /* SHAnimationMasonryLoginVC.m */; };
 		8FF058CF243884C2006F74E9 /* HomePageAnimationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF058CD243884C2006F74E9 /* HomePageAnimationUtil.m */; };
-		8FF058E0243F4B37006F74E9 /* SGH0409ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF058DF243F4B37006F74E9 /* SGH0409ThreadViewController.m */; };
 		8FF058E62443698C006F74E9 /* SGH_TTAttriLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF058E42443698C006F74E9 /* SGH_TTAttriLabelViewController.m */; };
 		8FF058EA24448D65006F74E9 /* SGH0413URLCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF058E924448D65006F74E9 /* SGH0413URLCacheViewController.m */; };
 		8FF847A42434230F002F18F9 /* SGH0401RACCommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF847A32434230F002F18F9 /* SGH0401RACCommandViewController.m */; };
@@ -418,6 +422,20 @@
 		0424220E24549525004DD1AC /* SGHSocketClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHSocketClientViewController.h; sourceTree = "<group>"; };
 		0424221324549788004DD1AC /* SGHAsyncSocketClientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHAsyncSocketClientViewController.h; sourceTree = "<group>"; };
 		0424221424549788004DD1AC /* SGHAsyncSocketClientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHAsyncSocketClientViewController.m; sourceTree = "<group>"; };
+		0424221724552ACC004DD1AC /* SGHMultithreadProgramViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHMultithreadProgramViewController.h; sourceTree = "<group>"; };
+		0424221824552ACC004DD1AC /* SGHMultithreadProgramViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHMultithreadProgramViewController.m; sourceTree = "<group>"; };
+		0424221C24552C30004DD1AC /* SGHAboutNSOperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGHAboutNSOperationViewController.m; sourceTree = "<group>"; };
+		0424221D24552C30004DD1AC /* FKGeometryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKGeometryView.h; sourceTree = "<group>"; };
+		0424221E24552C30004DD1AC /* SGHAboutNSOperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHAboutNSOperationViewController.h; sourceTree = "<group>"; };
+		0424221F24552C30004DD1AC /* FKGeometryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKGeometryView.m; sourceTree = "<group>"; };
+		04242229245533D0004DD1AC /* SGHGoBackMainThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHGoBackMainThreadViewController.h; sourceTree = "<group>"; };
+		0424222A245533D0004DD1AC /* SGHGoBackMainThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHGoBackMainThreadViewController.m; sourceTree = "<group>"; };
+		0424222D24553726004DD1AC /* SGH0409ThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGH0409ThreadViewController.h; sourceTree = "<group>"; };
+		0424222E24553726004DD1AC /* SGH0409ThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGH0409ThreadViewController.m; sourceTree = "<group>"; };
+		0424223124553819004DD1AC /* SGH0426GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH0426GCDViewController.h; sourceTree = "<group>"; };
+		0424223224553819004DD1AC /* SGH0426GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0426GCDViewController.m; sourceTree = "<group>"; };
+		04242235245563D8004DD1AC /* SGH0426OperationQueueDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH0426OperationQueueDemoViewController.h; sourceTree = "<group>"; };
+		04242236245563D8004DD1AC /* SGH0426OperationQueueDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0426OperationQueueDemoViewController.m; sourceTree = "<group>"; };
 		043A635624532F1B00C5ADE6 /* SGH0424HistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH0424HistoryViewController.h; sourceTree = "<group>"; };
 		043A635724532F1B00C5ADE6 /* SGH0424HistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0424HistoryViewController.m; sourceTree = "<group>"; };
 		043A635D2453301B00C5ADE6 /* SGHReferenceCycleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHReferenceCycleViewController.h; sourceTree = "<group>"; };
@@ -448,8 +466,6 @@
 		045787EB2427B4AA00C2DF75 /* SGHReliableiOSPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHReliableiOSPerson.h; sourceTree = "<group>"; };
 		045787ED2427B53300C2DF75 /* ReliableiOSPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReliableiOSPerson.m; sourceTree = "<group>"; };
 		045787EE2427B53300C2DF75 /* ReliableiOSPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReliableiOSPerson.h; sourceTree = "<group>"; };
-		045787F02427B5DA00C2DF75 /* FKGeometryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKGeometryView.h; sourceTree = "<group>"; };
-		045787F12427B5DA00C2DF75 /* FKGeometryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKGeometryView.m; sourceTree = "<group>"; };
 		045787F32427B62500C2DF75 /* NSObject+CYLRunAtDealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CYLRunAtDealloc.h"; sourceTree = "<group>"; };
 		045787F42427B62500C2DF75 /* NSObject+CYLRunAtDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CYLRunAtDealloc.m"; sourceTree = "<group>"; };
 		045787F52427B62500C2DF75 /* CYLBlockExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLBlockExecutor.h; sourceTree = "<group>"; };
@@ -480,8 +496,6 @@
 		0457882A2427C03B00C2DF75 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		04801961244954CF0024FF51 /* SHBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBaseTableViewController.h; sourceTree = "<group>"; };
 		04801962244954CF0024FF51 /* SHBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBaseTableViewController.m; sourceTree = "<group>"; };
-		048706302427670A00CCABC9 /* SGHAboutNSOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHAboutNSOperationViewController.h; sourceTree = "<group>"; };
-		048706312427670A00CCABC9 /* SGHAboutNSOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHAboutNSOperationViewController.m; sourceTree = "<group>"; };
 		049678F52427C37300F2FD83 /* CoreText.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CoreText.storyboard; sourceTree = "<group>"; };
 		049678F72427C56100F2FD83 /* SGHCoreText2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHCoreText2ViewController.h; sourceTree = "<group>"; };
 		049678F82427C56100F2FD83 /* SGHCoreText2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHCoreText2ViewController.m; sourceTree = "<group>"; };
@@ -1103,8 +1117,6 @@
 		8FF058CB243884C2006F74E9 /* HomePageAnimationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageAnimationUtil.h; sourceTree = "<group>"; };
 		8FF058CC243884C2006F74E9 /* SHAnimationMasonryLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAnimationMasonryLoginVC.h; sourceTree = "<group>"; };
 		8FF058CD243884C2006F74E9 /* HomePageAnimationUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageAnimationUtil.m; sourceTree = "<group>"; };
-		8FF058DE243F4B37006F74E9 /* SGH0409ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH0409ThreadViewController.h; sourceTree = "<group>"; };
-		8FF058DF243F4B37006F74E9 /* SGH0409ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0409ThreadViewController.m; sourceTree = "<group>"; };
 		8FF058E42443698C006F74E9 /* SGH_TTAttriLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGH_TTAttriLabelViewController.m; sourceTree = "<group>"; };
 		8FF058E52443698C006F74E9 /* SGH_TTAttriLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGH_TTAttriLabelViewController.h; sourceTree = "<group>"; };
 		8FF058E824448D65006F74E9 /* SGH0413URLCacheViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH0413URLCacheViewController.h; sourceTree = "<group>"; };
@@ -1199,6 +1211,107 @@
 				0424221424549788004DD1AC /* SGHAsyncSocketClientViewController.m */,
 			);
 			path = 3AsyncSocket_Client;
+			sourceTree = "<group>";
+		};
+		0424221624552AA5004DD1AC /* 8MultithreadProgram */ = {
+			isa = PBXGroup;
+			children = (
+				0424221724552ACC004DD1AC /* SGHMultithreadProgramViewController.h */,
+				0424221824552ACC004DD1AC /* SGHMultithreadProgramViewController.m */,
+				0424221A24552C04004DD1AC /* Examples */,
+			);
+			path = 8MultithreadProgram;
+			sourceTree = "<group>";
+		};
+		0424221A24552C04004DD1AC /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				04242228245533A6004DD1AC /* Section5_Others */,
+				0424222624553238004DD1AC /* Section4_pthread */,
+				042422252455322A004DD1AC /* Section3_NSThread */,
+				0424222424553212004DD1AC /* Section2_GCD */,
+				042422232455320C004DD1AC /* Section1_NSOperation */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		0424221B24552C30004DD1AC /* 3AboutNSOperation */ = {
+			isa = PBXGroup;
+			children = (
+				0424221E24552C30004DD1AC /* SGHAboutNSOperationViewController.h */,
+				0424221C24552C30004DD1AC /* SGHAboutNSOperationViewController.m */,
+				0424221D24552C30004DD1AC /* FKGeometryView.h */,
+				0424221F24552C30004DD1AC /* FKGeometryView.m */,
+			);
+			path = 3AboutNSOperation;
+			sourceTree = "<group>";
+		};
+		04242222245531F3004DD1AC /* 1goBackMainThread */ = {
+			isa = PBXGroup;
+			children = (
+				04242229245533D0004DD1AC /* SGHGoBackMainThreadViewController.h */,
+				0424222A245533D0004DD1AC /* SGHGoBackMainThreadViewController.m */,
+			);
+			path = 1goBackMainThread;
+			sourceTree = "<group>";
+		};
+		042422232455320C004DD1AC /* Section1_NSOperation */ = {
+			isa = PBXGroup;
+			children = (
+				04242234245563AE004DD1AC /* 2OperationQueueUseing */,
+				0424221B24552C30004DD1AC /* 3AboutNSOperation */,
+			);
+			path = Section1_NSOperation;
+			sourceTree = "<group>";
+		};
+		0424222424553212004DD1AC /* Section2_GCD */ = {
+			isa = PBXGroup;
+			children = (
+				0424223124553819004DD1AC /* SGH0426GCDViewController.h */,
+				0424223224553819004DD1AC /* SGH0426GCDViewController.m */,
+			);
+			path = Section2_GCD;
+			sourceTree = "<group>";
+		};
+		042422252455322A004DD1AC /* Section3_NSThread */ = {
+			isa = PBXGroup;
+			children = (
+				0424222C24553726004DD1AC /* 1Simulate_Sell_Ticket */,
+			);
+			path = Section3_NSThread;
+			sourceTree = "<group>";
+		};
+		0424222624553238004DD1AC /* Section4_pthread */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Section4_pthread;
+			sourceTree = "<group>";
+		};
+		04242228245533A6004DD1AC /* Section5_Others */ = {
+			isa = PBXGroup;
+			children = (
+				04242222245531F3004DD1AC /* 1goBackMainThread */,
+			);
+			path = Section5_Others;
+			sourceTree = "<group>";
+		};
+		0424222C24553726004DD1AC /* 1Simulate_Sell_Ticket */ = {
+			isa = PBXGroup;
+			children = (
+				0424222D24553726004DD1AC /* SGH0409ThreadViewController.h */,
+				0424222E24553726004DD1AC /* SGH0409ThreadViewController.m */,
+			);
+			path = 1Simulate_Sell_Ticket;
+			sourceTree = "<group>";
+		};
+		04242234245563AE004DD1AC /* 2OperationQueueUseing */ = {
+			isa = PBXGroup;
+			children = (
+				04242235245563D8004DD1AC /* SGH0426OperationQueueDemoViewController.h */,
+				04242236245563D8004DD1AC /* SGH0426OperationQueueDemoViewController.m */,
+			);
+			path = 2OperationQueueUseing;
 			sourceTree = "<group>";
 		};
 		043A635524532EE400C5ADE6 /* History */ = {
@@ -1366,17 +1479,6 @@
 			path = Examples;
 			sourceTree = "<group>";
 		};
-		0487062F242766DC00CCABC9 /* 3AboutNSOperation */ = {
-			isa = PBXGroup;
-			children = (
-				045787F02427B5DA00C2DF75 /* FKGeometryView.h */,
-				045787F12427B5DA00C2DF75 /* FKGeometryView.m */,
-				048706302427670A00CCABC9 /* SGHAboutNSOperationViewController.h */,
-				048706312427670A00CCABC9 /* SGHAboutNSOperationViewController.m */,
-			);
-			path = 3AboutNSOperation;
-			sourceTree = "<group>";
-		};
 		04F6EC2E2429ACCB00D7F1CB /* iOS runtime实战应用：Method Swizzling */ = {
 			isa = PBXGroup;
 			children = (
@@ -1438,7 +1540,6 @@
 			isa = PBXGroup;
 			children = (
 				8FF058E724448D4A006F74E9 /* URLCache */,
-				8FF058DD243F4B1B006F74E9 /* Thread */,
 				04F6EC662429AEA000D7F1CB /* 监听网路变化(用苹果官网提供的Reachability) */,
 				04F6EC732429AEA000D7F1CB /* 所有苹果字体显示的样式 */,
 				04F6EC462429AE9F00D7F1CB /* aboutNavigationController */,
@@ -2036,6 +2137,7 @@
 		8F310E9F24264FAF00421E7A /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				0424221624552AA5004DD1AC /* 8MultithreadProgram */,
 				042421FC245483FC004DD1AC /* 7Socket */,
 				8F310EA024264FAF00421E7A /* 6ReactiveCocoa */,
 				8F310EBB24264FAF00421E7A /* 3第三方组件 */,
@@ -3357,7 +3459,6 @@
 				8F3115402429940D00421E7A /* 6runloop */,
 				8F31153F2429940500421E7A /* 5性能优化 */,
 				045787F92427B85F00C2DF75 /* 4CoreTextDemos */,
-				0487062F242766DC00CCABC9 /* 3AboutNSOperation */,
 				8F3114252426EB4B00421E7A /* 2CoreLocation_MKMapView */,
 				8F3113562426E6EE00421E7A /* 16-05-07 */,
 			);
@@ -4689,15 +4790,6 @@
 			path = "7Autolayout_masonry登录动画";
 			sourceTree = "<group>";
 		};
-		8FF058DD243F4B1B006F74E9 /* Thread */ = {
-			isa = PBXGroup;
-			children = (
-				8FF058DE243F4B37006F74E9 /* SGH0409ThreadViewController.h */,
-				8FF058DF243F4B37006F74E9 /* SGH0409ThreadViewController.m */,
-			);
-			path = Thread;
-			sourceTree = "<group>";
-		};
 		8FF058E32443698C006F74E9 /* 22TTAttributedLabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -4980,6 +5072,7 @@
 				8F311633242D01FA00421E7A /* SGHFilterViewController.m in Sources */,
 				043A635824532F1B00C5ADE6 /* SGH0424HistoryViewController.m in Sources */,
 				8F31163D242D01FA00421E7A /* SGHTakeLastViewController.m in Sources */,
+				0424223324553819004DD1AC /* SGH0426GCDViewController.m in Sources */,
 				8F310B952425B29300421E7A /* main.m in Sources */,
 				8F3114182426E6EF00421E7A /* SGHStringShowViewController.m in Sources */,
 				8F31112B24264FB100421E7A /* SGH160728ViewController.m in Sources */,
@@ -5040,7 +5133,6 @@
 				8F31148A2426EB4C00421E7A /* SGH0618MapNavigationViewController.m in Sources */,
 				8F31109824264FB100421E7A /* SGH161223ComponentsDemoViewController.m in Sources */,
 				04F6ECB72429E87E00D7F1CB /* SGH0729Layer.m in Sources */,
-				8FF058E0243F4B37006F74E9 /* SGH0409ThreadViewController.m in Sources */,
 				8F31140C2426E6EF00421E7A /* SGHNSArrayNSMutableArrayViewController.m in Sources */,
 				8F31149B2426EB4C00421E7A /* SGH0727CollectionViewController.m in Sources */,
 				045788272427BAF100C2DF75 /* SGHCoreText1ViewController.m in Sources */,
@@ -5072,6 +5164,7 @@
 				04F6EC882429AEA000D7F1CB /* SGHUIFontViewController.m in Sources */,
 				8FF847A42434230F002F18F9 /* SGH0401RACCommandViewController.m in Sources */,
 				8F31108724264FB100421E7A /* SGHDeviceManager.m in Sources */,
+				0424221924552ACC004DD1AC /* SGHMultithreadProgramViewController.m in Sources */,
 				04F6EC862429AEA000D7F1CB /* SGHPresentTransitionSecondViewController.m in Sources */,
 				8F31162C242D01FA00421E7A /* SGHMergeViewController.m in Sources */,
 				8F3115462429944C00421E7A /* SGHPerformanceAnalysisAndOptimizationVC.m in Sources */,
@@ -5102,6 +5195,7 @@
 				8F31163A242D01FA00421E7A /* SGHIgnoreViewController.m in Sources */,
 				04F6EC432429ACCB00D7F1CB /* SGHRuntimeAttriMethodViewController.m in Sources */,
 				8F3110FF24264FB100421E7A /* SHProxy.m in Sources */,
+				0424222024552C30004DD1AC /* SGHAboutNSOperationViewController.m in Sources */,
 				8F3110A424264FB100421E7A /* WBTimelineItem.m in Sources */,
 				8F3115DD242A60F500421E7A /* NSObject+EnumDictOneLevel.m in Sources */,
 				8F3110A024264FB100421E7A /* SGH190129YYKitViewController.m in Sources */,
@@ -5123,6 +5217,7 @@
 				045787CC24279E8200C2DF75 /* SGHDeallocBlockViewController.m in Sources */,
 				0424221124549526004DD1AC /* SGHSocket.m in Sources */,
 				8F31150E2426FBEC00421E7A /* VarArgs.m in Sources */,
+				04242237245563D8004DD1AC /* SGH0426OperationQueueDemoViewController.m in Sources */,
 				8F3114982426EB4C00421E7A /* SGH0618GeocodeViewController.m in Sources */,
 				049678F92427C56100F2FD83 /* SGHCoreText2ViewController.m in Sources */,
 				8F3110F924264FB100421E7A /* UITableView+SHDefaultDisplay.m in Sources */,
@@ -5148,10 +5243,12 @@
 				8F311632242D01FA00421E7A /* SGHDistinctUntilChangedViewController.m in Sources */,
 				8F31162B242D01FA00421E7A /* SGHZipwithViewController.m in Sources */,
 				04F6ECB92429E87E00D7F1CB /* SGH0729TransitionGroupViewController.m in Sources */,
+				0424222B245533D0004DD1AC /* SGHGoBackMainThreadViewController.m in Sources */,
 				8F3110F224264FB100421E7A /* SGH1101DidScreenshotNotiViewController.m in Sources */,
 				8F31112D24264FB100421E7A /* SGH161128TabBarViewController.m in Sources */,
 				8F72EFE7245461110023060B /* UINavigationController+LGLeaksTest.m in Sources */,
 				8F3113512426E1D500421E7A /* NSString+Chinese.m in Sources */,
+				0424222124552C30004DD1AC /* FKGeometryView.m in Sources */,
 				045787E42427B37B00C2DF75 /* Girl.m in Sources */,
 				8F31153E24298CDC00421E7A /* SGH0911CoreLocationViewController.m in Sources */,
 				8FF058C124382176006F74E9 /* SGH04RACLoginViewController.m in Sources */,
@@ -5179,7 +5276,6 @@
 				8F3110E624264FB100421E7A /* UIButton+SHDistribute.m in Sources */,
 				04F6EC872429AEA000D7F1CB /* SGHPresentTransitionStyleViewController.m in Sources */,
 				8F3115DC242A60F500421E7A /* NSObject+EnumDict.m in Sources */,
-				048706322427670A00CCABC9 /* SGHAboutNSOperationViewController.m in Sources */,
 				8F3115932429977800421E7A /* SGH0425RunloopImageViewController.m in Sources */,
 				8F31111524264FB100421E7A /* TKAesHelper.m in Sources */,
 				8F311637242D01FA00421E7A /* SGHTakeUntilViewController.m in Sources */,
@@ -5245,7 +5341,6 @@
 				8F3110E224264FB100421E7A /* RegexKitLite.m in Sources */,
 				8F31112C24264FB100421E7A /* SGH1128BookmarksViewController.m in Sources */,
 				8FF058CF243884C2006F74E9 /* HomePageAnimationUtil.m in Sources */,
-				045787F22427B5DA00C2DF75 /* FKGeometryView.m in Sources */,
 				04F6EC412429ACCB00D7F1CB /* SGHMethodSwizzlingViewController.m in Sources */,
 				8F3110EF24264FB100421E7A /* SXNewsDetailEntity.m in Sources */,
 				8F3115492429946000421E7A /* SGHRunloopExperimentViewController.m in Sources */,
@@ -5280,6 +5375,7 @@
 				8F3110DE24264FB100421E7A /* SGH170815IdentCodeViewController.m in Sources */,
 				8F31110E24264FB100421E7A /* SGH0824PresentAndPushOneViewController.m in Sources */,
 				8F3110EB24264FB100421E7A /* SGH0524PresentCViewController.m in Sources */,
+				0424222F24553726004DD1AC /* SGH0409ThreadViewController.m in Sources */,
 				8F311597242999AE00421E7A /* SGHTechnologyExplorationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

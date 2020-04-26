@@ -40,9 +40,11 @@ const char *LGDefaultView;
     }
     if (!rows) {
 //        self.lgDefaultView.hidden = NO;
-        self.lgDefaultView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
-        self.lgDefaultView.backgroundColor = [UIColor redColor];
-        [self addSubview:self.lgDefaultView];
+        
+        NSLog(@"请打开这里的注释");
+//        self.lgDefaultView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+//        self.lgDefaultView.backgroundColor = [UIColor redColor];
+//        [self addSubview:self.lgDefaultView];
     } else {
         self.lgDefaultView.hidden = YES;
     }

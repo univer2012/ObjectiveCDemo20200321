@@ -151,7 +151,7 @@
         <!--AboutNS Operation View Controller-->
         <scene sceneID="32u-yr-vRe">
             <objects>
-                <viewController id="wKo-2s-VHf" customClass="SGHAboutNSOperationViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SGHAboutNSOperationViewController" id="wKo-2s-VHf" customClass="SGHAboutNSOperationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kio-Qo-cjO" customClass="FKGeometryView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

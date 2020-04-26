@@ -62,7 +62,6 @@
     _controllersArray= [@[
         @"SGH160507ViewController",
         @"SGH160519ViewController",
-        @"SGHAboutNSOperationViewController",
         @"SGHCoreTextListViewController",
         @"SGHPerformanceAnalysisAndOptimizationVC",
         @"SGHRunloopExperimentViewController",
@@ -76,7 +75,6 @@
     self.titlesArray=[@[
         @"16-05-07替代UDID/PageVC/webView/断点续传后台下载",
         @"2CoreLocation、MKMapView",
-        @"3多线程NSOperation的示例",
         @"4CoreText Demos",
         @"5性能优化",
         @"6runloop",
