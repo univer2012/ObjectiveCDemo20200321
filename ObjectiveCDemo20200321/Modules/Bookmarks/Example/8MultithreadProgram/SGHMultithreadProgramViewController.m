@@ -59,9 +59,11 @@
     //MARK: section 5
     NSArray *tempTitleArray5 = @[
         @"1.切回到主线程的N种方式",
+        @"2.iOS 十种线程锁",
     ];
     NSArray *tempClassNameArray5 = @[
         @"SGHGoBackMainThreadViewController",
+        @"SGHTenThreadLocksViewController",
     ];
     [self addSectionDataWithClassNameArray:tempClassNameArray5 titleArray:tempTitleArray5 title:@"其他issue"];
     

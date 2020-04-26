@@ -21,6 +21,17 @@
 		0424222F24553726004DD1AC /* SGH0409ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424222E24553726004DD1AC /* SGH0409ThreadViewController.m */; };
 		0424223324553819004DD1AC /* SGH0426GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424223224553819004DD1AC /* SGH0426GCDViewController.m */; };
 		04242237245563D8004DD1AC /* SGH0426OperationQueueDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04242236245563D8004DD1AC /* SGH0426OperationQueueDemoViewController.m */; };
+		0424223B2455D039004DD1AC /* SGHTenThreadLocksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424223A2455D039004DD1AC /* SGHTenThreadLocksViewController.m */; };
+		0424223F2455D0CD004DD1AC /* SGHLock1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424223E2455D0CD004DD1AC /* SGHLock1ViewController.m */; };
+		042422422455D1BC004DD1AC /* SGHLock2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042422412455D1BC004DD1AC /* SGHLock2ViewController.m */; };
+		042422452455D23B004DD1AC /* SGHLock3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042422442455D23B004DD1AC /* SGHLock3ViewController.m */; };
+		042422482455D269004DD1AC /* SGHLock4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042422472455D269004DD1AC /* SGHLock4ViewController.m */; };
+		0424224B2455D2D4004DD1AC /* SGHLock5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424224A2455D2D4004DD1AC /* SGHLock5ViewController.m */; };
+		0424224E2455D301004DD1AC /* SGHLock6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424224D2455D301004DD1AC /* SGHLock6ViewController.m */; };
+		042422512455D311004DD1AC /* SGHLock7ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042422502455D311004DD1AC /* SGHLock7ViewController.m */; };
+		042422542455D31E004DD1AC /* SGHLock8ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042422532455D31E004DD1AC /* SGHLock8ViewController.m */; };
+		042422572455D328004DD1AC /* SGHLock9ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042422562455D328004DD1AC /* SGHLock9ViewController.m */; };
+		0424225A2455D334004DD1AC /* SGHLock10ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042422592455D334004DD1AC /* SGHLock10ViewController.m */; };
 		043A635824532F1B00C5ADE6 /* SGH0424HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A635724532F1B00C5ADE6 /* SGH0424HistoryViewController.m */; };
 		043A635F2453301B00C5ADE6 /* SGHReferenceCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A635E2453301B00C5ADE6 /* SGHReferenceCycleViewController.m */; };
 		043A6362245330B600C5ADE6 /* SGHNameListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A6361245330B600C5ADE6 /* SGHNameListViewController.m */; };
@@ -436,6 +447,28 @@
 		0424223224553819004DD1AC /* SGH0426GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0426GCDViewController.m; sourceTree = "<group>"; };
 		04242235245563D8004DD1AC /* SGH0426OperationQueueDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH0426OperationQueueDemoViewController.h; sourceTree = "<group>"; };
 		04242236245563D8004DD1AC /* SGH0426OperationQueueDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0426OperationQueueDemoViewController.m; sourceTree = "<group>"; };
+		042422392455D039004DD1AC /* SGHTenThreadLocksViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHTenThreadLocksViewController.h; sourceTree = "<group>"; };
+		0424223A2455D039004DD1AC /* SGHTenThreadLocksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHTenThreadLocksViewController.m; sourceTree = "<group>"; };
+		0424223D2455D0CD004DD1AC /* SGHLock1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHLock1ViewController.h; sourceTree = "<group>"; };
+		0424223E2455D0CD004DD1AC /* SGHLock1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHLock1ViewController.m; sourceTree = "<group>"; };
+		042422402455D1BC004DD1AC /* SGHLock2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHLock2ViewController.h; sourceTree = "<group>"; };
+		042422412455D1BC004DD1AC /* SGHLock2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHLock2ViewController.m; sourceTree = "<group>"; };
+		042422432455D23B004DD1AC /* SGHLock3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHLock3ViewController.h; sourceTree = "<group>"; };
+		042422442455D23B004DD1AC /* SGHLock3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHLock3ViewController.m; sourceTree = "<group>"; };
+		042422462455D269004DD1AC /* SGHLock4ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHLock4ViewController.h; sourceTree = "<group>"; };
+		042422472455D269004DD1AC /* SGHLock4ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHLock4ViewController.m; sourceTree = "<group>"; };
+		042422492455D2D4004DD1AC /* SGHLock5ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHLock5ViewController.h; sourceTree = "<group>"; };
+		0424224A2455D2D4004DD1AC /* SGHLock5ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHLock5ViewController.m; sourceTree = "<group>"; };
+		0424224C2455D301004DD1AC /* SGHLock6ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHLock6ViewController.h; sourceTree = "<group>"; };
+		0424224D2455D301004DD1AC /* SGHLock6ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHLock6ViewController.m; sourceTree = "<group>"; };
+		0424224F2455D311004DD1AC /* SGHLock7ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHLock7ViewController.h; sourceTree = "<group>"; };
+		042422502455D311004DD1AC /* SGHLock7ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHLock7ViewController.m; sourceTree = "<group>"; };
+		042422522455D31E004DD1AC /* SGHLock8ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHLock8ViewController.h; sourceTree = "<group>"; };
+		042422532455D31E004DD1AC /* SGHLock8ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHLock8ViewController.m; sourceTree = "<group>"; };
+		042422552455D328004DD1AC /* SGHLock9ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHLock9ViewController.h; sourceTree = "<group>"; };
+		042422562455D328004DD1AC /* SGHLock9ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHLock9ViewController.m; sourceTree = "<group>"; };
+		042422582455D334004DD1AC /* SGHLock10ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHLock10ViewController.h; sourceTree = "<group>"; };
+		042422592455D334004DD1AC /* SGHLock10ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHLock10ViewController.m; sourceTree = "<group>"; };
 		043A635624532F1B00C5ADE6 /* SGH0424HistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH0424HistoryViewController.h; sourceTree = "<group>"; };
 		043A635724532F1B00C5ADE6 /* SGH0424HistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0424HistoryViewController.m; sourceTree = "<group>"; };
 		043A635D2453301B00C5ADE6 /* SGHReferenceCycleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHReferenceCycleViewController.h; sourceTree = "<group>"; };
@@ -1291,6 +1324,7 @@
 		04242228245533A6004DD1AC /* Section5_Others */ = {
 			isa = PBXGroup;
 			children = (
+				042422382455D01B004DD1AC /* TenThreadLock */,
 				04242222245531F3004DD1AC /* 1goBackMainThread */,
 			);
 			path = Section5_Others;
@@ -1312,6 +1346,43 @@
 				04242236245563D8004DD1AC /* SGH0426OperationQueueDemoViewController.m */,
 			);
 			path = 2OperationQueueUseing;
+			sourceTree = "<group>";
+		};
+		042422382455D01B004DD1AC /* TenThreadLock */ = {
+			isa = PBXGroup;
+			children = (
+				0424223C2455D0B6004DD1AC /* Examples */,
+				042422392455D039004DD1AC /* SGHTenThreadLocksViewController.h */,
+				0424223A2455D039004DD1AC /* SGHTenThreadLocksViewController.m */,
+			);
+			path = TenThreadLock;
+			sourceTree = "<group>";
+		};
+		0424223C2455D0B6004DD1AC /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				0424223D2455D0CD004DD1AC /* SGHLock1ViewController.h */,
+				0424223E2455D0CD004DD1AC /* SGHLock1ViewController.m */,
+				042422402455D1BC004DD1AC /* SGHLock2ViewController.h */,
+				042422412455D1BC004DD1AC /* SGHLock2ViewController.m */,
+				042422432455D23B004DD1AC /* SGHLock3ViewController.h */,
+				042422442455D23B004DD1AC /* SGHLock3ViewController.m */,
+				042422462455D269004DD1AC /* SGHLock4ViewController.h */,
+				042422472455D269004DD1AC /* SGHLock4ViewController.m */,
+				042422492455D2D4004DD1AC /* SGHLock5ViewController.h */,
+				0424224A2455D2D4004DD1AC /* SGHLock5ViewController.m */,
+				0424224C2455D301004DD1AC /* SGHLock6ViewController.h */,
+				0424224D2455D301004DD1AC /* SGHLock6ViewController.m */,
+				0424224F2455D311004DD1AC /* SGHLock7ViewController.h */,
+				042422502455D311004DD1AC /* SGHLock7ViewController.m */,
+				042422522455D31E004DD1AC /* SGHLock8ViewController.h */,
+				042422532455D31E004DD1AC /* SGHLock8ViewController.m */,
+				042422552455D328004DD1AC /* SGHLock9ViewController.h */,
+				042422562455D328004DD1AC /* SGHLock9ViewController.m */,
+				042422582455D334004DD1AC /* SGHLock10ViewController.h */,
+				042422592455D334004DD1AC /* SGHLock10ViewController.m */,
+			);
+			path = Examples;
 			sourceTree = "<group>";
 		};
 		043A635524532EE400C5ADE6 /* History */ = {
@@ -5075,6 +5146,7 @@
 				0424223324553819004DD1AC /* SGH0426GCDViewController.m in Sources */,
 				8F310B952425B29300421E7A /* main.m in Sources */,
 				8F3114182426E6EF00421E7A /* SGHStringShowViewController.m in Sources */,
+				042422452455D23B004DD1AC /* SGHLock3ViewController.m in Sources */,
 				8F31112B24264FB100421E7A /* SGH160728ViewController.m in Sources */,
 				0457881C2427BA6300C2DF75 /* CoreTextImageData.m in Sources */,
 				8F3110D924264FB100421E7A /* SHKVOExploreViewController.m in Sources */,
@@ -5101,6 +5173,7 @@
 				8F311642242D01FA00421E7A /* LxDBAnythingViewController.m in Sources */,
 				043A637424534FA800C5ADE6 /* SGHCyclesMemoryLeaksVC.m in Sources */,
 				8F31112A24264FB100421E7A /* SGH1012PlaceholderColorViewController.m in Sources */,
+				0424223B2455D039004DD1AC /* SGHTenThreadLocksViewController.m in Sources */,
 				8F31157E242995AE00421E7A /* SGH170506MyClass.m in Sources */,
 				8F31149F2426EB4C00421E7A /* SGH0618DynaAnnotationViewController.m in Sources */,
 				8F3114A42426EB4C00421E7A /* SGH0618DistanceViewController.m in Sources */,
@@ -5163,6 +5236,7 @@
 				04F6EC3F2429ACCB00D7F1CB /* UIImage+SGHHook.m in Sources */,
 				04F6EC882429AEA000D7F1CB /* SGHUIFontViewController.m in Sources */,
 				8FF847A42434230F002F18F9 /* SGH0401RACCommandViewController.m in Sources */,
+				042422572455D328004DD1AC /* SGHLock9ViewController.m in Sources */,
 				8F31108724264FB100421E7A /* SGHDeviceManager.m in Sources */,
 				0424221924552ACC004DD1AC /* SGHMultithreadProgramViewController.m in Sources */,
 				04F6EC862429AEA000D7F1CB /* SGHPresentTransitionSecondViewController.m in Sources */,
@@ -5189,6 +5263,7 @@
 				8F3114072426E6EF00421E7A /* Harpy.m in Sources */,
 				8F31108A24264FB100421E7A /* SHAlertViewManager.m in Sources */,
 				04F6EC7D2429AEA000D7F1CB /* SGHPopContentViewController.m in Sources */,
+				042422482455D269004DD1AC /* SGHLock4ViewController.m in Sources */,
 				8F3110DC24264FB100421E7A /* Model.xcdatamodeld in Sources */,
 				8F3114042426E6EF00421E7A /* SGHDateCalendarViewController.m in Sources */,
 				8F31162D242D01FA00421E7A /* SGHSkipUntilBlockViewController.m in Sources */,
@@ -5197,6 +5272,7 @@
 				8F3110FF24264FB100421E7A /* SHProxy.m in Sources */,
 				0424222024552C30004DD1AC /* SGHAboutNSOperationViewController.m in Sources */,
 				8F3110A424264FB100421E7A /* WBTimelineItem.m in Sources */,
+				042422422455D1BC004DD1AC /* SGHLock2ViewController.m in Sources */,
 				8F3115DD242A60F500421E7A /* NSObject+EnumDictOneLevel.m in Sources */,
 				8F3110A024264FB100421E7A /* SGH190129YYKitViewController.m in Sources */,
 				8F31108624264FB100421E7A /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
@@ -5212,6 +5288,7 @@
 				8F3110C824264FB100421E7A /* SGH0424GaodeMapView.m in Sources */,
 				8F31154C2429946E00421E7A /* SGHRuntimeExperimentViewController.m in Sources */,
 				8F3114052426E6EF00421E7A /* SGHSKStoreProductViewController.m in Sources */,
+				0424224E2455D301004DD1AC /* SGHLock6ViewController.m in Sources */,
 				8F31109524264FB100421E7A /* SHRAC1ViewController.m in Sources */,
 				04F6EC832429AEA000D7F1CB /* AccountTableHeaderView.m in Sources */,
 				045787CC24279E8200C2DF75 /* SGHDeallocBlockViewController.m in Sources */,
@@ -5231,6 +5308,7 @@
 				8F311645242D01FA00421E7A /* SGHKVOViewController.m in Sources */,
 				8F3113532426E1D500421E7A /* NSString+MD5.m in Sources */,
 				8F3114142426E6EF00421E7A /* SGHUDIDKeychainViewController.m in Sources */,
+				042422542455D31E004DD1AC /* SGHLock8ViewController.m in Sources */,
 				8F3114012426E6EF00421E7A /* SGHSesstionDownloadViewController.m in Sources */,
 				8F31112824264FB100421E7A /* SGH1128InterceptPopViewController.m in Sources */,
 				045787E92427B37B00C2DF75 /* FKUser.m in Sources */,
@@ -5266,9 +5344,11 @@
 				8F311626242D01FA00421E7A /* SGHConcatViewController.m in Sources */,
 				8F3110E324264FB100421E7A /* SHImageText0214ViewController.m in Sources */,
 				8F31111424264FB100421E7A /* SGH1103AESViewController.m in Sources */,
+				042422512455D311004DD1AC /* SGHLock7ViewController.m in Sources */,
 				8F3113FC2426E6EF00421E7A /* SGHShowHTMLViewController.m in Sources */,
 				8F31163B242D01FA00421E7A /* SGHSkipViewController.m in Sources */,
 				8F3110B424264FB100421E7A /* SHUnfixedHeightTableViewController.m in Sources */,
+				0424224B2455D2D4004DD1AC /* SGHLock5ViewController.m in Sources */,
 				8F3110F824264FB100421E7A /* UIViewController+SHLeaksTest.m in Sources */,
 				8F72EFD92454111B0023060B /* SGHTimerProxy.m in Sources */,
 				8F31110924264FB100421E7A /* SGH1125XMLParserViewController.m in Sources */,
@@ -5276,6 +5356,7 @@
 				8F3110E624264FB100421E7A /* UIButton+SHDistribute.m in Sources */,
 				04F6EC872429AEA000D7F1CB /* SGHPresentTransitionStyleViewController.m in Sources */,
 				8F3115DC242A60F500421E7A /* NSObject+EnumDict.m in Sources */,
+				0424223F2455D0CD004DD1AC /* SGHLock1ViewController.m in Sources */,
 				8F3115932429977800421E7A /* SGH0425RunloopImageViewController.m in Sources */,
 				8F31111524264FB100421E7A /* TKAesHelper.m in Sources */,
 				8F311637242D01FA00421E7A /* SGHTakeUntilViewController.m in Sources */,
@@ -5333,6 +5414,7 @@
 				8F31111724264FB100421E7A /* SGH0713ScreenShotViewController.m in Sources */,
 				8F3110CF24264FB100421E7A /* SHCommonToolVC.m in Sources */,
 				8F3110B124264FB100421E7A /* SGH170518ResuableCellViewController.m in Sources */,
+				0424225A2455D334004DD1AC /* SGHLock10ViewController.m in Sources */,
 				0424221024549526004DD1AC /* SGHSocketSeverViewController.m in Sources */,
 				8F3110D724264FB100421E7A /* EOCPerson.m in Sources */,
 				8F31112624264FB100421E7A /* SGH170119CrashRankViewController.m in Sources */,
