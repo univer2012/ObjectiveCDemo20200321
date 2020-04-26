@@ -1,8 +1,8 @@
 //
-//  SGH0409ThreadViewController.h
+//  SGHSocketListViewController.h
 //  ObjectiveCDemo20200321
 //
-//  Created by 远平 on 2020/4/9.
+//  Created by Mac on 2020/4/25.
 //  Copyright © 2020 远平. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SGH0409ThreadViewController : SHBaseTableViewController
+@interface SGHSocketListViewController : SHBaseTableViewController
 
 @end
 

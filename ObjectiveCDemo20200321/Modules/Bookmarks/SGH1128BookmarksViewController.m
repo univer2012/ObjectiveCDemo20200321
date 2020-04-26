@@ -44,6 +44,7 @@
         @"SGH170208ViewController",
         @"SGH190129YYKitViewController",
         @"SHReactiveCocoaViewController",
+        @"SGHSocketListViewController",
     ] mutableCopy];
     
     
@@ -53,6 +54,7 @@
         @"4、2017-02-08",
         @"5、YYKit",
         @"6、ReactiveCocoa",
+        @"7.Socket",
     ] mutableCopy];
     
     

@@ -132,9 +132,9 @@
     [self addSectionDataWithClassNameArray:tempClassNameArray titleArray:tempTitleArray title:@"文章的demo"];
     
     
-    self.inStoryboardVCArray = [@[
+    self.inStoryboardVCArray = @[
         @"SHRAC1ViewController",
-    ] mutableCopy];
+    ];
     
     [self.tableView reloadData];
 }

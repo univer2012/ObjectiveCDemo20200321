@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)NSMutableArray *dataArray;
 @property(nonatomic,strong)NSMutableArray *sectionTitle;
 
-@property(nonatomic,strong)NSMutableArray *inStoryboardVCArray;
+@property(nonatomic,strong)NSArray *inStoryboardVCArray;
 
 @property(nonatomic,assign) SHBaseTableType type;
 

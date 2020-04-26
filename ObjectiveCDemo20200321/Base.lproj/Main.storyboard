@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -574,7 +574,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZD2-L7-tKV">
-                                <rect key="frame" x="163" y="273" width="89" height="30"/>
+                                <rect key="frame" x="162.5" y="273" width="89" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="BL9-Kz-Bcm"/>
                                     <constraint firstAttribute="width" constant="89" id="NYa-ed-OE4"/>
@@ -675,6 +675,157 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mmg-dq-tDp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4207" y="67"/>
+        </scene>
+        <!--Native Socket View Controller-->
+        <scene sceneID="Qvx-wI-IUg">
+            <objects>
+                <viewController storyboardIdentifier="SGHNativeSocketViewController" id="x2H-bt-5V0" customClass="SGHNativeSocketViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9so-K4-RRt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9v-gg-uuf">
+                                <rect key="frame" x="88.5" y="141" width="237" height="49"/>
+                                <color key="backgroundColor" red="1" green="0.72941176470000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="237" id="pFh-2s-Dhl"/>
+                                    <constraint firstAttribute="height" constant="49" id="pzp-Ip-MCB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="连接Socket">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="socketConnetAction:" destination="x2H-bt-5V0" eventType="touchUpInside" id="HF2-Wu-nMF"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="发送消息" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="chI-3h-8EE">
+                                <rect key="frame" x="51" y="251" width="243" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKl-Cy-HGD">
+                                <rect key="frame" x="335" y="250.5" width="39" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="发送"/>
+                                <connections>
+                                    <action selector="sendMsgAction:" destination="x2H-bt-5V0" eventType="touchUpInside" id="Nr0-aV-Pgp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="C9v-gg-uuf" firstAttribute="centerX" secondItem="dsa-NC-Ysw" secondAttribute="centerX" id="OHX-m0-C7y"/>
+                            <constraint firstItem="C9v-gg-uuf" firstAttribute="top" secondItem="dsa-NC-Ysw" secondAttribute="top" constant="53" id="Y0C-G0-dbt"/>
+                            <constraint firstItem="chI-3h-8EE" firstAttribute="top" secondItem="C9v-gg-uuf" secondAttribute="bottom" constant="61" id="fiy-LB-Xh8"/>
+                            <constraint firstItem="dsa-NC-Ysw" firstAttribute="trailing" secondItem="yKl-Cy-HGD" secondAttribute="trailing" constant="40" id="grk-EQ-rKk"/>
+                            <constraint firstItem="yKl-Cy-HGD" firstAttribute="centerY" secondItem="chI-3h-8EE" secondAttribute="centerY" id="o23-oS-aee"/>
+                            <constraint firstItem="chI-3h-8EE" firstAttribute="leading" secondItem="dsa-NC-Ysw" secondAttribute="leading" constant="51" id="wKr-8x-PGZ"/>
+                            <constraint firstItem="yKl-Cy-HGD" firstAttribute="leading" secondItem="chI-3h-8EE" secondAttribute="trailing" constant="41" id="yLD-b0-k45"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dsa-NC-Ysw"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="sendMsgContent_tf" destination="chI-3h-8EE" id="SRX-rw-23P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gi2-5n-XoA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5053.6231884057979" y="94.419642857142847"/>
+        </scene>
+        <!--Async Socket Client View Controller-->
+        <scene sceneID="YUD-rw-Cu8">
+            <objects>
+                <viewController storyboardIdentifier="SGHAsyncSocketClientViewController" id="5ch-7q-yIY" customClass="SGHAsyncSocketClientViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gcl-Kb-XHl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LL2-XQ-ReS">
+                                <rect key="frame" x="94" y="149" width="237" height="58"/>
+                                <color key="backgroundColor" red="1" green="0.4431372549" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="8sa-ss-hWt"/>
+                                    <constraint firstAttribute="width" constant="237" id="zCh-Rh-HFZ"/>
+                                </constraints>
+                                <state key="normal" title="连接Socket">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="didClickConnectSocket:" destination="5ch-7q-yIY" eventType="touchUpInside" id="gcl-yu-Mp6"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="发送消息" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ns5-yY-neB">
+                                <rect key="frame" x="45" y="269" width="204" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="204" id="7qU-Gi-Dgj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddA-9Q-BPs">
+                                <rect key="frame" x="275" y="268" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="发送"/>
+                                <connections>
+                                    <action selector="didClickSendAction:" destination="5ch-7q-yIY" eventType="touchUpInside" id="iPh-Mp-Obo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gnb-Ok-0Zj">
+                                <rect key="frame" x="88.5" y="343" width="237" height="58"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="237" id="A3J-TH-Y4g"/>
+                                    <constraint firstAttribute="width" constant="237" id="Qp3-eg-DdM"/>
+                                    <constraint firstAttribute="height" constant="58" id="e0g-Ii-TLl"/>
+                                </constraints>
+                                <state key="normal" title="重连Socket">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="didClickReconnectAction:" destination="5ch-7q-yIY" eventType="touchUpInside" id="Tnw-bm-4Yu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSm-qP-Rlf">
+                                <rect key="frame" x="88.5" y="469" width="237" height="58"/>
+                                <color key="backgroundColor" red="1" green="0.4431372549" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="237" id="4SQ-0h-ZWz"/>
+                                    <constraint firstAttribute="height" constant="58" id="X2W-Im-muU"/>
+                                </constraints>
+                                <state key="normal" title="断开Socket">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="didClickCloseAction:" destination="5ch-7q-yIY" eventType="touchUpInside" id="qfN-Oi-4pD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ns5-yY-neB" firstAttribute="top" secondItem="LL2-XQ-ReS" secondAttribute="bottom" constant="62" id="CUV-Bd-gbx"/>
+                            <constraint firstItem="Gnb-Ok-0Zj" firstAttribute="centerX" secondItem="3rM-VF-WRR" secondAttribute="centerX" id="EUs-pk-mVm"/>
+                            <constraint firstItem="ddA-9Q-BPs" firstAttribute="leading" secondItem="ns5-yY-neB" secondAttribute="trailing" constant="26" id="HP6-gf-SOE"/>
+                            <constraint firstItem="ddA-9Q-BPs" firstAttribute="centerY" secondItem="ns5-yY-neB" secondAttribute="centerY" id="RM2-HW-zWS"/>
+                            <constraint firstItem="ns5-yY-neB" firstAttribute="leading" secondItem="3rM-VF-WRR" secondAttribute="leading" constant="45" id="U0g-Iv-YrD"/>
+                            <constraint firstItem="gSm-qP-Rlf" firstAttribute="centerX" secondItem="3rM-VF-WRR" secondAttribute="centerX" id="ZPf-pW-7XR"/>
+                            <constraint firstItem="LL2-XQ-ReS" firstAttribute="centerX" secondItem="3rM-VF-WRR" secondAttribute="centerX" id="ZZd-fL-0Ky"/>
+                            <constraint firstItem="LL2-XQ-ReS" firstAttribute="top" secondItem="3rM-VF-WRR" secondAttribute="top" constant="61" id="bZh-sZ-L6b"/>
+                            <constraint firstItem="3rM-VF-WRR" firstAttribute="trailing" secondItem="ddA-9Q-BPs" secondAttribute="trailing" constant="68" id="eNg-ev-uZp"/>
+                            <constraint firstItem="gSm-qP-Rlf" firstAttribute="top" secondItem="Gnb-Ok-0Zj" secondAttribute="bottom" constant="68" id="hJW-cv-HwV"/>
+                            <constraint firstItem="Gnb-Ok-0Zj" firstAttribute="top" secondItem="ns5-yY-neB" secondAttribute="bottom" constant="40" id="k7D-xe-wwZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3rM-VF-WRR"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="sendMsgContent_tf" destination="ns5-yY-neB" id="41A-A7-03D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sDc-wz-UaP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5744.9275362318849" y="94.419642857142847"/>
         </scene>
         <!--服务端-->
         <scene sceneID="des-Ue-6lX">

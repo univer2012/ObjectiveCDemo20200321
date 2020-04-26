@@ -46,7 +46,7 @@
     // 2. 与服务器的socket链接起来
     NSError *error = nil;
     BOOL result = [self.socket connectToHost:self.addressTF.text onPort:self.portTF.text.integerValue error:&error];
-    
+    if (error) NSLog(@"%@",error);
     // 3. 判断链接是否成功
     if (result) {
         [self addText:@"客户端链接服务器成功"];
@@ -110,5 +110,6 @@
     [self.message resignFirstResponder];
     [self.content endEditing:YES];
 }
+
 
 @end

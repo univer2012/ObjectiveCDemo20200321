@@ -8,10 +8,7 @@
 
 #import "SGH0409ThreadViewController.h"
 
-@interface SGH0409ThreadViewController ()<UITableViewDelegate,UITableViewDataSource>
-@property(nonatomic,strong)UITableView *tableView;
-@property(nonatomic,strong)NSArray *selectors;
-@property(nonatomic,strong)NSArray *titlesArray;
+@interface SGH0409ThreadViewController ()
 
 @property (nonatomic,assign) NSInteger ticketCount;
 
@@ -23,26 +20,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
-    self.tableView=({
-        UITableView *tableView=[UITableView new];
-        [self.view addSubview:tableView];
-        tableView.frame=CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame));
-        tableView.delegate=self;
-        tableView.dataSource=self;
-        tableView;
-    });
     
-    self.titlesArray = @[
+    self.type = SHBaseTableTypeMethod;
+    //section 1
+    NSArray *tempTitleArray=@[
         @"1.线程的创建和使用实例：模拟售票",
         @"2.改进1",
         @"3. 执行完成后，让其中线程一直运行，（窗口一直开放，可以随时指派其卖演唱会的门票的任务），答案就是给线程加上runLoop",
     ];
-    self.selectors = @[
+    NSArray *tempSelectorArray=@[
         @"originDemo",
         @"inproveDemo1",
         @"threadDemo3",
     ];
+    [self addSectionDataWithClassNameArray:tempSelectorArray titleArray:tempTitleArray title:@""];
+    
+    [self.tableView reloadData];
     
 }
 //MARK: 3. 执行完成后，让其中线程一直运行，（窗口一直开放，可以随时指派其卖演唱会的门票的任务），答案就是给线程加上runLoop
@@ -177,36 +170,6 @@
         else {
             break;
         }
-    }
-}
-
-
-//MARK: tableViewDelegate && tableViewDataSource
-
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.titlesArray.count;
-}
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 55;
-}
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *cellIndentifier = @"CellIdentifier";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIndentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIndentifier];
-    }
-    cell.textLabel.text = _titlesArray[indexPath.row];
-    cell.textLabel.numberOfLines = 0;
-    cell.textLabel.font = [UIFont systemFontOfSize:13];
-    return cell;
-}
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    SEL sel = NSSelectorFromString(self.selectors[indexPath.row]);
-    if (sel) {
-        [self performSelector:sel];
     }
 }
 
