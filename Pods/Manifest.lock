@@ -40,6 +40,7 @@ PODS:
   - DTFoundation/UIKit (1.7.14):
     - DTFoundation/Core
   - DZNEmptyDataSet (1.8.1)
+  - FBRetainCycleDetector (0.1.4)
   - FLAnimatedImage (1.0.12)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
@@ -50,6 +51,8 @@ PODS:
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.3.1)
+  - MLeaksFinder (1.0.0):
+    - FBRetainCycleDetector
   - MMKV (1.1.0):
     - MMKVCore (~> 1.1.0)
   - MMKVCore (1.1.0)
@@ -112,6 +115,7 @@ DEPENDENCIES:
   - Masonry
   - MBProgressHUD
   - MJRefresh
+  - MLeaksFinder
   - MMKV
   - PluggableApplicationDelegate (from `https://github.com/fmo91/PluggableApplicationDelegate.git`)
   - PPSPing (~> 0.3.0)
@@ -148,6 +152,7 @@ SPEC REPOS:
     - DTCoreText
     - DTFoundation
     - DZNEmptyDataSet
+    - FBRetainCycleDetector
     - FLAnimatedImage
     - FMDB
     - IQKeyboardManager
@@ -156,6 +161,7 @@ SPEC REPOS:
     - Masonry
     - MBProgressHUD
     - MJRefresh
+    - MLeaksFinder
     - MMKV
     - MMKVCore
     - PPSPing
@@ -204,6 +210,7 @@ SPEC CHECKSUMS:
   DTCoreText: 67023bb51b26711d5f640c851f4845aea14c24c9
   DTFoundation: 25aa19bb7c6e225b1dfae195604fb8cf1da0ab4c
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
@@ -212,8 +219,9 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
   MMKV: 7bb6c30f9ff2ea45bc2398c86e66dd1cb63cfe20
-  MMKVCore: f455d4bf01bb5257511c1062fdbc3d7ebdec216b
+  MMKVCore: f1e0aad4fc330e7cbfbdff16720017bf0973db5a
   PluggableApplicationDelegate: 5144bff5ef6ea834a362341a65199b38912d7dd6
   PPSPing: f275a44303d6e1ebbd07b90fe8d29831838e58a7
   Protobuf: 176220c526ad8bd09ab1fb40a978eac3fef665f7
@@ -244,6 +252,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 0f595df1ede2c8636b98ab7a4cbf0d39fbf01732
+PODFILE CHECKSUM: 1bdec7a5ebc1855e37b793c687b705eacaf749ac
 
 COCOAPODS: 1.9.1

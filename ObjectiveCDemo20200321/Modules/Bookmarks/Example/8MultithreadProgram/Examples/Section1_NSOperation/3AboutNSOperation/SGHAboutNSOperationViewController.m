@@ -42,12 +42,12 @@
     NSLog(@"\n string: %x,\n stringCopy: %x,\n stringMutableCopy: %x", &string, &stringCopy, &stringMutableCopy);
 
 
-    [self.demo6Button addTarget:self action:@selector(opDemo6) forControlEvents:UIControlEventTouchUpInside];
-    [self.demo5Button addTarget:self action:@selector(opDemo5) forControlEvents:UIControlEventTouchUpInside];
-    [self.demo4Button addTarget:self action:@selector(opDemo4) forControlEvents:UIControlEventTouchUpInside];
-    [self.demo3Button addTarget:self action:@selector(opDemo3) forControlEvents:UIControlEventTouchUpInside];
-    [self.demo2Button addTarget:self action:@selector(opDemo2) forControlEvents:UIControlEventTouchUpInside];
-    [self.demo1Button addTarget:self action:@selector(opDemo1) forControlEvents:UIControlEventTouchUpInside];
+    [self.demo6Button addTarget:self action:@selector(opDemo6) forControlEvents:UIControlEventTouchUpInside];   //「依赖关系」
+    [self.demo5Button addTarget:self action:@selector(opDemo5) forControlEvents:UIControlEventTouchUpInside];   //「最大并发数」
+    [self.demo4Button addTarget:self action:@selector(opDemo4) forControlEvents:UIControlEventTouchUpInside];   //「添加执行块」
+    [self.demo3Button addTarget:self action:@selector(opDemo3) forControlEvents:UIControlEventTouchUpInside];   //「添加块操作」
+    [self.demo2Button addTarget:self action:@selector(opDemo2) forControlEvents:UIControlEventTouchUpInside];   //「NSBlockOperation」
+    [self.demo1Button addTarget:self action:@selector(opDemo1) forControlEvents:UIControlEventTouchUpInside];   //「NSInvocationOperation」
 
     //1.状态栏的高度
     CGRect statusBarRect = [[UIApplication sharedApplication] statusBarFrame];
@@ -105,7 +105,7 @@
         NSLog(@"正在执行");
     }
 }
-//MARK: NSOperation指定操作之间的依赖关系
+//MARK: btn6.NSOperation指定操作之间的依赖关系
 -(void)opDemo6 {
 
 
@@ -144,7 +144,7 @@
     [[NSOperationQueue mainQueue] addOperation:op4];
 
 }
-//MARK: 设置最大并发数
+//MARK: btn5.设置最大并发数
 -(void)opDemo5 {
     // 设置队列的最大并发数，队列是负责调度操作的
     /** 最大并发数的应用场景：
@@ -158,7 +158,7 @@
         }];
     }
 }
-//MARK: Block操作，添加执行块
+//MARK: btn4.Block操作，添加执行块
 -(void)opDemo4 {
     //实例化block操作
     NSBlockOperation *op = [[NSBlockOperation alloc] init];
@@ -191,21 +191,21 @@
     [self.queue addOperation:op];
 }
 
-//MARK:直接添加块操作
+//MARK: btn3.直接添加块操作
 -(void)opDemo3 {
 //只要将操作添加到队列，就会立即被调度（执行）
     for (int i = 0; i < 10; i++) {
         [self.queue addOperationWithBlock:^{
-            NSLog(@"下载开始 %@ - %@", [NSThread currentThread], @(i));
+            NSLog(@"下载开始 - %@ - %@", @(i), [NSThread currentThread]);
         }];
     }
 
     //向主队列中添加操作
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-        NSLog(@"下载开始 %@ -111 %@", [NSThread currentThread], nil);
+        NSLog(@"下载开始 -111 %@ - %@", [NSThread currentThread], nil);
     }];
 }
-//MARK: NSBlockOperation
+//MARK: btn2.NSBlockOperation
 -(void)opDemo2 {
     for (int i = 0; i < 10; i++) {
         //指定一个块操作
@@ -217,9 +217,10 @@
         /*打印结果还是  0~9  */
     }
 }
-//MARK: NSInvocationOperation
+//MARK: btn1.NSInvocationOperation
 -(void)opDemo1 {
     for (int i = 0; i < 10; i++) {
+        sleep(1);
         NSInvocationOperation *op1 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(download:) object:@(i)];
         // 如果直接启动，会在主线程执行
         //    [op1 start];

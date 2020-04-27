@@ -44,7 +44,7 @@ target "ObjectiveCDemo20200321" do
   pod 'YYModel'
   pod 'Masonry'
   pod 'CYLTabBarController/Lottie', '~> 1.28.0'
-  #pod 'MLeaksFinder'
+  pod 'MLeaksFinder'
   pod 'SAMKeychain'
   pod 'YYText'
   pod 'UITableView+FDTemplateLayoutCell', '~> 1.6'

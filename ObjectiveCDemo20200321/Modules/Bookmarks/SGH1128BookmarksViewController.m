@@ -46,6 +46,7 @@
         @"SHReactiveCocoaViewController",
         @"SGHSocketListViewController",
         @"SGHMultithreadProgramViewController",
+        @"SGH0427AMPViewController",
     ] mutableCopy];
     
     
@@ -57,6 +58,7 @@
         @"6、ReactiveCocoa",
         @"7、Socket",
         @"8、多线程编程",
+        @"9、性能、内存优化",
     ] mutableCopy];
     
     
