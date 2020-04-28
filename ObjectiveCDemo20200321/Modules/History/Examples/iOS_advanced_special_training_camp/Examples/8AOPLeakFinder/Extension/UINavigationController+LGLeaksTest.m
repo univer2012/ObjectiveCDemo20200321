@@ -24,8 +24,10 @@
 
 - (UIViewController *)lg_popViewControllerAnimated:(BOOL)animated {
     UIViewController *popVC = [self lg_popViewControllerAnimated:animated];
-    extern const char *LGVCFLAG;
-    objc_setAssociatedObject(popVC, LGVCFLAG, @(YES), OBJC_ASSOCIATION_ASSIGN);
+    if (popVC) {
+        extern const char *LGVCFLAG;
+        objc_setAssociatedObject(popVC, LGVCFLAG, @(YES), OBJC_ASSOCIATION_ASSIGN);
+    }
     return popVC;
 }
 

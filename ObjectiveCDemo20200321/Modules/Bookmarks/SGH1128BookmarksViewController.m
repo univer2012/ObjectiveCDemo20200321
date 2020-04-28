@@ -47,6 +47,7 @@
         @"SGHSocketListViewController",
         @"SGHMultithreadProgramViewController",
         @"SGH0427AMPViewController",
+        @"SGH0428BlockViewController",
     ] mutableCopy];
     
     
@@ -59,6 +60,7 @@
         @"7、Socket",
         @"8、多线程编程",
         @"9、性能、内存优化",
+        @"10、Block",
     ] mutableCopy];
     
     
