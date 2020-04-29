@@ -48,6 +48,7 @@
         @"SGHMultithreadProgramViewController",
         @"SGH0427AMPViewController",
         @"SGH0428BlockViewController",
+        @"SGHDataStructAlgorithmsViewController",
     ] mutableCopy];
     
     
@@ -61,6 +62,7 @@
         @"8、多线程编程",
         @"9、性能、内存优化",
         @"10、Block",
+        @"11、数据结构与算法",
     ] mutableCopy];
     
     
