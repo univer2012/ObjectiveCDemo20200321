@@ -49,6 +49,7 @@
         @"SGH0427AMPViewController",
         @"SGH0428BlockViewController",
         @"SGHDataStructAlgorithmsViewController",
+        @"SGHInverviewQuestionsViewController",
     ] mutableCopy];
     
     
@@ -63,6 +64,7 @@
         @"9、性能、内存优化",
         @"10、Block",
         @"11、数据结构与算法",
+        @"12、面试题",
     ] mutableCopy];
     
     

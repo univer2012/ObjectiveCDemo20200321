@@ -47,6 +47,7 @@
     NSArray *mutableCopy = [mutableArray mutableCopy];
     NSLog(@"%p---%p---%p",mutableArray,copyArray,mutableCopy);
 
+    //打印：0x600003746820---0x600003744b70---0x6000037449f0
 }
 //MARK: 2.对NSArray进行copy操作进行的是浅拷贝、mutableCopy操作进行的是深拷贝
 - (void)demo2 {
@@ -54,6 +55,8 @@
     NSArray *copyArray = [array copy];
     NSArray *mutableCopy = [array mutableCopy];
     NSLog(@"%p---%p---%p",array,copyArray,mutableCopy);
+    
+    //打印：0x60000368adc0---0x60000368adc0---0x60000368aa30
 
 }
 //MARK: 1_2.对NSMutableString进行的copy和mutableCopy都是深拷贝。
@@ -63,6 +66,7 @@
     NSMutableString *mutableBaseStr = [mutableStr mutableCopy];
     NSLog(@"%p---%p---%p",mutableStr,baseStr,mutableBaseStr);
 
+    //打印：0x600003746880---0x600003744030---0x600003745aa0
 }
 
 //MARK: 1.对NSString进行copy操作进行的是浅拷贝、mutableCopy操作进行的是深拷贝
@@ -71,7 +75,8 @@
     NSString *copyStr = [baseStr copy];
     NSString *mutableCopyStr = [baseStr mutableCopy];
     NSLog(@"%p---%p---%p",baseStr,copyStr,mutableCopyStr);
-
+    
+    //打印：0x106f8b1a0---0x106f8b1a0---0x600003691740
 }
 
 

@@ -35,6 +35,7 @@
         tableView.dataSource=self;
         tableView;
     });
+    
 }
 
 - (void)addSectionDataWithClassNameArray:(NSArray *)classNameArray titleArray:(NSArray *)titleArray title:(NSString *)title {
@@ -130,6 +131,7 @@
     } else {
         [self executeSelectorWith:className];
     }
+    
     
 }
 

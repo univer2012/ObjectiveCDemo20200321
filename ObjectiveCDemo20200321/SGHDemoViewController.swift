@@ -14,6 +14,13 @@ class SGHDemoViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let tView = UIView()
+        self.view.addSubview(tView)
+        
+        tView.mas_makeConstraints { (make) in
+            
+        }
     }
 
 }

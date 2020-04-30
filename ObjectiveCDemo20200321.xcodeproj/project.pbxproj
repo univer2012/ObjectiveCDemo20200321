@@ -87,6 +87,9 @@
 		049678FB2427C6E900F2FD83 /* demo2_content.json in Resources */ = {isa = PBXBuildFile; fileRef = 049678FA2427C6E900F2FD83 /* demo2_content.json */; };
 		049678FE2427C98D00F2FD83 /* SGHCoreText3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049678FD2427C98D00F2FD83 /* SGHCoreText3ViewController.m */; };
 		04C8A283245822A70010545D /* SGH0428CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C8A282245822A70010545D /* SGH0428CopyViewController.m */; };
+		04DF5944245A8DF800F0EB3E /* SGHInverviewQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF593F245A8DF800F0EB3E /* SGHInverviewQuestionsViewController.m */; };
+		04DF5945245A8DF800F0EB3E /* UIView+NeastPublic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DF5940245A8DF800F0EB3E /* UIView+NeastPublic.swift */; };
+		04DF5946245A8DF800F0EB3E /* UIView+NeastPublicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF5943245A8DF800F0EB3E /* UIView+NeastPublicView.m */; };
 		04ECD3D8245942E9008E8E73 /* SGHStackMallocViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04ECD3D7245942E9008E8E73 /* SGHStackMallocViewController.mm */; };
 		04F6EC3F2429ACCB00D7F1CB /* UIImage+SGHHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F6EC312429ACCB00D7F1CB /* UIImage+SGHHook.m */; };
 		04F6EC402429ACCB00D7F1CB /* UIButton+SGHHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F6EC322429ACCB00D7F1CB /* UIButton+SGHHook.m */; };
@@ -597,6 +600,11 @@
 		049678FD2427C98D00F2FD83 /* SGHCoreText3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHCoreText3ViewController.m; sourceTree = "<group>"; };
 		04C8A281245822A70010545D /* SGH0428CopyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH0428CopyViewController.h; sourceTree = "<group>"; };
 		04C8A282245822A70010545D /* SGH0428CopyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0428CopyViewController.m; sourceTree = "<group>"; };
+		04DF593F245A8DF800F0EB3E /* SGHInverviewQuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGHInverviewQuestionsViewController.m; sourceTree = "<group>"; };
+		04DF5940245A8DF800F0EB3E /* UIView+NeastPublic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+NeastPublic.swift"; sourceTree = "<group>"; };
+		04DF5941245A8DF800F0EB3E /* UIView+NeastPublicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NeastPublicView.h"; sourceTree = "<group>"; };
+		04DF5942245A8DF800F0EB3E /* SGHInverviewQuestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHInverviewQuestionsViewController.h; sourceTree = "<group>"; };
+		04DF5943245A8DF800F0EB3E /* UIView+NeastPublicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NeastPublicView.m"; sourceTree = "<group>"; };
 		04ECD3D6245942E9008E8E73 /* SGHStackMallocViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHStackMallocViewController.h; sourceTree = "<group>"; };
 		04ECD3D7245942E9008E8E73 /* SGHStackMallocViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SGHStackMallocViewController.mm; sourceTree = "<group>"; };
 		04F6EC302429ACCB00D7F1CB /* UIButton+SGHHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SGHHook.h"; sourceTree = "<group>"; };
@@ -667,7 +675,7 @@
 		04F6ECB22429E87E00D7F1CB /* SGH0729Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGH0729Button.h; sourceTree = "<group>"; };
 		58E7D9D9B837FD37D83AC17F /* Pods-ObjectiveCDemo20200321.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveCDemo20200321.debug.xcconfig"; path = "Target Support Files/Pods-ObjectiveCDemo20200321/Pods-ObjectiveCDemo20200321.debug.xcconfig"; sourceTree = "<group>"; };
 		7B0CCC61ECC47D8190E5CDDD /* Pods-ObjectiveCDemo20200321.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveCDemo20200321.release.xcconfig"; path = "Target Support Files/Pods-ObjectiveCDemo20200321/Pods-ObjectiveCDemo20200321.release.xcconfig"; sourceTree = "<group>"; };
-		8F310B7C2425B28900421E7A /* OCDemo20200321.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCDemo20200321.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F310B7C2425B28900421E7A /* ObjectiveCDemo20200321.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCDemo20200321.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F310B7F2425B28900421E7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8F310B802425B28900421E7A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8F310B892425B28900421E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -1748,6 +1756,18 @@
 			path = 3shadowCopyDeepCopy;
 			sourceTree = "<group>";
 		};
+		04DF593E245A8DF800F0EB3E /* 12Interview_Questions */ = {
+			isa = PBXGroup;
+			children = (
+				04DF5942245A8DF800F0EB3E /* SGHInverviewQuestionsViewController.h */,
+				04DF593F245A8DF800F0EB3E /* SGHInverviewQuestionsViewController.m */,
+				04DF5940245A8DF800F0EB3E /* UIView+NeastPublic.swift */,
+				04DF5941245A8DF800F0EB3E /* UIView+NeastPublicView.h */,
+				04DF5943245A8DF800F0EB3E /* UIView+NeastPublicView.m */,
+			);
+			path = 12Interview_Questions;
+			sourceTree = "<group>";
+		};
 		04ECD3D5245942CD008E8E73 /* 4StackMalloc */ = {
 			isa = PBXGroup;
 			children = (
@@ -2224,7 +2244,7 @@
 		8F310B7D2425B28900421E7A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8F310B7C2425B28900421E7A /* OCDemo20200321.app */,
+				8F310B7C2425B28900421E7A /* ObjectiveCDemo20200321.app */,
 				8F310B9A2425B29400421E7A /* ObjectiveCDemo20200321Tests.xctest */,
 				8F310BA52425B29400421E7A /* ObjectiveCDemo20200321UITests.xctest */,
 			);
@@ -2416,6 +2436,7 @@
 		8F310E9F24264FAF00421E7A /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				04DF593E245A8DF800F0EB3E /* 12Interview_Questions */,
 				045B5EA12459737A0023BF7B /* 11Data_Structures_and_Algorithms */,
 				0417DBCC245802C300196D00 /* 10Block */,
 				0417DB9A2456B5E800196D00 /* 9APM */,
@@ -5129,7 +5150,7 @@
 			);
 			name = ObjectiveCDemo20200321;
 			productName = ObjectiveCDemo20200321;
-			productReference = 8F310B7C2425B28900421E7A /* OCDemo20200321.app */;
+			productReference = 8F310B7C2425B28900421E7A /* ObjectiveCDemo20200321.app */;
 			productType = "com.apple.product-type.application";
 		};
 		8F310B992425B29400421E7A /* ObjectiveCDemo20200321Tests */ = {
@@ -5357,6 +5378,7 @@
 				8F31163D242D01FA00421E7A /* SGHTakeLastViewController.m in Sources */,
 				0424223324553819004DD1AC /* SGH0426GCDViewController.m in Sources */,
 				8F310B952425B29300421E7A /* main.m in Sources */,
+				04DF5944245A8DF800F0EB3E /* SGHInverviewQuestionsViewController.m in Sources */,
 				8F3114182426E6EF00421E7A /* SGHStringShowViewController.m in Sources */,
 				042422452455D23B004DD1AC /* SGHLock3ViewController.m in Sources */,
 				8F31112B24264FB100421E7A /* SGH160728ViewController.m in Sources */,
@@ -5463,6 +5485,7 @@
 				04F6EC862429AEA000D7F1CB /* SGHPresentTransitionSecondViewController.m in Sources */,
 				8F31162C242D01FA00421E7A /* SGHMergeViewController.m in Sources */,
 				8F3115462429944C00421E7A /* SGHPerformanceAnalysisAndOptimizationVC.m in Sources */,
+				04DF5946245A8DF800F0EB3E /* UIView+NeastPublicView.m in Sources */,
 				8F3115522429948900421E7A /* SGHPrincipleOfInquiryViewController.m in Sources */,
 				0417DBC32456BCB800196D00 /* UIView+MemoryLeak.m in Sources */,
 				8F72EFC92453EE7A0023060B /* SGH0425LeaksViewController.m in Sources */,
@@ -5577,6 +5600,7 @@
 				8F31163B242D01FA00421E7A /* SGHSkipViewController.m in Sources */,
 				8F3110B424264FB100421E7A /* SHUnfixedHeightTableViewController.m in Sources */,
 				0424224B2455D2D4004DD1AC /* SGHLock5ViewController.m in Sources */,
+				04DF5945245A8DF800F0EB3E /* UIView+NeastPublic.swift in Sources */,
 				8F3110F824264FB100421E7A /* UIViewController+SHLeaksTest.m in Sources */,
 				8F72EFD92454111B0023060B /* SGHTimerProxy.m in Sources */,
 				8F31110924264FB100421E7A /* SGH1125XMLParserViewController.m in Sources */,
@@ -5779,12 +5803,14 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -5800,7 +5826,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -5838,10 +5864,12 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -5852,7 +5880,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -5907,10 +5935,10 @@
 					"-licucore",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sengoln.ObjectiveCDemo20200321;
-				PRODUCT_NAME = OCDemo20200321;
+				PRODUCT_NAME = ObjectiveCDemo20200321;
 				SWIFT_OBJC_BRIDGING_HEADER = "ObjectiveCDemo20200321/ObjectiveCDemo20200321-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -5965,9 +5993,9 @@
 					"-licucore",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sengoln.ObjectiveCDemo20200321;
-				PRODUCT_NAME = OCDemo20200321;
+				PRODUCT_NAME = ObjectiveCDemo20200321;
 				SWIFT_OBJC_BRIDGING_HEADER = "ObjectiveCDemo20200321/ObjectiveCDemo20200321-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
