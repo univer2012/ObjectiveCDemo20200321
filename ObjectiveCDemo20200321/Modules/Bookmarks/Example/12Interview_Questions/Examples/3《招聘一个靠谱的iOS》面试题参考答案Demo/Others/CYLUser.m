@@ -24,17 +24,18 @@
 @implementation CYLUser {
     NSMutableSet *_friends;
 }
+
 -(void)setName:(NSString *)name {
     _name = [name copy];
 }
 -(void)setObject:(NSObject *)object {
     objc_setAssociatedObject(self, "object", object, OBJC_ASSOCIATION_ASSIGN);
     [object cyl_runAtDealloc:^{
-        _object = nil;
+        self->_object = nil;
     }];
 }
 
-- (instancetype)initWithName:(NSString *)name age:(int)age sex:(CYLSex)sex {
+- (instancetype)initWithName:(NSString *)name age:(NSUInteger)age sex:(CYLSex)sex {
     if(self = [super init]) {
         _name = [name copy];
         _age = age;
@@ -42,6 +43,10 @@
         _friends = [[NSMutableSet alloc] init];
     }
     return self;
+}
+
++ (instancetype)userWithName:(NSString *)name age:(NSUInteger)age sex:(CYLSex)sex {
+    return [[CYLUser alloc] initWithName:name age:age sex:sex];
 }
 
 -(void)addFriend:(CYLUser *)user {

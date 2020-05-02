@@ -57,16 +57,6 @@
 		043A63692453310800C5ADE6 /* SGHBlockLeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A63682453310800C5ADE6 /* SGHBlockLeakViewController.m */; };
 		043A636C2453313800C5ADE6 /* SGHStaticAnalysisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A636B2453313800C5ADE6 /* SGHStaticAnalysisViewController.m */; };
 		043A637424534FA800C5ADE6 /* SGHCyclesMemoryLeaksVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A637324534FA800C5ADE6 /* SGHCyclesMemoryLeaksVC.m */; };
-		045787CC24279E8200C2DF75 /* SGHDeallocBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045787CB24279E8200C2DF75 /* SGHDeallocBlockViewController.m */; };
-		045787E42427B37B00C2DF75 /* Girl.m in Sources */ = {isa = PBXBuildFile; fileRef = 045787D92427B37B00C2DF75 /* Girl.m */; };
-		045787E52427B37B00C2DF75 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 045787DA2427B37B00C2DF75 /* Son.m */; };
-		045787E72427B37B00C2DF75 /* CYLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 045787DD2427B37B00C2DF75 /* CYLUser.m */; };
-		045787E82427B37B00C2DF75 /* NSDictionary+print.m in Sources */ = {isa = PBXBuildFile; fileRef = 045787DE2427B37B00C2DF75 /* NSDictionary+print.m */; };
-		045787E92427B37B00C2DF75 /* FKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 045787DF2427B37B00C2DF75 /* FKUser.m */; };
-		045787EC2427B4AA00C2DF75 /* SGHReliableiOSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 045787EA2427B4AA00C2DF75 /* SGHReliableiOSPerson.m */; };
-		045787EF2427B53300C2DF75 /* ReliableiOSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 045787ED2427B53300C2DF75 /* ReliableiOSPerson.m */; };
-		045787F72427B62500C2DF75 /* NSObject+CYLRunAtDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 045787F42427B62500C2DF75 /* NSObject+CYLRunAtDealloc.m */; };
-		045787F82427B62500C2DF75 /* CYLBlockExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 045787F62427B62500C2DF75 /* CYLBlockExecutor.m */; };
 		045787FC2427B88100C2DF75 /* SGHCoreTextListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045787FB2427B88100C2DF75 /* SGHCoreTextListViewController.m */; };
 		045788192427BA6300C2DF75 /* demo3_content.json in Resources */ = {isa = PBXBuildFile; fileRef = 045788002427BA6200C2DF75 /* demo3_content.json */; };
 		0457881A2427BA6300C2DF75 /* CoreTextUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 045788022427BA6200C2DF75 /* CoreTextUtils.m */; };
@@ -412,6 +402,16 @@
 		8F72EFE324545DE80023060B /* NSObject+LGSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72EFE224545DE80023060B /* NSObject+LGSwizzling.m */; };
 		8F72EFE7245461110023060B /* UINavigationController+LGLeaksTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72EFE6245461110023060B /* UINavigationController+LGLeaksTest.m */; };
 		8F72EFEB24546F2A0023060B /* SGH0425SocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72EFEA24546F2A0023060B /* SGH0425SocketViewController.m */; };
+		8FEEE1F0245D009A0074BED6 /* NSObject+CYLRunAtDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEE1DA245D00990074BED6 /* NSObject+CYLRunAtDealloc.m */; };
+		8FEEE1F1245D009A0074BED6 /* CYLBlockExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEE1DB245D00990074BED6 /* CYLBlockExecutor.m */; };
+		8FEEE1F2245D009A0074BED6 /* SGHDeallocBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEE1DE245D00990074BED6 /* SGHDeallocBlockViewController.m */; };
+		8FEEE1F3245D009A0074BED6 /* NSDictionary+print.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEE1E0245D00990074BED6 /* NSDictionary+print.m */; };
+		8FEEE1F4245D009A0074BED6 /* SGHReliableiOSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEE1E1245D00990074BED6 /* SGHReliableiOSPerson.m */; };
+		8FEEE1F5245D009A0074BED6 /* FKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEE1E2245D00990074BED6 /* FKUser.m */; };
+		8FEEE1F6245D009A0074BED6 /* CYLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEE1E3245D00990074BED6 /* CYLUser.m */; };
+		8FEEE1F7245D009A0074BED6 /* Girl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEE1E9245D009A0074BED6 /* Girl.m */; };
+		8FEEE1F8245D009A0074BED6 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEE1EA245D009A0074BED6 /* Son.m */; };
+		8FEEE1F9245D009A0074BED6 /* ReliableiOSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEE1EB245D009A0074BED6 /* ReliableiOSPerson.m */; };
 		8FF058B724381790006F74E9 /* SGH0404SequenceMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF058B62438178F006F74E9 /* SGH0404SequenceMapViewController.m */; };
 		8FF058BE2438215D006F74E9 /* SGH04LoginSuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF058BD2438215D006F74E9 /* SGH04LoginSuccessViewController.m */; };
 		8FF058C124382176006F74E9 /* SGH04RACLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF058C024382176006F74E9 /* SGH04RACLoginViewController.m */; };
@@ -544,26 +544,6 @@
 		043A636B2453313800C5ADE6 /* SGHStaticAnalysisViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHStaticAnalysisViewController.m; sourceTree = "<group>"; };
 		043A637224534FA700C5ADE6 /* SGHCyclesMemoryLeaksVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHCyclesMemoryLeaksVC.h; sourceTree = "<group>"; };
 		043A637324534FA800C5ADE6 /* SGHCyclesMemoryLeaksVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGHCyclesMemoryLeaksVC.m; sourceTree = "<group>"; };
-		045787CA24279E8200C2DF75 /* SGHDeallocBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHDeallocBlockViewController.h; sourceTree = "<group>"; };
-		045787CB24279E8200C2DF75 /* SGHDeallocBlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHDeallocBlockViewController.m; sourceTree = "<group>"; };
-		045787D52427B37B00C2DF75 /* CYLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLUser.h; sourceTree = "<group>"; };
-		045787D82427B37B00C2DF75 /* Son.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
-		045787D92427B37B00C2DF75 /* Girl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Girl.m; sourceTree = "<group>"; };
-		045787DA2427B37B00C2DF75 /* Son.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
-		045787DC2427B37B00C2DF75 /* Girl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Girl.h; sourceTree = "<group>"; };
-		045787DD2427B37B00C2DF75 /* CYLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLUser.m; sourceTree = "<group>"; };
-		045787DE2427B37B00C2DF75 /* NSDictionary+print.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+print.m"; sourceTree = "<group>"; };
-		045787DF2427B37B00C2DF75 /* FKUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKUser.m; sourceTree = "<group>"; };
-		045787E02427B37B00C2DF75 /* FKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKUser.h; sourceTree = "<group>"; };
-		045787E12427B37B00C2DF75 /* NSDictionary+print.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+print.h"; sourceTree = "<group>"; };
-		045787EA2427B4AA00C2DF75 /* SGHReliableiOSPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGHReliableiOSPerson.m; sourceTree = "<group>"; };
-		045787EB2427B4AA00C2DF75 /* SGHReliableiOSPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHReliableiOSPerson.h; sourceTree = "<group>"; };
-		045787ED2427B53300C2DF75 /* ReliableiOSPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReliableiOSPerson.m; sourceTree = "<group>"; };
-		045787EE2427B53300C2DF75 /* ReliableiOSPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReliableiOSPerson.h; sourceTree = "<group>"; };
-		045787F32427B62500C2DF75 /* NSObject+CYLRunAtDealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CYLRunAtDealloc.h"; sourceTree = "<group>"; };
-		045787F42427B62500C2DF75 /* NSObject+CYLRunAtDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CYLRunAtDealloc.m"; sourceTree = "<group>"; };
-		045787F52427B62500C2DF75 /* CYLBlockExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLBlockExecutor.h; sourceTree = "<group>"; };
-		045787F62427B62500C2DF75 /* CYLBlockExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLBlockExecutor.m; sourceTree = "<group>"; };
 		045787FA2427B88100C2DF75 /* SGHCoreTextListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHCoreTextListViewController.h; sourceTree = "<group>"; };
 		045787FB2427B88100C2DF75 /* SGHCoreTextListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHCoreTextListViewController.m; sourceTree = "<group>"; };
 		045788002427BA6200C2DF75 /* demo3_content.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = demo3_content.json; sourceTree = "<group>"; };
@@ -1208,6 +1188,26 @@
 		8F72EFE6245461110023060B /* UINavigationController+LGLeaksTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+LGLeaksTest.m"; sourceTree = "<group>"; };
 		8F72EFE924546F290023060B /* SGH0425SocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH0425SocketViewController.h; sourceTree = "<group>"; };
 		8F72EFEA24546F2A0023060B /* SGH0425SocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0425SocketViewController.m; sourceTree = "<group>"; };
+		8FEEE1DA245D00990074BED6 /* NSObject+CYLRunAtDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CYLRunAtDealloc.m"; sourceTree = "<group>"; };
+		8FEEE1DB245D00990074BED6 /* CYLBlockExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLBlockExecutor.m; sourceTree = "<group>"; };
+		8FEEE1DC245D00990074BED6 /* NSObject+CYLRunAtDealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CYLRunAtDealloc.h"; sourceTree = "<group>"; };
+		8FEEE1DD245D00990074BED6 /* CYLBlockExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLBlockExecutor.h; sourceTree = "<group>"; };
+		8FEEE1DE245D00990074BED6 /* SGHDeallocBlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGHDeallocBlockViewController.m; sourceTree = "<group>"; };
+		8FEEE1E0245D00990074BED6 /* NSDictionary+print.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+print.m"; sourceTree = "<group>"; };
+		8FEEE1E1245D00990074BED6 /* SGHReliableiOSPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGHReliableiOSPerson.m; sourceTree = "<group>"; };
+		8FEEE1E2245D00990074BED6 /* FKUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKUser.m; sourceTree = "<group>"; };
+		8FEEE1E3245D00990074BED6 /* CYLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLUser.m; sourceTree = "<group>"; };
+		8FEEE1E4245D00990074BED6 /* SGHReliableiOSPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHReliableiOSPerson.h; sourceTree = "<group>"; };
+		8FEEE1E5245D00990074BED6 /* NSDictionary+print.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+print.h"; sourceTree = "<group>"; };
+		8FEEE1E7245D009A0074BED6 /* Son.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
+		8FEEE1E8245D009A0074BED6 /* ReliableiOSPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReliableiOSPerson.h; sourceTree = "<group>"; };
+		8FEEE1E9245D009A0074BED6 /* Girl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Girl.m; sourceTree = "<group>"; };
+		8FEEE1EA245D009A0074BED6 /* Son.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
+		8FEEE1EB245D009A0074BED6 /* ReliableiOSPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReliableiOSPerson.m; sourceTree = "<group>"; };
+		8FEEE1EC245D009A0074BED6 /* Girl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Girl.h; sourceTree = "<group>"; };
+		8FEEE1ED245D009A0074BED6 /* FKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKUser.h; sourceTree = "<group>"; };
+		8FEEE1EE245D009A0074BED6 /* CYLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLUser.h; sourceTree = "<group>"; };
+		8FEEE1EF245D009A0074BED6 /* SGHDeallocBlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHDeallocBlockViewController.h; sourceTree = "<group>"; };
 		8FF058B52438178F006F74E9 /* SGH0404SequenceMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH0404SequenceMapViewController.h; sourceTree = "<group>"; };
 		8FF058B62438178F006F74E9 /* SGH0404SequenceMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0404SequenceMapViewController.m; sourceTree = "<group>"; };
 		8FF058BC2438215D006F74E9 /* SGH04LoginSuccessViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH04LoginSuccessViewController.h; sourceTree = "<group>"; };
@@ -1611,57 +1611,6 @@
 			path = Examples;
 			sourceTree = "<group>";
 		};
-		045787C2242769FA00C2DF75 /* 《招聘一个靠谱的iOS》面试题参考答案Demo */ = {
-			isa = PBXGroup;
-			children = (
-				045787CD2427A3D300C2DF75 /* Others */,
-				045787C324276A2700C2DF75 /* NSObjectExtension */,
-				045787CA24279E8200C2DF75 /* SGHDeallocBlockViewController.h */,
-				045787CB24279E8200C2DF75 /* SGHDeallocBlockViewController.m */,
-			);
-			path = "《招聘一个靠谱的iOS》面试题参考答案Demo";
-			sourceTree = "<group>";
-		};
-		045787C324276A2700C2DF75 /* NSObjectExtension */ = {
-			isa = PBXGroup;
-			children = (
-				045787F52427B62500C2DF75 /* CYLBlockExecutor.h */,
-				045787F62427B62500C2DF75 /* CYLBlockExecutor.m */,
-				045787F32427B62500C2DF75 /* NSObject+CYLRunAtDealloc.h */,
-				045787F42427B62500C2DF75 /* NSObject+CYLRunAtDealloc.m */,
-			);
-			path = NSObjectExtension;
-			sourceTree = "<group>";
-		};
-		045787CD2427A3D300C2DF75 /* Others */ = {
-			isa = PBXGroup;
-			children = (
-				045787EB2427B4AA00C2DF75 /* SGHReliableiOSPerson.h */,
-				045787EA2427B4AA00C2DF75 /* SGHReliableiOSPerson.m */,
-				045787D52427B37B00C2DF75 /* CYLUser.h */,
-				045787DD2427B37B00C2DF75 /* CYLUser.m */,
-				045787E02427B37B00C2DF75 /* FKUser.h */,
-				045787DF2427B37B00C2DF75 /* FKUser.m */,
-				045787E12427B37B00C2DF75 /* NSDictionary+print.h */,
-				045787DE2427B37B00C2DF75 /* NSDictionary+print.m */,
-				045787D62427B37B00C2DF75 /* Persons */,
-			);
-			path = Others;
-			sourceTree = "<group>";
-		};
-		045787D62427B37B00C2DF75 /* Persons */ = {
-			isa = PBXGroup;
-			children = (
-				045787EE2427B53300C2DF75 /* ReliableiOSPerson.h */,
-				045787ED2427B53300C2DF75 /* ReliableiOSPerson.m */,
-				045787D82427B37B00C2DF75 /* Son.h */,
-				045787DA2427B37B00C2DF75 /* Son.m */,
-				045787DC2427B37B00C2DF75 /* Girl.h */,
-				045787D92427B37B00C2DF75 /* Girl.m */,
-			);
-			path = Persons;
-			sourceTree = "<group>";
-		};
 		045787F92427B85F00C2DF75 /* 4CoreTextDemos */ = {
 			isa = PBXGroup;
 			children = (
@@ -1761,9 +1710,7 @@
 			children = (
 				04DF5942245A8DF800F0EB3E /* SGHInverviewQuestionsViewController.h */,
 				04DF593F245A8DF800F0EB3E /* SGHInverviewQuestionsViewController.m */,
-				04DF5940245A8DF800F0EB3E /* UIView+NeastPublic.swift */,
-				04DF5941245A8DF800F0EB3E /* UIView+NeastPublicView.h */,
-				04DF5943245A8DF800F0EB3E /* UIView+NeastPublicView.m */,
+				8FEEE1D2245CFC7E0074BED6 /* Examples */,
 			);
 			path = 12Interview_Questions;
 			sourceTree = "<group>";
@@ -3827,7 +3774,6 @@
 			isa = PBXGroup;
 			children = (
 				8F31153524298C3100421E7A /* 2理解 Scroll Views */,
-				045787C2242769FA00C2DF75 /* 《招聘一个靠谱的iOS》面试题参考答案Demo */,
 				8F31138B2426E6EE00421E7A /* 显示html格式的文字 */,
 				8F31138E2426E6EE00421E7A /* iOS JavaScriptCore实现OC与JS的交互 */,
 				8F3113962426E6EE00421E7A /* 断点续传下载_普通下载_后台下载_取消下载 */,
@@ -4490,8 +4436,8 @@
 		8F31156D242995AE00421E7A /* Ctrl */ = {
 			isa = PBXGroup;
 			children = (
-				8F31156E242995AE00421E7A /* SGH0510Runtime2ViewController.m */,
 				8F31156F242995AE00421E7A /* SGH0510Runtime2ViewController.h */,
+				8F31156E242995AE00421E7A /* SGH0510Runtime2ViewController.m */,
 			);
 			path = Ctrl;
 			sourceTree = "<group>";
@@ -4499,8 +4445,8 @@
 		8F311570242995AE00421E7A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8F311571242995AE00421E7A /* SGH0510MyObject.m */,
 				8F311572242995AE00421E7A /* SGH0510MyObject.h */,
+				8F311571242995AE00421E7A /* SGH0510MyObject.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -4508,8 +4454,8 @@
 		8F311573242995AE00421E7A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8F311574242995AE00421E7A /* UIView+SGHTapGesture.m */,
 				8F311575242995AE00421E7A /* UIView+SGHTapGesture.h */,
+				8F311574242995AE00421E7A /* UIView+SGHTapGesture.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -5051,6 +4997,76 @@
 			path = 9Socket;
 			sourceTree = "<group>";
 		};
+		8FEEE1D2245CFC7E0074BED6 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				8FEEE1D8245D00990074BED6 /* 3《招聘一个靠谱的iOS》面试题参考答案Demo */,
+				8FEEE1D7245D00520074BED6 /* 1iOS 面试题--转自唐巧 */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		8FEEE1D7245D00520074BED6 /* 1iOS 面试题--转自唐巧 */ = {
+			isa = PBXGroup;
+			children = (
+				04DF5940245A8DF800F0EB3E /* UIView+NeastPublic.swift */,
+				04DF5941245A8DF800F0EB3E /* UIView+NeastPublicView.h */,
+				04DF5943245A8DF800F0EB3E /* UIView+NeastPublicView.m */,
+			);
+			path = "1iOS 面试题--转自唐巧";
+			sourceTree = "<group>";
+		};
+		8FEEE1D8245D00990074BED6 /* 3《招聘一个靠谱的iOS》面试题参考答案Demo */ = {
+			isa = PBXGroup;
+			children = (
+				8FEEE1EF245D009A0074BED6 /* SGHDeallocBlockViewController.h */,
+				8FEEE1DE245D00990074BED6 /* SGHDeallocBlockViewController.m */,
+				8FEEE1D9245D00990074BED6 /* NSObjectExtension */,
+				8FEEE1DF245D00990074BED6 /* Others */,
+			);
+			path = "3《招聘一个靠谱的iOS》面试题参考答案Demo";
+			sourceTree = "<group>";
+		};
+		8FEEE1D9245D00990074BED6 /* NSObjectExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8FEEE1DC245D00990074BED6 /* NSObject+CYLRunAtDealloc.h */,
+				8FEEE1DA245D00990074BED6 /* NSObject+CYLRunAtDealloc.m */,
+				8FEEE1DD245D00990074BED6 /* CYLBlockExecutor.h */,
+				8FEEE1DB245D00990074BED6 /* CYLBlockExecutor.m */,
+			);
+			path = NSObjectExtension;
+			sourceTree = "<group>";
+		};
+		8FEEE1DF245D00990074BED6 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				8FEEE1E5245D00990074BED6 /* NSDictionary+print.h */,
+				8FEEE1E0245D00990074BED6 /* NSDictionary+print.m */,
+				8FEEE1E4245D00990074BED6 /* SGHReliableiOSPerson.h */,
+				8FEEE1E1245D00990074BED6 /* SGHReliableiOSPerson.m */,
+				8FEEE1ED245D009A0074BED6 /* FKUser.h */,
+				8FEEE1E2245D00990074BED6 /* FKUser.m */,
+				8FEEE1EE245D009A0074BED6 /* CYLUser.h */,
+				8FEEE1E3245D00990074BED6 /* CYLUser.m */,
+				8FEEE1E6245D00990074BED6 /* Persons */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		8FEEE1E6245D00990074BED6 /* Persons */ = {
+			isa = PBXGroup;
+			children = (
+				8FEEE1E7245D009A0074BED6 /* Son.h */,
+				8FEEE1EA245D009A0074BED6 /* Son.m */,
+				8FEEE1E8245D009A0074BED6 /* ReliableiOSPerson.h */,
+				8FEEE1EB245D009A0074BED6 /* ReliableiOSPerson.m */,
+				8FEEE1EC245D009A0074BED6 /* Girl.h */,
+				8FEEE1E9245D009A0074BED6 /* Girl.m */,
+			);
+			path = Persons;
+			sourceTree = "<group>";
+		};
 		8FF058B4243816C6006F74E9 /* RAC_MVVM */ = {
 			isa = PBXGroup;
 			children = (
@@ -5368,6 +5384,7 @@
 				8F3110BA24264FB100421E7A /* SGHReusableHeaderFooterTableViewController.m in Sources */,
 				8F31163C242D01FA00421E7A /* SGHSignalViewController.m in Sources */,
 				8F3110C524264FB100421E7A /* Example3Controller.m in Sources */,
+				8FEEE1F7245D009A0074BED6 /* Girl.m in Sources */,
 				8F31112024264FB100421E7A /* SGH16110701ViewController.m in Sources */,
 				8F3110A824264FB100421E7A /* WBTag.m in Sources */,
 				8F3110B724264FB100421E7A /* SGH0522CrashAnalisisViewController.m in Sources */,
@@ -5382,6 +5399,7 @@
 				8F3114182426E6EF00421E7A /* SGHStringShowViewController.m in Sources */,
 				042422452455D23B004DD1AC /* SGHLock3ViewController.m in Sources */,
 				8F31112B24264FB100421E7A /* SGH160728ViewController.m in Sources */,
+				8FEEE1F2245D009A0074BED6 /* SGHDeallocBlockViewController.m in Sources */,
 				0457881C2427BA6300C2DF75 /* CoreTextImageData.m in Sources */,
 				8F3110D924264FB100421E7A /* SHKVOExploreViewController.m in Sources */,
 				8F31109B24264FB100421E7A /* UIView+WZLBadge.m in Sources */,
@@ -5397,7 +5415,6 @@
 				8F31111F24264FB100421E7A /* SGH1108AppStoreViewController.m in Sources */,
 				8F311635242D01FA00421E7A /* SGHStartWithViewController.m in Sources */,
 				8F3113502426E1D500421E7A /* SGHMethodSwizzlingObject.m in Sources */,
-				045787E52427B37B00C2DF75 /* Son.m in Sources */,
 				8F311631242D01FA00421E7A /* SGHThrottleViewController.m in Sources */,
 				8F311587242995AE00421E7A /* SGH0511Runtime3ViewController.m in Sources */,
 				8F3114132426E6EF00421E7A /* YYQKeyChain.m in Sources */,
@@ -5426,6 +5443,7 @@
 				0417DBD924581BB200196D00 /* SGH0428StringViewController.m in Sources */,
 				8F31111824264FB100421E7A /* SGH1013TextViewViewController.m in Sources */,
 				8F31110B24264FB100421E7A /* SGH0824PresentAndPushThreeViewController.m in Sources */,
+				8FEEE1F5245D009A0074BED6 /* FKUser.m in Sources */,
 				8F311641242D01FA00421E7A /* SGHSwitchDelegateViewController.m in Sources */,
 				8F31112924264FB100421E7A /* SGHNavigation1128Controller.m in Sources */,
 				8F31111624264FB100421E7A /* GTMBase64.m in Sources */,
@@ -5440,9 +5458,12 @@
 				8FF058CE243884C2006F74E9 /* SHAnimationMasonryLoginVC.m in Sources */,
 				8F3114962426EB4C00421E7A /* SGH0618Annotation.m in Sources */,
 				0457881D2427BA6300C2DF75 /* CTFrameParserConfig.m in Sources */,
+				8FEEE1F3245D009A0074BED6 /* NSDictionary+print.m in Sources */,
 				8F3110A724264FB100421E7A /* WBTopic.m in Sources */,
 				8F72EFEB24546F2A0023060B /* SGH0425SocketViewController.m in Sources */,
+				8FEEE1F4245D009A0074BED6 /* SGHReliableiOSPerson.m in Sources */,
 				8F31148A2426EB4C00421E7A /* SGH0618MapNavigationViewController.m in Sources */,
+				8FEEE1F9245D009A0074BED6 /* ReliableiOSPerson.m in Sources */,
 				8F31109824264FB100421E7A /* SGH161223ComponentsDemoViewController.m in Sources */,
 				04F6ECB72429E87E00D7F1CB /* SGH0729Layer.m in Sources */,
 				8F31140C2426E6EF00421E7A /* SGHNSArrayNSMutableArrayViewController.m in Sources */,
@@ -5452,21 +5473,17 @@
 				8F31110F24264FB100421E7A /* SGH0824PresentAndPushTwoViewController.m in Sources */,
 				8F3115E0242A60F500421E7A /* CellModel.m in Sources */,
 				8F3110F524264FB100421E7A /* SGH0802ExpressionViewController.m in Sources */,
-				045787F82427B62500C2DF75 /* CYLBlockExecutor.m in Sources */,
 				8F3110C324264FB100421E7A /* Example2Controller.m in Sources */,
 				8FF058EA24448D65006F74E9 /* SGH0413URLCacheViewController.m in Sources */,
 				8F31110124264FB100421E7A /* SHSocketStruc0218ViewController.m in Sources */,
 				04F6EC912429E7F300D7F1CB /* SGH_CGAndQuartzCoreAnimationViewController.m in Sources */,
 				045787FC2427B88100C2DF75 /* SGHCoreTextListViewController.m in Sources */,
-				045787EF2427B53300C2DF75 /* ReliableiOSPerson.m in Sources */,
 				8F31108524264FB100421E7A /* NSDictionary+NilSafe.m in Sources */,
 				04F6EC802429AEA000D7F1CB /* SGHTableViewStyleGroupedViewController.m in Sources */,
 				8F3110A624264FB100421E7A /* WBButtonLink.m in Sources */,
 				045788232427BA6300C2DF75 /* MagnifiterView.m in Sources */,
 				8F311582242995AE00421E7A /* SGH0515Runtime6ViewController.m in Sources */,
 				8F72EFDD24545C180023060B /* SGHAOPLeakFinderViewController.m in Sources */,
-				045787F72427B62500C2DF75 /* NSObject+CYLRunAtDealloc.m in Sources */,
-				045787E82427B37B00C2DF75 /* NSDictionary+print.m in Sources */,
 				0417DBC72456BCB800196D00 /* UITabBarController+MemoryLeak.m in Sources */,
 				8F3110A324264FB100421E7A /* WBStatus.m in Sources */,
 				04ECD3D8245942E9008E8E73 /* SGHStackMallocViewController.mm in Sources */,
@@ -5538,9 +5555,9 @@
 				8F31154C2429946E00421E7A /* SGHRuntimeExperimentViewController.m in Sources */,
 				8F3114052426E6EF00421E7A /* SGHSKStoreProductViewController.m in Sources */,
 				0424224E2455D301004DD1AC /* SGHLock6ViewController.m in Sources */,
+				8FEEE1F8245D009A0074BED6 /* Son.m in Sources */,
 				8F31109524264FB100421E7A /* SHRAC1ViewController.m in Sources */,
 				04F6EC832429AEA000D7F1CB /* AccountTableHeaderView.m in Sources */,
-				045787CC24279E8200C2DF75 /* SGHDeallocBlockViewController.m in Sources */,
 				0424221124549526004DD1AC /* SGHSocket.m in Sources */,
 				8F31150E2426FBEC00421E7A /* VarArgs.m in Sources */,
 				04242237245563D8004DD1AC /* SGH0426OperationQueueDemoViewController.m in Sources */,
@@ -5560,7 +5577,6 @@
 				042422542455D31E004DD1AC /* SGHLock8ViewController.m in Sources */,
 				8F3114012426E6EF00421E7A /* SGHSesstionDownloadViewController.m in Sources */,
 				8F31112824264FB100421E7A /* SGH1128InterceptPopViewController.m in Sources */,
-				045787E92427B37B00C2DF75 /* FKUser.m in Sources */,
 				8F311636242D01FA00421E7A /* SGHSkipWhileBlockViewController.m in Sources */,
 				049678FE2427C98D00F2FD83 /* SGHCoreText3ViewController.m in Sources */,
 				8F72EFD6245408880023060B /* UIViewController+ExecuteMethod.m in Sources */,
@@ -5577,13 +5593,13 @@
 				8F72EFE7245461110023060B /* UINavigationController+LGLeaksTest.m in Sources */,
 				8F3113512426E1D500421E7A /* NSString+Chinese.m in Sources */,
 				0424222124552C30004DD1AC /* FKGeometryView.m in Sources */,
-				045787E42427B37B00C2DF75 /* Girl.m in Sources */,
 				8F31153E24298CDC00421E7A /* SGH0911CoreLocationViewController.m in Sources */,
 				8FF058C124382176006F74E9 /* SGH04RACLoginViewController.m in Sources */,
 				04F6EC852429AEA000D7F1CB /* SGHNetworkChangeViewController.m in Sources */,
 				8F31109424264FB100421E7A /* SHRAC10ViewController.m in Sources */,
 				0417DBC52456BCB800196D00 /* UISplitViewController+MemoryLeak.m in Sources */,
 				8F31108F24264FB100421E7A /* SHReactiveCocoaViewController.m in Sources */,
+				8FEEE1F0245D009A0074BED6 /* NSObject+CYLRunAtDealloc.m in Sources */,
 				04F6EC772429AEA000D7F1CB /* SHGAboutNavigationViewController.m in Sources */,
 				04F6EC442429ACCB00D7F1CB /* SGHPerson.m in Sources */,
 				8F3115922429977800421E7A /* SGH0509AboutRunLoopViewController.m in Sources */,
@@ -5606,6 +5622,7 @@
 				8F31110924264FB100421E7A /* SGH1125XMLParserViewController.m in Sources */,
 				8F311588242995AE00421E7A /* SGH0511RuntimeMethod.m in Sources */,
 				8F3110E624264FB100421E7A /* UIButton+SHDistribute.m in Sources */,
+				8FEEE1F6245D009A0074BED6 /* CYLUser.m in Sources */,
 				04F6EC872429AEA000D7F1CB /* SGHPresentTransitionStyleViewController.m in Sources */,
 				8F3115DC242A60F500421E7A /* NSObject+EnumDict.m in Sources */,
 				0424223F2455D0CD004DD1AC /* SGHLock1ViewController.m in Sources */,
@@ -5625,7 +5642,6 @@
 				8F31163F242D01FA00421E7A /* SGHTargetActionViewController.m in Sources */,
 				8F3115CB242A609400421E7A /* SGHModelTransformViewController.m in Sources */,
 				8F3114192426E6EF00421E7A /* SGHWebViewConstrainsViewController.m in Sources */,
-				045787E72427B37B00C2DF75 /* CYLUser.m in Sources */,
 				8F31108224264FB100421E7A /* TBXML+Compression.m in Sources */,
 				8F3110ED24264FB100421E7A /* SGH0524PresentAViewController.m in Sources */,
 				8F3110D224264FB100421E7A /* SGH0601SystemVersionViewController.m in Sources */,
@@ -5670,6 +5686,7 @@
 				8F3110B124264FB100421E7A /* SGH170518ResuableCellViewController.m in Sources */,
 				0424225A2455D334004DD1AC /* SGHLock10ViewController.m in Sources */,
 				0424221024549526004DD1AC /* SGHSocketSeverViewController.m in Sources */,
+				8FEEE1F1245D009A0074BED6 /* CYLBlockExecutor.m in Sources */,
 				8F3110D724264FB100421E7A /* EOCPerson.m in Sources */,
 				8F31112624264FB100421E7A /* SGH170119CrashRankViewController.m in Sources */,
 				8F3110FA24264FB100421E7A /* SH1902SpareWheel.m in Sources */,
@@ -5697,7 +5714,6 @@
 				8F311583242995AE00421E7A /* SGH0512Runtime5ViewController.m in Sources */,
 				8F31108424264FB100421E7A /* TBXML+HTTP.m in Sources */,
 				8F31112724264FB100421E7A /* SGH1108UpdateAppViewController.m in Sources */,
-				045787EC2427B4AA00C2DF75 /* SGHReliableiOSPerson.m in Sources */,
 				8F3110C924264FB100421E7A /* SGH0424GaodeFactory.m in Sources */,
 				8F3110FE24264FB100421E7A /* SHRuntime4Person.m in Sources */,
 				8F3110DF24264FB100421E7A /* SGH170815IdentCodeAuthView.m in Sources */,

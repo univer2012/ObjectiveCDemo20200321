@@ -17,12 +17,18 @@ typedef NS_ENUM(NSInteger, CYLSex) {
 };
 
 @interface CYLUser : NSObject<NSCopying,NSMutableCopying>
+
 @property(nonatomic,copy,readonly)NSString *name;
+
 @property(nonatomic,assign, readonly)NSUInteger age;
+
 @property(nonatomic,assign, readonly)CYLSex sex;
 
-- (instancetype)initWithName:(NSString *)name age:(int)age sex:(CYLSex)sex;
-+ (instancetype)userWithName:(NSString *)name age:(int)age sex:(CYLSex)sex;
+- (instancetype)initWithName:(NSString *)name age:(NSUInteger)age sex:(CYLSex)sex;
+
++ (instancetype)userWithName:(NSString *)name age:(NSUInteger)age sex:(CYLSex)sex;
+
 - (void)addFriend:(CYLUser *)user;
+
 - (void)removeFriend:(CYLUser *)user;
 @end
