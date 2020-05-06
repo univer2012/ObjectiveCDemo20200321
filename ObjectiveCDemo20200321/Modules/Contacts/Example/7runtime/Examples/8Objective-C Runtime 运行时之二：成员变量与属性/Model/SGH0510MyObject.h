@@ -14,4 +14,9 @@
 
 @property(nonatomic,copy)NSString *status;
 
+-(void)setDataWithDic:(NSDictionary *)dic;
+
+///json 转 model
+- (instancetype)initWithDict:(NSDictionary *)dict;
+
 @end

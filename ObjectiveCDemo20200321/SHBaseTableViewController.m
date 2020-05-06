@@ -27,15 +27,25 @@
     self.type = SHBaseTableTypeNewVC;
     
     self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
-    self.tableView=({
-        UITableView *tableView=[UITableView new];
-        [self.view addSubview:tableView];
-        tableView.frame=CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame));
+    self.tableView = ({
+        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         tableView.delegate = self;
-        tableView.dataSource=self;
+        tableView.dataSource = self;
+        [self.view addSubview:tableView];
+                
         tableView;
     });
     
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.view);
+    }];
+}
+
+- (void)remakeTableViewConstraintsWith:(UIView *)view {
+    [self.tableView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.equalTo(self.view);
+        make.top.equalTo(view.mas_bottom).offset(10);
+    }];
 }
 
 - (void)addSectionDataWithClassNameArray:(NSArray *)classNameArray titleArray:(NSArray *)titleArray title:(NSString *)title {

@@ -26,6 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic,assign) SHBaseTableType type;
 
+- (void)remakeTableViewConstraintsWith:(UIView *)view;
+
 - (void)addSectionDataWithClassNameArray:(NSArray *)classNameArray titleArray:(NSArray *)titleArray title:(NSString *)title;
 
 - (void)pushToNewVCWith:(NSString *)className title:(NSString *)title inBookmarkStoryboard:(BOOL)inBookmarkStoryboard selText:(NSString *)selText;

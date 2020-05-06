@@ -12,6 +12,9 @@
 
 #import "ObjectiveCDemo20200321-Swift.h"
 
+#import "SGH0503ARCPerson.h"
+#import "SGH0503MRCPerson.h"
+
 @interface SGHInverviewQuestionsViewController ()
 
 @property (copy) NSMutableArray *array;
@@ -43,17 +46,61 @@
     
     //MARK: section 2
     NSArray *tempTitleArray2 = @[
-        @"1.查看`self.array`的运行时类型是什么",
+        @"1.这个写法会出什么问题： `@property (copy) NSMutableArray *array;` \n查看`self.array`的运行时类型是什么",
+        @"2.重写setter方法",
     ];
     NSArray *tempClassNameArray2 = @[
         @"sec2demo1",
+        @"sec2demo2",
     ];
-    [self addSectionDataWithClassNameArray:tempClassNameArray2 titleArray:tempTitleArray2 title:@"这个写法会出什么问题： `@property (copy) NSMutableArray *array;`"];
+    [self addSectionDataWithClassNameArray:tempClassNameArray2 titleArray:tempTitleArray2 title:@""];
     
     [self.tableView reloadData];
 }
-//MARK: 这个写法会出什么问题： `@property (copy) NSMutableArray *array;`
-//MARK: 1.查看`self.array`的运行时类型是什么
+
+//MARK: 2.重写setter方法
+- (void)sec2demo2 {
+    
+    NSLog(@"1、ARC-NSMutableString赋值");
+    NSMutableString *mutStr = [[NSMutableString alloc] initWithString:@"ARC开始我没变"];
+    
+    SGH0503ARCPerson * arcPerson = [[SGH0503ARCPerson alloc] init];
+    arcPerson.name = mutStr;
+    arcPerson.fatherName = mutStr;
+    arcPerson.motherName = mutStr;
+    NSLog(@"mutStr:%p,\n name:%p,\n fatherName:%p,\n motherName:%p",mutStr, arcPerson.name, arcPerson.fatherName, arcPerson.motherName);
+    
+    ///========
+    NSLog(@"2、ARC-NSString赋值");
+    NSString *str = @"ARC开始我没变";
+    
+    SGH0503ARCPerson * arcPerson2 = [[SGH0503ARCPerson alloc] init];
+    arcPerson2.name = str;
+    arcPerson2.fatherName = str;
+    arcPerson2.motherName = str;
+    NSLog(@"str:%p,\n name:%p,\n fatherName:%p,\n motherName:%p",str, arcPerson2.name, arcPerson2.fatherName, arcPerson2.motherName);
+    
+    ///========
+    NSLog(@"3、MRC-NSMutableString赋值");
+    
+    SGH0503MRCPerson * mrcPerson = [[SGH0503MRCPerson alloc] init];
+    mrcPerson.name = mutStr;
+    mrcPerson.fatherName = mutStr;
+    mrcPerson.motherName = mutStr;
+    NSLog(@"mutStr:%p,\n name:%p,\n fatherName:%p,\n motherName:%p",mutStr, mrcPerson.name, mrcPerson.fatherName, mrcPerson.motherName);
+    
+    ///========
+    NSLog(@"4、MRC-NSString赋值");
+    
+    SGH0503MRCPerson * mrcPerson2 = [[SGH0503MRCPerson alloc] init];
+    mrcPerson2.name = str;
+    mrcPerson2.fatherName = str;
+    mrcPerson2.motherName = str;
+    NSLog(@"str:%p,\n name:%p,\n fatherName:%p,\n motherName:%p",str, mrcPerson2.name, mrcPerson2.fatherName, mrcPerson2.motherName);
+}
+
+
+//MARK: 1.这个写法会出什么问题： `@property (copy) NSMutableArray *array;` \n1.查看`self.array`的运行时类型是什么
 - (void)sec2demo1 {
     NSMutableArray *array = [NSMutableArray arrayWithObjects:@1,@2,nil];
     self.array = array;

@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewController (Description)
 
-- (void)showDescWith:(NSString *)text;
+- (UILabel *)showDescWith:(NSString *)text;
 
 - (UIButton *)buildBtnWith:(NSString *)text;
 

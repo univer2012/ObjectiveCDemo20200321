@@ -11,7 +11,7 @@
 
 @implementation UIViewController (Description)
 
-- (void)showDescWith:(NSString *)text {
+- (UILabel *)showDescWith:(NSString *)text {
     ///文字说明
     UILabel *tipLab = [UILabel new];
     tipLab.backgroundColor = UIColor.systemBlueColor;
@@ -23,6 +23,7 @@
         make.left.right.equalTo(self.view);
         make.top.equalTo(self.view).offset(88);
     }];
+    return tipLab;
 }
 
 - (UIButton *)buildBtnWith:(NSString *)text {

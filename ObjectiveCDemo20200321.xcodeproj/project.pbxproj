@@ -412,6 +412,8 @@
 		8FEEE1F7245D009A0074BED6 /* Girl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEE1E9245D009A0074BED6 /* Girl.m */; };
 		8FEEE1F8245D009A0074BED6 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEE1EA245D009A0074BED6 /* Son.m */; };
 		8FEEE1F9245D009A0074BED6 /* ReliableiOSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEE1EB245D009A0074BED6 /* ReliableiOSPerson.m */; };
+		8FEEE1FD245E2E980074BED6 /* SGH0503ARCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEE1FC245E2E970074BED6 /* SGH0503ARCPerson.m */; };
+		8FEEE200245E2EF60074BED6 /* SGH0503MRCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEE1FF245E2EF60074BED6 /* SGH0503MRCPerson.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8FF058B724381790006F74E9 /* SGH0404SequenceMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF058B62438178F006F74E9 /* SGH0404SequenceMapViewController.m */; };
 		8FF058BE2438215D006F74E9 /* SGH04LoginSuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF058BD2438215D006F74E9 /* SGH04LoginSuccessViewController.m */; };
 		8FF058C124382176006F74E9 /* SGH04RACLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF058C024382176006F74E9 /* SGH04RACLoginViewController.m */; };
@@ -1208,6 +1210,10 @@
 		8FEEE1ED245D009A0074BED6 /* FKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKUser.h; sourceTree = "<group>"; };
 		8FEEE1EE245D009A0074BED6 /* CYLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLUser.h; sourceTree = "<group>"; };
 		8FEEE1EF245D009A0074BED6 /* SGHDeallocBlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHDeallocBlockViewController.h; sourceTree = "<group>"; };
+		8FEEE1FB245E2E970074BED6 /* SGH0503ARCPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH0503ARCPerson.h; sourceTree = "<group>"; };
+		8FEEE1FC245E2E970074BED6 /* SGH0503ARCPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0503ARCPerson.m; sourceTree = "<group>"; };
+		8FEEE1FE245E2EF60074BED6 /* SGH0503MRCPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH0503MRCPerson.h; sourceTree = "<group>"; };
+		8FEEE1FF245E2EF60074BED6 /* SGH0503MRCPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0503MRCPerson.m; sourceTree = "<group>"; };
 		8FF058B52438178F006F74E9 /* SGH0404SequenceMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH0404SequenceMapViewController.h; sourceTree = "<group>"; };
 		8FF058B62438178F006F74E9 /* SGH0404SequenceMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0404SequenceMapViewController.m; sourceTree = "<group>"; };
 		8FF058BC2438215D006F74E9 /* SGH04LoginSuccessViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH04LoginSuccessViewController.h; sourceTree = "<group>"; };
@@ -5000,6 +5006,7 @@
 		8FEEE1D2245CFC7E0074BED6 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				8FEEE1FA245E2E1E0074BED6 /* 4手动重写strong_copy_retain的setter方法 */,
 				8FEEE1D8245D00990074BED6 /* 3《招聘一个靠谱的iOS》面试题参考答案Demo */,
 				8FEEE1D7245D00520074BED6 /* 1iOS 面试题--转自唐巧 */,
 			);
@@ -5065,6 +5072,17 @@
 				8FEEE1E9245D009A0074BED6 /* Girl.m */,
 			);
 			path = Persons;
+			sourceTree = "<group>";
+		};
+		8FEEE1FA245E2E1E0074BED6 /* 4手动重写strong_copy_retain的setter方法 */ = {
+			isa = PBXGroup;
+			children = (
+				8FEEE1FB245E2E970074BED6 /* SGH0503ARCPerson.h */,
+				8FEEE1FC245E2E970074BED6 /* SGH0503ARCPerson.m */,
+				8FEEE1FE245E2EF60074BED6 /* SGH0503MRCPerson.h */,
+				8FEEE1FF245E2EF60074BED6 /* SGH0503MRCPerson.m */,
+			);
+			path = "4手动重写strong_copy_retain的setter方法";
 			sourceTree = "<group>";
 		};
 		8FF058B4243816C6006F74E9 /* RAC_MVVM */ = {
@@ -5487,6 +5505,7 @@
 				0417DBC72456BCB800196D00 /* UITabBarController+MemoryLeak.m in Sources */,
 				8F3110A324264FB100421E7A /* WBStatus.m in Sources */,
 				04ECD3D8245942E9008E8E73 /* SGHStackMallocViewController.mm in Sources */,
+				8FEEE200245E2EF60074BED6 /* SGH0503MRCPerson.m in Sources */,
 				8F31109024264FB100421E7A /* SHRAC12ViewController.m in Sources */,
 				8F311634242D01FA00421E7A /* SGHDelayViewController.m in Sources */,
 				04F6EC822429AEA000D7F1CB /* TKAccountModel.m in Sources */,
@@ -5534,6 +5553,7 @@
 				04F6EC432429ACCB00D7F1CB /* SGHRuntimeAttriMethodViewController.m in Sources */,
 				8F3110FF24264FB100421E7A /* SHProxy.m in Sources */,
 				0424222024552C30004DD1AC /* SGHAboutNSOperationViewController.m in Sources */,
+				8FEEE1FD245E2E980074BED6 /* SGH0503ARCPerson.m in Sources */,
 				8F3110A424264FB100421E7A /* WBTimelineItem.m in Sources */,
 				0417DBC12456BCB800196D00 /* UINavigationController+MemoryLeak.m in Sources */,
 				042422422455D1BC004DD1AC /* SGHLock2ViewController.m in Sources */,

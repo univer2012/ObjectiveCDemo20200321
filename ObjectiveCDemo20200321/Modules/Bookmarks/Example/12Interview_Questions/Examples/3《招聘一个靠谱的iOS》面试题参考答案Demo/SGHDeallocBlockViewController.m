@@ -19,6 +19,7 @@
 @end
 
 @implementation SGHDeallocBlockViewController
+@synthesize foo;
 
 - (void)viewDidLoad {
     [super viewDidLoad];

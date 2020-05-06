@@ -12,6 +12,8 @@
  */
 #import "SGH0428StringViewController.h"
 
+#import "UIViewController+Description.h"
+
 @interface SGH0428StringViewController ()
 
 @property (retain, nonatomic) NSString *retainStr;
@@ -31,96 +33,128 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSString *result = @"结论：\n"\
+    "1. NSString要用copy修饰，这样赋值者不管是NSString还是NSMutableString，引用计数一直是1，值不会被改变。\n"\
+    "2. NSMutableString要用retain或者strong，这样，\n"\
+    "用NSMutableString的mStr， 赋值retain或strong修饰的NSMutableString：是浅拷贝，内存地址和mStr一样，引用计数加1，值会随着mStr的改变而改变。\n"\
+    "用NSString的str，         赋值retain或strong修饰的NSMutableString：内存地址是新的，引用计数加1，值不会随着str的改变而改变。。";
+    
+    UILabel *tip = [self showDescWith:result];
+    
+    [self remakeTableViewConstraintsWith:tip];
+    
     self.type = SHBaseTableTypeMethod;
     //MARK: section 1
-    
     NSArray *tempTitleArray = @[
         @"1.验证：属性是retain修饰的，就是浅拷贝，引用计数加1。\n 属性是copy修饰的，就是深拷贝，引用计数等于1（因为从堆里新分配一个内存块）。",
-        @"2. 当一个不可变字符串（NSString）赋值给一个字符串属性 （无论这个字符串是NSString还是NSMutableString），就不存在安全性问题，都是深拷贝。 \n 此时无论retain还是copy都无所谓。",
         @"3.用NSMutableString，赋值strong修饰的NSString，赋值strong修饰的NSMutableString",
         @"4.用NSMutableString，赋值assign修饰的NSString，赋值assign修饰的NSMutableString",
     ];
     NSArray *tempClassNameArray = @[
         @"demo1",
-        @"demo2",
         @"demo3",
         @"demo4",
     ];
-    [self addSectionDataWithClassNameArray:tempClassNameArray titleArray:tempTitleArray title:@""];
+    [self addSectionDataWithClassNameArray:tempClassNameArray titleArray:tempTitleArray title:@"用NSMutableString赋值"];
+    
+    //MARK: section 2
+    NSArray *tempTitleArray2 = @[
+        @"1.当一个不可变字符串（NSString）赋值给一个字符串属性（无论这个字符串是NSString还是NSMutableString）， 就不存在安全性问题，都是深拷贝。 \n 此时无论retain还是copy都无所谓。",
+        @"2.用NSString，赋值strong修饰的NSString，赋值strong修饰的NSMutableString",
+        @"3.用NSString，赋值assign修饰的NSString，赋值assign修饰的NSMutableString",
+    ];
+    NSArray *tempClassNameArray2 = @[
+        @"sec2demo1",
+        @"sec2demo2",
+        @"sec2demo3",
+    ];
+    [self addSectionDataWithClassNameArray:tempClassNameArray2 titleArray:tempTitleArray2 title:@"用NSString赋值"];
     
     [self.tableView reloadData];
 }
-
-//MARK: 4.用NSMutableString，赋值assign修饰的NSString，赋值assign修饰的NSMutableString
+//MARK: 3.用NSString，赋值assign修饰的NSString，赋值assign修饰的NSMutableString
 /*
- 结论：用NSMutableString的mStr，赋值assign修饰的NSString, 和assign修饰的NSMutableString：
-    不是浅拷贝也不是深拷贝。只是简单地把指针指向mStr的内存地址。
-    所以引用计数一直是1，且随着mStr的改变而改变。
- */
-- (void)demo4 {
-    NSMutableString *mStr = [NSMutableString string];
-    
-    [mStr setString:@"我没变-------"];
-    NSLog(@"mStr:%p",mStr);
-    
-    self.assignStr   = mStr;                                                //浅拷贝，引用计数加1
-    NSLog(@"%p,---:%ld", self.assignStr, [self.assignStr retainCount]);     //2
-
-    self.assignMStr   = mStr;                                               //浅拷贝，引用计数加1
-    NSLog(@"%p,---:%ld", self.assignMStr, [self.assignMStr retainCount]);   //3
-    
-    NSLog(@"assignStr:%@",  self.assignStr);
-    NSLog(@"assignMStr:%@",    self.assignMStr);
-    
-    [mStr setString:@"我变了--------"];
-    
-    NSLog(@"assignStr:%@",  self.assignStr);        //浅拷贝
-    NSLog(@"%ld",[self.assignStr retainCount]);     //3
-    
-    NSLog(@"assignMStr:%@",  self.assignMStr);      //浅拷贝
-    NSLog(@"%ld",[self.assignMStr retainCount]);    //3
-    
-}
-
-//MARK: 3.用NSMutableString，赋值strong修饰的NSString，赋值strong修饰的NSMutableString
-/*
- 结论：用NSMutableString的mStr，赋值strong修饰的NSString, 和strong修饰的NSMutableString：
-   都是浅拷贝，引用计数加1，都会随着mStr的改变而改变。
- */
-- (void)demo3 {
-    NSMutableString *mStr = [NSMutableString string];
-    
-    [mStr setString:@"我没变-------"];
-    NSLog(@"mStr:%p",mStr);
-    
-    self.strongStr   = mStr;                                                //浅拷贝，引用计数加1
-    NSLog(@"%p,---:%ld", self.strongStr, [self.strongStr retainCount]);     //2
-
-    self.strongMStr   = mStr;                                               //浅拷贝，引用计数加1
-    NSLog(@"%p,---:%ld", self.strongMStr, [self.strongMStr retainCount]);   //3
-    
-    NSLog(@"strongStr:%@",  self.strongStr);
-    NSLog(@"strongMStr:%@",    self.strongMStr);
-    
-    [mStr setString:@"我变了--------"];
-    
-    NSLog(@"strongStr:%@",  self.strongStr);        //浅拷贝
-    NSLog(@"%ld",[self.strongStr retainCount]);     //3
-    
-    NSLog(@"strongMStr:%@",  self.strongMStr);      //浅拷贝
-    NSLog(@"%ld",[self.strongMStr retainCount]);    //3
-    
-}
-
-//MARK: 2.当一个不可变字符串（NSString）赋值给一个字符串属性（无论这个字符串是NSString还是NSMutableString），就不存在安全性问题，都是深拷贝。 此时无论retain还是copy都无所谓。
-/*
- 结论：用NSString的str，赋值retain修饰的NSString, 和retain修饰的NSMutableString：
- 都是深拷贝，引用计数等于1，不会随着mStr的改变而改变。
+ 结论：用NSString的str，赋值assign修饰的NSString：
+    内存地址和str一样，引用计数一直是1，值不会变。
  
- 结论：用NSString的str，赋值copy修饰的NSString, 和copy修饰的NSMutableString：
- 都是深拷贝，引用计数等于1，不会随着mStr的改变而改变。
+ 
+    用NSString的str，赋值assign修饰的NSMutableString：
+    内存地址是新的，引用计数等于1，值不会变。
+    
+    
  */
-- (void)demo2 {
+- (void)sec2demo3 {
+    NSString *str = @"我来了";//[[NSString alloc] initWithString:@"我来了"];//两种方式都一样。都在常量区
+    
+    NSLog(@"str内存地址：%p,引用计数：%ld, 内容：%@", str, [str retainCount], str);
+    
+    self.assignStr   = str;                                                //浅拷贝，引用计数加1
+    NSLog(@"assignStr内存地址：%p,引用计数：%ld, 内容：%@", self.assignStr, [self.assignStr retainCount], self.assignStr);
+
+    self.assignMStr   = [str mutableCopy];                                               //浅拷贝，引用计数加1
+    NSLog(@"assignMStr内存地址：%p,引用计数：%ld, 内容：%@", self.assignMStr, [self.assignMStr retainCount], self.assignMStr);
+    
+    NSLog(@"\n");
+    
+    str = @"我走了";//[[NSStringalloc] initWithString:@"我走了"];//两种方式都一样
+    
+    NSLog(@"assignStr内存地址：%p,引用计数：%ld, 内容：%@", self.assignStr, [self.assignStr retainCount], self.assignStr);
+    
+    NSLog(@"assignMStr内存地址：%p,引用计数：%ld, 内容：%@", self.assignMStr, [self.assignMStr retainCount], self.assignMStr);
+    
+}
+
+
+//MARK: 2.用NSString，赋值strong修饰的NSString，赋值strong修饰的NSMutableString
+/*
+ 结论：用NSString的str，赋值strong修饰的NSString：
+   指针指向str的地址，引用计数一直是1，值不会变。
+ 
+ 用NSString的str，赋值strong修饰的NSMutableString：
+ 内存地址是新的，引用计数加1，值不会随着str的改变而改变。
+ 
+ 对NSMutableString，retain和strong的结论是一样的。
+ */
+- (void)sec2demo2 {
+    NSString *str = @"我来了";//[[NSString alloc] initWithString:@"我来了"];//两种方式都一样。都在常量区
+    
+    self.strongStr = str;
+
+    self.strongMStr   = [str mutableCopy];
+
+    
+    NSLog(@"内存地址：str=%p, strongStr=%p, strongMStr=%p",str, self.strongStr, self.strongMStr);
+    NSLog(@"引用计数：str=%ld, strongStr=%ld, strongMStr=%ld",[str retainCount], [self.strongStr retainCount], [self.strongMStr retainCount]);
+    NSLog(@"内容：str=%@, strongStr=%@, strongMStr=%@",str,self.strongStr, self.strongMStr);
+    
+    NSLog(@"\n");
+    
+    str = @"我走了";//[[NSStringalloc] initWithString:@"我走了"];//两种方式都一样
+    
+    
+    NSLog(@"内存地址：str=%p, strongStr=%p, strongMStr=%p",str, self.strongStr, self.strongMStr);
+    NSLog(@"引用计数：str=%ld, strongStr=%ld, strongMStr=%ld",[str retainCount], [self.strongStr retainCount], [self.strongMStr retainCount]);
+    NSLog(@"内容：str=%@, strongStr=%@, strongMStr=%@",str,self.strongStr, self.strongMStr);
+}
+
+
+
+//MARK: 1.当一个不可变字符串（NSString）赋值给一个字符串属性（无论这个字符串是NSString还是NSMutableString）， 就不存在安全性问题，都是深拷贝。 \n 此时无论retain还是copy都无所谓。
+/*
+ 结论：用NSString的str，赋值retain修饰的NSString：
+ 指针指向str的地址，引用计数一直是1，值不会变。
+ 
+ 用NSString的str，赋值retain修饰的NSMutableString：
+ 内存地址是新的，引用计数加1，值不会随着str的改变而改变。
+ 
+ 结论：用NSString的str，赋值copy修饰的NSString：
+ 指针指向str的地址，引用计数一直是1，值不会变。
+ 
+ 用NSString的str，赋值copy修饰的NSMutableString：
+ 内存地址是新的，引用计数等于1，值不会随着str的改变而改变。
+ */
+- (void)sec2demo1 {
     NSString *str = @"我来了";//[[NSString alloc] initWithString:@"我来了"];//两种方式都一样。都在常量区
     
     self.retainStr  = str;
@@ -128,77 +162,118 @@
     self.retainMStr = [str mutableCopy];
     self.copyMStr   = [str mutableCopy];
     
-    NSLog(@"retainStr:%@",  self.retainStr);
-    NSLog(@"copyStr:%@",    self.copyStr);
-    NSLog(@"retainMStr:%@", self.retainMStr);
-    NSLog(@"copyMStr:%@",   self.copyMStr);
+    NSLog(@"内存地址：str=%p, retainStr=%p, retainMStr=%p, copyStr=%p, copyMStr=%p",str, self.retainStr, self.retainMStr, self.copyStr, self.copyMStr);
+    NSLog(@"引用计数：str=%ld, retainStr=%ld, retainMStr=%ld, copyStr=%ld, copyMStr=%ld",[str retainCount], [self.retainStr retainCount], [self.retainMStr retainCount], [self.copyStr retainCount], [self.copyMStr retainCount]);
+    NSLog(@"内容：str=%@, retainStr=%@, retainMStr=%@, copyStr=%@, copyMStr=%@",str, self.retainStr, self.retainMStr, self.copyStr, self.copyMStr);
     
     NSLog(@"\n");
     
-    str =@"我走了";//[[NSStringalloc] initWithString:@"我走了"];//两种方式都一样
+    str = @"我走了";//[[NSStringalloc] initWithString:@"我走了"];//两种方式都一样
     
-    NSLog(@"retainStr:%@",  self.retainStr);
-    NSLog(@"copyStr:%@",    self.copyStr);
-    NSLog(@"retainMStr:%@", self.retainMStr);
-    NSLog(@"copyMStr:%@",   self.copyMStr);
-    
-    NSLog(@"\n");
+    NSLog(@"内存地址：str=%p, retainStr=%p, retainMStr=%p, copyStr=%p, copyMStr=%p",str, self.retainStr, self.retainMStr, self.copyStr, self.copyMStr);
+    NSLog(@"引用计数：str=%ld, retainStr=%ld, retainMStr=%ld, copyStr=%ld, copyMStr=%ld",[str retainCount], [self.retainStr retainCount], [self.retainMStr retainCount], [self.copyStr retainCount], [self.copyMStr retainCount]);
+    NSLog(@"内容：str=%@, retainStr=%@, retainMStr=%@, copyStr=%@, copyMStr=%@",str, self.retainStr, self.retainMStr, self.copyStr, self.copyMStr);
+
 }
 
 
+//MARK: 4.用NSMutableString，赋值assign修饰的NSString，赋值assign修饰的NSMutableString
+/*
+ 结论：用NSMutableString的mStr，赋值assign修饰的NSString, 和assign修饰的NSMutableString：
+    不是浅拷贝也不是深拷贝。
+    内存地址和mStr一样，引用计数一直是1，值都会随着mStr的改变而改变。
+ */
+- (void)demo4 {
+    NSMutableString *mStr = [NSMutableString string];
+    
+    [mStr setString:@"我没变-------"];
+    NSLog(@"mStr内存地址：%p,引用计数：%ld, 内容：%@", mStr, [mStr retainCount], mStr);
+    
+    self.assignStr   = mStr;                                                //浅拷贝，引用计数加1
+    NSLog(@"assignStr内存地址：%p,引用计数：%ld, 内容：%@", self.assignStr, [self.assignStr retainCount], self.assignStr);
+
+    self.assignMStr   = mStr;                                               //浅拷贝，引用计数加1
+    NSLog(@"assignMStr内存地址：%p,引用计数：%ld, 内容：%@", self.assignMStr, [self.assignMStr retainCount], self.assignMStr);
+    
+    NSLog(@"\n");
+    
+    [mStr setString:@"我变了--------"];
+    
+    NSLog(@"assignStr内存地址：%p,引用计数：%ld, 内容：%@", self.assignStr, [self.assignStr retainCount], self.assignStr);
+    
+    NSLog(@"assignMStr内存地址：%p,引用计数：%ld, 内容：%@", self.assignMStr, [self.assignMStr retainCount], self.assignMStr);
+    
+}
+
+//MARK: 3.用NSMutableString，赋值strong修饰的NSString，赋值strong修饰的NSMutableString
+/*
+ 结论：用NSMutableString的mStr，赋值strong修饰的NSString, 和strong修饰的NSMutableString：
+    都是浅拷贝，内存地址和mStr一样，引用计数加1，值都会随着mStr的改变而改变。
+    
+    对NSMutableString，retain和strong的结论是一样的。
+ */
+- (void)demo3 {
+    NSMutableString *mStr = [NSMutableString string];
+    
+    [mStr setString:@"我没变-------"];
+    NSLog(@"mStr内存地址：%p,引用计数：%ld, 内容：%@", mStr, [mStr retainCount], mStr);
+    
+    self.strongStr   = mStr;                                                //浅拷贝，引用计数加1
+    NSLog(@"strongStr内存地址：%p,引用计数：%ld, 内容：%@", self.strongStr, [self.strongStr retainCount], self.strongStr);
+
+    self.strongMStr   = mStr;                                               //浅拷贝，引用计数加1
+    NSLog(@"strongMStr内存地址：%p,引用计数：%ld, 内容：%@", self.strongMStr, [self.strongMStr retainCount], self.strongMStr);
+
+    NSLog(@"\n");
+    [mStr setString:@"我变了--------"];
+    
+    NSLog(@"strongStr内存地址：%p,引用计数：%ld, 内容：%@", self.strongStr, [self.strongStr retainCount], self.strongStr);
+    
+    NSLog(@"strongMStr内存地址：%p,引用计数：%ld, 内容：%@", self.strongMStr, [self.strongMStr retainCount], self.strongMStr);
+    
+}
 
 //MARK: 1.验证：属性是retain修饰的，就是浅拷贝，引用计数加1。\n 属性是copy修饰的，就是深拷贝，引用计数等于1（因为从堆里新分配一个内存块）。
 /*
  结论：用NSMutableString的mStr，赋值retain修饰的NSString, 和retain修饰的NSMutableString：
- 都是浅拷贝，引用计数加1，都会随着mStr的改变而改变。
+ 都是浅拷贝，内存地址和mStr一样，引用计数加1，值都会随着mStr的改变而改变。
  
  结论：用NSMutableString的mStr，赋值copy修饰的NSString, 和copy修饰的NSMutableString：
- 都是深拷贝，引用计数等于1，不会随着mStr的改变而改变。
+ 都是深拷贝，内存地址和mStr不一样，引用计数等于1，不会随着mStr的改变而改变。
  */
 - (void)demo1 {
     NSMutableString *mStr = [NSMutableString string];
     
     [mStr setString:@"我没变-------"];
-    NSLog(@"mStr:%p",mStr);
+    NSLog(@"mStr内存地址：%p,引用计数：%ld, 内容：%@", mStr, [mStr retainCount], mStr);
     
     /// ================ NSString
     self.retainStr   = mStr;  // 浅拷贝，引用计数加1，
-    NSLog(@"%p,---:%ld", self.retainStr, [self.retainStr retainCount]);// 2
+    NSLog(@"retainStr内存地址：%p,引用计数：%ld, 内容：%@", self.retainStr, [self.retainStr retainCount], self.retainStr);
     
     self.copyStr     = mStr;    // 深拷贝，
-    NSLog(@"%p,---:%ld", self.copyStr, [self.copyStr retainCount]);// 1
+    NSLog(@"copyStr内存地址：%p,引用计数：%ld, 内容：%@", self.copyStr, [self.copyStr retainCount], self.copyStr);
     
     /// ================ NSMutableString
     self.retainMStr = mStr;   // 浅拷贝，引用计数加1，
-    NSLog(@"%p,---:%ld", self.retainMStr, [self.retainMStr retainCount]);// 3
+    NSLog(@"retainMStr内存地址：%p,引用计数：%ld, 内容：%@", self.retainMStr, [self.retainMStr retainCount], self.retainMStr);
     
     self.copyMStr   = mStr;   // 深拷贝
-    NSLog(@"%p,---:%ld", self.copyMStr, [self.copyMStr retainCount]);// 1
-    
-    
-    
-    NSLog(@"retainStr:%@",  self.retainStr);
-    NSLog(@"copyStr:%@",    self.copyStr);
-    NSLog(@"retainMStr:%@", self.retainMStr);
-    NSLog(@"copyMStr:%@",   self.copyMStr);
+    NSLog(@"copyMStr内存地址：%p,引用计数：%ld, 内容：%@", self.copyMStr, [self.copyMStr retainCount], self.copyMStr);
     
     NSLog(@"\n");
     
     [mStr setString:@"我变了--------"];
     
     /// ================ NSString
-    NSLog(@"retainStr:%@",  self.retainStr);// 浅拷贝
-    NSLog(@"%ld",[self.retainStr retainCount]);// 3
+    NSLog(@"retainStr内存地址：%p,引用计数：%ld, 内容：%@", self.retainStr, [self.retainStr retainCount], self.retainStr);
     
-    NSLog(@"copyStr:%@",    self.copyStr);// 深拷贝
-    NSLog(@"%ld",[self.copyStr retainCount]);// 1
+    NSLog(@"copyStr内存地址：%p,引用计数：%ld, 内容：%@", self.copyStr, [self.copyStr retainCount], self.copyStr);
     
     /// ================ NSMutableString
-    NSLog(@"retainMStr:%@", self.retainMStr);// 浅拷贝
-    NSLog(@"%ld",[self.retainMStr retainCount]);// 3
+    NSLog(@"retainMStr内存地址：%p,引用计数：%ld, 内容：%@", self.retainMStr, [self.retainMStr retainCount], self.retainMStr);
     
-    NSLog(@"copyMStr:%@",   self.copyMStr);// 深拷贝
-    NSLog(@"%ld",[self.copyMStr retainCount]);// 1
+    NSLog(@"copyMStr内存地址：%p,引用计数：%ld, 内容：%@", self.copyMStr, [self.copyMStr retainCount], self.copyMStr);
     
     NSLog(@"\n");
 }

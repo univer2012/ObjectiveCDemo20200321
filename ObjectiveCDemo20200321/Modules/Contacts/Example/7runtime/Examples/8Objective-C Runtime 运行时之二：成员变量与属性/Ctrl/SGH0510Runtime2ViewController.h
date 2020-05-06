@@ -6,8 +6,8 @@
 //  Copyright © 2017年 huangaengoln. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SHBaseTableViewController.h"
 
-@interface SGH0510Runtime2ViewController : UIViewController
+@interface SGH0510Runtime2ViewController : SHBaseTableViewController
 
 @end
