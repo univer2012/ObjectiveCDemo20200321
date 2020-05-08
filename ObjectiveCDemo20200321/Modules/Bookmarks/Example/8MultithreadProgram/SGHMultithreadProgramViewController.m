@@ -8,6 +8,8 @@
 
 #import "SGHMultithreadProgramViewController.h"
 
+#import "ObjectiveCDemo20200321-Swift.h"
+
 @interface SGHMultithreadProgramViewController ()
 
 @end
@@ -34,9 +36,13 @@
     //MARK: section 2
     NSArray *tempTitleArray2 = @[
         @"1.GCD的使用",
+        @"2.iOS 使用GCD控制网络请求顺序",
+        @"2_1.iOS 使用GCD控制网络请求顺序-Swift版",
     ];
     NSArray *tempClassNameArray2 = @[
         @"SGH0426GCDViewController",
+        @"SGHGroupSemaphoreNetworkViewController",
+        NSStringFromClass([SGHGroupSemaphoreNetViewController class])
     ];
     [self addSectionDataWithClassNameArray:tempClassNameArray2 titleArray:tempTitleArray2 title:@"GCD"];
     

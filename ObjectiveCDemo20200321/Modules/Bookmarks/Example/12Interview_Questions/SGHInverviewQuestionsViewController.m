@@ -15,6 +15,9 @@
 #import "SGH0503ARCPerson.h"
 #import "SGH0503MRCPerson.h"
 
+#import "SGHInverviewQuestionsViewController+Ex1.h"
+#import "SGHInverviewQuestionsViewController+Ex2.h"
+
 @interface SGHInverviewQuestionsViewController ()
 
 @property (copy) NSMutableArray *array;
@@ -55,7 +58,26 @@
     ];
     [self addSectionDataWithClassNameArray:tempClassNameArray2 titleArray:tempTitleArray2 title:@""];
     
+    //MARK: section 3
+    NSArray *tempTitleArray3 = @[
+        @"1. 两个category有同一个方法，调用该方法时， 由编译器决定执行哪个方法，执行编译器最后编译的方法。",
+    ];
+    NSArray *tempClassNameArray3 = @[
+        @"sec3demo1",
+    ];
+    [self addSectionDataWithClassNameArray:tempClassNameArray3 titleArray:tempTitleArray3 title:@"Category"];
+    
     [self.tableView reloadData];
+}
+
+//MARK: section 3 Category
+//MARK: 1. 两个category有同一个方法，调用该方法时， 由编译器决定执行哪个方法，执行编译器最后编译的方法。
+///如果在`Build Phases` --> `Compile Sources` 中，SGHInverviewQuestionsViewController+Ex1在上面， SGHInverviewQuestionsViewController+Ex2在下面，则执行Ex2中的run方法。
+///反之，则执行Ex1中的 `run`方法。
+///
+///现在是Ex1在上面，Ex在下面，所以输出结果是：Ex2_run
+- (void)sec3demo1 {
+    [self run];
 }
 
 //MARK: 2.重写setter方法

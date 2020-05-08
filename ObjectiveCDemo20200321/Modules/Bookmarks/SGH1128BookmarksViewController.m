@@ -50,6 +50,7 @@
         @"SGH0428BlockViewController",
         @"SGHDataStructAlgorithmsViewController",
         @"SGHInverviewQuestionsViewController",
+        @"SGHCProgramLanguageViewController",
     ] mutableCopy];
     
     
@@ -65,6 +66,7 @@
         @"10、Block",
         @"11、数据结构与算法",
         @"12、面试题",
+        @"13、C语言",
     ] mutableCopy];
     
     

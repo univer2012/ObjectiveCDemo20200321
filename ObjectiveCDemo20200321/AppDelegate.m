@@ -32,7 +32,7 @@
     // Override point for customization after application launch.
     
     NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
-    NSLog(@"path: %@",path);
+    NSLog(@"Documents_path: %@",path);
     
     self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     SGH161128TabBarViewController *tabBarController = [SGH161128TabBarViewController new];

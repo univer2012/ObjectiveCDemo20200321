@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "SGHCellModel.h"
 
-typedef enum : NSUInteger {
+typedef NS_ENUM(NSUInteger, SHBaseTableType) {
     SHBaseTableTypeMethod,
     SHBaseTableTypeNewVC,
-} SHBaseTableType;
+};
 
 NS_ASSUME_NONNULL_BEGIN
 

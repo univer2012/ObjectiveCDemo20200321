@@ -6,10 +6,14 @@
 //  Copyright © 2020 远平. All rights reserved.
 //
 /*
- 来自：[iOS开发之多线程(GCD与NSOperation)](http://www.jianshu.com/p/5593af00c597)
+ 来自：
+ 1.[iOS开发之多线程(GCD与NSOperation)](http://www.jianshu.com/p/5593af00c597)
+ 2. [iOS 使用dispatch_group_enter 使多次网络请求依次执行](https://www.jianshu.com/p/71fbc0415b5d)
  
  更多dispatch_semaphore_t的使用情况，请查看：
  [GCD信号量-dispatch_semaphore_t](https://www.jianshu.com/p/24ffa819379c)
+ 
+ 
  */
 #import "SGH0426GCDViewController.h"
 
@@ -26,31 +30,94 @@
     //section 1
     NSArray *tempTitleArray=@[
         @"1.GCD死锁问题",
-        @"2.GCD任务组 的使用",
         @"2_1.dispatch_group_wait 的使用",
         @"2_2.dispatch_after 的使用",
         @"3.其他线程在读取时，使用dispatch_async执行写操作",
         @"3_2.对「3」的改进，使用dispatch_barrier_async执行写操作",
-        @"3_3.利用dispatch_semaphore_t将数据，在异步线程追加到数组",
+        
     ];
     NSArray *tempSelectorArray=@[
         @"demo1",
-        @"demo2",
         @"demo2_1",
         @"demo2_2",
         @"demo3",
         @"demo3_2",
-        @"demo3_3",
+        
     ];
     [self addSectionDataWithClassNameArray:tempSelectorArray titleArray:tempTitleArray title:@""];
     
+    //MARK: section 2
+    NSArray *tempTitleArray2 = @[
+        @"1.使用dispatch_group_enter使多次网络请求依次执行",
+        @"2.GCD任务组 的使用 - dispatch_group_async、dispatch_group_notify",
+    ];
+    NSArray *tempSelectorArray2 = @[
+        @"sec2demo1",
+        @"sec2demo2",
+    ];
+    [self addSectionDataWithClassNameArray:tempSelectorArray2 titleArray:tempTitleArray2 title:@"dispatch_group_t的使用"];
+    
+    //MARK: section 3
+    NSArray *tempTitleArray3 = @[
+        @"1.利用dispatch_semaphore_t将数据，在异步线程追加到数组",
+        @"2.用 dispatch_semaphore 实现：A 请求数据成功之后,再执行 B 的网络请求",
+    ];
+    NSArray *tempSelectorArray3 = @[
+        @"sec3demo1",
+        @"sec3demo2",
+    ];
+    [self addSectionDataWithClassNameArray:tempSelectorArray3 titleArray:tempTitleArray3 title:@"dispatch_semaphore_t的使用"];
+        
     [self.tableView reloadData];
 }
 
-
-//MARK: 3_3.利用dispatch_semaphore_t将数据，在异步线程追加到数组
+//MARK: 2.用 dispatch_semaphore 实现：A 请求数据成功之后,再执行 B 的网络请求
 ///3.3 dispatch_semaphore
-- (void)demo3_3 {
+- (void)sec3demo2 {
+    [self finishedSemDataFinished:^(BOOL success) {
+        if (success) {
+            NSLog(@"执行完成");
+        } else {
+            NSLog(@"执行中...");
+        }
+    }];
+}
+
+- (void)finishedSemDataFinished:(void(^)(BOOL success))finished {
+    NSLog(@"开始");
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+
+        dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+        [self loadADataFinished:^(BOOL success){
+            if (success){
+            }else{
+                finished(NO);
+            }
+            dispatch_semaphore_signal(semaphore);
+        }];
+    
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER); // A请求完成之后,请求 B
+    
+        [self loadBDataFinished:^(BOOL success){
+            if (success){
+            }else{
+                finished(NO);
+            }
+            dispatch_semaphore_signal(semaphore);
+        }];
+        
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        
+        NSLog(@"结束");
+        
+    });
+}
+
+
+//MARK: section 3
+//MARK: 1.利用dispatch_semaphore_t将数据，在异步线程追加到数组
+///3.3 dispatch_semaphore
+- (void)sec3demo1 {
     //创建一个信号量初始值为1
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(1);
     
@@ -84,6 +151,109 @@
     }
     NSLog(@"结束2");
 }
+
+//MARK: 2.GCD任务组 的使用 - dispatch_group_async、dispatch_group_notify
+//2.2 GCD任务组
+- (void)sec2demo2 {
+    dispatch_queue_t dispatchQueue = dispatch_queue_create("sgh.queue.next", DISPATCH_QUEUE_CONCURRENT);
+    
+    dispatch_group_t dispatchGroup = dispatch_group_create();
+
+    dispatch_group_async(dispatchGroup, dispatchQueue, ^{
+        NSLog(@"任务A");
+    });
+    dispatch_group_async(dispatchGroup, dispatchQueue, ^{
+        NSLog(@"任务B");
+    });
+    dispatch_group_async(dispatchGroup, dispatchQueue, ^{
+        NSLog(@"任务C");
+    });
+    dispatch_group_async(dispatchGroup, dispatchQueue, ^{
+        NSLog(@"任务D");
+    });
+
+    dispatch_group_notify(dispatchGroup, dispatchQueue, ^{
+        NSLog(@"end");
+    });
+}
+
+//MARK: section 2
+//MARK:1. 使用dispatch_group_enter使多次网络请求依次执行
+///
+- (void)sec2demo1 {
+    [self finishedDataFinished:^(BOOL success) {
+        if (success) {
+            NSLog(@"执行完成");
+        } else {
+            NSLog(@"执行中...");
+        }
+    }];
+}
+
+// 请求是否全部完成
+- (void)finishedDataFinished:(void(^)(BOOL success))finished {
+  dispatch_group_t group = dispatch_group_create();
+  dispatch_group_enter(group);
+  [self loadADataFinished:^(BOOL success){
+    if (success){
+      dispatch_group_leave(group);
+    }else{
+      finished(NO);
+    }
+  }];
+  dispatch_group_enter(group);
+  [self loadBDataFinished:^(BOOL success){
+    if (success){
+      dispatch_group_leave(group);
+    }else{
+      finished(NO);
+    }
+  }];
+
+ dispatch_group_wait(group, DISPATCH_TIME_FOREVER);// A,B同时执行, 执行完才会执行下面的 C
+ dispatch_group_enter(group);
+ [self loadCDataFinished:^(BOOL success){
+    if (success){
+      dispatch_group_leave(group);
+    }else{
+      finished(NO);
+    }
+  }];
+ 
+  //  group 中的任务都成功完成后,才会返回 YES
+  dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        finished(YES);
+   });
+}
+// A 请求数据 - 异步
+- (void)loadADataFinished:(void(^)(BOOL success))finished {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        sleep(3);
+        NSLog(@"A");
+        finished(YES);
+    });
+        
+}
+// B 请求数据 - 异步
+- (void)loadBDataFinished:(void(^)(BOOL success))finished {
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        sleep(2);
+        NSLog(@"B");
+        finished(YES);
+    });
+    
+}
+// C 请求数据 - 异步
+- (void)loadCDataFinished:(void(^)(BOOL success))finished {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        sleep(1);
+        NSLog(@"C");
+        finished(YES);
+    });
+}
+
+
 
 //MARK: 3_2.对「3」的改进，使用dispatch_barrier_async执行写操作
 - (void)demo3_2 {
@@ -240,30 +410,6 @@
 }
 
 
-//MARK: 2.GCD任务组 的使用
-//2.2 GCD任务组
-- (void)demo2 {
-    dispatch_queue_t dispatchQueue = dispatch_queue_create("sgh.queue.next", DISPATCH_QUEUE_CONCURRENT);
-    
-    dispatch_group_t dispatchGroup = dispatch_group_create();
-
-    dispatch_group_async(dispatchGroup, dispatchQueue, ^{
-        NSLog(@"任务A");
-    });
-    dispatch_group_async(dispatchGroup, dispatchQueue, ^{
-        NSLog(@"任务B");
-    });
-    dispatch_group_async(dispatchGroup, dispatchQueue, ^{
-        NSLog(@"任务C");
-    });
-    dispatch_group_async(dispatchGroup, dispatchQueue, ^{
-        NSLog(@"任务D");
-    });
-
-    dispatch_group_notify(dispatchGroup, dispatchQueue, ^{
-        NSLog(@"end");
-    });
-}
 
 //MARK: 1.GCD死锁问题
 /*

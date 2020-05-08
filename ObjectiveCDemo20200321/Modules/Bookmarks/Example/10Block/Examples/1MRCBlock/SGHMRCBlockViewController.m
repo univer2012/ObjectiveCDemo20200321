@@ -67,7 +67,7 @@ typedef long (^BlockSum)(int, int);
         @"demo1_4",
         @"demo2",
     ];
-    [self addSectionDataWithClassNameArray:tempClassNameArray titleArray:tempTitleArray title:@""];
+    [self addSectionDataWithClassNameArray:tempClassNameArray titleArray:tempTitleArray title:@"MRC模式下的 block"];
     
     [self.tableView reloadData];
     

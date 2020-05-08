@@ -8,10 +8,7 @@
 
 #import "SGHRuntimeExperimentViewController.h"
 
-@interface SGHRuntimeExperimentViewController ()<UITableViewDelegate,UITableViewDataSource>
-@property(nonatomic,strong)UITableView *tableView;
-@property(nonatomic,strong)NSMutableArray *controllersArray;
-@property(nonatomic,strong)NSMutableArray *titlesArray;
+@interface SGHRuntimeExperimentViewController ()
 
 @end
 
@@ -20,29 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
-    self.tableView=({
-        UITableView *tableView=[UITableView new];
-        [self.view addSubview:tableView];
-        tableView.frame=CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame));
-        tableView.delegate=self;
-        tableView.dataSource=self;
-        tableView;
-    });
-    _controllersArray= [@[
-        @"SGH0506OCRuntime1ViewController",
-        @"SGH0510Runtime2ViewController",
-        @"SGH0511Runtime3ViewController",
-        @"SGH0512Runtime4ViewController",
-        @"SGH0512Runtime5ViewController",
-        @"SGH0515Runtime6ViewController",
-        @"SGH0515ClassViewController",
-        @"SGHRuntimeAttriMethodViewController",
-        @"SGHMethodSwizzlingViewController",
-        @"SGHModelTransformViewController",
-    ] mutableCopy];
     
-    self.titlesArray=[@[
+    self.type = SHBaseTableTypeNewVC;
+    
+    //MARK: section 1
+    NSArray *tempTitleArray = @[
         @"6、Objective-C Runtime 运行时之一：类与对象",
         @"8、Objective-C Runtime 运行时之二：成员变量与属性",
         @"9、Objective-C Runtime 运行时之三：方法与消息",
@@ -53,34 +32,41 @@
         @"runtime获取私有属性强制更改私有属性以及获取私有方法",
         @"iOS runtime实战应用：Method Swizzling",
         @"runtime+KVC实现多层字典模型转换",
-    ] mutableCopy];
+    ];
+    NSArray *tempClassNameArray = @[
+        @"SGH0506OCRuntime1ViewController",
+        @"SGH0510Runtime2ViewController",
+        @"SGH0511Runtime3ViewController",
+        @"SGH0512Runtime4ViewController",
+        @"SGH0512Runtime5ViewController",
+        @"SGH0515Runtime6ViewController",
+        @"SGH0515ClassViewController",
+        @"SGHRuntimeAttriMethodViewController",
+        @"SGHMethodSwizzlingViewController",
+        @"SGHModelTransformViewController",
+    ];
+    [self addSectionDataWithClassNameArray:tempClassNameArray titleArray:tempTitleArray title:@"Objective-C Runtime 运行时"];
+    
+    //MARK: section 2
+    NSArray *tempTitleArray2 = @[
+        @"14、Runtime方法的使用—Class篇",
+        @"runtime获取私有属性强制更改私有属性以及获取私有方法",
+        @"iOS runtime实战应用：Method Swizzling",
+        @"runtime+KVC实现多层字典模型转换",
+        @"获取UILabel类的所有属性和方法",
+    ];
+    NSArray *tempClassNameArray2 = @[
+        @"SGH0515ClassViewController",
+        @"SGHRuntimeAttriMethodViewController",
+        @"SGHMethodSwizzlingViewController",
+        @"SGHModelTransformViewController",
+        @"SGHGetIvarsPropertiesViewController",
+    ];
+    [self addSectionDataWithClassNameArray:tempClassNameArray2 titleArray:tempTitleArray2 title:@"Runtime 的使用"];
+    
+    [self.tableView reloadData];
 }
 
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _controllersArray.count;
-}
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 50;
-}
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *cellIndentifier=@"CellIdentifier";
-    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:cellIndentifier];
-    if (cell == nil) {
-        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIndentifier];
-    }
-    cell.textLabel.text=_titlesArray[indexPath.row];
-    return cell;
-}
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    Class cls=NSClassFromString(_controllersArray[indexPath.row]);
-    if (cls) {
-        UIViewController *vc = [cls new];
-        vc.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:vc animated:YES];
-    }
-}
+
 
 @end

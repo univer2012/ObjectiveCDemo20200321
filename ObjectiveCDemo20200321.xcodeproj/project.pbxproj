@@ -402,6 +402,14 @@
 		8F72EFE324545DE80023060B /* NSObject+LGSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72EFE224545DE80023060B /* NSObject+LGSwizzling.m */; };
 		8F72EFE7245461110023060B /* UINavigationController+LGLeaksTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72EFE6245461110023060B /* UINavigationController+LGLeaksTest.m */; };
 		8F72EFEB24546F2A0023060B /* SGH0425SocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72EFEA24546F2A0023060B /* SGH0425SocketViewController.m */; };
+		8F7D622024656B37006B2AF4 /* SGHGroupSemaphoreNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D621F24656B37006B2AF4 /* SGHGroupSemaphoreNetworkViewController.m */; };
+		8F7D62222465B397006B2AF4 /* SGHGroupSemaphoreNetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D62212465B397006B2AF4 /* SGHGroupSemaphoreNetViewController.swift */; };
+		8F8FC5C8246481120017AE10 /* SGHCProgramLanguageViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FC5C7246481120017AE10 /* SGHCProgramLanguageViewController.mm */; };
+		8F8FC5CC246515470017AE10 /* SGHARCBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FC5CB246515470017AE10 /* SGHARCBlockViewController.m */; };
+		8F8FC5D0246526140017AE10 /* SGHInverviewQuestionsViewController+Ex1.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FC5CF246526140017AE10 /* SGHInverviewQuestionsViewController+Ex1.m */; };
+		8F8FC5D32465264C0017AE10 /* SGHInverviewQuestionsViewController+Ex2.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FC5D22465264C0017AE10 /* SGHInverviewQuestionsViewController+Ex2.m */; };
+		8F8FC5D624652EE50017AE10 /* Girl+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FC5D524652EE50017AE10 /* Girl+Ex.m */; };
+		8F8FC5D9246531790017AE10 /* SGHGetIvarsPropertiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FC5D8246531790017AE10 /* SGHGetIvarsPropertiesViewController.m */; };
 		8FEEE1F0245D009A0074BED6 /* NSObject+CYLRunAtDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEE1DA245D00990074BED6 /* NSObject+CYLRunAtDealloc.m */; };
 		8FEEE1F1245D009A0074BED6 /* CYLBlockExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEE1DB245D00990074BED6 /* CYLBlockExecutor.m */; };
 		8FEEE1F2245D009A0074BED6 /* SGHDeallocBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEE1DE245D00990074BED6 /* SGHDeallocBlockViewController.m */; };
@@ -1190,6 +1198,21 @@
 		8F72EFE6245461110023060B /* UINavigationController+LGLeaksTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+LGLeaksTest.m"; sourceTree = "<group>"; };
 		8F72EFE924546F290023060B /* SGH0425SocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH0425SocketViewController.h; sourceTree = "<group>"; };
 		8F72EFEA24546F2A0023060B /* SGH0425SocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0425SocketViewController.m; sourceTree = "<group>"; };
+		8F7D621E24656B37006B2AF4 /* SGHGroupSemaphoreNetworkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHGroupSemaphoreNetworkViewController.h; sourceTree = "<group>"; };
+		8F7D621F24656B37006B2AF4 /* SGHGroupSemaphoreNetworkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHGroupSemaphoreNetworkViewController.m; sourceTree = "<group>"; };
+		8F7D62212465B397006B2AF4 /* SGHGroupSemaphoreNetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGHGroupSemaphoreNetViewController.swift; sourceTree = "<group>"; };
+		8F8FC5C6246481120017AE10 /* SGHCProgramLanguageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHCProgramLanguageViewController.h; sourceTree = "<group>"; };
+		8F8FC5C7246481120017AE10 /* SGHCProgramLanguageViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SGHCProgramLanguageViewController.mm; sourceTree = "<group>"; };
+		8F8FC5CA246515460017AE10 /* SGHARCBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHARCBlockViewController.h; sourceTree = "<group>"; };
+		8F8FC5CB246515470017AE10 /* SGHARCBlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHARCBlockViewController.m; sourceTree = "<group>"; };
+		8F8FC5CE246526140017AE10 /* SGHInverviewQuestionsViewController+Ex1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SGHInverviewQuestionsViewController+Ex1.h"; sourceTree = "<group>"; };
+		8F8FC5CF246526140017AE10 /* SGHInverviewQuestionsViewController+Ex1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SGHInverviewQuestionsViewController+Ex1.m"; sourceTree = "<group>"; };
+		8F8FC5D12465264C0017AE10 /* SGHInverviewQuestionsViewController+Ex2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SGHInverviewQuestionsViewController+Ex2.h"; sourceTree = "<group>"; };
+		8F8FC5D22465264C0017AE10 /* SGHInverviewQuestionsViewController+Ex2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SGHInverviewQuestionsViewController+Ex2.m"; sourceTree = "<group>"; };
+		8F8FC5D424652EE50017AE10 /* Girl+Ex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Girl+Ex.h"; sourceTree = "<group>"; };
+		8F8FC5D524652EE50017AE10 /* Girl+Ex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Girl+Ex.m"; sourceTree = "<group>"; };
+		8F8FC5D7246531790017AE10 /* SGHGetIvarsPropertiesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHGetIvarsPropertiesViewController.h; sourceTree = "<group>"; };
+		8F8FC5D8246531790017AE10 /* SGHGetIvarsPropertiesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHGetIvarsPropertiesViewController.m; sourceTree = "<group>"; };
 		8FEEE1DA245D00990074BED6 /* NSObject+CYLRunAtDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CYLRunAtDealloc.m"; sourceTree = "<group>"; };
 		8FEEE1DB245D00990074BED6 /* CYLBlockExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLBlockExecutor.m; sourceTree = "<group>"; };
 		8FEEE1DC245D00990074BED6 /* NSObject+CYLRunAtDealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CYLRunAtDealloc.h"; sourceTree = "<group>"; };
@@ -1329,6 +1352,7 @@
 		0417DBD0245802FC00196D00 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				8F8FC5C92465145F0017AE10 /* 2ARCBlock */,
 				0417DBD12458037700196D00 /* 1MRCBlock */,
 			);
 			path = Examples;
@@ -1480,6 +1504,9 @@
 			children = (
 				0424223124553819004DD1AC /* SGH0426GCDViewController.h */,
 				0424223224553819004DD1AC /* SGH0426GCDViewController.m */,
+				8F7D621E24656B37006B2AF4 /* SGHGroupSemaphoreNetworkViewController.h */,
+				8F7D621F24656B37006B2AF4 /* SGHGroupSemaphoreNetworkViewController.m */,
+				8F7D62212465B397006B2AF4 /* SGHGroupSemaphoreNetViewController.swift */,
 			);
 			path = Section2_GCD;
 			sourceTree = "<group>";
@@ -1680,6 +1707,7 @@
 		045B5EA12459737A0023BF7B /* 11Data_Structures_and_Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				8F8FC5B1246385230017AE10 /* Chapter8 */,
 				045B5EA2245973C30023BF7B /* SGHDataStructAlgorithmsViewController.h */,
 				045B5EA3245973C30023BF7B /* SGHDataStructAlgorithmsViewController.mm */,
 				045B5EB42459A4720023BF7B /* Chapter2 */,
@@ -2389,6 +2417,7 @@
 		8F310E9F24264FAF00421E7A /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				8F8FC5C5246480E00017AE10 /* 13C_Program_Language */,
 				04DF593E245A8DF800F0EB3E /* 12Interview_Questions */,
 				045B5EA12459737A0023BF7B /* 11Data_Structures_and_Algorithms */,
 				0417DBCC245802C300196D00 /* 10Block */,
@@ -4335,6 +4364,8 @@
 				8F31155D242995AE00421E7A /* 10Objective-C Runtime 运行时之四：Method Swizzling */,
 				8F311568242995AE00421E7A /* 11Objective-C Runtime 运行时之五：协议与分类 */,
 				8F311564242995AE00421E7A /* 12Objective-C Runtime 运行时之六：拾遗 */,
+				8F8FC5D7246531790017AE10 /* SGHGetIvarsPropertiesViewController.h */,
+				8F8FC5D8246531790017AE10 /* SGHGetIvarsPropertiesViewController.m */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -5003,9 +5034,46 @@
 			path = 9Socket;
 			sourceTree = "<group>";
 		};
+		8F8FC5B1246385230017AE10 /* Chapter8 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Chapter8;
+			sourceTree = "<group>";
+		};
+		8F8FC5C5246480E00017AE10 /* 13C_Program_Language */ = {
+			isa = PBXGroup;
+			children = (
+				8F8FC5C6246481120017AE10 /* SGHCProgramLanguageViewController.h */,
+				8F8FC5C7246481120017AE10 /* SGHCProgramLanguageViewController.mm */,
+			);
+			path = 13C_Program_Language;
+			sourceTree = "<group>";
+		};
+		8F8FC5C92465145F0017AE10 /* 2ARCBlock */ = {
+			isa = PBXGroup;
+			children = (
+				8F8FC5CA246515460017AE10 /* SGHARCBlockViewController.h */,
+				8F8FC5CB246515470017AE10 /* SGHARCBlockViewController.m */,
+			);
+			path = 2ARCBlock;
+			sourceTree = "<group>";
+		};
+		8F8FC5CD246525E00017AE10 /* InverviewQuestionsVC_Category */ = {
+			isa = PBXGroup;
+			children = (
+				8F8FC5CE246526140017AE10 /* SGHInverviewQuestionsViewController+Ex1.h */,
+				8F8FC5CF246526140017AE10 /* SGHInverviewQuestionsViewController+Ex1.m */,
+				8F8FC5D12465264C0017AE10 /* SGHInverviewQuestionsViewController+Ex2.h */,
+				8F8FC5D22465264C0017AE10 /* SGHInverviewQuestionsViewController+Ex2.m */,
+			);
+			path = InverviewQuestionsVC_Category;
+			sourceTree = "<group>";
+		};
 		8FEEE1D2245CFC7E0074BED6 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				8F8FC5CD246525E00017AE10 /* InverviewQuestionsVC_Category */,
 				8FEEE1FA245E2E1E0074BED6 /* 4手动重写strong_copy_retain的setter方法 */,
 				8FEEE1D8245D00990074BED6 /* 3《招聘一个靠谱的iOS》面试题参考答案Demo */,
 				8FEEE1D7245D00520074BED6 /* 1iOS 面试题--转自唐巧 */,
@@ -5070,6 +5138,8 @@
 				8FEEE1EB245D009A0074BED6 /* ReliableiOSPerson.m */,
 				8FEEE1EC245D009A0074BED6 /* Girl.h */,
 				8FEEE1E9245D009A0074BED6 /* Girl.m */,
+				8F8FC5D424652EE50017AE10 /* Girl+Ex.h */,
+				8F8FC5D524652EE50017AE10 /* Girl+Ex.m */,
 			);
 			path = Persons;
 			sourceTree = "<group>";
@@ -5401,6 +5471,7 @@
 				8F3110C224264FB100421E7A /* SHQRCodeViewController.m in Sources */,
 				8F3110BA24264FB100421E7A /* SGHReusableHeaderFooterTableViewController.m in Sources */,
 				8F31163C242D01FA00421E7A /* SGHSignalViewController.m in Sources */,
+				8F7D62222465B397006B2AF4 /* SGHGroupSemaphoreNetViewController.swift in Sources */,
 				8F3110C524264FB100421E7A /* Example3Controller.m in Sources */,
 				8FEEE1F7245D009A0074BED6 /* Girl.m in Sources */,
 				8F31112024264FB100421E7A /* SGH16110701ViewController.m in Sources */,
@@ -5462,6 +5533,7 @@
 				8F31111824264FB100421E7A /* SGH1013TextViewViewController.m in Sources */,
 				8F31110B24264FB100421E7A /* SGH0824PresentAndPushThreeViewController.m in Sources */,
 				8FEEE1F5245D009A0074BED6 /* FKUser.m in Sources */,
+				8F8FC5C8246481120017AE10 /* SGHCProgramLanguageViewController.mm in Sources */,
 				8F311641242D01FA00421E7A /* SGHSwitchDelegateViewController.m in Sources */,
 				8F31112924264FB100421E7A /* SGHNavigation1128Controller.m in Sources */,
 				8F31111624264FB100421E7A /* GTMBase64.m in Sources */,
@@ -5492,6 +5564,7 @@
 				8F3115E0242A60F500421E7A /* CellModel.m in Sources */,
 				8F3110F524264FB100421E7A /* SGH0802ExpressionViewController.m in Sources */,
 				8F3110C324264FB100421E7A /* Example2Controller.m in Sources */,
+				8F7D622024656B37006B2AF4 /* SGHGroupSemaphoreNetworkViewController.m in Sources */,
 				8FF058EA24448D65006F74E9 /* SGH0413URLCacheViewController.m in Sources */,
 				8F31110124264FB100421E7A /* SHSocketStruc0218ViewController.m in Sources */,
 				04F6EC912429E7F300D7F1CB /* SGH_CGAndQuartzCoreAnimationViewController.m in Sources */,
@@ -5530,6 +5603,7 @@
 				8F311644242D01FA00421E7A /* SGHSchedulerViewController.m in Sources */,
 				8F311649242D031C00421E7A /* SGHAnythingTestModel.m in Sources */,
 				8F31157F242995AE00421E7A /* SGH0506Test.m in Sources */,
+				8F8FC5CC246515470017AE10 /* SGHARCBlockViewController.m in Sources */,
 				8F31141C2426E6EF00421E7A /* SGHNSURLSessionViewController.m in Sources */,
 				8F3110CC24264FB100421E7A /* SGH0424DreamLBSViewController.m in Sources */,
 				043A6362245330B600C5ADE6 /* SGHNameListViewController.m in Sources */,
@@ -5568,6 +5642,7 @@
 				0417DBA12456B71F00196D00 /* SGHFBRetainCycleViewController.m in Sources */,
 				8FF058BE2438215D006F74E9 /* SGH04LoginSuccessViewController.m in Sources */,
 				8F3110DD24264FB100421E7A /* SHUpdateJumpAppStoreVC.m in Sources */,
+				8F8FC5D624652EE50017AE10 /* Girl+Ex.m in Sources */,
 				8F31159B242A2D7200421E7A /* SGH0324CATransitionViewController.m in Sources */,
 				8F3110B924264FB100421E7A /* SH3DTouchDemoViewController.m in Sources */,
 				8F31108E24264FB100421E7A /* SGH1128ContactsViewController.m in Sources */,
@@ -5622,6 +5697,7 @@
 				8FEEE1F0245D009A0074BED6 /* NSObject+CYLRunAtDealloc.m in Sources */,
 				04F6EC772429AEA000D7F1CB /* SHGAboutNavigationViewController.m in Sources */,
 				04F6EC442429ACCB00D7F1CB /* SGHPerson.m in Sources */,
+				8F8FC5D0246526140017AE10 /* SGHInverviewQuestionsViewController+Ex1.m in Sources */,
 				8F3115922429977800421E7A /* SGH0509AboutRunLoopViewController.m in Sources */,
 				8F3115C4242A58C200421E7A /* SGHAdvance2KVOViewController.m in Sources */,
 				8F3110FC24264FB100421E7A /* SHLeaks0301Object.m in Sources */,
@@ -5699,6 +5775,7 @@
 				04242206245484B5004DD1AC /* SGHNativeSocketViewController.m in Sources */,
 				8FF058E62443698C006F74E9 /* SGH_TTAttriLabelViewController.m in Sources */,
 				8F3110EC24264FB100421E7A /* SGH0524PresentBViewController.m in Sources */,
+				8F8FC5D32465264C0017AE10 /* SGHInverviewQuestionsViewController+Ex2.m in Sources */,
 				8F3114922426EB4C00421E7A /* SGH0618LocationViewController.m in Sources */,
 				0417DBCF245802DC00196D00 /* SGH0428BlockViewController.m in Sources */,
 				8F31111724264FB100421E7A /* SGH0713ScreenShotViewController.m in Sources */,
@@ -5719,6 +5796,7 @@
 				8F3110EF24264FB100421E7A /* SXNewsDetailEntity.m in Sources */,
 				0417DBCB2456BCB800196D00 /* NSObject+MemoryLeak.m in Sources */,
 				8F3115492429946000421E7A /* SGHRunloopExperimentViewController.m in Sources */,
+				8F8FC5D9246531790017AE10 /* SGHGetIvarsPropertiesViewController.m in Sources */,
 				8F31108C24264FB100421E7A /* UIColor+Hex.m in Sources */,
 				8F310B812425B28900421E7A /* AppDelegate.m in Sources */,
 				8F31162A242D01FA00421E7A /* SGHSumupViewController.m in Sources */,
