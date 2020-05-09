@@ -271,5 +271,69 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4AE36B40-2F66-4859-81BB-00323B22813C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ObjectiveCDemo20200321/Modules/Bookmarks/Example/10Block/Examples/1MRCBlock/SGHMRCBlockViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "-demo5"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "87A3CD12-3780-4839-A31F-507258F9D7D0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ObjectiveCDemo20200321/Modules/Bookmarks/Example/10Block/Examples/2ARCBlock/SGHARCBlockViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "-demo5"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "87A3CD12-3780-4839-A31F-507258F9D7D0 - 9bafac1805bdd949"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SGHARCBlockViewController demo5]"
+                  moduleName = "ObjectiveCDemo20200321"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuanping/Desktop/HuangSengoln/ObjectiveCDemo20200321/ObjectiveCDemo20200321/Modules/Bookmarks/Example/10Block/Examples/2ARCBlock/SGHARCBlockViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "105">
+               </Location>
+               <Location
+                  uuid = "87A3CD12-3780-4839-A31F-507258F9D7D0 - e29eebbc8c1bc948"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__34-[SGHARCBlockViewController demo5]_block_invoke"
+                  moduleName = "ObjectiveCDemo20200321"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuanping/Desktop/HuangSengoln/ObjectiveCDemo20200321/ObjectiveCDemo20200321/Modules/Bookmarks/Example/10Block/Examples/2ARCBlock/SGHARCBlockViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

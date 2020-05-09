@@ -404,6 +404,7 @@
 		8F72EFEB24546F2A0023060B /* SGH0425SocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72EFEA24546F2A0023060B /* SGH0425SocketViewController.m */; };
 		8F7D622024656B37006B2AF4 /* SGHGroupSemaphoreNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D621F24656B37006B2AF4 /* SGHGroupSemaphoreNetworkViewController.m */; };
 		8F7D62222465B397006B2AF4 /* SGHGroupSemaphoreNetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D62212465B397006B2AF4 /* SGHGroupSemaphoreNetViewController.swift */; };
+		8F7D622624663CDF006B2AF4 /* SGHBlockPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D622524663CDF006B2AF4 /* SGHBlockPerson.m */; };
 		8F8FC5C8246481120017AE10 /* SGHCProgramLanguageViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FC5C7246481120017AE10 /* SGHCProgramLanguageViewController.mm */; };
 		8F8FC5CC246515470017AE10 /* SGHARCBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FC5CB246515470017AE10 /* SGHARCBlockViewController.m */; };
 		8F8FC5D0246526140017AE10 /* SGHInverviewQuestionsViewController+Ex1.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FC5CF246526140017AE10 /* SGHInverviewQuestionsViewController+Ex1.m */; };
@@ -1201,6 +1202,8 @@
 		8F7D621E24656B37006B2AF4 /* SGHGroupSemaphoreNetworkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHGroupSemaphoreNetworkViewController.h; sourceTree = "<group>"; };
 		8F7D621F24656B37006B2AF4 /* SGHGroupSemaphoreNetworkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHGroupSemaphoreNetworkViewController.m; sourceTree = "<group>"; };
 		8F7D62212465B397006B2AF4 /* SGHGroupSemaphoreNetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGHGroupSemaphoreNetViewController.swift; sourceTree = "<group>"; };
+		8F7D622424663CDF006B2AF4 /* SGHBlockPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHBlockPerson.h; sourceTree = "<group>"; };
+		8F7D622524663CDF006B2AF4 /* SGHBlockPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHBlockPerson.m; sourceTree = "<group>"; };
 		8F8FC5C6246481120017AE10 /* SGHCProgramLanguageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHCProgramLanguageViewController.h; sourceTree = "<group>"; };
 		8F8FC5C7246481120017AE10 /* SGHCProgramLanguageViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SGHCProgramLanguageViewController.mm; sourceTree = "<group>"; };
 		8F8FC5CA246515460017AE10 /* SGHARCBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHARCBlockViewController.h; sourceTree = "<group>"; };
@@ -1352,6 +1355,7 @@
 		0417DBD0245802FC00196D00 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				8F7D622324663CB9006B2AF4 /* Others */,
 				8F8FC5C92465145F0017AE10 /* 2ARCBlock */,
 				0417DBD12458037700196D00 /* 1MRCBlock */,
 			);
@@ -5034,6 +5038,15 @@
 			path = 9Socket;
 			sourceTree = "<group>";
 		};
+		8F7D622324663CB9006B2AF4 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				8F7D622424663CDF006B2AF4 /* SGHBlockPerson.h */,
+				8F7D622524663CDF006B2AF4 /* SGHBlockPerson.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
 		8F8FC5B1246385230017AE10 /* Chapter8 */ = {
 			isa = PBXGroup;
 			children = (
@@ -5701,6 +5714,7 @@
 				8F3115922429977800421E7A /* SGH0509AboutRunLoopViewController.m in Sources */,
 				8F3115C4242A58C200421E7A /* SGHAdvance2KVOViewController.m in Sources */,
 				8F3110FC24264FB100421E7A /* SHLeaks0301Object.m in Sources */,
+				8F7D622624663CDF006B2AF4 /* SGHBlockPerson.m in Sources */,
 				8F3114812426EB4C00421E7A /* SGH0618AntiEncodeViewController.m in Sources */,
 				8FF058C8243873AD006F74E9 /* SGHCellModel.m in Sources */,
 				8F31149C2426EB4C00421E7A /* SGHUIKitDynamicsViewController.m in Sources */,

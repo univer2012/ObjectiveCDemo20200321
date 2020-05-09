@@ -22,9 +22,11 @@
     //MARK: section 1
     NSArray *tempTitleArray = @[
         @"1.MRC模式下，Block作为属性，是否使用copy修饰的区别",
+        @"2.ARC模式下，Block的情况探究",
     ];
     NSArray *tempClassNameArray = @[
         @"SGHMRCBlockViewController",
+        @"SGHARCBlockViewController",
     ];
     [self addSectionDataWithClassNameArray:tempClassNameArray titleArray:tempTitleArray title:@"NSOperation&NSOperationQueue"];
     
