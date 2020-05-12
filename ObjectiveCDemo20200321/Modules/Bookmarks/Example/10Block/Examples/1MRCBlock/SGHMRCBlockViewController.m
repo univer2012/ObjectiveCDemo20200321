@@ -83,8 +83,96 @@ XBTBlock btBlock2;
     ];
     [self addSectionDataWithClassNameArray:tempClassNameArray2 titleArray:tempTitleArray2 title:@"copy操作、其他"];
     
+    //MARK: section 3
+    NSArray *tempTitleArray3 = @[
+        @"第一种方式：__unsafe_unretained",
+        @"第二种方式：__block",
+    ];
+    NSArray *tempClassNameArray3 = @[
+        @"sec3demo1",
+        @"sec3demo2",
+    ];
+    [self addSectionDataWithClassNameArray:tempClassNameArray3 titleArray:tempTitleArray3 title:@"MRC下如何解决block循环引用的问题？"];
+    
+    //MARK: section 4
+    NSArray *tempTitleArray4 = @[
+        @"1.NSGlobalBlock、NSStackBlock、NSMallocBlock执行 retain、copy、release的情况",
+    ];
+    NSArray *tempClassNameArray4 = @[
+        @"sec4demo1",
+    ];
+    [self addSectionDataWithClassNameArray:tempClassNameArray4 titleArray:tempTitleArray4 title:@""];
+    
     [self.tableView reloadData];
     
+}
+
+//MARK: - section 4
+//MARK: 1.NSGlobalBlock、NSStackBlock、NSMallocBlock执行 retain、copy、release的情况
+- (void)sec4demo1 {
+    //宏定义一个block
+    typedef long (^BlockSum)(int, int);
+    
+    // <__NSGlobalBlock__: 0x1000020b0>
+    BlockSum block1 =^long(int a,int b){
+        return a + b;
+    };
+    NSLog(@"block1: %lu", (unsigned long)[block1 retainCount]);
+    BlockSum tempBlock1 = [block1 retain];
+    NSLog(@"block1_retain: %lu", (unsigned long)[block1 retainCount]);
+    BlockSum tempBlock12 = [block1 copy];
+    NSLog(@"block1_copy: %lu", (unsigned long)[block1 retainCount]);
+    [block1 release];
+    NSLog(@"block1_release: %lu", (unsigned long)[block1 retainCount]);
+    NSLog(@"NSGlobalBlock: %@, retain: %@, copy: %@\n\n",block1, tempBlock1, tempBlock12);
+
+    //MRC: <__NSStackBlock__: 0x7fff5698b070>
+    int base = 100;
+    BlockSum block2 = ^long(int a, int b) {
+        return base + a + b;
+    };
+    NSLog(@"block2: %lu", (unsigned long)[block2 retainCount]);
+    BlockSum tempBlock2 = [block2 retain];
+    NSLog(@"block2_retain: %lu", (unsigned long)[block2 retainCount]);
+    [block2 release];
+    NSLog(@"block2_release: %lu\n\n", (unsigned long)[block2 retainCount]);
+
+
+
+    // <__NSMallocBlock__: 0x10051cf60>
+    BlockSum block3 = [block2 copy];
+    NSLog(@"NSStackBlock: %@, retain: %@, copy: %@", block2, tempBlock2, block3);
+
+    NSLog(@"block3: %lu", (unsigned long)[block3 retainCount]);
+    BlockSum tempBlock3 = [block3 retain];
+    NSLog(@"block3_retain: %lu", (unsigned long)[block3 retainCount]);
+    BlockSum tempBlock31 = [block3 copy];
+    NSLog(@"block3_copy: %lu", (unsigned long)[block3 retainCount]);
+    [block3 release];
+    NSLog(@"block3_release: %lu", (unsigned long)[block3 retainCount]);
+    NSLog(@"NSMallocBlock: %@, retain: %@, copy: %@\n\n", block3, tempBlock3, tempBlock31);
+}
+
+//MARK:第二种方式：__block
+- (void)sec3demo2 {
+    SGHBlockPerson *person = [[[SGHBlockPerson alloc] init] autorelease];
+    __block typeof(person) blockPerson = person;
+    person.block = ^{
+        NSLog(@"age is %ld", (long)blockPerson.age);
+        blockPerson = nil; //使用完blockPerson后，如果没有设置`blockPerson = nil;`，会出现循环引用
+    };
+    person.block();
+}
+
+//MARK: - section 3
+//MARK:第一种方式：__unsafe_unretained
+- (void)sec3demo1 {
+    SGHBlockPerson *person = [[[SGHBlockPerson alloc] init] autorelease];
+    __unsafe_unretained  typeof(person) tPerson = person;
+    person.block = ^{
+        NSLog(@"age is %ld", (long)tPerson.age);
+    };
+    person.block();
 }
 
 //MARK: 5_2.探究：MRC模式下，StackBlock 不会持有对象p

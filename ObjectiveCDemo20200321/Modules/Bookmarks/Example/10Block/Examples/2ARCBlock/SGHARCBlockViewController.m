@@ -7,6 +7,7 @@
 //
 /*
  来自：1.[ARC 下引用计数的打印](https://blog.csdn.net/yishabeier152/article/details/52326487)
+ 2.[iOS-Block本质](https://www.jianshu.com/p/4e79e9a0dd82)
  */
 #import "SGHARCBlockViewController.h"
 
@@ -53,8 +54,141 @@ XBTBlock btBlock;
     ];
     [self addSectionDataWithClassNameArray:tempClassNameArray titleArray:tempTitleArray title:@"ARC模式下的 block"];
     
+    
+    //MARK: section 2
+    NSArray *tempTitleArray2 = @[
+        @"1.gcd的block中引用 局部变量Person对象，在block执行完成后才销毁",
+        @"2.gcd的block中引用 局部变量、有__weak 修饰的Person对象，\n Person对象的作用域结束就销毁",
+        @"3.如果gcd内包含gcd，\n Person对象在block执行完成后才销毁",
+        @"4.如果gcd内包含gcd，先强引用后弱引用。\n Person对象在强引用执行完后就销毁",
+    ];
+    NSArray *tempClassNameArray2 = @[
+        @"sec2demo1",
+        @"sec2demo2",
+        @"sec2demo3",
+        @"sec2demo4",
+    ];
+    [self addSectionDataWithClassNameArray:tempClassNameArray2 titleArray:tempTitleArray2 title:@"gcd的block中引用 Person对象"];
+    
+    //MARK: section 3
+    NSArray *tempTitleArray3 = @[
+        @"第一种方式：__weak",
+        @"第二种方式：__unsafe_unretained",
+        @"第三种方式：__block",
+    ];
+    NSArray *tempClassNameArray3 = @[
+        @"sec3demo1",
+        @"sec3demo2",
+        @"sec3demo3",
+    ];
+    [self addSectionDataWithClassNameArray:tempClassNameArray3 titleArray:tempTitleArray3 title:@"ARC下如何解决block循环引用的问题？"];
+    
     [self.tableView reloadData];
 }
+
+//MARK:第三种方式：__block
+- (void)sec3demo3 {
+    SGHBlockPerson *person = [[SGHBlockPerson alloc] init];
+    __block typeof(person) blockPerson = person;
+    person.block = ^{
+        NSLog(@"age is %ld", (long)blockPerson.age);
+        blockPerson = nil; //使用完blockPerson后，如果没有设置`blockPerson = nil;`，会出现循环引用
+    };
+    person.block();
+}
+
+//MARK:第二种方式：__unsafe_unretained
+- (void)sec3demo2 {
+    SGHBlockPerson *person = [[SGHBlockPerson alloc] init];
+    __unsafe_unretained  typeof(person) tPerson = person;
+    person.block = ^{
+        NSLog(@"age is %ld", (long)tPerson.age);
+    };
+    person.block();
+}
+
+
+//MARK: - section 3
+//MARK:第一种方式：__weak
+- (void)sec3demo1 {
+    SGHBlockPerson *person = [[SGHBlockPerson alloc] init];
+//    __weak SGHBlockPerson *weakPerson = person;
+    __weak typeof(person) weakPerson = person;
+
+    person.block = ^{
+        NSLog(@"age is %ld", (long)weakPerson.age);
+    };
+    person.block();
+}
+
+
+
+//MARK:4.如果gcd内包含gcd，先强引用后弱引用。\n Person对象在强引用执行完后就销毁
+- (void)sec2demo4 {
+    SGHBlockPerson *person = [[SGHBlockPerson alloc] init];
+    person.age = 10;
+    
+    __weak SGHBlockPerson *weakPerson = person;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4.0 * NSEC_PER_SEC)),
+                   dispatch_get_main_queue(), ^{
+                       
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            NSLog(@"2-----age:%p",weakPerson);
+        });
+        NSLog(@"1-----age:%p",person);
+    });
+
+    NSLog(@"touchesBegan");
+}
+
+//MARK:3.如果gcd内包含gcd，先使用弱引用，后使用强引用。\n Person对象在block执行完成后才销毁
+- (void)sec2demo3 {
+    SGHBlockPerson *person = [[SGHBlockPerson alloc] init];
+    person.age = 10;
+    
+    __weak SGHBlockPerson *weakPerson = person;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4.0 * NSEC_PER_SEC)),
+                   dispatch_get_main_queue(), ^{
+                       
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            NSLog(@"2-----age:%p",person);
+        });
+        NSLog(@"1-----age:%p",weakPerson);
+    });
+
+    NSLog(@"touchesBegan");
+}
+
+
+//MARK:2.gcd的block中引用 局部变量、有__weak 修饰的Person对象，\n Person对象的作用域结束就销毁
+- (void)sec2demo2 {
+    SGHBlockPerson *person = [[SGHBlockPerson alloc] init];
+    person.age = 10;
+    
+    __weak SGHBlockPerson *weakPerson = person;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"age:%ld",(long)weakPerson.age);
+    });
+    
+    NSLog(@"touchesBegan");
+}
+
+//MARK: - section 2
+
+//MARK:1.gcd的block中引用 局部变量Person对象，在block执行完成后才销毁
+- (void)sec2demo1 {
+    SGHBlockPerson *person = [[SGHBlockPerson alloc] init];
+    person.age = 10;
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"age:%ld",(long)person.age);
+    });
+    
+    NSLog(@"touchesBegan");
+}
+
+
+
 //MARK: 5_2.探究：ARC模式下，MallocBlock 会持有对象p
 - (void)demo5_2 {
     typedef void(^XBTBlock)(void);

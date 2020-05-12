@@ -52,6 +52,10 @@ static CGFloat kCell_Height = 135.f;
     [self addRunloopObserver];
 }
 
+- (void)dealloc {
+    NSLog(@"SGH0425RunloopImageViewController dealloc");
+}
+
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     //    self.exampleTableView.frame = self.view.bounds;
@@ -187,7 +191,7 @@ static void CallBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, 
 +(void)addImage1With:(UITableViewCell *)cell {
     UIImageView *imageView2 = [[UIImageView alloc]initWithFrame:CGRectMake(5, 20, 85, 85)];
     imageView2.tag = 1;
-    NSString *path1 = [[NSBundle mainBundle]pathForResource:@"spaceship" ofType:@"png"];
+    NSString *path1 = [[NSBundle mainBundle]pathForResource:@"sea" ofType:@"png"];
     UIImage *image2 = [UIImage imageWithContentsOfFile:path1];
     imageView2.contentMode = UIViewContentModeScaleAspectFit;
     imageView2.image = image2;
@@ -199,7 +203,7 @@ static void CallBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, 
 +(void)addImage2With:(UITableViewCell *)cell {
     UIImageView *imageView2 = [[UIImageView alloc]initWithFrame:CGRectMake(105, 20, 85, 85)];
     imageView2.tag = 2;
-    NSString *path1 = [[NSBundle mainBundle]pathForResource:@"spaceship" ofType:@"png"];
+    NSString *path1 = [[NSBundle mainBundle]pathForResource:@"sea" ofType:@"png"];
     UIImage *image2 = [UIImage imageWithContentsOfFile:path1];
     imageView2.contentMode = UIViewContentModeScaleAspectFit;
     imageView2.image = image2;
@@ -212,7 +216,7 @@ static void CallBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, 
 +(void)addImage3With:(UITableViewCell *)cell {
     UIImageView *imageView2 = [[UIImageView alloc]initWithFrame:CGRectMake(200, 20, 85, 85)];
     imageView2.tag = 3;
-    NSString *path1 = [[NSBundle mainBundle]pathForResource:@"spaceship" ofType:@"png"];
+    NSString *path1 = [[NSBundle mainBundle]pathForResource:@"sea" ofType:@"png"];
     UIImage *image2 = [UIImage imageWithContentsOfFile:path1];
     imageView2.contentMode = UIViewContentModeScaleAspectFit;
     imageView2.image = image2;
@@ -227,14 +231,5 @@ static void CallBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, 
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

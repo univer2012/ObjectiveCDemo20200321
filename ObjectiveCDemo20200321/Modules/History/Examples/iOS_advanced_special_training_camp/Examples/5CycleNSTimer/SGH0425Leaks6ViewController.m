@@ -36,7 +36,7 @@
         @"1_2.「1」中的代码相当于如下代码：",
         @"2.第1种解决方案：\n当`didMoveToParentViewController:`中的`parent == nil`时，对timer执行释放",
         @"3.第2种解决方案：\n不让NSTimer持有self，采用「消息转发」来解决循环引用的问题",
-        @"4.第3种解决方案：\n使用中间变量NSProxy，弱持有self，来打破self与NSTimer中间的循环。",
+        @"4.第3种解决方案：\n使用中间变量NSProxy， 弱持有self，来打破self与NSTimer中间的循环。",
     ];
     NSArray *tempClassNameArray = @[
         @"demo1",

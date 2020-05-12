@@ -405,6 +405,7 @@
 		8F7D622024656B37006B2AF4 /* SGHGroupSemaphoreNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D621F24656B37006B2AF4 /* SGHGroupSemaphoreNetworkViewController.m */; };
 		8F7D62222465B397006B2AF4 /* SGHGroupSemaphoreNetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D62212465B397006B2AF4 /* SGHGroupSemaphoreNetViewController.swift */; };
 		8F7D622624663CDF006B2AF4 /* SGHBlockPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D622524663CDF006B2AF4 /* SGHBlockPerson.m */; };
+		8F7D66F9246AADB2006B2AF4 /* sea.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F7D66F8246AADB0006B2AF4 /* sea.png */; };
 		8F8FC5C8246481120017AE10 /* SGHCProgramLanguageViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FC5C7246481120017AE10 /* SGHCProgramLanguageViewController.mm */; };
 		8F8FC5CC246515470017AE10 /* SGHARCBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FC5CB246515470017AE10 /* SGHARCBlockViewController.m */; };
 		8F8FC5D0246526140017AE10 /* SGHInverviewQuestionsViewController+Ex1.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FC5CF246526140017AE10 /* SGHInverviewQuestionsViewController+Ex1.m */; };
@@ -1204,6 +1205,9 @@
 		8F7D62212465B397006B2AF4 /* SGHGroupSemaphoreNetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGHGroupSemaphoreNetViewController.swift; sourceTree = "<group>"; };
 		8F7D622424663CDF006B2AF4 /* SGHBlockPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHBlockPerson.h; sourceTree = "<group>"; };
 		8F7D622524663CDF006B2AF4 /* SGHBlockPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHBlockPerson.m; sourceTree = "<group>"; };
+		8F7D63DA24670688006B2AF4 /* ObjectiveCDemo20200321 copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ObjectiveCDemo20200321 copy-Info.plist"; path = "/Users/yuanping/Desktop/HuangSengoln/ObjectiveCDemo20200321/ObjectiveCDemo20200321 copy-Info.plist"; sourceTree = "<absolute>"; };
+		8F7D66202467778E006B2AF4 /* ObjectiveCDemo20200321 copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ObjectiveCDemo20200321 copy2-Info.plist"; path = "/Users/yuanping/Desktop/HuangSengoln/ObjectiveCDemo20200321/ObjectiveCDemo20200321 copy2-Info.plist"; sourceTree = "<absolute>"; };
+		8F7D66F8246AADB0006B2AF4 /* sea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sea.png; sourceTree = "<group>"; };
 		8F8FC5C6246481120017AE10 /* SGHCProgramLanguageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHCProgramLanguageViewController.h; sourceTree = "<group>"; };
 		8F8FC5C7246481120017AE10 /* SGHCProgramLanguageViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SGHCProgramLanguageViewController.mm; sourceTree = "<group>"; };
 		8F8FC5CA246515460017AE10 /* SGHARCBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHARCBlockViewController.h; sourceTree = "<group>"; };
@@ -2223,6 +2227,8 @@
 				8F310B7D2425B28900421E7A /* Products */,
 				7B2250CDD62BE8E089F37EC9 /* Pods */,
 				DC1DA7B9E7D364730BFA4B7C /* Frameworks */,
+				8F7D63DA24670688006B2AF4 /* ObjectiveCDemo20200321 copy-Info.plist */,
+				8F7D66202467778E006B2AF4 /* ObjectiveCDemo20200321 copy2-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -4593,6 +4599,7 @@
 		8F31159C242A303C00421E7A /* images */ = {
 			isa = PBXGroup;
 			children = (
+				8F7D66F8246AADB0006B2AF4 /* sea.png */,
 				8F3115A2242A307600421E7A /* 01.jpg */,
 				8F3115A1242A307600421E7A /* 02.jpg */,
 				8F31152D2429129000421E7A /* coretext-image-1.jpg */,
@@ -5367,6 +5374,7 @@
 				04F6EC7A2429AEA000D7F1CB /* qrcode_screen@2x.png in Resources */,
 				8F3114082426E6EF00421E7A /* DS_Store in Resources */,
 				8F3114022426E6EF00421E7A /* SGHSesstionDownloadViewController.xib in Resources */,
+				8F7D66F9246AADB2006B2AF4 /* sea.png in Resources */,
 				8F3115A4242A307600421E7A /* 01.jpg in Resources */,
 				04F6EC7B2429AEA000D7F1CB /* system_setting@2x.png in Resources */,
 				8F310B8F2425B29300421E7A /* Assets.xcassets in Resources */,

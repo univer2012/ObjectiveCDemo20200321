@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) NSInteger age;
 
+@property (nonatomic, copy) dispatch_block_t block;
+
 @end
 
 NS_ASSUME_NONNULL_END
