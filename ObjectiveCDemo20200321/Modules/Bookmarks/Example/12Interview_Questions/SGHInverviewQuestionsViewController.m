@@ -18,6 +18,9 @@
 #import "SGHInverviewQuestionsViewController+Ex1.h"
 #import "SGHInverviewQuestionsViewController+Ex2.h"
 
+#import "Girl.h"
+#import "Girl+Ex.h"
+
 @interface SGHInverviewQuestionsViewController ()
 
 @property (copy) NSMutableArray *array;
@@ -61,13 +64,26 @@
     //MARK: section 3
     NSArray *tempTitleArray3 = @[
         @"1. 两个category有同一个方法，调用该方法时， 由编译器决定执行哪个方法，执行编译器最后编译的方法。",
+        @"2.用category 来暴露主类的私有方法",
     ];
     NSArray *tempClassNameArray3 = @[
         @"sec3demo1",
+        @"sec3demo2",
     ];
     [self addSectionDataWithClassNameArray:tempClassNameArray3 titleArray:tempTitleArray3 title:@"Category"];
     
     [self.tableView reloadData];
+}
+
+//MARK:2.用category 来暴露主类的私有方法 和私有属性
+- (void)sec3demo2 {
+    Girl *person = [Girl new];
+    [person runText];
+    person.littleName = @"小明";
+    /*output:
+     分类暴露私有方法成功!!!
+     私有属性暴露成功!
+     */
 }
 
 //MARK: section 3 Category

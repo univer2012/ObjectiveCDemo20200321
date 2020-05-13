@@ -345,9 +345,25 @@
             filePath = "ObjectiveCDemo20200321/Modules/Contacts/Example/6runloop/Examples/4&#x5229;&#x7528;runloop&#x6765;&#x89e3;&#x51b3;&#x56fe;&#x50cf;&#x5361;&#x987f;/Ctrl/SGH0425RunloopImageViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
             landmarkName = "+addImage1With:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2AAB7E64-357B-4DDE-BB45-6206A69583F9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ObjectiveCDemo20200321/Modules/Contacts/Example/6runloop/Examples/4&#x5229;&#x7528;runloop&#x6765;&#x89e3;&#x51b3;&#x56fe;&#x50cf;&#x5361;&#x987f;/Ctrl/SGH0425RunloopImageViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

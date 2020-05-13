@@ -9,6 +9,7 @@
  来自：爱奇艺的 「iOS中高级特训营」的第5个视频「iOS开发之循环引用」
  */
 #import "SGH0425LeaksViewController.h"
+#import "SHLeaks0301Object.h"
 
 @interface SGH0425LeaksViewController ()
 
@@ -103,6 +104,10 @@
     a.ClassB = b;
     b.ClassA = a;
     */
+    SHLeaks0301Object *a = [SHLeaks0301Object new];
+    SHLeaks0301Object *b = [SHLeaks0301Object new];
+    a.objc = b;
+    b.objc = a;
 }
 
 - (void)dealloc

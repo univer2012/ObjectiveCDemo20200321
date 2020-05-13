@@ -24,12 +24,14 @@
         @"socket通信，客户端",
         @"socket通信，服务端",
         @"3.iOS GCDAsyncSocket简单使用 - 客户端",
+        @"4.Socket基本结构",
     ];
     NSArray *tempClassNameArray = @[
         @"SGHNativeSocketViewController",
         @"SGHSocketClientViewController",
         @"SGHSocketSeverViewController",
         @"SGHAsyncSocketClientViewController",
+        @"SHSocketStruc0218ViewController",
     ];
     
     self.inStoryboardVCArray = @[

@@ -47,8 +47,10 @@
         return;
     }
     [self willChangeValueForKey:@"name"];
-    _name=name;
+    _name = name;
     [self didChangeValueForKey:@"name"];
 }
+
+//- setLittleName:(NSString *)littleName {}  //成员变量没有setter方法
 
 @end

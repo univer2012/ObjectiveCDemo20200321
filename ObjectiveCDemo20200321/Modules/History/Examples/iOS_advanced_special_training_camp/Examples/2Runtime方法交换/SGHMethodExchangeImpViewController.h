@@ -1,8 +1,8 @@
 //
-//  SGHAdvance2KVOViewController.h
+//  SGHMethodExchangeImpViewController.h
 //  ObjectiveCDemo20200321
 //
-//  Created by 远平 on 2020/3/24.
+//  Created by 远平 on 2020/5/13.
 //  Copyright © 2020 远平. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SGHAdvance2KVOViewController : UIViewController
+@interface SGHMethodExchangeImpViewController : UIViewController
 
 @end
 

@@ -8,10 +8,12 @@
 
 #import "SGHAboutKVOAndKVCViewController.h"
 
-@interface SGHAboutKVOAndKVCViewController ()<UITableViewDelegate,UITableViewDataSource>
-@property(nonatomic,strong)UITableView *tableView;
-@property(nonatomic,strong)NSMutableArray *controllersArray;
-@property(nonatomic,strong)NSMutableArray *titlesArray;
+#import "SGH0324Person.h"
+#import "SGH0324Observer.h"
+
+
+@interface SGHAboutKVOAndKVCViewController ()
+
 
 @end
 
@@ -20,49 +22,69 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
-    self.tableView=({
-        UITableView *tableView=[UITableView new];
-        [self.view addSubview:tableView];
-        tableView.frame=CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame));
-        tableView.delegate=self;
-        tableView.dataSource=self;
-        tableView;
-    });
-    _controllersArray= [@[
-        @"SGHAdvance2KVOViewController",
-    ] mutableCopy];
+    self.type = SHBaseTableTypeMethod;
+    //MARK: section 1
+    NSArray *tempTitleArray = @[
+        @"1.探究KVO，用第三者来监听person.name的变化",
+        @"2.通过手动调用，让成员变量也响应KVO",
+    ];
+    NSArray *tempClassNameArray = @[
+        @"sec1demo1",
+        @"sec1demo2",
+    ];
     
-    self.titlesArray=[@[
-        @"1KVO进阶二",
-    ] mutableCopy];
+    [self addSectionDataWithClassNameArray:tempClassNameArray titleArray:tempTitleArray title:@"KVO的原理探究"];
+    
+    
+    [self.tableView reloadData];
+    
+    
 }
 
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+
+
+
+
+//MARK: 2.手动调用`willChangeValueForKey:` 和 `didChangeValueForKey:`，让成员变量也响应KVO
+- (void)sec1demo2 {
+    
+    SGH0324Observer *observer = [SGH0324Observer new];
+    SGH0324Person *person = [[SGH0324Person alloc] init];
+    
+    [person addObserver:observer forKeyPath:@"littleName" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:NULL];
+    
+    person->littleName = @"Li mama"; //set default value
+    
+    [person willChangeValueForKey:@"littleName"];
+    person->littleName = @"dragon mama";
+    person->littleName = @"dragon mama";
+    [person didChangeValueForKey:@"littleName"];
+    
+    [person removeObserver:observer forKeyPath:@"littleName" context:NULL];
 }
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _controllersArray.count;
+
+//MARK: - section 1
+
+//MARK: 1.探究KVO，用第三者来监听person.name的变化
+- (void)sec1demo1 {
+    /*
+    * 来自：
+    [KVO进阶（二）](https://www.jianshu.com/p/a8809c1eaecc)
+    */
+    
+    SGH0324Observer *observer = [SGH0324Observer new];
+    SGH0324Person *person = [[SGH0324Person alloc] init];
+    [person addObserver:observer forKeyPath:@"name" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:NULL];
+    person.name = @"Jack";
+    person.name = @"Jack";
+//        [person setValue:@"Jhon" forKey:@"name"];
+//        [person changeName:@"Jiji"];
+    
+    [person removeObserver:observer forKeyPath:@"name" context:NULL];
 }
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 50;
-}
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *cellIndentifier=@"CellIdentifier";
-    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:cellIndentifier];
-    if (cell == nil) {
-        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIndentifier];
-    }
-    cell.textLabel.text=_titlesArray[indexPath.row];
-    return cell;
-}
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    Class cls=NSClassFromString(_controllersArray[indexPath.row]);
-    if (cls) {
-        UIViewController *vc = [cls new];
-        vc.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:vc animated:YES];
-    }
-}
+
+
+
+
 
 @end

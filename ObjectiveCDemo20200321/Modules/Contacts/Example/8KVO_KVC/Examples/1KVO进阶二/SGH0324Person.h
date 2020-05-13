@@ -10,9 +10,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SGH0324Person : NSObject
+@interface SGH0324Person : NSObject {
+    @public
+    NSString *littleName; //小名
+}
+
 @property(copy,nonatomic)NSString *name;
+
 -(void)changeName:(NSString *)name;
+
 @end
 
 NS_ASSUME_NONNULL_END

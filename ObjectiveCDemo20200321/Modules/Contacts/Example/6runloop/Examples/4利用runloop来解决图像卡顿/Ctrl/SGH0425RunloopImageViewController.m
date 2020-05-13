@@ -9,6 +9,7 @@
 #import "SGH0425RunloopImageViewController.h"
 
 #import <CoreFoundation/CoreFoundation.h>
+#import "SGHTimerProxy.h"
 
 //定义一个block
 typedef BOOL(^RunloopBlock)(void);
@@ -20,7 +21,9 @@ static CGFloat kCell_Height = 135.f;
 
 @property(nonatomic,strong)UITableView *exampleTableView ;
 
-@property(nonatomic,strong)NSTimer *timer;
+
+@property (nonatomic, strong)NSTimer *timer;
+@property (nonatomic, strong) SGHTimerProxy* lgProxy;
 
 @property(nonatomic,strong)NSMutableArray *tasks;
 
@@ -44,7 +47,11 @@ static CGFloat kCell_Height = 135.f;
     });
     self.tasks = [NSMutableArray array];
     self.maxQueueLenght = 30;
-    _timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(timerMegthod) userInfo:nil repeats:YES];
+    
+    
+    _lgProxy = [SGHTimerProxy alloc]; //NSProxy只有alloc方法
+    _lgProxy.target = self;
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:_lgProxy selector:@selector(timerMegthod) userInfo:nil repeats:YES];
     
     //注册cell
     [self.exampleTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kIdentifier];
@@ -87,19 +94,23 @@ static CGFloat kCell_Height = 135.f;
     [SGH0425RunloopImageViewController addlabel:cell indexPath:indexPath];
     
     //添加图片 -- 每一次RunLoop循环 加载一个图片
-    //吧这个好事操作的代码，扔到数组里面去，先不执行
+    //把这个耗时操作的代码，扔到数组里面去，先不执行
 //    [SGH0425RunloopImageViewController addImage1With:cell];
 //    [SGH0425RunloopImageViewController addImage2With:cell];
 //    [SGH0425RunloopImageViewController addImage3With:cell];
+    @weakify(cell)
     [self addTask:^BOOL{
+        @strongify(cell)
         [SGH0425RunloopImageViewController addImage1With:cell];
         return YES;
     }];
     [self addTask:^BOOL{
+        @strongify(cell)
         [SGH0425RunloopImageViewController addImage2With:cell];
         return YES;
     }];
     [self addTask:^BOOL{
+        @strongify(cell)
         [SGH0425RunloopImageViewController addImage3With:cell];
         return YES;
     }];

@@ -73,8 +73,6 @@
                           @"SGH1221SelectedCellsViewController",
                           @"SGH170119CrashRankViewController",
                           @"SGH0713ScreenShotViewController",
-                          @"SHSocketStruc0218ViewController",
-                          @"SH0227SeniorCampViewController"
                           ] mutableCopy];
     
     self.titlesArray=[@[
@@ -96,8 +94,6 @@
                         @"21、tableView多选cell",
                         @"22、iOS_Crash杀手排名",
                         @"23、截屏方案",
-                        @"24、Socket基本结构",
-                        @"25、高级特训营"
                         ] mutableCopy];
     
     /*用组件隐藏navigationBar，并可以滑动返回

@@ -19,11 +19,15 @@
     self.type = SHBaseTableTypeNewVC;
     
     NSArray *tempTitleArray = @[
+        @"2.Runtime方法交换，交换UITableView的reloadData方法",
+        @"4.Runtime自定义KVO",
         @"5.iOS开发之循环引用",
         @"6.iOS开发之NSTimer",
         @"8.iOS开发之内存检测工具",
     ];
     NSArray *tempClassNameArray = @[
+        @"SGHMethodExchangeImpViewController",
+        @"SGHCustomKVOViewController",
         @"SGH0425LeaksViewController",
         @"SGH0425Leaks6ViewController",
         @"SGHAOPLeakFinderViewController",

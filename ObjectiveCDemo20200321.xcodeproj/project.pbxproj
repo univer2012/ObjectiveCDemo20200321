@@ -223,16 +223,6 @@
 		8F3110F524264FB100421E7A /* SGH0802ExpressionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F310FE224264FB000421E7A /* SGH0802ExpressionViewController.m */; };
 		8F3110F624264FB100421E7A /* SGH1108ActivityShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F310FE624264FB000421E7A /* SGH1108ActivityShareViewController.m */; };
 		8F3110F724264FB100421E7A /* SGH1108ShareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F310FE924264FB000421E7A /* SGH1108ShareItem.m */; };
-		8F3110F824264FB100421E7A /* UIViewController+SHLeaksTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F310FED24264FB000421E7A /* UIViewController+SHLeaksTest.m */; };
-		8F3110F924264FB100421E7A /* UITableView+SHDefaultDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F310FF124264FB000421E7A /* UITableView+SHDefaultDisplay.m */; };
-		8F3110FA24264FB100421E7A /* SH1902SpareWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F310FF324264FB000421E7A /* SH1902SpareWheel.m */; };
-		8F3110FB24264FB100421E7A /* SH1902Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F310FF424264FB000421E7A /* SH1902Person.m */; };
-		8F3110FC24264FB100421E7A /* SHLeaks0301Object.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F310FF824264FB000421E7A /* SHLeaks0301Object.m */; };
-		8F3110FD24264FB100421E7A /* SH0227SeniorCampViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F310FFB24264FB000421E7A /* SH0227SeniorCampViewController.m */; };
-		8F3110FE24264FB100421E7A /* SHRuntime4Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F310FFE24264FB000421E7A /* SHRuntime4Person.m */; };
-		8F3110FF24264FB100421E7A /* SHProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F31100124264FB000421E7A /* SHProxy.m */; };
-		8F31110024264FB100421E7A /* SHRuntime3Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F31100524264FB000421E7A /* SHRuntime3Person.m */; };
-		8F31110124264FB100421E7A /* SHSocketStruc0218ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F31100924264FB000421E7A /* SHSocketStruc0218ViewController.m */; };
 		8F31110224264FB100421E7A /* SGH1221SelectedCellsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F31100C24264FB000421E7A /* SGH1221SelectedCellsViewController.m */; };
 		8F31110324264FB100421E7A /* README.docx in Resources */ = {isa = PBXBuildFile; fileRef = 8F31100E24264FB000421E7A /* README.docx */; };
 		8F31110724264FB100421E7A /* Server_RTDev.xml in Resources */ = {isa = PBXBuildFile; fileRef = 8F31101824264FB000421E7A /* Server_RTDev.xml */; };
@@ -349,7 +339,6 @@
 		8F3115B9242A512900421E7A /* banner_3d_tran_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F3115B3242A512900421E7A /* banner_3d_tran_0.jpg */; };
 		8F3115BE242A586500421E7A /* SGH0324Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3115BD242A586500421E7A /* SGH0324Person.m */; };
 		8F3115C1242A589600421E7A /* SGH0324Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3115C0242A589600421E7A /* SGH0324Observer.m */; };
-		8F3115C4242A58C200421E7A /* SGHAdvance2KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3115C3242A58C200421E7A /* SGHAdvance2KVOViewController.m */; };
 		8F3115C7242A5AFD00421E7A /* UIViewController+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3115C6242A5AFD00421E7A /* UIViewController+Description.m */; };
 		8F3115CB242A609400421E7A /* SGHModelTransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3115CA242A609300421E7A /* SGHModelTransformViewController.m */; };
 		8F3115DB242A60F500421E7A /* statuses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F3115CC242A60F400421E7A /* statuses.plist */; };
@@ -434,6 +423,15 @@
 		8FF058E62443698C006F74E9 /* SGH_TTAttriLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF058E42443698C006F74E9 /* SGH_TTAttriLabelViewController.m */; };
 		8FF058EA24448D65006F74E9 /* SGH0413URLCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF058E924448D65006F74E9 /* SGH0413URLCacheViewController.m */; };
 		8FF847A42434230F002F18F9 /* SGH0401RACCommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF847A32434230F002F18F9 /* SGH0401RACCommandViewController.m */; };
+		8FFE474F246BB205000065C6 /* SHRuntime3Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFE474E246BB205000065C6 /* SHRuntime3Person.m */; };
+		8FFE4759246BB318000065C6 /* SH1902SpareWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFE4751246BB317000065C6 /* SH1902SpareWheel.m */; };
+		8FFE475A246BB318000065C6 /* SH1902Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFE4752246BB317000065C6 /* SH1902Person.m */; };
+		8FFE475B246BB318000065C6 /* UITableView+SHDefaultDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFE4757246BB317000065C6 /* UITableView+SHDefaultDisplay.m */; };
+		8FFE475E246BB3DD000065C6 /* SGHMethodExchangeImpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFE475D246BB3DD000065C6 /* SGHMethodExchangeImpViewController.m */; };
+		8FFE4761246BB553000065C6 /* SGHCustomKVOPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFE4760246BB553000065C6 /* SGHCustomKVOPerson.m */; };
+		8FFE4764246BB563000065C6 /* SGHCustomKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFE4763246BB563000065C6 /* SGHCustomKVOViewController.m */; };
+		8FFE4767246BB75F000065C6 /* SHLeaks0301Object.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFE4765246BB75E000065C6 /* SHLeaks0301Object.m */; };
+		8FFE476C246BB8FA000065C6 /* SHSocketStruc0218ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFE476B246BB8FA000065C6 /* SHSocketStruc0218ViewController.m */; };
 		CDC200DEA842E035ADFAA877 /* Pods_ObjectiveCDemo20200321.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5AE66CECF32624C91F7693 /* Pods_ObjectiveCDemo20200321.framework */; };
 /* End PBXBuildFile section */
 
@@ -872,26 +870,6 @@
 		8F310FE724264FB000421E7A /* SGH1108ActivityShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGH1108ActivityShareViewController.h; sourceTree = "<group>"; };
 		8F310FE924264FB000421E7A /* SGH1108ShareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGH1108ShareItem.m; sourceTree = "<group>"; };
 		8F310FEA24264FB000421E7A /* SGH1108ShareItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGH1108ShareItem.h; sourceTree = "<group>"; };
-		8F310FED24264FB000421E7A /* UIViewController+SHLeaksTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SHLeaksTest.m"; sourceTree = "<group>"; };
-		8F310FEE24264FB000421E7A /* UIViewController+SHLeaksTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SHLeaksTest.h"; sourceTree = "<group>"; };
-		8F310FF024264FB000421E7A /* UITableView+SHDefaultDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SHDefaultDisplay.h"; sourceTree = "<group>"; };
-		8F310FF124264FB000421E7A /* UITableView+SHDefaultDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SHDefaultDisplay.m"; sourceTree = "<group>"; };
-		8F310FF324264FB000421E7A /* SH1902SpareWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SH1902SpareWheel.m; sourceTree = "<group>"; };
-		8F310FF424264FB000421E7A /* SH1902Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SH1902Person.m; sourceTree = "<group>"; };
-		8F310FF524264FB000421E7A /* SH1902SpareWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SH1902SpareWheel.h; sourceTree = "<group>"; };
-		8F310FF624264FB000421E7A /* SH1902Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SH1902Person.h; sourceTree = "<group>"; };
-		8F310FF824264FB000421E7A /* SHLeaks0301Object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHLeaks0301Object.m; sourceTree = "<group>"; };
-		8F310FF924264FB000421E7A /* SHLeaks0301Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHLeaks0301Object.h; sourceTree = "<group>"; };
-		8F310FFB24264FB000421E7A /* SH0227SeniorCampViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SH0227SeniorCampViewController.m; sourceTree = "<group>"; };
-		8F310FFC24264FB000421E7A /* SH0227SeniorCampViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SH0227SeniorCampViewController.h; sourceTree = "<group>"; };
-		8F310FFE24264FB000421E7A /* SHRuntime4Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHRuntime4Person.m; sourceTree = "<group>"; };
-		8F310FFF24264FB000421E7A /* SHRuntime4Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHRuntime4Person.h; sourceTree = "<group>"; };
-		8F31100124264FB000421E7A /* SHProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHProxy.m; sourceTree = "<group>"; };
-		8F31100224264FB000421E7A /* SHProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHProxy.h; sourceTree = "<group>"; };
-		8F31100424264FB000421E7A /* SHRuntime3Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHRuntime3Person.h; sourceTree = "<group>"; };
-		8F31100524264FB000421E7A /* SHRuntime3Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHRuntime3Person.m; sourceTree = "<group>"; };
-		8F31100824264FB000421E7A /* SHSocketStruc0218ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSocketStruc0218ViewController.h; sourceTree = "<group>"; };
-		8F31100924264FB000421E7A /* SHSocketStruc0218ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSocketStruc0218ViewController.m; sourceTree = "<group>"; };
 		8F31100C24264FB000421E7A /* SGH1221SelectedCellsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGH1221SelectedCellsViewController.m; sourceTree = "<group>"; };
 		8F31100D24264FB000421E7A /* SGH1221SelectedCellsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGH1221SelectedCellsViewController.h; sourceTree = "<group>"; };
 		8F31100E24264FB000421E7A /* README.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = README.docx; sourceTree = "<group>"; };
@@ -1095,8 +1073,6 @@
 		8F3115BD242A586500421E7A /* SGH0324Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0324Person.m; sourceTree = "<group>"; };
 		8F3115BF242A589600421E7A /* SGH0324Observer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH0324Observer.h; sourceTree = "<group>"; };
 		8F3115C0242A589600421E7A /* SGH0324Observer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0324Observer.m; sourceTree = "<group>"; };
-		8F3115C2242A58C200421E7A /* SGHAdvance2KVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHAdvance2KVOViewController.h; sourceTree = "<group>"; };
-		8F3115C3242A58C200421E7A /* SGHAdvance2KVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHAdvance2KVOViewController.m; sourceTree = "<group>"; };
 		8F3115C5242A5AFD00421E7A /* UIViewController+Description.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Description.h"; sourceTree = "<group>"; };
 		8F3115C6242A5AFD00421E7A /* UIViewController+Description.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Description.m"; sourceTree = "<group>"; };
 		8F3115C9242A609300421E7A /* SGHModelTransformViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHModelTransformViewController.h; sourceTree = "<group>"; };
@@ -1264,6 +1240,24 @@
 		8FF058E924448D65006F74E9 /* SGH0413URLCacheViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0413URLCacheViewController.m; sourceTree = "<group>"; };
 		8FF847A22434230F002F18F9 /* SGH0401RACCommandViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH0401RACCommandViewController.h; sourceTree = "<group>"; };
 		8FF847A32434230F002F18F9 /* SGH0401RACCommandViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0401RACCommandViewController.m; sourceTree = "<group>"; };
+		8FFE474D246BB205000065C6 /* SHRuntime3Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHRuntime3Person.h; sourceTree = "<group>"; };
+		8FFE474E246BB205000065C6 /* SHRuntime3Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHRuntime3Person.m; sourceTree = "<group>"; };
+		8FFE4751246BB317000065C6 /* SH1902SpareWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SH1902SpareWheel.m; sourceTree = "<group>"; };
+		8FFE4752246BB317000065C6 /* SH1902Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SH1902Person.m; sourceTree = "<group>"; };
+		8FFE4753246BB317000065C6 /* SH1902SpareWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SH1902SpareWheel.h; sourceTree = "<group>"; };
+		8FFE4754246BB317000065C6 /* SH1902Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SH1902Person.h; sourceTree = "<group>"; };
+		8FFE4756246BB317000065C6 /* UITableView+SHDefaultDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SHDefaultDisplay.h"; sourceTree = "<group>"; };
+		8FFE4757246BB317000065C6 /* UITableView+SHDefaultDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SHDefaultDisplay.m"; sourceTree = "<group>"; };
+		8FFE475C246BB3DD000065C6 /* SGHMethodExchangeImpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHMethodExchangeImpViewController.h; sourceTree = "<group>"; };
+		8FFE475D246BB3DD000065C6 /* SGHMethodExchangeImpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHMethodExchangeImpViewController.m; sourceTree = "<group>"; };
+		8FFE475F246BB553000065C6 /* SGHCustomKVOPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHCustomKVOPerson.h; sourceTree = "<group>"; };
+		8FFE4760246BB553000065C6 /* SGHCustomKVOPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGHCustomKVOPerson.m; sourceTree = "<group>"; };
+		8FFE4762246BB563000065C6 /* SGHCustomKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHCustomKVOViewController.h; sourceTree = "<group>"; };
+		8FFE4763246BB563000065C6 /* SGHCustomKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHCustomKVOViewController.m; sourceTree = "<group>"; };
+		8FFE4765246BB75E000065C6 /* SHLeaks0301Object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHLeaks0301Object.m; sourceTree = "<group>"; };
+		8FFE4766246BB75E000065C6 /* SHLeaks0301Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHLeaks0301Object.h; sourceTree = "<group>"; };
+		8FFE476A246BB8FA000065C6 /* SHSocketStruc0218ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSocketStruc0218ViewController.h; sourceTree = "<group>"; };
+		8FFE476B246BB8FA000065C6 /* SHSocketStruc0218ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSocketStruc0218ViewController.m; sourceTree = "<group>"; };
 		BA5AE66CECF32624C91F7693 /* Pods_ObjectiveCDemo20200321.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectiveCDemo20200321.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1410,9 +1404,9 @@
 		0424220224548483004DD1AC /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				8FFE4769246BB8FA000065C6 /* 4SocketStruct */,
 				0424221224549772004DD1AC /* 3AsyncSocket_Client */,
 				0424220824549525004DD1AC /* HTTPs_Socket_TCP_IP_UDP */,
-				04242207245493A6004DD1AC /* 2NativeSocket_Server */,
 				042422032454849A004DD1AC /* 1NativeSocket_Client */,
 			);
 			path = Examples;
@@ -1425,13 +1419,6 @@
 				04242205245484B5004DD1AC /* SGHNativeSocketViewController.m */,
 			);
 			path = 1NativeSocket_Client;
-			sourceTree = "<group>";
-		};
-		04242207245493A6004DD1AC /* 2NativeSocket_Server */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = 2NativeSocket_Server;
 			sourceTree = "<group>";
 		};
 		0424220824549525004DD1AC /* HTTPs_Socket_TCP_IP_UDP */ = {
@@ -3187,8 +3174,9 @@
 		8F310FCB24264FB000421E7A /* 16-07-28 */ = {
 			isa = PBXGroup;
 			children = (
+				8F31107C24264FB100421E7A /* SGH160728ViewController.h */,
+				8F31107D24264FB100421E7A /* SGH160728ViewController.m */,
 				8F310FCC24264FB000421E7A /* Modlues */,
-				8F31107B24264FB100421E7A /* Ctrl */,
 			);
 			path = "16-07-28";
 			sourceTree = "<group>";
@@ -3201,8 +3189,6 @@
 				8F310FDB24264FB000421E7A /* 7UIAlertViewSetting */,
 				8F310FE024264FB000421E7A /* 5iOS正则表达式与判断手机号是否有效实例 */,
 				8F310FE424264FB000421E7A /* 18调用iOS系统自带的分享功能 */,
-				8F310FEB24264FB000421E7A /* 25高级特训营 */,
-				8F31100624264FB000421E7A /* 24Socket基本结构 */,
 				8F31100A24264FB000421E7A /* 21tableView多选cell */,
 				8F31101624264FB000421E7A /* 19使用NSXMLParser解析XML */,
 				8F31102024264FB000421E7A /* 6PresentAndPush */,
@@ -3328,112 +3314,6 @@
 				8F310FEA24264FB000421E7A /* SGH1108ShareItem.h */,
 			);
 			path = ShareItem;
-			sourceTree = "<group>";
-		};
-		8F310FEB24264FB000421E7A /* 25高级特训营 */ = {
-			isa = PBXGroup;
-			children = (
-				8F310FEC24264FB000421E7A /* 8iOS开发之内存检测工具 */,
-				8F310FEF24264FB000421E7A /* 2Runtime方法交换 */,
-				8F310FF224264FB000421E7A /* 1Runtime消息转发 */,
-				8F310FF724264FB000421E7A /* 7iOS开发之内存泄漏 */,
-				8F310FFA24264FB000421E7A /* Controller */,
-				8F310FFD24264FB000421E7A /* 4Runtime自定义KVO */,
-				8F31100024264FB000421E7A /* 6iOS开发之NSTimer */,
-				8F31100324264FB000421E7A /* 3Runtime字典转模型 */,
-			);
-			path = "25高级特训营";
-			sourceTree = "<group>";
-		};
-		8F310FEC24264FB000421E7A /* 8iOS开发之内存检测工具 */ = {
-			isa = PBXGroup;
-			children = (
-				8F310FED24264FB000421E7A /* UIViewController+SHLeaksTest.m */,
-				8F310FEE24264FB000421E7A /* UIViewController+SHLeaksTest.h */,
-			);
-			path = "8iOS开发之内存检测工具";
-			sourceTree = "<group>";
-		};
-		8F310FEF24264FB000421E7A /* 2Runtime方法交换 */ = {
-			isa = PBXGroup;
-			children = (
-				8F310FF024264FB000421E7A /* UITableView+SHDefaultDisplay.h */,
-				8F310FF124264FB000421E7A /* UITableView+SHDefaultDisplay.m */,
-			);
-			path = "2Runtime方法交换";
-			sourceTree = "<group>";
-		};
-		8F310FF224264FB000421E7A /* 1Runtime消息转发 */ = {
-			isa = PBXGroup;
-			children = (
-				8F310FF524264FB000421E7A /* SH1902SpareWheel.h */,
-				8F310FF324264FB000421E7A /* SH1902SpareWheel.m */,
-				8F310FF624264FB000421E7A /* SH1902Person.h */,
-				8F310FF424264FB000421E7A /* SH1902Person.m */,
-			);
-			path = "1Runtime消息转发";
-			sourceTree = "<group>";
-		};
-		8F310FF724264FB000421E7A /* 7iOS开发之内存泄漏 */ = {
-			isa = PBXGroup;
-			children = (
-				8F310FF824264FB000421E7A /* SHLeaks0301Object.m */,
-				8F310FF924264FB000421E7A /* SHLeaks0301Object.h */,
-			);
-			path = "7iOS开发之内存泄漏";
-			sourceTree = "<group>";
-		};
-		8F310FFA24264FB000421E7A /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				8F310FFB24264FB000421E7A /* SH0227SeniorCampViewController.m */,
-				8F310FFC24264FB000421E7A /* SH0227SeniorCampViewController.h */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		8F310FFD24264FB000421E7A /* 4Runtime自定义KVO */ = {
-			isa = PBXGroup;
-			children = (
-				8F310FFE24264FB000421E7A /* SHRuntime4Person.m */,
-				8F310FFF24264FB000421E7A /* SHRuntime4Person.h */,
-			);
-			path = "4Runtime自定义KVO";
-			sourceTree = "<group>";
-		};
-		8F31100024264FB000421E7A /* 6iOS开发之NSTimer */ = {
-			isa = PBXGroup;
-			children = (
-				8F31100124264FB000421E7A /* SHProxy.m */,
-				8F31100224264FB000421E7A /* SHProxy.h */,
-			);
-			path = "6iOS开发之NSTimer";
-			sourceTree = "<group>";
-		};
-		8F31100324264FB000421E7A /* 3Runtime字典转模型 */ = {
-			isa = PBXGroup;
-			children = (
-				8F31100424264FB000421E7A /* SHRuntime3Person.h */,
-				8F31100524264FB000421E7A /* SHRuntime3Person.m */,
-			);
-			path = "3Runtime字典转模型";
-			sourceTree = "<group>";
-		};
-		8F31100624264FB000421E7A /* 24Socket基本结构 */ = {
-			isa = PBXGroup;
-			children = (
-				8F31100724264FB000421E7A /* Controller */,
-			);
-			path = "24Socket基本结构";
-			sourceTree = "<group>";
-		};
-		8F31100724264FB000421E7A /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				8F31100824264FB000421E7A /* SHSocketStruc0218ViewController.h */,
-				8F31100924264FB000421E7A /* SHSocketStruc0218ViewController.m */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		8F31100A24264FB000421E7A /* 21tableView多选cell */ = {
@@ -3730,15 +3610,6 @@
 			children = (
 				8F31107924264FB100421E7A /* SGH1012PlaceholderColorViewController.m */,
 				8F31107A24264FB100421E7A /* SGH1012PlaceholderColorViewController.h */,
-			);
-			path = Ctrl;
-			sourceTree = "<group>";
-		};
-		8F31107B24264FB100421E7A /* Ctrl */ = {
-			isa = PBXGroup;
-			children = (
-				8F31107C24264FB100421E7A /* SGH160728ViewController.h */,
-				8F31107D24264FB100421E7A /* SGH160728ViewController.m */,
 			);
 			path = Ctrl;
 			sourceTree = "<group>";
@@ -4658,8 +4529,6 @@
 				8F3115BD242A586500421E7A /* SGH0324Person.m */,
 				8F3115BF242A589600421E7A /* SGH0324Observer.h */,
 				8F3115C0242A589600421E7A /* SGH0324Observer.m */,
-				8F3115C2242A58C200421E7A /* SGHAdvance2KVOViewController.h */,
-				8F3115C3242A58C200421E7A /* SGHAdvance2KVOViewController.m */,
 			);
 			path = "1KVO进阶二";
 			sourceTree = "<group>";
@@ -4975,6 +4844,8 @@
 		8F72EFC62453EE4A0023060B /* 2CycleReference */ = {
 			isa = PBXGroup;
 			children = (
+				8FFE4766246BB75E000065C6 /* SHLeaks0301Object.h */,
+				8FFE4765246BB75E000065C6 /* SHLeaks0301Object.m */,
 				8F72EFC72453EE7A0023060B /* SGH0425LeaksViewController.h */,
 				8F72EFC82453EE7A0023060B /* SGH0425LeaksViewController.m */,
 			);
@@ -4994,6 +4865,10 @@
 		8F72EFCE2453F3D80023060B /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				8FFE4750246BB317000065C6 /* 1Runtime消息转发 */,
+				8FFE4755246BB317000065C6 /* 2Runtime方法交换 */,
+				8FFE474C246BB205000065C6 /* 3Runtime字典转模型 */,
+				8FFE4758246BB318000065C6 /* 4Runtime自定义KVO */,
 				8F72EFE824546F080023060B /* 9Socket */,
 				8F72EFDA24545BE20023060B /* 8AOPLeakFinder */,
 				8F72EFD02453F4370023060B /* 5CycleNSTimer */,
@@ -5242,6 +5117,57 @@
 				8FF847A32434230F002F18F9 /* SGH0401RACCommandViewController.m */,
 			);
 			path = 7RACCommand;
+			sourceTree = "<group>";
+		};
+		8FFE474C246BB205000065C6 /* 3Runtime字典转模型 */ = {
+			isa = PBXGroup;
+			children = (
+				8FFE474D246BB205000065C6 /* SHRuntime3Person.h */,
+				8FFE474E246BB205000065C6 /* SHRuntime3Person.m */,
+			);
+			path = "3Runtime字典转模型";
+			sourceTree = "<group>";
+		};
+		8FFE4750246BB317000065C6 /* 1Runtime消息转发 */ = {
+			isa = PBXGroup;
+			children = (
+				8FFE4753246BB317000065C6 /* SH1902SpareWheel.h */,
+				8FFE4751246BB317000065C6 /* SH1902SpareWheel.m */,
+				8FFE4754246BB317000065C6 /* SH1902Person.h */,
+				8FFE4752246BB317000065C6 /* SH1902Person.m */,
+			);
+			path = "1Runtime消息转发";
+			sourceTree = "<group>";
+		};
+		8FFE4755246BB317000065C6 /* 2Runtime方法交换 */ = {
+			isa = PBXGroup;
+			children = (
+				8FFE4756246BB317000065C6 /* UITableView+SHDefaultDisplay.h */,
+				8FFE4757246BB317000065C6 /* UITableView+SHDefaultDisplay.m */,
+				8FFE475C246BB3DD000065C6 /* SGHMethodExchangeImpViewController.h */,
+				8FFE475D246BB3DD000065C6 /* SGHMethodExchangeImpViewController.m */,
+			);
+			path = "2Runtime方法交换";
+			sourceTree = "<group>";
+		};
+		8FFE4758246BB318000065C6 /* 4Runtime自定义KVO */ = {
+			isa = PBXGroup;
+			children = (
+				8FFE475F246BB553000065C6 /* SGHCustomKVOPerson.h */,
+				8FFE4760246BB553000065C6 /* SGHCustomKVOPerson.m */,
+				8FFE4762246BB563000065C6 /* SGHCustomKVOViewController.h */,
+				8FFE4763246BB563000065C6 /* SGHCustomKVOViewController.m */,
+			);
+			path = "4Runtime自定义KVO";
+			sourceTree = "<group>";
+		};
+		8FFE4769246BB8FA000065C6 /* 4SocketStruct */ = {
+			isa = PBXGroup;
+			children = (
+				8FFE476A246BB8FA000065C6 /* SHSocketStruc0218ViewController.h */,
+				8FFE476B246BB8FA000065C6 /* SHSocketStruc0218ViewController.m */,
+			);
+			path = 4SocketStruct;
 			sourceTree = "<group>";
 		};
 		DC1DA7B9E7D364730BFA4B7C /* Frameworks */ = {
@@ -5495,6 +5421,7 @@
 				8F7D62222465B397006B2AF4 /* SGHGroupSemaphoreNetViewController.swift in Sources */,
 				8F3110C524264FB100421E7A /* Example3Controller.m in Sources */,
 				8FEEE1F7245D009A0074BED6 /* Girl.m in Sources */,
+				8FFE4764246BB563000065C6 /* SGHCustomKVOViewController.m in Sources */,
 				8F31112024264FB100421E7A /* SGH16110701ViewController.m in Sources */,
 				8F3110A824264FB100421E7A /* WBTag.m in Sources */,
 				8F3110B724264FB100421E7A /* SGH0522CrashAnalisisViewController.m in Sources */,
@@ -5515,7 +5442,6 @@
 				8F31109B24264FB100421E7A /* UIView+WZLBadge.m in Sources */,
 				8F311640242D01FA00421E7A /* SGHNotificationViewController.m in Sources */,
 				8F3115E1242A60F500421E7A /* Status.m in Sources */,
-				8F3110FB24264FB100421E7A /* SH1902Person.m in Sources */,
 				0417DBCA2456BCB800196D00 /* UIApplication+MemoryLeak.m in Sources */,
 				8F311581242995AE00421E7A /* SGH0512Runtime4ViewController.m in Sources */,
 				0417DB9D2456B60200196D00 /* SGH0427AMPViewController.m in Sources */,
@@ -5524,6 +5450,7 @@
 				8F311627242D01FA00421E7A /* SGHStopwatchViewController.m in Sources */,
 				8F31111F24264FB100421E7A /* SGH1108AppStoreViewController.m in Sources */,
 				8F311635242D01FA00421E7A /* SGHStartWithViewController.m in Sources */,
+				8FFE474F246BB205000065C6 /* SHRuntime3Person.m in Sources */,
 				8F3113502426E1D500421E7A /* SGHMethodSwizzlingObject.m in Sources */,
 				8F311631242D01FA00421E7A /* SGHThrottleViewController.m in Sources */,
 				8F311587242995AE00421E7A /* SGH0511Runtime3ViewController.m in Sources */,
@@ -5534,6 +5461,7 @@
 				8F3110BE24264FB100421E7A /* SGH0429CryptographyViewController.m in Sources */,
 				0417DBC62456BCB800196D00 /* UIPageViewController+MemoryLeak.m in Sources */,
 				8F3110B524264FB100421E7A /* GJCell.m in Sources */,
+				8FFE4767246BB75F000065C6 /* SHLeaks0301Object.m in Sources */,
 				8F311642242D01FA00421E7A /* LxDBAnythingViewController.m in Sources */,
 				043A637424534FA800C5ADE6 /* SGHCyclesMemoryLeaksVC.m in Sources */,
 				8F31112A24264FB100421E7A /* SGH1012PlaceholderColorViewController.m in Sources */,
@@ -5548,11 +5476,11 @@
 				8F3110A124264FB100421E7A /* WBStatusTimelineViewController.m in Sources */,
 				8F3110CD24264FB100421E7A /* SGH0424MapEngine.m in Sources */,
 				04F6EC7E2429AEA000D7F1CB /* SGHPopoverPresentationController.m in Sources */,
-				8F3110FD24264FB100421E7A /* SH0227SeniorCampViewController.m in Sources */,
 				8F3110E424264FB100421E7A /* UIColor+Hex.m in Sources */,
 				0417DBD924581BB200196D00 /* SGH0428StringViewController.m in Sources */,
 				8F31111824264FB100421E7A /* SGH1013TextViewViewController.m in Sources */,
 				8F31110B24264FB100421E7A /* SGH0824PresentAndPushThreeViewController.m in Sources */,
+				8FFE4759246BB318000065C6 /* SH1902SpareWheel.m in Sources */,
 				8FEEE1F5245D009A0074BED6 /* FKUser.m in Sources */,
 				8F8FC5C8246481120017AE10 /* SGHCProgramLanguageViewController.mm in Sources */,
 				8F311641242D01FA00421E7A /* SGHSwitchDelegateViewController.m in Sources */,
@@ -5587,7 +5515,7 @@
 				8F3110C324264FB100421E7A /* Example2Controller.m in Sources */,
 				8F7D622024656B37006B2AF4 /* SGHGroupSemaphoreNetworkViewController.m in Sources */,
 				8FF058EA24448D65006F74E9 /* SGH0413URLCacheViewController.m in Sources */,
-				8F31110124264FB100421E7A /* SHSocketStruc0218ViewController.m in Sources */,
+				8FFE475E246BB3DD000065C6 /* SGHMethodExchangeImpViewController.m in Sources */,
 				04F6EC912429E7F300D7F1CB /* SGH_CGAndQuartzCoreAnimationViewController.m in Sources */,
 				045787FC2427B88100C2DF75 /* SGHCoreTextListViewController.m in Sources */,
 				8F31108524264FB100421E7A /* NSDictionary+NilSafe.m in Sources */,
@@ -5644,9 +5572,9 @@
 				8F3110DC24264FB100421E7A /* Model.xcdatamodeld in Sources */,
 				8F3114042426E6EF00421E7A /* SGHDateCalendarViewController.m in Sources */,
 				8F31162D242D01FA00421E7A /* SGHSkipUntilBlockViewController.m in Sources */,
+				8FFE476C246BB8FA000065C6 /* SHSocketStruc0218ViewController.m in Sources */,
 				8F31163A242D01FA00421E7A /* SGHIgnoreViewController.m in Sources */,
 				04F6EC432429ACCB00D7F1CB /* SGHRuntimeAttriMethodViewController.m in Sources */,
-				8F3110FF24264FB100421E7A /* SHProxy.m in Sources */,
 				0424222024552C30004DD1AC /* SGHAboutNSOperationViewController.m in Sources */,
 				8FEEE1FD245E2E980074BED6 /* SGH0503ARCPerson.m in Sources */,
 				8F3110A424264FB100421E7A /* WBTimelineItem.m in Sources */,
@@ -5656,11 +5584,11 @@
 				04C8A283245822A70010545D /* SGH0428CopyViewController.m in Sources */,
 				8F3110A024264FB100421E7A /* SGH190129YYKitViewController.m in Sources */,
 				8F31108624264FB100421E7A /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
-				8F31110024264FB100421E7A /* SHRuntime3Person.m in Sources */,
 				8F3110D024264FB100421E7A /* SHDispatchMethodsViewController.m in Sources */,
 				8F311639242D01FA00421E7A /* SGHMapViewController.m in Sources */,
 				8F3115DE242A60F500421E7A /* NSObject+EnumArr.m in Sources */,
 				0417DBA12456B71F00196D00 /* SGHFBRetainCycleViewController.m in Sources */,
+				8FFE4761246BB553000065C6 /* SGHCustomKVOPerson.m in Sources */,
 				8FF058BE2438215D006F74E9 /* SGH04LoginSuccessViewController.m in Sources */,
 				8F3110DD24264FB100421E7A /* SHUpdateJumpAppStoreVC.m in Sources */,
 				8F8FC5D624652EE50017AE10 /* Girl+Ex.m in Sources */,
@@ -5679,7 +5607,6 @@
 				04242237245563D8004DD1AC /* SGH0426OperationQueueDemoViewController.m in Sources */,
 				8F3114982426EB4C00421E7A /* SGH0618GeocodeViewController.m in Sources */,
 				049678F92427C56100F2FD83 /* SGHCoreText2ViewController.m in Sources */,
-				8F3110F924264FB100421E7A /* UITableView+SHDefaultDisplay.m in Sources */,
 				8F72EFCD2453F34E0023060B /* SGHAdvancedTrainingCampListDemoViewController.m in Sources */,
 				8F3115DF242A60F500421E7A /* PersonModel.m in Sources */,
 				043A63692453310800C5ADE6 /* SGHBlockLeakViewController.m in Sources */,
@@ -5720,8 +5647,6 @@
 				04F6EC442429ACCB00D7F1CB /* SGHPerson.m in Sources */,
 				8F8FC5D0246526140017AE10 /* SGHInverviewQuestionsViewController+Ex1.m in Sources */,
 				8F3115922429977800421E7A /* SGH0509AboutRunLoopViewController.m in Sources */,
-				8F3115C4242A58C200421E7A /* SGHAdvance2KVOViewController.m in Sources */,
-				8F3110FC24264FB100421E7A /* SHLeaks0301Object.m in Sources */,
 				8F7D622624663CDF006B2AF4 /* SGHBlockPerson.m in Sources */,
 				8F3114812426EB4C00421E7A /* SGH0618AntiEncodeViewController.m in Sources */,
 				8FF058C8243873AD006F74E9 /* SGHCellModel.m in Sources */,
@@ -5735,7 +5660,6 @@
 				8F3110B424264FB100421E7A /* SHUnfixedHeightTableViewController.m in Sources */,
 				0424224B2455D2D4004DD1AC /* SGHLock5ViewController.m in Sources */,
 				04DF5945245A8DF800F0EB3E /* UIView+NeastPublic.swift in Sources */,
-				8F3110F824264FB100421E7A /* UIViewController+SHLeaksTest.m in Sources */,
 				8F72EFD92454111B0023060B /* SGHTimerProxy.m in Sources */,
 				8F31110924264FB100421E7A /* SGH1125XMLParserViewController.m in Sources */,
 				8F311588242995AE00421E7A /* SGH0511RuntimeMethod.m in Sources */,
@@ -5759,6 +5683,7 @@
 				8F31112524264FB100421E7A /* SGH1013ImageSaveAlbumViewController.m in Sources */,
 				8F31163F242D01FA00421E7A /* SGHTargetActionViewController.m in Sources */,
 				8F3115CB242A609400421E7A /* SGHModelTransformViewController.m in Sources */,
+				8FFE475A246BB318000065C6 /* SH1902Person.m in Sources */,
 				8F3114192426E6EF00421E7A /* SGHWebViewConstrainsViewController.m in Sources */,
 				8F31108224264FB100421E7A /* TBXML+Compression.m in Sources */,
 				8F3110ED24264FB100421E7A /* SGH0524PresentAViewController.m in Sources */,
@@ -5808,7 +5733,6 @@
 				8FEEE1F1245D009A0074BED6 /* CYLBlockExecutor.m in Sources */,
 				8F3110D724264FB100421E7A /* EOCPerson.m in Sources */,
 				8F31112624264FB100421E7A /* SGH170119CrashRankViewController.m in Sources */,
-				8F3110FA24264FB100421E7A /* SH1902SpareWheel.m in Sources */,
 				045B5EA4245973C30023BF7B /* SGHDataStructAlgorithmsViewController.mm in Sources */,
 				8F3110A224264FB100421E7A /* WBURL.m in Sources */,
 				8F3110E224264FB100421E7A /* RegexKitLite.m in Sources */,
@@ -5835,7 +5759,6 @@
 				8F31108424264FB100421E7A /* TBXML+HTTP.m in Sources */,
 				8F31112724264FB100421E7A /* SGH1108UpdateAppViewController.m in Sources */,
 				8F3110C924264FB100421E7A /* SGH0424GaodeFactory.m in Sources */,
-				8F3110FE24264FB100421E7A /* SHRuntime4Person.m in Sources */,
 				8F3110DF24264FB100421E7A /* SGH170815IdentCodeAuthView.m in Sources */,
 				8F3110AA24264FB100421E7A /* SGH170208ViewController.m in Sources */,
 				8F31150B2426FBCD00421E7A /* SGHVariableParamsViewController.m in Sources */,
@@ -5849,6 +5772,7 @@
 				8F3110DE24264FB100421E7A /* SGH170815IdentCodeViewController.m in Sources */,
 				8F31110E24264FB100421E7A /* SGH0824PresentAndPushOneViewController.m in Sources */,
 				8F3110EB24264FB100421E7A /* SGH0524PresentCViewController.m in Sources */,
+				8FFE475B246BB318000065C6 /* UITableView+SHDefaultDisplay.m in Sources */,
 				0424222F24553726004DD1AC /* SGH0409ThreadViewController.m in Sources */,
 				8F311597242999AE00421E7A /* SGHTechnologyExplorationViewController.m in Sources */,
 			);

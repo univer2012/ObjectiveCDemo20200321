@@ -13,6 +13,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Girl (Ex)
 
+///暴露Girl 的 私有方法 runText
+- (void)runText;
+
+///暴露Girl 的 私有属性littleName
+@property (nonatomic, copy) NSString *littleName;   //小名
+
 @end
 
 NS_ASSUME_NONNULL_END
