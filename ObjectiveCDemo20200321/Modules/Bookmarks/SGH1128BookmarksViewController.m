@@ -15,6 +15,8 @@
 #import "SHReactiveCocoaViewController.h"
 //#import "UINavigationController+FDFullscreenPopGesture.h"
 
+#import "ObjectiveCDemo20200321-Swift.h"
+
 @interface SGH1128BookmarksViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)NSMutableArray *controllersArray;
@@ -51,6 +53,8 @@
         @"SGHDataStructAlgorithmsViewController",
         @"SGHInverviewQuestionsViewController",
         @"SGHCProgramLanguageViewController",
+        NSStringFromClass([SGHSwiftProgramLanguageViewController class]),
+        @"SGHRealizePrincipleAndAnalysisVC",
     ] mutableCopy];
     
     
@@ -67,6 +71,8 @@
         @"11、数据结构与算法",
         @"12、面试题",
         @"13、C语言",
+        @"14、Swift语言",
+        @"15、底层原理探索和分析",
     ] mutableCopy];
     
     

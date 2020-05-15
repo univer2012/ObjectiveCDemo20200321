@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface SGHPerson : NSObject
+
 @property(nonatomic,strong)NSString *name;
 
 -(void)sayHello;

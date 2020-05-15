@@ -53,14 +53,14 @@
         @"runtime获取私有属性强制更改私有属性以及获取私有方法",
         @"iOS runtime实战应用：Method Swizzling",
         @"runtime+KVC实现多层字典模型转换",
-        @"获取UILabel类的所有属性和方法",
+        @"3.Runtime的基本使用",
     ];
     NSArray *tempClassNameArray2 = @[
         @"SGH0515ClassViewController",
         @"SGHRuntimeAttriMethodViewController",
         @"SGHMethodSwizzlingViewController",
         @"SGHModelTransformViewController",
-        @"SGHGetIvarsPropertiesViewController",
+        @"SGHRuntimeUseViewController",
     ];
     [self addSectionDataWithClassNameArray:tempClassNameArray2 titleArray:tempTitleArray2 title:@"Runtime 的使用"];
     

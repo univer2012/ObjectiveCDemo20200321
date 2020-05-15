@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
     NSString *littleName; //小名
 }
 
+@property(assign, nonatomic)int age;
+
 @property(copy,nonatomic)NSString *name;
 
 -(void)changeName:(NSString *)name;

@@ -72,8 +72,91 @@
     ];
     [self addSectionDataWithClassNameArray:tempClassNameArray3 titleArray:tempTitleArray3 title:@"Category"];
     
+    //MARK: section 4
+    NSArray *tempTitleArray4 = @[
+        @"1.暴力破解法 - 两层for循环，获取差值中最大值",
+        @"2.贪心算法 - 先获取数组中最小值，然后做差值的出最大差价",
+    ];
+    NSArray *tempClassNameArray4 = @[
+        @"sec4demo1",
+        @"sec4demo2",
+    ];
+    [self addSectionDataWithClassNameArray:tempClassNameArray4 titleArray:tempTitleArray4 title:@"iOS算法提升之四(买卖股票的最佳时机)"];
+    
     [self.tableView reloadData];
 }
+
+//MARK: 2.贪心算法 - 先获取数组中最小值，然后做差值的出最大差价
+- (void)sec4demo2 {
+    NSArray *arr = @[@7, @1, @5, @3, @6, @4];
+    function2(arr);
+}
+/**
+动态规划
+ 1.获取最少购入价格
+ 2.判断最大售出价格
+ **/
+void function2(NSArray *dataArr) {
+    int min = [dataArr[0] intValue];    //最小值
+    int maxPrice = 0;   //最大赚取
+    int startIndex = 0;
+    int saleIndex = 0;
+ 
+    for (int i = 1 ; i < dataArr.count; i++) {
+        int indexi = [dataArr[i] intValue];
+        //首先获取最少购入价格
+        if (min > indexi) {
+            min = indexi;
+            //获取最大售出价格
+        } else if (indexi - min > maxPrice) {
+            /**
+             切记这个开始位置，不是min的位置，
+             如果数组NSArray *arr = @[@7,@2,@5,@13,@1,@5,@3,@6,@4,@8];
+             是上面的话，min最终结果是1， startIndex应该是2的位置
+             **/
+            startIndex = [dataArr containsObject:@(min)];
+            saleIndex = i;
+            maxPrice = indexi - min;
+        }
+    }
+    
+    NSLog(@"第%d天买入，第%d天卖出，最大赚取max ----%d ",startIndex+1,saleIndex +1,maxPrice);
+}
+
+
+//MARK: - section 4
+//MARK: 1.暴力破解法 - 两层for循环，获取差值中最大值
+- (void)sec4demo1 {
+    NSArray *arr = @[@7, @1, @5, @3, @6, @4];
+    function1(arr);
+}
+/**
+ 暴力破解法，二次for循环获取差值最大值
+ **/
+void function1(NSArray *dataArr) {
+    int max = 0;
+    int startIndex = 0;
+    int saleIndex = 0;
+ 
+    for (int i = 0 ; i < dataArr.count; i++) {
+        for (int j = i+1; j<dataArr.count; j++) {
+            //获取第j天股票价格
+            int indexj = [dataArr[j] intValue];
+            //获取第i天股票价格
+            int indexi = [dataArr[i] intValue];
+            int priceSpread  = indexj - indexi;
+            if (priceSpread > max) {
+                startIndex = i;
+                saleIndex = j;
+            }
+            max = max> priceSpread ? max : priceSpread;
+            
+        }
+        
+    }
+    NSLog(@"第%d天买入，第%d天卖出，最大赚取max ----%d ",startIndex+1,saleIndex +1,max);
+}
+
 
 //MARK:2.用category 来暴露主类的私有方法 和私有属性
 - (void)sec3demo2 {

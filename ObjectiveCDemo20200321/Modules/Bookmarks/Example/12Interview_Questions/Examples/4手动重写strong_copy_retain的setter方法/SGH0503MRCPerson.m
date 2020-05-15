@@ -10,6 +10,18 @@
 
 @implementation SGH0503MRCPerson
 
+//对readwrite属性，同时重写了setter、getter方法，要手动创建对应的`_<key>` 成员变量。
+@synthesize name = _name;
+@synthesize age = _age;
+
+//assign
+- (void)setAge:(int)age {
+    _age = age;
+}
+- (int)age {
+    return _age;
+}
+
 //strong
 -(void)setName:(NSString *)name
 {
@@ -18,6 +30,9 @@
         [_name release];
         _name = [name retain];
     }
+}
+- (NSString *)name {
+    return _name;
 }
 
 //copy

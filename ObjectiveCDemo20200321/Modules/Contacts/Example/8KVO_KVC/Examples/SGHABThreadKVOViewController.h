@@ -1,8 +1,8 @@
 //
-//  SGHGetIvarsPropertiesViewController.h
+//  SGHABThreadKVOViewController.h
 //  ObjectiveCDemo20200321
 //
-//  Created by 远平 on 2020/5/8.
+//  Created by 远平 on 2020/5/15.
 //  Copyright © 2020 远平. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SGHGetIvarsPropertiesViewController : UIViewController
+@interface SGHABThreadKVOViewController : UIViewController
 
 @end
 

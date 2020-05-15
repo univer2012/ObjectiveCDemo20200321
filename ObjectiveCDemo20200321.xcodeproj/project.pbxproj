@@ -400,7 +400,6 @@
 		8F8FC5D0246526140017AE10 /* SGHInverviewQuestionsViewController+Ex1.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FC5CF246526140017AE10 /* SGHInverviewQuestionsViewController+Ex1.m */; };
 		8F8FC5D32465264C0017AE10 /* SGHInverviewQuestionsViewController+Ex2.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FC5D22465264C0017AE10 /* SGHInverviewQuestionsViewController+Ex2.m */; };
 		8F8FC5D624652EE50017AE10 /* Girl+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FC5D524652EE50017AE10 /* Girl+Ex.m */; };
-		8F8FC5D9246531790017AE10 /* SGHGetIvarsPropertiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FC5D8246531790017AE10 /* SGHGetIvarsPropertiesViewController.m */; };
 		8FEEE1F0245D009A0074BED6 /* NSObject+CYLRunAtDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEE1DA245D00990074BED6 /* NSObject+CYLRunAtDealloc.m */; };
 		8FEEE1F1245D009A0074BED6 /* CYLBlockExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEE1DB245D00990074BED6 /* CYLBlockExecutor.m */; };
 		8FEEE1F2245D009A0074BED6 /* SGHDeallocBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEE1DE245D00990074BED6 /* SGHDeallocBlockViewController.m */; };
@@ -432,6 +431,11 @@
 		8FFE4764246BB563000065C6 /* SGHCustomKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFE4763246BB563000065C6 /* SGHCustomKVOViewController.m */; };
 		8FFE4767246BB75F000065C6 /* SHLeaks0301Object.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFE4765246BB75E000065C6 /* SHLeaks0301Object.m */; };
 		8FFE476C246BB8FA000065C6 /* SHSocketStruc0218ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFE476B246BB8FA000065C6 /* SHSocketStruc0218ViewController.m */; };
+		8FFE4770246BC131000065C6 /* SGHRuntimeUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFE476F246BC131000065C6 /* SGHRuntimeUseViewController.m */; };
+		8FFE4773246D4306000065C6 /* SGHSwiftProgramLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFE4772246D4306000065C6 /* SGHSwiftProgramLanguageViewController.swift */; };
+		8FFE4777246E473D000065C6 /* SGHRealizePrincipleAndAnalysisVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFE4776246E473D000065C6 /* SGHRealizePrincipleAndAnalysisVC.m */; };
+		8FFE477B246E570B000065C6 /* SGHisaMan.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFE477A246E570B000065C6 /* SGHisaMan.m */; };
+		8FFE477E246E74AD000065C6 /* SGHABThreadKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFE477D246E74AD000065C6 /* SGHABThreadKVOViewController.m */; };
 		CDC200DEA842E035ADFAA877 /* Pods_ObjectiveCDemo20200321.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5AE66CECF32624C91F7693 /* Pods_ObjectiveCDemo20200321.framework */; };
 /* End PBXBuildFile section */
 
@@ -1194,8 +1198,6 @@
 		8F8FC5D22465264C0017AE10 /* SGHInverviewQuestionsViewController+Ex2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SGHInverviewQuestionsViewController+Ex2.m"; sourceTree = "<group>"; };
 		8F8FC5D424652EE50017AE10 /* Girl+Ex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Girl+Ex.h"; sourceTree = "<group>"; };
 		8F8FC5D524652EE50017AE10 /* Girl+Ex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Girl+Ex.m"; sourceTree = "<group>"; };
-		8F8FC5D7246531790017AE10 /* SGHGetIvarsPropertiesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHGetIvarsPropertiesViewController.h; sourceTree = "<group>"; };
-		8F8FC5D8246531790017AE10 /* SGHGetIvarsPropertiesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHGetIvarsPropertiesViewController.m; sourceTree = "<group>"; };
 		8FEEE1DA245D00990074BED6 /* NSObject+CYLRunAtDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CYLRunAtDealloc.m"; sourceTree = "<group>"; };
 		8FEEE1DB245D00990074BED6 /* CYLBlockExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLBlockExecutor.m; sourceTree = "<group>"; };
 		8FEEE1DC245D00990074BED6 /* NSObject+CYLRunAtDealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CYLRunAtDealloc.h"; sourceTree = "<group>"; };
@@ -1258,6 +1260,15 @@
 		8FFE4766246BB75E000065C6 /* SHLeaks0301Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHLeaks0301Object.h; sourceTree = "<group>"; };
 		8FFE476A246BB8FA000065C6 /* SHSocketStruc0218ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSocketStruc0218ViewController.h; sourceTree = "<group>"; };
 		8FFE476B246BB8FA000065C6 /* SHSocketStruc0218ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSocketStruc0218ViewController.m; sourceTree = "<group>"; };
+		8FFE476E246BC131000065C6 /* SGHRuntimeUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHRuntimeUseViewController.h; sourceTree = "<group>"; };
+		8FFE476F246BC131000065C6 /* SGHRuntimeUseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHRuntimeUseViewController.m; sourceTree = "<group>"; };
+		8FFE4772246D4306000065C6 /* SGHSwiftProgramLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGHSwiftProgramLanguageViewController.swift; sourceTree = "<group>"; };
+		8FFE4775246E473D000065C6 /* SGHRealizePrincipleAndAnalysisVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHRealizePrincipleAndAnalysisVC.h; sourceTree = "<group>"; };
+		8FFE4776246E473D000065C6 /* SGHRealizePrincipleAndAnalysisVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHRealizePrincipleAndAnalysisVC.m; sourceTree = "<group>"; };
+		8FFE4779246E570B000065C6 /* SGHisaMan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHisaMan.h; sourceTree = "<group>"; };
+		8FFE477A246E570B000065C6 /* SGHisaMan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHisaMan.m; sourceTree = "<group>"; };
+		8FFE477C246E74AD000065C6 /* SGHABThreadKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHABThreadKVOViewController.h; sourceTree = "<group>"; };
+		8FFE477D246E74AD000065C6 /* SGHABThreadKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHABThreadKVOViewController.m; sourceTree = "<group>"; };
 		BA5AE66CECF32624C91F7693 /* Pods_ObjectiveCDemo20200321.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectiveCDemo20200321.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1804,8 +1815,8 @@
 		04F6EC3C2429ACCB00D7F1CB /* model */ = {
 			isa = PBXGroup;
 			children = (
-				04F6EC3D2429ACCB00D7F1CB /* SGHPerson.m */,
 				04F6EC3E2429ACCB00D7F1CB /* SGHPerson.h */,
+				04F6EC3D2429ACCB00D7F1CB /* SGHPerson.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -2414,6 +2425,8 @@
 		8F310E9F24264FAF00421E7A /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				8FFE4774246E4700000065C6 /* 15Realize_Principle_And_Analysis */,
+				8FFE4771246D42D4000065C6 /* 14Swift_Program_Language */,
 				8F8FC5C5246480E00017AE10 /* 13C_Program_Language */,
 				04DF593E245A8DF800F0EB3E /* 12Interview_Questions */,
 				045B5EA12459737A0023BF7B /* 11Data_Structures_and_Algorithms */,
@@ -4236,6 +4249,7 @@
 		8F3115532429953500421E7A /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				8FFE476D246BC10A000065C6 /* 3Runtime的基本使用 */,
 				8F3115C8242A601600421E7A /* runtime+KVC实现多层字典模型转换 */,
 				04F6EC382429ACCB00D7F1CB /* runtime获取私有属性强制更改私有属性以及获取私有方法 */,
 				04F6EC2E2429ACCB00D7F1CB /* iOS runtime实战应用：Method Swizzling */,
@@ -4245,8 +4259,6 @@
 				8F31155D242995AE00421E7A /* 10Objective-C Runtime 运行时之四：Method Swizzling */,
 				8F311568242995AE00421E7A /* 11Objective-C Runtime 运行时之五：协议与分类 */,
 				8F311564242995AE00421E7A /* 12Objective-C Runtime 运行时之六：拾遗 */,
-				8F8FC5D7246531790017AE10 /* SGHGetIvarsPropertiesViewController.h */,
-				8F8FC5D8246531790017AE10 /* SGHGetIvarsPropertiesViewController.m */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -4518,6 +4530,8 @@
 			isa = PBXGroup;
 			children = (
 				8F3115BB242A580700421E7A /* 1KVO进阶二 */,
+				8FFE477C246E74AD000065C6 /* SGHABThreadKVOViewController.h */,
+				8FFE477D246E74AD000065C6 /* SGHABThreadKVOViewController.m */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -4549,11 +4563,11 @@
 			isa = PBXGroup;
 			children = (
 				8F3115CE242A60F400421E7A /* NSObject+EnumArr.h */,
-				8F3115CF242A60F400421E7A /* NSObject+EnumDict.m */,
-				8F3115D0242A60F400421E7A /* NSObject+EnumDictOneLevel.m */,
 				8F3115D1242A60F400421E7A /* NSObject+EnumArr.m */,
-				8F3115D2242A60F400421E7A /* NSObject+EnumDictOneLevel.h */,
 				8F3115D3242A60F400421E7A /* NSObject+EnumDict.h */,
+				8F3115CF242A60F400421E7A /* NSObject+EnumDict.m */,
+				8F3115D2242A60F400421E7A /* NSObject+EnumDictOneLevel.h */,
+				8F3115D0242A60F400421E7A /* NSObject+EnumDictOneLevel.m */,
 			);
 			path = ConvertKit;
 			sourceTree = "<group>";
@@ -4562,11 +4576,11 @@
 			isa = PBXGroup;
 			children = (
 				8F3115D5242A60F400421E7A /* Status.h */,
-				8F3115D6242A60F400421E7A /* PersonModel.m */,
-				8F3115D7242A60F400421E7A /* CellModel.m */,
 				8F3115D8242A60F400421E7A /* Status.m */,
 				8F3115D9242A60F400421E7A /* PersonModel.h */,
+				8F3115D6242A60F400421E7A /* PersonModel.m */,
 				8F3115DA242A60F400421E7A /* CellModel.h */,
+				8F3115D7242A60F400421E7A /* CellModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -5170,6 +5184,42 @@
 			path = 4SocketStruct;
 			sourceTree = "<group>";
 		};
+		8FFE476D246BC10A000065C6 /* 3Runtime的基本使用 */ = {
+			isa = PBXGroup;
+			children = (
+				8FFE476E246BC131000065C6 /* SGHRuntimeUseViewController.h */,
+				8FFE476F246BC131000065C6 /* SGHRuntimeUseViewController.m */,
+			);
+			path = "3Runtime的基本使用";
+			sourceTree = "<group>";
+		};
+		8FFE4771246D42D4000065C6 /* 14Swift_Program_Language */ = {
+			isa = PBXGroup;
+			children = (
+				8FFE4772246D4306000065C6 /* SGHSwiftProgramLanguageViewController.swift */,
+			);
+			path = 14Swift_Program_Language;
+			sourceTree = "<group>";
+		};
+		8FFE4774246E4700000065C6 /* 15Realize_Principle_And_Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				8FFE4775246E473D000065C6 /* SGHRealizePrincipleAndAnalysisVC.h */,
+				8FFE4776246E473D000065C6 /* SGHRealizePrincipleAndAnalysisVC.m */,
+				8FFE4778246E56E2000065C6 /* Mudules */,
+			);
+			path = 15Realize_Principle_And_Analysis;
+			sourceTree = "<group>";
+		};
+		8FFE4778246E56E2000065C6 /* Mudules */ = {
+			isa = PBXGroup;
+			children = (
+				8FFE4779246E570B000065C6 /* SGHisaMan.h */,
+				8FFE477A246E570B000065C6 /* SGHisaMan.m */,
+			);
+			path = Mudules;
+			sourceTree = "<group>";
+		};
 		DC1DA7B9E7D364730BFA4B7C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -5562,6 +5612,7 @@
 				8F31162E242D01FA00421E7A /* SGHSwitchToLatestViewController.m in Sources */,
 				043A6366245330F700C5ADE6 /* ArrayDataSource.m in Sources */,
 				8F3110A924264FB100421E7A /* WBPictureMetadata.m in Sources */,
+				8FFE477B246E570B000065C6 /* SGHisaMan.m in Sources */,
 				8F3110DB24264FB100421E7A /* SHCoreDataDemoVC.m in Sources */,
 				0417DBC82456BCB800196D00 /* MLeaksMessenger.m in Sources */,
 				8F3110C024264FB100421E7A /* NSString+Hash.m in Sources */,
@@ -5574,6 +5625,7 @@
 				8F31162D242D01FA00421E7A /* SGHSkipUntilBlockViewController.m in Sources */,
 				8FFE476C246BB8FA000065C6 /* SHSocketStruc0218ViewController.m in Sources */,
 				8F31163A242D01FA00421E7A /* SGHIgnoreViewController.m in Sources */,
+				8FFE4777246E473D000065C6 /* SGHRealizePrincipleAndAnalysisVC.m in Sources */,
 				04F6EC432429ACCB00D7F1CB /* SGHRuntimeAttriMethodViewController.m in Sources */,
 				0424222024552C30004DD1AC /* SGHAboutNSOperationViewController.m in Sources */,
 				8FEEE1FD245E2E980074BED6 /* SGH0503ARCPerson.m in Sources */,
@@ -5634,6 +5686,7 @@
 				8F3110F224264FB100421E7A /* SGH1101DidScreenshotNotiViewController.m in Sources */,
 				8F31112D24264FB100421E7A /* SGH161128TabBarViewController.m in Sources */,
 				8F72EFE7245461110023060B /* UINavigationController+LGLeaksTest.m in Sources */,
+				8FFE477E246E74AD000065C6 /* SGHABThreadKVOViewController.m in Sources */,
 				8F3113512426E1D500421E7A /* NSString+Chinese.m in Sources */,
 				0424222124552C30004DD1AC /* FKGeometryView.m in Sources */,
 				8F31153E24298CDC00421E7A /* SGH0911CoreLocationViewController.m in Sources */,
@@ -5667,6 +5720,7 @@
 				8FEEE1F6245D009A0074BED6 /* CYLUser.m in Sources */,
 				04F6EC872429AEA000D7F1CB /* SGHPresentTransitionStyleViewController.m in Sources */,
 				8F3115DC242A60F500421E7A /* NSObject+EnumDict.m in Sources */,
+				8FFE4773246D4306000065C6 /* SGHSwiftProgramLanguageViewController.swift in Sources */,
 				0424223F2455D0CD004DD1AC /* SGHLock1ViewController.m in Sources */,
 				8F3115932429977800421E7A /* SGH0425RunloopImageViewController.m in Sources */,
 				8F31111524264FB100421E7A /* TKAesHelper.m in Sources */,
@@ -5742,7 +5796,6 @@
 				8F3110EF24264FB100421E7A /* SXNewsDetailEntity.m in Sources */,
 				0417DBCB2456BCB800196D00 /* NSObject+MemoryLeak.m in Sources */,
 				8F3115492429946000421E7A /* SGHRunloopExperimentViewController.m in Sources */,
-				8F8FC5D9246531790017AE10 /* SGHGetIvarsPropertiesViewController.m in Sources */,
 				8F31108C24264FB100421E7A /* UIColor+Hex.m in Sources */,
 				8F310B812425B28900421E7A /* AppDelegate.m in Sources */,
 				8F31162A242D01FA00421E7A /* SGHSumupViewController.m in Sources */,
@@ -5760,6 +5813,7 @@
 				8F31112724264FB100421E7A /* SGH1108UpdateAppViewController.m in Sources */,
 				8F3110C924264FB100421E7A /* SGH0424GaodeFactory.m in Sources */,
 				8F3110DF24264FB100421E7A /* SGH170815IdentCodeAuthView.m in Sources */,
+				8FFE4770246BC131000065C6 /* SGHRuntimeUseViewController.m in Sources */,
 				8F3110AA24264FB100421E7A /* SGH170208ViewController.m in Sources */,
 				8F31150B2426FBCD00421E7A /* SGHVariableParamsViewController.m in Sources */,
 				8F3110E924264FB100421E7A /* UIButton+timeCountDown.m in Sources */,

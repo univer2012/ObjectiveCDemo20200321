@@ -9,7 +9,8 @@
 #import "SGHPerson.h"
 
 @interface SGHPerson ()
-@property(nonatomic,strong)NSString *address;
+
+@property (nonatomic, strong) NSString *address;
 
 @end
 
@@ -19,8 +20,8 @@
 {
     self = [super init];
     if (self) {
-        _address=@"三里屯SOHO";
-        self.name=@"AirZilong";
+        _address = @"三里屯SOHO";
+        self.name = @"AirZilong";
     }
     return self;
 }

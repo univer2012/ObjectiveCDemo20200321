@@ -35,13 +35,25 @@
     
     [self addSectionDataWithClassNameArray:tempClassNameArray titleArray:tempTitleArray title:@"KVO的原理探究"];
     
+    //MARK: - section 2
+    NSArray *tempTitleArray2 = @[
+        @"1.kvo在a线程监听，b线程修改，会在b线程收到通知",
+    ];
+    NSArray *tempClassNameArray2 = @[
+        @"sec2demo1",
+    ];
+    
+    [self addSectionDataWithClassNameArray:tempClassNameArray2 titleArray:tempTitleArray2 title:@"KVO与线程"];
+    
     
     [self.tableView reloadData];
     
     
 }
-
-
+//MARK: 1.kvo在a线程监听，b线程修改，会在b线程收到通知
+- (void)sec2demo1 {
+    [self pushToNewVCWith:@"SGHABThreadKVOViewController" title:nil inBookmarkStoryboard:NO selText:nil];
+}
 
 
 

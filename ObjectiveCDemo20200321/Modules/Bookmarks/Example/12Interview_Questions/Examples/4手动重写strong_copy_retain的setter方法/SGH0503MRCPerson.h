@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SGH0503MRCPerson : NSObject
 
+@property (nonatomic, assign)int age;
+
 @property (nonatomic, strong)NSString *name;
 
 @property (nonatomic, copy)NSString *fatherName;
