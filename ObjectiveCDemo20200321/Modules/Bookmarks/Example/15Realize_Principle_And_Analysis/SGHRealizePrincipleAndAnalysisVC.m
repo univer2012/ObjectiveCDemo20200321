@@ -50,10 +50,12 @@
     NSArray *tempTitleArray2 = @[
         @"1.打印一下一个`SGHisaMan`类对象所占据的内存大小",
         @"2.使用结构体位域优化代码",
+        @"3.使用共用体优化代码",
     ];
     NSArray *tempClassNameArray2 = @[
         @"sec2demo1",
         @"sec2demo2",
+        @"sec2demo3",
     ];
     [self addSectionDataWithClassNameArray:tempClassNameArray2 titleArray:tempTitleArray2 title:@"isa本质"];
     
@@ -61,9 +63,20 @@
     [self.tableView reloadData];
 }
 
+//MARK: 3.使用共用体优化代码
+- (void)sec2demo3 {
+    NSLog(@"SGHisaMan3_size: %zd", class_getInstanceSize([SGHisaMan3 class]) );
+    
+    SGHisaMan3 *man = [[SGHisaMan3 alloc] init];
+    man.tall = NO;
+    man.rich = NO;
+    man.handsome = YES;
+    NSLog(@"tall:%d,\n rich:%d, \n handsome:%d",man.isTall, man.isRich, man.isHandsome);
+}
+
 //MARK: 2.使用结构体位域优化代码
 - (void)sec2demo2 {
-    NSLog(@"SGHisaMan_size: %zd", class_getInstanceSize([SGHisaMan class]) );
+    NSLog(@"SGHisaMan2_size: %zd", class_getInstanceSize([SGHisaMan2 class]) );
     
     SGHisaMan2 *man = [[SGHisaMan2 alloc] init];
     man.tall = NO;

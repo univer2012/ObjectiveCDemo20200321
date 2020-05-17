@@ -34,4 +34,23 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface SGHisaMan3 : NSObject
+{
+    union {
+        char bits;
+       // 结构体仅仅是为了增强代码可读性
+        struct {
+            char tall : 1;
+            char rich : 1;
+            char handsome : 1;
+        };
+    } _tallRichHandsome;
+}
+
+@property (nonatomic, assign, getter = isTall) BOOL tall;
+@property (nonatomic, assign, getter = isRich) BOOL rich;
+@property (nonatomic, assign, getter = isHandsome) BOOL handsome;
+
+@end
+
 NS_ASSUME_NONNULL_END

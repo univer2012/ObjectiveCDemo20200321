@@ -30,10 +30,10 @@
 }
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
 {
-    NSLog(@"监听结构的线程：%@", [NSThread currentThread]);
+    NSLog(@"监听结果的线程：%@", [NSThread currentThread]);
     NSLog(@"%d", _person.age);
     /*output:
-     监听结构的线程：<NSThread: 0x6000026a0700>{number = 7, name = (null)}
+     监听结果的线程：<NSThread: 0x6000026a0700>{number = 7, name = (null)}
      1
     */
 }

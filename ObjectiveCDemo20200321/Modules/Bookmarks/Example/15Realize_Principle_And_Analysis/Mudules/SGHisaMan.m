@@ -88,5 +88,43 @@
     return !!_tallRichHandsome.handsome;
 }
 
+@end
+
+
+@implementation SGHisaMan3
+
+
+- (void)setTall:(BOOL)tall {
+    if (tall) {
+        _tallRichHandsome.bits |= Tall_Mask;
+    } else {
+        _tallRichHandsome.bits &= ~Tall_Mask;
+    }
+}
+
+- (void)setRich:(BOOL)rich {
+    if (rich) {
+        _tallRichHandsome.bits |= Rich_Mask;
+    } else {
+        _tallRichHandsome.bits &= ~Rich_Mask;
+    }
+}
+- (void)setHandsome:(BOOL)handsome {
+    if (handsome) {
+        _tallRichHandsome.bits |= Handsome_Mask;
+    } else {
+        _tallRichHandsome.bits &= ~Handsome_Mask;
+    }
+}
+
+- (BOOL)isTall {
+    return !!(_tallRichHandsome.bits & Tall_Mask);
+}
+- (BOOL)isRich {
+    return !!(_tallRichHandsome.bits & Rich_Mask);
+}
+- (BOOL)isHandsome {
+    return !!(_tallRichHandsome.bits & Handsome_Mask);
+}
 
 @end

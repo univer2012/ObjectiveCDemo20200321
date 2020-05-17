@@ -37,10 +37,12 @@
     
     //MARK: - section 2
     NSArray *tempTitleArray2 = @[
-        @"1.kvo在a线程监听，b线程修改，会在b线程收到通知",
+        @"1.kvo在a线程监听，b线程修改：会在b线程收到通知",
+        @"2.NSNotificationCenter在a线程监听，b线程发送通知：会在b线程收到通知",
     ];
     NSArray *tempClassNameArray2 = @[
         @"sec2demo1",
+        @"sec2demo2",
     ];
     
     [self addSectionDataWithClassNameArray:tempClassNameArray2 titleArray:tempTitleArray2 title:@"KVO与线程"];
@@ -49,8 +51,28 @@
     [self.tableView reloadData];
     
     
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notice) name:@"test" object:nil];
 }
-//MARK: 1.kvo在a线程监听，b线程修改，会在b线程收到通知
+//MARK: 2.NSNotificationCenter在a线程监听，b线程发送通知：会在b线程收到通知
+//来自：[iOS 通知和kvo中的线程问题](https://blog.csdn.net/qq_20037693/article/details/56280251)
+- (void)sec2demo2 {
+    [self performSelectorInBackground:@selector(noticeOnthread) withObject:nil];
+}
+ - (void)noticeOnthread {
+     NSLog(@"在Background线程发送通知：%@", [NSThread currentThread]);
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"test" object:nil];
+     /*output:
+      在Background线程发送通知：<NSThread: 0x600001ae2800>{number = 8, name = (null)}
+      */
+}
+ - (void)notice {
+     NSLog(@"收到监听结果的线程：%@", [NSThread currentThread]);
+     /*output:
+      收到监听结果的线程：<NSThread: 0x600001ae2800>{number = 8, name = (null)}
+     */
+}
+
+//MARK: 1.kvo在a线程监听，b线程修改：会在b线程收到通知
 - (void)sec2demo1 {
     [self pushToNewVCWith:@"SGHABThreadKVOViewController" title:nil inBookmarkStoryboard:NO selText:nil];
 }
