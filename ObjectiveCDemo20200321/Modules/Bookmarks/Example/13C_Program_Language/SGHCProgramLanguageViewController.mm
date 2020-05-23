@@ -35,8 +35,48 @@
         @"demo5",
         @"demo6",
     ];
-    [self addSectionDataWithClassNameArray:tempClassNameArray titleArray:tempTitleArray title:@""];
+    [self addSectionDataWithClassNameArray:tempClassNameArray titleArray:tempTitleArray title:@"C语言程序设计（第2版）第2章 C语言基础-练习题"];
+    
+    //MARK: section 2
+    NSArray *tempTitleArray2 = @[
+        @"1.计算数组a的长度：`sizeof(a) / sizeof(a[0]);`，但这个计算的长度不一定准确。",
+    ];
+    NSArray *tempClassNameArray2 = @[
+        @"sec2demo1",
+
+    ];
+    [self addSectionDataWithClassNameArray:tempClassNameArray2 titleArray:tempTitleArray2 title:@"计算数组、字典的长度"];
+    
+    [self.tableView reloadData];
 }
+//MARK: - section 2
+//MARK: 1.计算数组a的长度：`sizeof(a) / sizeof(a[0]);`，但这个计算的长度不一定准确。
+//来自：[数组的长度，C语言获取数组长度详解](http://c.biancheng.net/view/186.html)
+- (void)sec2demo1 {
+    int a[10] = {0};
+    
+    for (int i = 0; i < 10; i++) {
+        printf("%d ",a[i]);
+    }
+    printf("\n");
+    
+    int cnt = sizeof(a) / sizeof(a[0]);
+    printf("cnt = %d\n", cnt);
+    
+    //=========== 注意
+    int a1[10] = {1, 2, 3, 4, 5};
+    for (int i = 0; i < 10; i++) {
+        printf("%d ",a1[i]);
+    }
+    printf("\n");
+    
+    int cnt1 = sizeof(a1) / sizeof(a1[0]);
+    printf("cnt1 = %d\n", cnt1);
+    ///我们只初始化了五个元素，但是 sizeof(a)/sizeof(a[0]) 求出的是 10，而不是 5。
+    ///换句话说，我们无法通过 sizeof(a)/sizeof(a[0]) 求出数组中有多少个有意义的数据。
+    
+}
+
 //MARK: 6.看程序写结果-第6题
 - (void)demo6 {
     int i, j, x, y;

@@ -49,8 +49,8 @@
 ///方法1：拿第一个路径中的所有节点，去第二个节点中查找。假设路径的平均长度是 N，
 ///因为每个节点都要找 N 次，一共有 N 个节点，所以这个办法的时间复杂度是 O（N^2）。
 + (UIView *)commonView_1:(UIView *)viewA andView:(UIView *)viewB {
-    NSArray *arr1 = [self superViews:viewA];
-    NSArray *arr2 = [self superViews:viewB];
+    NSArray *arr1 = [self superViews:viewA];//arr1是从叶子结点到根结点的 路径数组
+    NSArray *arr2 = [self superViews:viewB];//arr1是从叶子结点到根结点的 路径数组
     for (NSUInteger i = 0; i < arr1.count; ++i) {
         UIView *targetView = arr1[i];
         for (NSUInteger j = 0; j < arr2.count; ++j) {
@@ -72,6 +72,24 @@
         view = view.superview;
     }
     return [result copy];
+    /* 返回的是  从叶子到根结点的路径  数组
+     <__NSArrayM 0x6000014f4120>(
+     <UIView: 0x7fd8d60308f0; frame = (0 0; 0 0); tag = 4; layer = <CALayer: 0x600001a29360>>,
+     <UIView: 0x7fd8d600a9b0; frame = (0 0; 0 0); tag = 3; layer = <CALayer: 0x600001a29c20>>,
+     <UIView: 0x7fd8d6031450; frame = (0 0; 0 0); tag = 2; layer = <CALayer: 0x600001a29aa0>>,
+     <UIView: 0x7fd8d602e020; frame = (0 0; 0 0); tag = 1; layer = <CALayer: 0x600001a298e0>>,
+     <UIView: 0x7fd8d551b0f0; frame = (0 0; 414 896); autoresize = W+H; layer = <CALayer: 0x600001a24600>>,
+     <UIViewControllerWrapperView: 0x7fd8d5545dd0; frame = (0 0; 414 896); autoresize = W+H; layer = <CALayer: 0x600001a06240>>,
+     <UINavigationTransitionView: 0x7fd8d540f1c0; frame = (0 0; 414 896); clipsToBounds = YES; autoresize = W+H; layer = <CALayer: 0x600001abee00>>,
+     <UILayoutContainerView: 0x7fd8d5513ef0; frame = (0 0; 414 896); clipsToBounds = YES; autoresize = W+H; gestureRecognizers = <NSArray: 0x6000014d2970>; layer = <CALayer: 0x600001ae7f00>>,
+     <UIViewControllerWrapperView: 0x7fd8d55327a0; frame = (0 0; 414 896); autoresize = W+H; layer = <CALayer: 0x600001af1200>>,
+     <UITransitionView: 0x7fd8d5510900; frame = (0 0; 414 896); clipsToBounds = YES; autoresize = W+H; layer = <CALayer: 0x600001ae7d00>>,
+     <UILayoutContainerView: 0x7fd8d540d5f0; frame = (0 0; 414 896); autoresize = W+H; layer = <CALayer: 0x600001abe620>>,
+     <UIDropShadowView: 0x7fd8d6019780; frame = (0 0; 414 896); clipsToBounds = YES; autoresize = W+H; layer = <CALayer: 0x600001ae28a0>>,
+     <UITransitionView: 0x7fd8d6019200; frame = (0 0; 414 896); autoresize = W+H; layer = <CALayer: 0x600001ae26e0>>,
+     <UIWindow: 0x7fd8d551ebf0; frame = (0 0; 414 896); gestureRecognizers = <NSArray: 0x6000014e5860>; layer = <UIWindowLayer: 0x600001ae6880>>
+     )
+     */
 }
 
 @end

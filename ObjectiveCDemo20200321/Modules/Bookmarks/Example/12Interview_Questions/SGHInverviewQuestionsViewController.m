@@ -298,7 +298,13 @@ void function1(NSArray *dataArr) {
 
 //MARK: 1_1.寻找最近公共view
 - (void)demo1_1 {
-    
+    /* 结构如下
+                                  v4
+                                 /
+     self.view -- v1 -- v2 -- v3
+                                 \
+                                  v5 -- v6 -- v7
+     */
     UIView *v1 = [self addViewWith:self.view tag:1];
     UIView *v2 = [self addViewWith:v1 tag:2];
     UIView *v3 = [self addViewWith:v2 tag:3];

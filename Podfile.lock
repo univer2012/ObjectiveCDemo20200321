@@ -37,6 +37,7 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - LGUtils (0.1.0)
   - LxDBAnything (1.1.0)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
@@ -68,6 +69,7 @@ DEPENDENCIES:
   - DTCoreText (~> 1.6.21)
   - FLAnimatedImage
   - FMDB
+  - LGUtils (from `../iOS_advanced_special_training_camp/10-iOS_local_private_library/LGLib/LGUtils/`)
   - LxDBAnything
   - Masonry
   - MBProgressHUD
@@ -114,6 +116,10 @@ SPEC REPOS:
     - YYModel
     - YYText
 
+EXTERNAL SOURCES:
+  LGUtils:
+    :path: "../iOS_advanced_special_training_camp/10-iOS_local_private_library/LGLib/LGUtils/"
+
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
@@ -122,6 +128,7 @@ SPEC CHECKSUMS:
   FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  LGUtils: 165d0351089530569226315543d401712441a532
   LxDBAnything: 154a2ad1ae32e70355d886b5443260543bb60c71
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
@@ -141,6 +148,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 1eb3d8bc8e07699b5fd8ec8a4b332edee06b0c2a
+PODFILE CHECKSUM: adeeae90cebba14fbe470cbfcd1aea9a6550bcbe
 
 COCOAPODS: 1.9.1

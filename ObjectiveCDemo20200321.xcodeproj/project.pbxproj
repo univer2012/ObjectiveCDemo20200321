@@ -381,6 +381,7 @@
 		8F311644242D01FA00421E7A /* SGHSchedulerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F311623242D01F900421E7A /* SGHSchedulerViewController.m */; };
 		8F311645242D01FA00421E7A /* SGHKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F311624242D01F900421E7A /* SGHKVOViewController.m */; };
 		8F311649242D031C00421E7A /* SGHAnythingTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F311647242D031C00421E7A /* SGHAnythingTestModel.m */; };
+		8F61E1732478308800A1FDE0 /* SGHDataStructAlgorithmsViewController+MRC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F61E1722478308800A1FDE0 /* SGHDataStructAlgorithmsViewController+MRC.m */; };
 		8F72EFC92453EE7A0023060B /* SGH0425LeaksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72EFC82453EE7A0023060B /* SGH0425LeaksViewController.m */; };
 		8F72EFCD2453F34E0023060B /* SGHAdvancedTrainingCampListDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72EFCC2453F34E0023060B /* SGHAdvancedTrainingCampListDemoViewController.m */; };
 		8F72EFD32453F4650023060B /* SGH0425Leaks6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72EFD22453F4650023060B /* SGH0425Leaks6ViewController.m */; };
@@ -436,6 +437,8 @@
 		8FFE4777246E473D000065C6 /* SGHRealizePrincipleAndAnalysisVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFE4776246E473D000065C6 /* SGHRealizePrincipleAndAnalysisVC.m */; };
 		8FFE477B246E570B000065C6 /* SGHisaMan.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFE477A246E570B000065C6 /* SGHisaMan.m */; };
 		8FFE477E246E74AD000065C6 /* SGHABThreadKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFE477D246E74AD000065C6 /* SGHABThreadKVOViewController.m */; };
+		8FFE47822472A2A2000065C6 /* SGHMemoryManagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFE47812472A2A2000065C6 /* SGHMemoryManagementViewController.m */; };
+		8FFE47852472A67C000065C6 /* SGHMemoryManagementViewController+MRC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFE47842472A67C000065C6 /* SGHMemoryManagementViewController+MRC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CDC200DEA842E035ADFAA877 /* Pods_ObjectiveCDemo20200321.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5AE66CECF32624C91F7693 /* Pods_ObjectiveCDemo20200321.framework */; };
 /* End PBXBuildFile section */
 
@@ -1160,6 +1163,8 @@
 		8F311625242D01F900421E7A /* SGHSwitchDelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHSwitchDelegateViewController.h; sourceTree = "<group>"; };
 		8F311647242D031C00421E7A /* SGHAnythingTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGHAnythingTestModel.m; sourceTree = "<group>"; };
 		8F311648242D031C00421E7A /* SGHAnythingTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHAnythingTestModel.h; sourceTree = "<group>"; };
+		8F61E1712478308700A1FDE0 /* SGHDataStructAlgorithmsViewController+MRC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SGHDataStructAlgorithmsViewController+MRC.h"; sourceTree = "<group>"; };
+		8F61E1722478308800A1FDE0 /* SGHDataStructAlgorithmsViewController+MRC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SGHDataStructAlgorithmsViewController+MRC.m"; sourceTree = "<group>"; };
 		8F72EFC72453EE7A0023060B /* SGH0425LeaksViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH0425LeaksViewController.h; sourceTree = "<group>"; };
 		8F72EFC82453EE7A0023060B /* SGH0425LeaksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH0425LeaksViewController.m; sourceTree = "<group>"; };
 		8F72EFCB2453F34E0023060B /* SGHAdvancedTrainingCampListDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHAdvancedTrainingCampListDemoViewController.h; sourceTree = "<group>"; };
@@ -1185,8 +1190,7 @@
 		8F7D62212465B397006B2AF4 /* SGHGroupSemaphoreNetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGHGroupSemaphoreNetViewController.swift; sourceTree = "<group>"; };
 		8F7D622424663CDF006B2AF4 /* SGHBlockPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHBlockPerson.h; sourceTree = "<group>"; };
 		8F7D622524663CDF006B2AF4 /* SGHBlockPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHBlockPerson.m; sourceTree = "<group>"; };
-		8F7D63DA24670688006B2AF4 /* ObjectiveCDemo20200321 copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ObjectiveCDemo20200321 copy-Info.plist"; path = "/Users/yuanping/Desktop/HuangSengoln/ObjectiveCDemo20200321/ObjectiveCDemo20200321 copy-Info.plist"; sourceTree = "<absolute>"; };
-		8F7D66202467778E006B2AF4 /* ObjectiveCDemo20200321 copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ObjectiveCDemo20200321 copy2-Info.plist"; path = "/Users/yuanping/Desktop/HuangSengoln/ObjectiveCDemo20200321/ObjectiveCDemo20200321 copy2-Info.plist"; sourceTree = "<absolute>"; };
+		8F7D63DA24670688006B2AF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = /Users/yuanping/Desktop/HuangSengoln/ObjectiveCDemo20200321/Info.plist; sourceTree = "<absolute>"; };
 		8F7D66F8246AADB0006B2AF4 /* sea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sea.png; sourceTree = "<group>"; };
 		8F8FC5C6246481120017AE10 /* SGHCProgramLanguageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHCProgramLanguageViewController.h; sourceTree = "<group>"; };
 		8F8FC5C7246481120017AE10 /* SGHCProgramLanguageViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SGHCProgramLanguageViewController.mm; sourceTree = "<group>"; };
@@ -1269,6 +1273,10 @@
 		8FFE477A246E570B000065C6 /* SGHisaMan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHisaMan.m; sourceTree = "<group>"; };
 		8FFE477C246E74AD000065C6 /* SGHABThreadKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHABThreadKVOViewController.h; sourceTree = "<group>"; };
 		8FFE477D246E74AD000065C6 /* SGHABThreadKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHABThreadKVOViewController.m; sourceTree = "<group>"; };
+		8FFE47802472A2A2000065C6 /* SGHMemoryManagementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHMemoryManagementViewController.h; sourceTree = "<group>"; };
+		8FFE47812472A2A2000065C6 /* SGHMemoryManagementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHMemoryManagementViewController.m; sourceTree = "<group>"; };
+		8FFE47832472A67C000065C6 /* SGHMemoryManagementViewController+MRC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SGHMemoryManagementViewController+MRC.h"; sourceTree = "<group>"; };
+		8FFE47842472A67C000065C6 /* SGHMemoryManagementViewController+MRC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SGHMemoryManagementViewController+MRC.m"; sourceTree = "<group>"; };
 		BA5AE66CECF32624C91F7693 /* Pods_ObjectiveCDemo20200321.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectiveCDemo20200321.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1716,6 +1724,8 @@
 				8F8FC5B1246385230017AE10 /* Chapter8 */,
 				045B5EA2245973C30023BF7B /* SGHDataStructAlgorithmsViewController.h */,
 				045B5EA3245973C30023BF7B /* SGHDataStructAlgorithmsViewController.mm */,
+				8F61E1712478308700A1FDE0 /* SGHDataStructAlgorithmsViewController+MRC.h */,
+				8F61E1722478308800A1FDE0 /* SGHDataStructAlgorithmsViewController+MRC.m */,
 				045B5EB42459A4720023BF7B /* Chapter2 */,
 			);
 			path = 11Data_Structures_and_Algorithms;
@@ -2225,8 +2235,7 @@
 				8F310B7D2425B28900421E7A /* Products */,
 				7B2250CDD62BE8E089F37EC9 /* Pods */,
 				DC1DA7B9E7D364730BFA4B7C /* Frameworks */,
-				8F7D63DA24670688006B2AF4 /* ObjectiveCDemo20200321 copy-Info.plist */,
-				8F7D66202467778E006B2AF4 /* ObjectiveCDemo20200321 copy2-Info.plist */,
+				8F7D63DA24670688006B2AF4 /* Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2425,6 +2434,7 @@
 		8F310E9F24264FAF00421E7A /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				8FFE477F2472A26A000065C6 /* 16MemoryManagement */,
 				8FFE4774246E4700000065C6 /* 15Realize_Principle_And_Analysis */,
 				8FFE4771246D42D4000065C6 /* 14Swift_Program_Language */,
 				8F8FC5C5246480E00017AE10 /* 13C_Program_Language */,
@@ -5220,6 +5230,17 @@
 			path = Mudules;
 			sourceTree = "<group>";
 		};
+		8FFE477F2472A26A000065C6 /* 16MemoryManagement */ = {
+			isa = PBXGroup;
+			children = (
+				8FFE47802472A2A2000065C6 /* SGHMemoryManagementViewController.h */,
+				8FFE47812472A2A2000065C6 /* SGHMemoryManagementViewController.m */,
+				8FFE47832472A67C000065C6 /* SGHMemoryManagementViewController+MRC.h */,
+				8FFE47842472A67C000065C6 /* SGHMemoryManagementViewController+MRC.m */,
+			);
+			path = 16MemoryManagement;
+			sourceTree = "<group>";
+		};
 		DC1DA7B9E7D364730BFA4B7C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -5489,6 +5510,7 @@
 				8FEEE1F2245D009A0074BED6 /* SGHDeallocBlockViewController.m in Sources */,
 				0457881C2427BA6300C2DF75 /* CoreTextImageData.m in Sources */,
 				8F3110D924264FB100421E7A /* SHKVOExploreViewController.m in Sources */,
+				8FFE47852472A67C000065C6 /* SGHMemoryManagementViewController+MRC.m in Sources */,
 				8F31109B24264FB100421E7A /* UIView+WZLBadge.m in Sources */,
 				8F311640242D01FA00421E7A /* SGHNotificationViewController.m in Sources */,
 				8F3115E1242A60F500421E7A /* Status.m in Sources */,
@@ -5642,6 +5664,7 @@
 				0417DBA12456B71F00196D00 /* SGHFBRetainCycleViewController.m in Sources */,
 				8FFE4761246BB553000065C6 /* SGHCustomKVOPerson.m in Sources */,
 				8FF058BE2438215D006F74E9 /* SGH04LoginSuccessViewController.m in Sources */,
+				8FFE47822472A2A2000065C6 /* SGHMemoryManagementViewController.m in Sources */,
 				8F3110DD24264FB100421E7A /* SHUpdateJumpAppStoreVC.m in Sources */,
 				8F8FC5D624652EE50017AE10 /* Girl+Ex.m in Sources */,
 				8F31159B242A2D7200421E7A /* SGH0324CATransitionViewController.m in Sources */,
@@ -5732,6 +5755,7 @@
 				0424221524549788004DD1AC /* SGHAsyncSocketClientViewController.m in Sources */,
 				8F3110CA24264FB100421E7A /* SGH0424BaiduMapView.m in Sources */,
 				8F311643242D01FA00421E7A /* SGHGesturerViewController.m in Sources */,
+				8F61E1732478308800A1FDE0 /* SGHDataStructAlgorithmsViewController+MRC.m in Sources */,
 				8F3113E72426E6EF00421E7A /* SGH160507ViewController.m in Sources */,
 				8F3110CB24264FB100421E7A /* SGH0424BaiduFactory.m in Sources */,
 				8F31112524264FB100421E7A /* SGH1013ImageSaveAlbumViewController.m in Sources */,

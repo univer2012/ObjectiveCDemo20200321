@@ -141,4 +141,8 @@ pod 'YYModel'
 
 #use_frameworks!
 #pod 'XMPPFramework', '~> 3.6.4'
+
+
+   ### ===============================以下是学习使用的代码
+   pod 'LGUtils', :path => '../iOS_advanced_special_training_camp/10-iOS_local_private_library/LGLib/LGUtils/'
 end

@@ -55,6 +55,7 @@
         @"SGHCProgramLanguageViewController",
         NSStringFromClass([SGHSwiftProgramLanguageViewController class]),
         @"SGHRealizePrincipleAndAnalysisVC",
+        @"SGHMemoryManagementViewController",
     ] mutableCopy];
     
     
@@ -73,6 +74,7 @@
         @"13、C语言",
         @"14、Swift语言",
         @"15、底层原理探索和分析",
+        @"16、内存管理",
     ] mutableCopy];
     
     
