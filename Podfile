@@ -1,5 +1,5 @@
-source 'https://github.com/CocoaPods/Specs.git'
-#source 'https://cdn.cocoapods.org/'
+#source 'https://github.com/CocoaPods/Specs.git'
+source 'https://cdn.cocoapods.org/'
 
 
 platform:ios, '8.0'
@@ -144,5 +144,5 @@ pod 'YYModel'
 
 
    ### ===============================以下是学习使用的代码
-   pod 'LGUtils', :path => '../iOS_advanced_special_training_camp/10-iOS_local_private_library/LGLib/LGUtils/'
+   #pod 'LGUtils', :path => '../iOS_advanced_special_training_camp/10-iOS_local_private_library/LGLib/LGUtils/'
 end
