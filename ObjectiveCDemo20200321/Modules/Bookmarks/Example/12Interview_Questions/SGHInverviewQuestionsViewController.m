@@ -101,6 +101,8 @@ void function2(NSArray *dataArr) {
     int maxPrice = 0;   //最大赚取
     int startIndex = 0;
     int saleIndex = 0;
+    
+    
  
     for (int i = 1 ; i < dataArr.count; i++) {
         int indexi = [dataArr[i] intValue];
@@ -298,7 +300,7 @@ void function1(NSArray *dataArr) {
 
 //MARK: 1_1.寻找最近公共view
 - (void)demo1_1 {
-    /* 结构如下
+    /* 结构如下：
                                   v4
                                  /
      self.view -- v1 -- v2 -- v3
