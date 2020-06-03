@@ -14,7 +14,11 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - Charts (3.5.0):
+    - Charts/Core (= 3.5.0)
+  - Charts/Core (3.5.0)
   - CocoaAsyncSocket (7.6.4)
+  - CTMediator (32)
   - DTCoreText (1.6.23):
     - DTCoreText/Core (= 1.6.23)
     - DTFoundation/Core (~> 1.7.5)
@@ -38,6 +42,7 @@ PODS:
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
   - LxDBAnything (1.1.0)
+  - LXFBase (0.1.0)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.4.3)
@@ -64,11 +69,14 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (= 3.1.0)
+  - Charts
   - CocoaAsyncSocket
+  - CTMediator
   - DTCoreText (~> 1.6.21)
   - FLAnimatedImage
   - FMDB
   - LxDBAnything
+  - "LXFBase (from `git@gitee.com:virgilsun2012/LXFBase.git`)"
   - Masonry
   - MBProgressHUD
   - MJRefresh
@@ -87,6 +95,9 @@ DEPENDENCIES:
   - YYText
 
 SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Charts
+    - CTMediator
   trunk:
     - AFNetworking
     - CocoaAsyncSocket
@@ -114,15 +125,27 @@ SPEC REPOS:
     - YYModel
     - YYText
 
+EXTERNAL SOURCES:
+  LXFBase:
+    :git: "git@gitee.com:virgilsun2012/LXFBase.git"
+
+CHECKOUT OPTIONS:
+  LXFBase:
+    :commit: c99e2f7406302e38e3c44042730d9626bac6d3d3
+    :git: "git@gitee.com:virgilsun2012/LXFBase.git"
+
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
+  CTMediator: 10f2c387be0ab2061b75b88c86f9903eedba1ce8
   DTCoreText: 67023bb51b26711d5f640c851f4845aea14c24c9
   DTFoundation: 25aa19bb7c6e225b1dfae195604fb8cf1da0ab4c
   FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   LxDBAnything: 154a2ad1ae32e70355d886b5443260543bb60c71
+  LXFBase: 38d7e741e7636f42607c5603627e8f451bb1b977
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
@@ -141,6 +164,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 92ac220c7e939788b1af8116a6230e42bc18acfd
+PODFILE CHECKSUM: dc2ec4921f690b1e16595043038d873cdfc6baad
 
 COCOAPODS: 1.9.1

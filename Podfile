@@ -1,6 +1,9 @@
 #source 'https://github.com/CocoaPods/Specs.git'
-source 'https://cdn.cocoapods.org/'
+#source 'https://cdn.cocoapods.org/'
 
+
+source 'https://gitee.com/virgilsun2012/LXFSpecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
 
 platform:ios, '8.0'
 use_frameworks!
@@ -70,7 +73,7 @@ target "ObjectiveCDemo20200321" do
 #  pod 'TYAlertController'
 
   #图表绘制软件
-#  pod 'Charts'
+  pod 'Charts'
 
   #神策数据分析
 #  pod 'SensorsAnalyticsSDK'
@@ -116,33 +119,37 @@ target "ObjectiveCDemo20200321" do
   ###===================================
   
   
-# pod 'BaiduMapKit' #百度地图SDK
+#  pod 'BaiduMapKit' #百度地图SDK
 
-# 2D地图SDK,NO IDFA版本(3D地图与2D地图不能同时使用)
-# pod 'AMap2DMap-NO-IDFA' 
+#  2D地图SDK,NO IDFA版本(3D地图与2D地图不能同时使用)
+#  pod 'AMap2DMap-NO-IDFA'
 
-#pod 'Masonry'
+#  pod 'Masonry'
 
-#pod 'AFNetworking', '~> 3.0'
+#  pod 'AFNetworking', '~> 3.0'
 
-pod 'TTTAttributedLabel'
-pod 'YBAttributeTextTapAction'
-pod 'TYAttributedLabel'
+  pod 'TTTAttributedLabel'
+  pod 'YBAttributeTextTapAction'
+  pod 'TYAttributedLabel'
 
-pod 'FMDB'
+  pod 'FMDB'
+
+  # 组件之间的调用通讯
+  pod 'CTMediator'
 
 
 
-pod 'LxDBAnything' # ,'~>1.1.1'
-pod 'YYModel'
+  pod 'LxDBAnything' # ,'~>1.1.1'
+  pod 'YYModel'
 
 # 有关socket
-#pod 'CocoaAsyncSocket'
+#  pod 'CocoaAsyncSocket'
 
-#use_frameworks!
-#pod 'XMPPFramework', '~> 3.6.4'
+#  use_frameworks!
+#  pod 'XMPPFramework', '~> 3.6.4'
 
 
    ### ===============================以下是学习使用的代码
    #pod 'LGUtils', :path => '../iOS_advanced_special_training_camp/10-iOS_local_private_library/LGLib/LGUtils/'
+   pod 'LXFBase', :git => 'git@gitee.com:virgilsun2012/LXFBase.git'
 end

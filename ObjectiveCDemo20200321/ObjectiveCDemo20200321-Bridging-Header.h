@@ -21,3 +21,5 @@
 
 #import "SHBaseTableViewController.h"
 
+#import "SGHLineChartViewController.h"
+

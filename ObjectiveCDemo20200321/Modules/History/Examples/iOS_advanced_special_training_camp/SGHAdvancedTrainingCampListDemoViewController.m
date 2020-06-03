@@ -24,6 +24,7 @@
         @"5.iOS开发之循环引用",
         @"6.iOS开发之NSTimer",
         @"8.iOS开发之内存检测工具",
+        @"12、13.iOS组件通讯原理 -CTMediator的使用",
     ];
     NSArray *tempClassNameArray = @[
         @"SGHMethodExchangeImpViewController",
@@ -31,6 +32,7 @@
         @"SGH0425LeaksViewController",
         @"SGH0425Leaks6ViewController",
         @"SGHAOPLeakFinderViewController",
+        @"SGH_CTMediatorViewController",
     ];
     
     [self addSectionDataWithClassNameArray:tempClassNameArray titleArray:tempTitleArray title:@"开发"];

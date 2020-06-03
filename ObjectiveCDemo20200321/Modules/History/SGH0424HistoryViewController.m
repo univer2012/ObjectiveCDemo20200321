@@ -7,6 +7,7 @@
 //
 
 #import "SGH0424HistoryViewController.h"
+#import "ObjectiveCDemo20200321-Swift.h"
 
 @interface SGH0424HistoryViewController ()
 
@@ -22,12 +23,12 @@
     NSArray *tempTitleArray = @[
         @"1.iOS检测内存泄漏的方法 \n请结合文章《iOS检测内存泄漏的方法》操作来看，效果更好",
         @"2.iOS中高级特训营--系列代码",
-        
+        @"3.Charts组件的使用",
     ];
     NSArray *tempClassNameArray = @[
         @"SGHCyclesMemoryLeaksVC",
         @"SGHAdvancedTrainingCampListDemoViewController",
-        
+        NSStringFromClass([SGHChartsListViewController class]),
     ];
     
     [self addSectionDataWithClassNameArray:tempClassNameArray titleArray:tempTitleArray title:@"APM 系列"];

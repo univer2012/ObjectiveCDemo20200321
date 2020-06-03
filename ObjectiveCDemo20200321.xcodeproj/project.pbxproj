@@ -120,6 +120,22 @@
 		04F6ECBE2429E87E00D7F1CB /* SGHWheelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F6ECAE2429E87E00D7F1CB /* SGHWheelView.xib */; };
 		04F6ECBF2429E87E00D7F1CB /* SGHWheelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F6ECAF2429E87E00D7F1CB /* SGHWheelView.m */; };
 		04F6ECC02429E87E00D7F1CB /* SGH0729Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F6ECB02429E87E00D7F1CB /* SGH0729Button.m */; };
+		320D053E248660F000FE842E /* SGHChartsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320D053D248660F000FE842E /* SGHChartsListViewController.swift */; };
+		320D0542248661C900FE842E /* SGHLineChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D0541248661C900FE842E /* SGHLineChartViewController.m */; };
+		320D054A2486624E00FE842E /* DateValueFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D05442486624D00FE842E /* DateValueFormatter.m */; };
+		320D054B2486624E00FE842E /* SymbolsValueFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D05452486624D00FE842E /* SymbolsValueFormatter.m */; };
+		320D054C2486624E00FE842E /* SetValueFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D05462486624D00FE842E /* SetValueFormatter.m */; };
+		3269377524878DC000A05C88 /* SGH_CTMediatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3269377424878DC000A05C88 /* SGH_CTMediatorViewController.m */; };
+		326937BD24878EE800A05C88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326937AD24878EE700A05C88 /* ViewController.swift */; };
+		326937BE24878EE800A05C88 /* Target_A.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326937AE24878EE700A05C88 /* Target_A.swift */; };
+		326937BF24878EE800A05C88 /* Target_A.m in Sources */ = {isa = PBXBuildFile; fileRef = 326937B124878EE700A05C88 /* Target_A.m */; };
+		326937C024878EE800A05C88 /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 326937B324878EE700A05C88 /* AViewController.m */; };
+		326937C124878EE800A05C88 /* CTMediator+A.m in Sources */ = {isa = PBXBuildFile; fileRef = 326937B724878EE800A05C88 /* CTMediator+A.m */; };
+		326937C224878EE800A05C88 /* CTMediator+B.m in Sources */ = {isa = PBXBuildFile; fileRef = 326937BA24878EE800A05C88 /* CTMediator+B.m */; };
+		326937C72487939000A05C88 /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 326937C62487939000A05C88 /* UIView+LayoutMethods.m */; };
+		326937CE2487941600A05C88 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 326937CA2487941600A05C88 /* BViewController.m */; };
+		326937CF2487941600A05C88 /* Target_B.m in Sources */ = {isa = PBXBuildFile; fileRef = 326937CC2487941600A05C88 /* Target_B.m */; };
+		326937D124879E2200A05C88 /* CTMediator+A.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326937D024879E2200A05C88 /* CTMediator+A.swift */; };
 		8F310B812425B28900421E7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F310B802425B28900421E7A /* AppDelegate.m */; };
 		8F310B8A2425B28900421E7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F310B882425B28900421E7A /* Main.storyboard */; };
 		8F310B8D2425B28900421E7A /* ObjectiveCDemo20200321.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F310B8B2425B28900421E7A /* ObjectiveCDemo20200321.xcdatamodeld */; };
@@ -670,6 +686,34 @@
 		04F6ECB02429E87E00D7F1CB /* SGH0729Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGH0729Button.m; sourceTree = "<group>"; };
 		04F6ECB12429E87E00D7F1CB /* SGHWheelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHWheelView.h; sourceTree = "<group>"; };
 		04F6ECB22429E87E00D7F1CB /* SGH0729Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGH0729Button.h; sourceTree = "<group>"; };
+		320D053D248660F000FE842E /* SGHChartsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGHChartsListViewController.swift; sourceTree = "<group>"; };
+		320D0540248661C900FE842E /* SGHLineChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHLineChartViewController.h; sourceTree = "<group>"; };
+		320D0541248661C900FE842E /* SGHLineChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHLineChartViewController.m; sourceTree = "<group>"; };
+		320D05442486624D00FE842E /* DateValueFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateValueFormatter.m; sourceTree = "<group>"; };
+		320D05452486624D00FE842E /* SymbolsValueFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymbolsValueFormatter.m; sourceTree = "<group>"; };
+		320D05462486624D00FE842E /* SetValueFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetValueFormatter.m; sourceTree = "<group>"; };
+		320D05472486624D00FE842E /* SymbolsValueFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymbolsValueFormatter.h; sourceTree = "<group>"; };
+		320D05482486624D00FE842E /* DateValueFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateValueFormatter.h; sourceTree = "<group>"; };
+		320D05492486624E00FE842E /* SetValueFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetValueFormatter.h; sourceTree = "<group>"; };
+		3269377324878DC000A05C88 /* SGH_CTMediatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH_CTMediatorViewController.h; sourceTree = "<group>"; };
+		3269377424878DC000A05C88 /* SGH_CTMediatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH_CTMediatorViewController.m; sourceTree = "<group>"; };
+		326937AD24878EE700A05C88 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "ObjectiveCDemo20200321/Modules/History/Examples/iOS_advanced_special_training_camp/Examples/12、13iOS组件通讯原理/A_swift/ViewController.swift"; sourceTree = SOURCE_ROOT; };
+		326937AE24878EE700A05C88 /* Target_A.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Target_A.swift; path = ../../A_swift/Target_A.swift; sourceTree = "<group>"; };
+		326937B124878EE700A05C88 /* Target_A.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_A.m; sourceTree = "<group>"; };
+		326937B224878EE700A05C88 /* Target_A.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_A.h; sourceTree = "<group>"; };
+		326937B324878EE700A05C88 /* AViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
+		326937B424878EE800A05C88 /* AViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
+		326937B624878EE800A05C88 /* CTMediator+A.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CTMediator+A.h"; sourceTree = "<group>"; };
+		326937B724878EE800A05C88 /* CTMediator+A.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+A.m"; sourceTree = "<group>"; };
+		326937B924878EE800A05C88 /* CTMediator+B.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CTMediator+B.h"; sourceTree = "<group>"; };
+		326937BA24878EE800A05C88 /* CTMediator+B.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+B.m"; sourceTree = "<group>"; };
+		326937C52487939000A05C88 /* UIView+LayoutMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutMethods.h"; sourceTree = "<group>"; };
+		326937C62487939000A05C88 /* UIView+LayoutMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutMethods.m"; sourceTree = "<group>"; };
+		326937C92487941600A05C88 /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		326937CA2487941600A05C88 /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
+		326937CC2487941600A05C88 /* Target_B.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_B.m; sourceTree = "<group>"; };
+		326937CD2487941600A05C88 /* Target_B.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_B.h; sourceTree = "<group>"; };
+		326937D024879E2200A05C88 /* CTMediator+A.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CTMediator+A.swift"; sourceTree = "<group>"; };
 		58E7D9D9B837FD37D83AC17F /* Pods-ObjectiveCDemo20200321.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveCDemo20200321.debug.xcconfig"; path = "Target Support Files/Pods-ObjectiveCDemo20200321/Pods-ObjectiveCDemo20200321.debug.xcconfig"; sourceTree = "<group>"; };
 		7B0CCC61ECC47D8190E5CDDD /* Pods-ObjectiveCDemo20200321.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveCDemo20200321.release.xcconfig"; path = "Target Support Files/Pods-ObjectiveCDemo20200321/Pods-ObjectiveCDemo20200321.release.xcconfig"; sourceTree = "<group>"; };
 		8F310B7C2425B28900421E7A /* ObjectiveCDemo20200321.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCDemo20200321.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1617,6 +1661,7 @@
 		043A635924532FCF00C5ADE6 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				320D053C248660B100FE842E /* 3Charts */,
 				8F72EFCA2453F3120023060B /* iOS_advanced_special_training_camp */,
 				043A636D2453318000C5ADE6 /* 1CyclesMemoryLeaks */,
 			);
@@ -2215,6 +2260,120 @@
 				8F3115EE242D01F900421E7A /* SGHSumupViewController.m */,
 			);
 			path = "7总结_大量使用RAC的写法";
+			sourceTree = "<group>";
+		};
+		320D053C248660B100FE842E /* 3Charts */ = {
+			isa = PBXGroup;
+			children = (
+				320D053D248660F000FE842E /* SGHChartsListViewController.swift */,
+				320D053F248661AB00FE842E /* Modules */,
+			);
+			path = 3Charts;
+			sourceTree = "<group>";
+		};
+		320D053F248661AB00FE842E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				320D05432486622800FE842E /* Others */,
+				320D0540248661C900FE842E /* SGHLineChartViewController.h */,
+				320D0541248661C900FE842E /* SGHLineChartViewController.m */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		320D05432486622800FE842E /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				320D05482486624D00FE842E /* DateValueFormatter.h */,
+				320D05442486624D00FE842E /* DateValueFormatter.m */,
+				320D05492486624E00FE842E /* SetValueFormatter.h */,
+				320D05462486624D00FE842E /* SetValueFormatter.m */,
+				320D05472486624D00FE842E /* SymbolsValueFormatter.h */,
+				320D05452486624D00FE842E /* SymbolsValueFormatter.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		3269377224878D1000A05C88 /* 12、13iOS组件通讯原理 */ = {
+			isa = PBXGroup;
+			children = (
+				326937C42487937800A05C88 /* HandyFrame */,
+				326937B524878EE800A05C88 /* CTMediator_A */,
+				3269377324878DC000A05C88 /* SGH_CTMediatorViewController.h */,
+				3269377424878DC000A05C88 /* SGH_CTMediatorViewController.m */,
+				326937C8248793E500A05C88 /* B */,
+				326937AF24878EE700A05C88 /* A */,
+			);
+			path = "12、13iOS组件通讯原理";
+			sourceTree = "<group>";
+		};
+		326937AF24878EE700A05C88 /* A */ = {
+			isa = PBXGroup;
+			children = (
+				326937AD24878EE700A05C88 /* ViewController.swift */,
+				326937B424878EE800A05C88 /* AViewController.h */,
+				326937B324878EE700A05C88 /* AViewController.m */,
+				326937B824878EE800A05C88 /* CTMediator_B */,
+				326937B024878EE700A05C88 /* Targets */,
+			);
+			path = A;
+			sourceTree = "<group>";
+		};
+		326937B024878EE700A05C88 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				326937AE24878EE700A05C88 /* Target_A.swift */,
+				326937B224878EE700A05C88 /* Target_A.h */,
+				326937B124878EE700A05C88 /* Target_A.m */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		326937B524878EE800A05C88 /* CTMediator_A */ = {
+			isa = PBXGroup;
+			children = (
+				326937D024879E2200A05C88 /* CTMediator+A.swift */,
+				326937B624878EE800A05C88 /* CTMediator+A.h */,
+				326937B724878EE800A05C88 /* CTMediator+A.m */,
+			);
+			path = CTMediator_A;
+			sourceTree = "<group>";
+		};
+		326937B824878EE800A05C88 /* CTMediator_B */ = {
+			isa = PBXGroup;
+			children = (
+				326937B924878EE800A05C88 /* CTMediator+B.h */,
+				326937BA24878EE800A05C88 /* CTMediator+B.m */,
+			);
+			path = CTMediator_B;
+			sourceTree = "<group>";
+		};
+		326937C42487937800A05C88 /* HandyFrame */ = {
+			isa = PBXGroup;
+			children = (
+				326937C52487939000A05C88 /* UIView+LayoutMethods.h */,
+				326937C62487939000A05C88 /* UIView+LayoutMethods.m */,
+			);
+			path = HandyFrame;
+			sourceTree = "<group>";
+		};
+		326937C8248793E500A05C88 /* B */ = {
+			isa = PBXGroup;
+			children = (
+				326937C92487941600A05C88 /* BViewController.h */,
+				326937CA2487941600A05C88 /* BViewController.m */,
+				326937CB2487941600A05C88 /* Targets */,
+			);
+			path = B;
+			sourceTree = "<group>";
+		};
+		326937CB2487941600A05C88 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				326937CD2487941600A05C88 /* Target_B.h */,
+				326937CC2487941600A05C88 /* Target_B.m */,
+			);
+			path = Targets;
 			sourceTree = "<group>";
 		};
 		7B2250CDD62BE8E089F37EC9 /* Pods */ = {
@@ -4889,6 +5048,7 @@
 		8F72EFCE2453F3D80023060B /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				3269377224878D1000A05C88 /* 12、13iOS组件通讯原理 */,
 				8FFE4750246BB317000065C6 /* 1Runtime消息转发 */,
 				8FFE4755246BB317000065C6 /* 2Runtime方法交换 */,
 				8FFE474C246BB205000065C6 /* 3Runtime字典转模型 */,
@@ -5535,6 +5695,7 @@
 				8F3110B524264FB100421E7A /* GJCell.m in Sources */,
 				8FFE4767246BB75F000065C6 /* SHLeaks0301Object.m in Sources */,
 				8F311642242D01FA00421E7A /* LxDBAnythingViewController.m in Sources */,
+				326937BE24878EE800A05C88 /* Target_A.swift in Sources */,
 				043A637424534FA800C5ADE6 /* SGHCyclesMemoryLeaksVC.m in Sources */,
 				8F31112A24264FB100421E7A /* SGH1012PlaceholderColorViewController.m in Sources */,
 				0424223B2455D039004DD1AC /* SGHTenThreadLocksViewController.m in Sources */,
@@ -5575,6 +5736,7 @@
 				8FEEE1F4245D009A0074BED6 /* SGHReliableiOSPerson.m in Sources */,
 				8F31148A2426EB4C00421E7A /* SGH0618MapNavigationViewController.m in Sources */,
 				8FEEE1F9245D009A0074BED6 /* ReliableiOSPerson.m in Sources */,
+				320D054C2486624E00FE842E /* SetValueFormatter.m in Sources */,
 				8F31109824264FB100421E7A /* SGH161223ComponentsDemoViewController.m in Sources */,
 				04F6ECB72429E87E00D7F1CB /* SGH0729Layer.m in Sources */,
 				8F31140C2426E6EF00421E7A /* SGHNSArrayNSMutableArrayViewController.m in Sources */,
@@ -5582,6 +5744,7 @@
 				045788272427BAF100C2DF75 /* SGHCoreText1ViewController.m in Sources */,
 				8F31157D242995AE00421E7A /* SGH0506OCRuntime1ViewController.m in Sources */,
 				8F31110F24264FB100421E7A /* SGH0824PresentAndPushTwoViewController.m in Sources */,
+				326937D124879E2200A05C88 /* CTMediator+A.swift in Sources */,
 				8F3115E0242A60F500421E7A /* CellModel.m in Sources */,
 				8F3110F524264FB100421E7A /* SGH0802ExpressionViewController.m in Sources */,
 				8F3110C324264FB100421E7A /* Example2Controller.m in Sources */,
@@ -5618,6 +5781,7 @@
 				04DF5946245A8DF800F0EB3E /* UIView+NeastPublicView.m in Sources */,
 				8F3115522429948900421E7A /* SGHPrincipleOfInquiryViewController.m in Sources */,
 				0417DBC32456BCB800196D00 /* UIView+MemoryLeak.m in Sources */,
+				326937BF24878EE800A05C88 /* Target_A.m in Sources */,
 				8F72EFC92453EE7A0023060B /* SGH0425LeaksViewController.m in Sources */,
 				8F311580242995AE00421E7A /* UIViewController+SGH0512Tracking.m in Sources */,
 				8F3110E824264FB100421E7A /* SHFetchFutureDateViewController.m in Sources */,
@@ -5641,12 +5805,14 @@
 				8F3114072426E6EF00421E7A /* Harpy.m in Sources */,
 				8F31108A24264FB100421E7A /* SHAlertViewManager.m in Sources */,
 				04F6EC7D2429AEA000D7F1CB /* SGHPopContentViewController.m in Sources */,
+				326937CF2487941600A05C88 /* Target_B.m in Sources */,
 				042422482455D269004DD1AC /* SGHLock4ViewController.m in Sources */,
 				8F3110DC24264FB100421E7A /* Model.xcdatamodeld in Sources */,
 				8F3114042426E6EF00421E7A /* SGHDateCalendarViewController.m in Sources */,
 				8F31162D242D01FA00421E7A /* SGHSkipUntilBlockViewController.m in Sources */,
 				8FFE476C246BB8FA000065C6 /* SHSocketStruc0218ViewController.m in Sources */,
 				8F31163A242D01FA00421E7A /* SGHIgnoreViewController.m in Sources */,
+				3269377524878DC000A05C88 /* SGH_CTMediatorViewController.m in Sources */,
 				8FFE4777246E473D000065C6 /* SGHRealizePrincipleAndAnalysisVC.m in Sources */,
 				04F6EC432429ACCB00D7F1CB /* SGHRuntimeAttriMethodViewController.m in Sources */,
 				0424222024552C30004DD1AC /* SGHAboutNSOperationViewController.m in Sources */,
@@ -5664,6 +5830,7 @@
 				0417DBA12456B71F00196D00 /* SGHFBRetainCycleViewController.m in Sources */,
 				8FFE4761246BB553000065C6 /* SGHCustomKVOPerson.m in Sources */,
 				8FF058BE2438215D006F74E9 /* SGH04LoginSuccessViewController.m in Sources */,
+				326937C72487939000A05C88 /* UIView+LayoutMethods.m in Sources */,
 				8FFE47822472A2A2000065C6 /* SGHMemoryManagementViewController.m in Sources */,
 				8F3110DD24264FB100421E7A /* SHUpdateJumpAppStoreVC.m in Sources */,
 				8F8FC5D624652EE50017AE10 /* Girl+Ex.m in Sources */,
@@ -5688,6 +5855,7 @@
 				043A636C2453313800C5ADE6 /* SGHStaticAnalysisViewController.m in Sources */,
 				042421FB24542969004DD1AC /* SGHDemoViewController.swift in Sources */,
 				8F3110F624264FB100421E7A /* SGH1108ActivityShareViewController.m in Sources */,
+				326937BD24878EE800A05C88 /* ViewController.swift in Sources */,
 				8F31163E242D01FA00421E7A /* SGHTimeoutViewController.m in Sources */,
 				8F311645242D01FA00421E7A /* SGHKVOViewController.m in Sources */,
 				8F3113532426E1D500421E7A /* NSString+MD5.m in Sources */,
@@ -5705,6 +5873,7 @@
 				8F311632242D01FA00421E7A /* SGHDistinctUntilChangedViewController.m in Sources */,
 				8F31162B242D01FA00421E7A /* SGHZipwithViewController.m in Sources */,
 				04F6ECB92429E87E00D7F1CB /* SGH0729TransitionGroupViewController.m in Sources */,
+				320D0542248661C900FE842E /* SGHLineChartViewController.m in Sources */,
 				0424222B245533D0004DD1AC /* SGHGoBackMainThreadViewController.m in Sources */,
 				8F3110F224264FB100421E7A /* SGH1101DidScreenshotNotiViewController.m in Sources */,
 				8F31112D24264FB100421E7A /* SGH161128TabBarViewController.m in Sources */,
@@ -5732,6 +5901,7 @@
 				8F31111424264FB100421E7A /* SGH1103AESViewController.m in Sources */,
 				042422512455D311004DD1AC /* SGHLock7ViewController.m in Sources */,
 				8F3113FC2426E6EF00421E7A /* SGHShowHTMLViewController.m in Sources */,
+				320D054B2486624E00FE842E /* SymbolsValueFormatter.m in Sources */,
 				8F31163B242D01FA00421E7A /* SGHSkipViewController.m in Sources */,
 				8F3110B424264FB100421E7A /* SHUnfixedHeightTableViewController.m in Sources */,
 				0424224B2455D2D4004DD1AC /* SGHLock5ViewController.m in Sources */,
@@ -5773,6 +5943,7 @@
 				8F3115BE242A586500421E7A /* SGH0324Person.m in Sources */,
 				8F31111324264FB100421E7A /* SGH1012GetIvarAndPropertyViewController.m in Sources */,
 				8F3115AD242A511F00421E7A /* SGHBanner3DTransitionView.m in Sources */,
+				320D054A2486624E00FE842E /* DateValueFormatter.m in Sources */,
 				8F31108824264FB100421E7A /* BDTConstManager.m in Sources */,
 				8F31108B24264FB100421E7A /* SHUtility.m in Sources */,
 				8F311584242995AE00421E7A /* SGH0510Runtime2ViewController.m in Sources */,
@@ -5786,6 +5957,7 @@
 				04F6ECC02429E87E00D7F1CB /* SGH0729Button.m in Sources */,
 				8F31147F2426EB4C00421E7A /* SGH160519ViewController.m in Sources */,
 				04F6ECBA2429E87E00D7F1CB /* SGH0729TransitionGroupSecondViewController.m in Sources */,
+				326937C224878EE800A05C88 /* CTMediator+B.m in Sources */,
 				8F31109924264FB100421E7A /* UIView+Frame.m in Sources */,
 				8F31162F242D01FA00421E7A /* SGHTakeWhileBlockViewController.m in Sources */,
 				8F31141F2426E6EF00421E7A /* SGHUniqueUUID_UDIDViewController.m in Sources */,
@@ -5816,6 +5988,7 @@
 				8F3110E224264FB100421E7A /* RegexKitLite.m in Sources */,
 				8F31112C24264FB100421E7A /* SGH1128BookmarksViewController.m in Sources */,
 				8FF058CF243884C2006F74E9 /* HomePageAnimationUtil.m in Sources */,
+				320D053E248660F000FE842E /* SGHChartsListViewController.swift in Sources */,
 				04F6EC412429ACCB00D7F1CB /* SGHMethodSwizzlingViewController.m in Sources */,
 				8F3110EF24264FB100421E7A /* SXNewsDetailEntity.m in Sources */,
 				0417DBCB2456BCB800196D00 /* NSObject+MemoryLeak.m in Sources */,
@@ -5824,6 +5997,7 @@
 				8F310B812425B28900421E7A /* AppDelegate.m in Sources */,
 				8F31162A242D01FA00421E7A /* SGHSumupViewController.m in Sources */,
 				8F3110D824264FB100421E7A /* EOCFamily.m in Sources */,
+				326937C124878EE800A05C88 /* CTMediator+A.m in Sources */,
 				8F311585242995AE00421E7A /* SGH0510MyObject.m in Sources */,
 				04F6ECBF2429E87E00D7F1CB /* SGHWheelView.m in Sources */,
 				04F6EC7F2429AEA000D7F1CB /* SGHDataPickerViewController.m in Sources */,
@@ -5831,10 +6005,12 @@
 				8F31108D24264FB100421E7A /* UIView+LCAdd.m in Sources */,
 				8F31109C24264FB100421E7A /* SGHAFNetworkingViewController.m in Sources */,
 				8F311629242D01FA00421E7A /* SGHDefineRACViewController.m in Sources */,
+				326937C024878EE800A05C88 /* AViewController.m in Sources */,
 				8F3114092426E6EF00421E7A /* SGHPlistDictionaryViewController.m in Sources */,
 				8F311583242995AE00421E7A /* SGH0512Runtime5ViewController.m in Sources */,
 				8F31108424264FB100421E7A /* TBXML+HTTP.m in Sources */,
 				8F31112724264FB100421E7A /* SGH1108UpdateAppViewController.m in Sources */,
+				326937CE2487941600A05C88 /* BViewController.m in Sources */,
 				8F3110C924264FB100421E7A /* SGH0424GaodeFactory.m in Sources */,
 				8F3110DF24264FB100421E7A /* SGH170815IdentCodeAuthView.m in Sources */,
 				8FFE4770246BC131000065C6 /* SGHRuntimeUseViewController.m in Sources */,
