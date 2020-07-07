@@ -50,6 +50,7 @@
 //MARK: 1.获取UILabel类的所有属性和方法
 - (void)sec1demo1 {
     UILabel *label = [[UILabel alloc] init];
+    //UIPanGestureRecognizer *label = [[UIPanGestureRecognizer alloc] init];
     NSLog(@"********所有变量/值:\n%@", [self getAllIvar:label]);
     NSLog(@"********所有属性:\n%@", [self getAllProperty:label]);
 }

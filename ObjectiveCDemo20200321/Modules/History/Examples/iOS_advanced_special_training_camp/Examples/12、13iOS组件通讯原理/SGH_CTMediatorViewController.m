@@ -5,7 +5,12 @@
 //  Created by blue on 2020/6/3.
 //  Copyright © 2020 远平. All rights reserved.
 //
-
+/*
+ 
+ 本demo来自：[iOS应用架构谈 组件化方案](https://casatwy.com/iOS-Modulization.html)
+ 对应的github地址：https://github.com/ModulizationDemo/ModulizedMainProject
+ 
+ */
 #import "SGH_CTMediatorViewController.h"
 
 #import <CTMediator/CTMediator.h>

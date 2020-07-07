@@ -42,7 +42,7 @@ PODS:
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
   - LxDBAnything (1.1.0)
-  - LXFBase (0.1.0)
+  - LXFBase (0.2.0)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.4.3)
@@ -54,7 +54,7 @@ PODS:
   - ReactiveObjCBridge (6.0.0):
     - ReactiveObjC (~> 3.1)
     - ReactiveSwift (~> 6.1)
-  - ReactiveSwift (6.2.1)
+  - ReactiveSwift (6.3.0)
   - SDWebImage (5.8.0):
     - SDWebImage/Core (= 5.8.0)
   - SDWebImage/Core (5.8.0)
@@ -96,11 +96,10 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - Charts
-    - CTMediator
-  trunk:
     - AFNetworking
+    - Charts
     - CocoaAsyncSocket
+    - CTMediator
     - DTCoreText
     - DTFoundation
     - FBRetainCycleDetector
@@ -131,7 +130,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   LXFBase:
-    :commit: c99e2f7406302e38e3c44042730d9626bac6d3d3
+    :commit: c808c23bda2e0c0219699eac850f03c0910c03c7
     :git: "git@gitee.com:virgilsun2012/LXFBase.git"
 
 SPEC CHECKSUMS:
@@ -145,7 +144,7 @@ SPEC CHECKSUMS:
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   LxDBAnything: 154a2ad1ae32e70355d886b5443260543bb60c71
-  LXFBase: 38d7e741e7636f42607c5603627e8f451bb1b977
+  LXFBase: 97e16bdb5a69296fea20d66762c263848e9a7037
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
@@ -153,7 +152,7 @@ SPEC CHECKSUMS:
   ReactiveCocoa: 083ae559e6f588ce519cab412ea119b431c26a24
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   ReactiveObjCBridge: 5502e3da1f092d39953ac27816f3441e01eb875a
-  ReactiveSwift: 07ddf579f4eb3ee3bd656214f0461aaf2c0fd639
+  ReactiveSwift: 7937f26ec18d555e2a99352bd0a8b2817d1f042d
   SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   STRFTimeFormatter: 426a398955a01ce6e29e8fb48e97df00e6d0e4b6
@@ -166,4 +165,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: dc2ec4921f690b1e16595043038d873cdfc6baad
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3

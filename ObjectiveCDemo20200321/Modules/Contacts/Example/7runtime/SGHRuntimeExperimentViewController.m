@@ -28,10 +28,6 @@
         @"10、Objective-C Runtime 运行时之四：Method Swizzling",
         @"11、Objective-C Runtime 运行时之五：协议与分类",
         @"12、Objective-C Runtime 运行时之六：拾遗",
-        @"14、Runtime方法的使用—Class篇",
-        @"runtime获取私有属性强制更改私有属性以及获取私有方法",
-        @"iOS runtime实战应用：Method Swizzling",
-        @"runtime+KVC实现多层字典模型转换",
     ];
     NSArray *tempClassNameArray = @[
         @"SGH0506OCRuntime1ViewController",
@@ -40,10 +36,6 @@
         @"SGH0512Runtime4ViewController",
         @"SGH0512Runtime5ViewController",
         @"SGH0515Runtime6ViewController",
-        @"SGH0515ClassViewController",
-        @"SGHRuntimeAttriMethodViewController",
-        @"SGHMethodSwizzlingViewController",
-        @"SGHModelTransformViewController",
     ];
     [self addSectionDataWithClassNameArray:tempClassNameArray titleArray:tempTitleArray title:@"Objective-C Runtime 运行时"];
     
