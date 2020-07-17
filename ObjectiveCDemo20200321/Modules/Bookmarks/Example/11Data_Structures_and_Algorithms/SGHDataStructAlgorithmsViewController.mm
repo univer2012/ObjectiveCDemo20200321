@@ -14,7 +14,7 @@
 
 #import "SGHDataStructAlgorithmsViewController+MRC.h"
 
-
+#import "SGHLinkList.hpp"
 
 @interface SGHDataStructAlgorithmsViewController ()
 
@@ -43,6 +43,7 @@
         @"3.有序数组合并",
         @"4.HASH算法",
         @"5.查找两个子视图的共同父视图",
+        @"6. 测试调用c++代码",
     ];
     NSArray *tempClassNameArray2 = @[
         @"charReverse",
@@ -51,11 +52,22 @@
         @"orderListMerge",
         @"hashTest",
         @"sec2demo5",
+        @"sec2demo6",
     ];
     [self addSectionDataWithClassNameArray:tempClassNameArray2 titleArray:tempTitleArray2 title:@"算法"];
     
     [self.tableView reloadData];
 }
+
+
+//MARK: 6. 测试调用c++代码
+- (void)sec2demo6 {
+    const char *pathChar = "a";
+    MyCppClass::ShowMsg(pathChar);
+    float * array = GetDotClass::GetDot();
+}
+
+
 //MARK: 5.查找两个子视图的共同父视图
 - (void)sec2demo5 {
     /* 结构如下

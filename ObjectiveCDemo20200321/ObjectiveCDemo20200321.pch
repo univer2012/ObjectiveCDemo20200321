@@ -7,35 +7,42 @@
 //
 
 
+///因为引入了`.c`、`.hpp`、`.cpp`文件，导致工程报错，所以用`#ifdef __OBJC__`加以限制编译。
+///pch里面自加的头文件是全局性的，当在C文件import时其实是没有意义的，这也就是问题出处，所以要ObjC区分开编译。
+//解决方案来自：
+//[在xcode中混编c代码，导入.c文件引起编译错误，原因和解决办法](https://www.jianshu.com/p/70bb45bbf11e)
+#ifdef __OBJC__
+    #import "SHUtility.h"
+    #import "SGHDeviceManager.h"
+
+    #import "UIColor+Hex.h"
+    #import "UIView+LCAdd.h"
+
+    #import <ReactiveObjC.h>
+    //#import <ReactiveCocoa/ReactiveCocoa.h>
+    #import <LxDBAnything/LxDBAnything.h>
+    #import <Masonry/Masonry.h>
+
+    #import "MLeaksFinder.h"
 
 
-#import "SHUtility.h"
-#import "SGHDeviceManager.h"
+    #define RGB(A,B,C) [UIColor colorWithRed:A/255.0 green:B/255.0 blue:C/255.0 alpha:1.0]
 
-#import "UIColor+Hex.h"
-#import "UIView+LCAdd.h"
+    #ifdef DEBUG
+    #define debugLog(...) NSLog(__VA_ARGS__)
+    #define debugMethod() NSLog(@"%s", __func__)
+    #else
+    #define debugLog(...)
+    #define debugMethod()
+    #endif
 
-#import <ReactiveObjC.h>
-//#import <ReactiveCocoa/ReactiveCocoa.h>
-#import <LxDBAnything/LxDBAnything.h>
-#import <Masonry/Masonry.h>
+    /** blockSelf和weakSelf 宏定义  */
+    #define kWeakSelf __weak typeof(self) weakSelf = self;
+    #define kBlockSelf __block typeof(self) blockSelf = self;
 
-#import "MLeaksFinder.h"
-
-
-#define RGB(A,B,C) [UIColor colorWithRed:A/255.0 green:B/255.0 blue:C/255.0 alpha:1.0]
-
-#ifdef DEBUG
-#define debugLog(...) NSLog(__VA_ARGS__)
-#define debugMethod() NSLog(@"%s", __func__)
-#else
-#define debugLog(...)
-#define debugMethod()
 #endif
 
-/** blockSelf和weakSelf 宏定义  */
-#define kWeakSelf __weak typeof(self) weakSelf = self;
-#define kBlockSelf __block typeof(self) blockSelf = self;
+
 
 #ifndef ObjectiveCDemo20200321_pch
 #define ObjectiveCDemo20200321_pch

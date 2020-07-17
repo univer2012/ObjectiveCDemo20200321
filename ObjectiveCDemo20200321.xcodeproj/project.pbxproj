@@ -125,6 +125,8 @@
 		320D054A2486624E00FE842E /* DateValueFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D05442486624D00FE842E /* DateValueFormatter.m */; };
 		320D054B2486624E00FE842E /* SymbolsValueFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D05452486624D00FE842E /* SymbolsValueFormatter.m */; };
 		320D054C2486624E00FE842E /* SetValueFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D05462486624D00FE842E /* SetValueFormatter.m */; };
+		3234303D24B5B32A009E2855 /* SGHOffScreenRender_CornerRadiusVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3234303C24B5B32A009E2855 /* SGHOffScreenRender_CornerRadiusVC.m */; };
+		3234303F24B5C0AB009E2855 /* pkq.png in Resources */ = {isa = PBXBuildFile; fileRef = 3234303E24B5C0AB009E2855 /* pkq.png */; };
 		3269377524878DC000A05C88 /* SGH_CTMediatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3269377424878DC000A05C88 /* SGH_CTMediatorViewController.m */; };
 		326937BD24878EE800A05C88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326937AD24878EE700A05C88 /* ViewController.swift */; };
 		326937BE24878EE800A05C88 /* Target_A.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326937AE24878EE700A05C88 /* Target_A.swift */; };
@@ -136,6 +138,7 @@
 		326937CE2487941600A05C88 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 326937CA2487941600A05C88 /* BViewController.m */; };
 		326937CF2487941600A05C88 /* Target_B.m in Sources */ = {isa = PBXBuildFile; fileRef = 326937CC2487941600A05C88 /* Target_B.m */; };
 		326937D124879E2200A05C88 /* CTMediator+A.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326937D024879E2200A05C88 /* CTMediator+A.swift */; };
+		32FB38E224C1430F009BB23E /* SGHLinkList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32FB38E024C1430F009BB23E /* SGHLinkList.cpp */; };
 		8F310B812425B28900421E7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F310B802425B28900421E7A /* AppDelegate.m */; };
 		8F310B8A2425B28900421E7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F310B882425B28900421E7A /* Main.storyboard */; };
 		8F310B8D2425B28900421E7A /* ObjectiveCDemo20200321.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F310B8B2425B28900421E7A /* ObjectiveCDemo20200321.xcdatamodeld */; };
@@ -695,6 +698,9 @@
 		320D05472486624D00FE842E /* SymbolsValueFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymbolsValueFormatter.h; sourceTree = "<group>"; };
 		320D05482486624D00FE842E /* DateValueFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateValueFormatter.h; sourceTree = "<group>"; };
 		320D05492486624E00FE842E /* SetValueFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetValueFormatter.h; sourceTree = "<group>"; };
+		3234303B24B5B32A009E2855 /* SGHOffScreenRender_CornerRadiusVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHOffScreenRender_CornerRadiusVC.h; sourceTree = "<group>"; };
+		3234303C24B5B32A009E2855 /* SGHOffScreenRender_CornerRadiusVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHOffScreenRender_CornerRadiusVC.m; sourceTree = "<group>"; };
+		3234303E24B5C0AB009E2855 /* pkq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pkq.png; sourceTree = "<group>"; };
 		3269377324878DC000A05C88 /* SGH_CTMediatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGH_CTMediatorViewController.h; sourceTree = "<group>"; };
 		3269377424878DC000A05C88 /* SGH_CTMediatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGH_CTMediatorViewController.m; sourceTree = "<group>"; };
 		326937AD24878EE700A05C88 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "ObjectiveCDemo20200321/Modules/History/Examples/iOS_advanced_special_training_camp/Examples/12、13iOS组件通讯原理/A_swift/ViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -714,6 +720,8 @@
 		326937CC2487941600A05C88 /* Target_B.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_B.m; sourceTree = "<group>"; };
 		326937CD2487941600A05C88 /* Target_B.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_B.h; sourceTree = "<group>"; };
 		326937D024879E2200A05C88 /* CTMediator+A.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CTMediator+A.swift"; sourceTree = "<group>"; };
+		32FB38E024C1430F009BB23E /* SGHLinkList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SGHLinkList.cpp; sourceTree = "<group>"; };
+		32FB38E124C1430F009BB23E /* SGHLinkList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SGHLinkList.hpp; sourceTree = "<group>"; };
 		58E7D9D9B837FD37D83AC17F /* Pods-ObjectiveCDemo20200321.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveCDemo20200321.debug.xcconfig"; path = "Target Support Files/Pods-ObjectiveCDemo20200321/Pods-ObjectiveCDemo20200321.debug.xcconfig"; sourceTree = "<group>"; };
 		7B0CCC61ECC47D8190E5CDDD /* Pods-ObjectiveCDemo20200321.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveCDemo20200321.release.xcconfig"; path = "Target Support Files/Pods-ObjectiveCDemo20200321/Pods-ObjectiveCDemo20200321.release.xcconfig"; sourceTree = "<group>"; };
 		8F310B7C2425B28900421E7A /* ObjectiveCDemo20200321.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCDemo20200321.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1766,29 +1774,13 @@
 		045B5EA12459737A0023BF7B /* 11Data_Structures_and_Algorithms */ = {
 			isa = PBXGroup;
 			children = (
-				8F8FC5B1246385230017AE10 /* Chapter8 */,
+				32FB38DF24C142FA009BB23E /* Modules */,
 				045B5EA2245973C30023BF7B /* SGHDataStructAlgorithmsViewController.h */,
 				045B5EA3245973C30023BF7B /* SGHDataStructAlgorithmsViewController.mm */,
 				8F61E1712478308700A1FDE0 /* SGHDataStructAlgorithmsViewController+MRC.h */,
 				8F61E1722478308800A1FDE0 /* SGHDataStructAlgorithmsViewController+MRC.m */,
-				045B5EB42459A4720023BF7B /* Chapter2 */,
 			);
 			path = 11Data_Structures_and_Algorithms;
-			sourceTree = "<group>";
-		};
-		045B5EB42459A4720023BF7B /* Chapter2 */ = {
-			isa = PBXGroup;
-			children = (
-				045B5EB52459A4860023BF7B /* 1LinkList */,
-			);
-			path = Chapter2;
-			sourceTree = "<group>";
-		};
-		045B5EB52459A4860023BF7B /* 1LinkList */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = 1LinkList;
 			sourceTree = "<group>";
 		};
 		04C8A280245822620010545D /* 3shadowCopyDeepCopy */ = {
@@ -2294,6 +2286,15 @@
 			path = Others;
 			sourceTree = "<group>";
 		};
+		3234303A24B5B2D5009E2855 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3234303B24B5B32A009E2855 /* SGHOffScreenRender_CornerRadiusVC.h */,
+				3234303C24B5B32A009E2855 /* SGHOffScreenRender_CornerRadiusVC.m */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		3269377224878D1000A05C88 /* 12、13iOS组件通讯原理 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2374,6 +2375,15 @@
 				326937CC2487941600A05C88 /* Target_B.m */,
 			);
 			path = Targets;
+			sourceTree = "<group>";
+		};
+		32FB38DF24C142FA009BB23E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				32FB38E124C1430F009BB23E /* SGHLinkList.hpp */,
+				32FB38E024C1430F009BB23E /* SGHLinkList.cpp */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		7B2250CDD62BE8E089F37EC9 /* Pods */ = {
@@ -4372,6 +4382,7 @@
 			children = (
 				8F3115442429944C00421E7A /* SGHPerformanceAnalysisAndOptimizationVC.h */,
 				8F3115452429944C00421E7A /* SGHPerformanceAnalysisAndOptimizationVC.m */,
+				3234303A24B5B2D5009E2855 /* Modules */,
 			);
 			path = "5性能优化";
 			sourceTree = "<group>";
@@ -4651,6 +4662,7 @@
 		8F31159C242A303C00421E7A /* images */ = {
 			isa = PBXGroup;
 			children = (
+				3234303E24B5C0AB009E2855 /* pkq.png */,
 				8F7D66F8246AADB0006B2AF4 /* sea.png */,
 				8F3115A2242A307600421E7A /* 01.jpg */,
 				8F3115A1242A307600421E7A /* 02.jpg */,
@@ -5113,13 +5125,6 @@
 			path = Others;
 			sourceTree = "<group>";
 		};
-		8F8FC5B1246385230017AE10 /* Chapter8 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Chapter8;
-			sourceTree = "<group>";
-		};
 		8F8FC5C5246480E00017AE10 /* 13C_Program_Language */ = {
 			isa = PBXGroup;
 			children = (
@@ -5565,6 +5570,7 @@
 				8F3115B6242A512900421E7A /* banner_3d_tran_3.jpg in Resources */,
 				8F31110324264FB100421E7A /* README.docx in Resources */,
 				8F3115DB242A60F500421E7A /* statuses.plist in Resources */,
+				3234303F24B5C0AB009E2855 /* pkq.png in Resources */,
 				8F3110C124264FB100421E7A /* readme.md in Resources */,
 				8F310B8A2425B28900421E7A /* Main.storyboard in Resources */,
 				8F3114952426EB4C00421E7A /* SGH0618AnnotationViewController.xib in Resources */,
@@ -5787,6 +5793,7 @@
 				8F3110E824264FB100421E7A /* SHFetchFutureDateViewController.m in Sources */,
 				8F311644242D01FA00421E7A /* SGHSchedulerViewController.m in Sources */,
 				8F311649242D031C00421E7A /* SGHAnythingTestModel.m in Sources */,
+				32FB38E224C1430F009BB23E /* SGHLinkList.cpp in Sources */,
 				8F31157F242995AE00421E7A /* SGH0506Test.m in Sources */,
 				8F8FC5CC246515470017AE10 /* SGHARCBlockViewController.m in Sources */,
 				8F31141C2426E6EF00421E7A /* SGHNSURLSessionViewController.m in Sources */,
@@ -5820,6 +5827,7 @@
 				8F3110A424264FB100421E7A /* WBTimelineItem.m in Sources */,
 				0417DBC12456BCB800196D00 /* UINavigationController+MemoryLeak.m in Sources */,
 				042422422455D1BC004DD1AC /* SGHLock2ViewController.m in Sources */,
+				3234303D24B5B32A009E2855 /* SGHOffScreenRender_CornerRadiusVC.m in Sources */,
 				8F3115DD242A60F500421E7A /* NSObject+EnumDictOneLevel.m in Sources */,
 				04C8A283245822A70010545D /* SGH0428CopyViewController.m in Sources */,
 				8F3110A024264FB100421E7A /* SGH190129YYKitViewController.m in Sources */,

@@ -6,11 +6,11 @@
 //  Copyright © 2020 远平. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SHBaseTableViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SGHPerformanceAnalysisAndOptimizationVC : UIViewController
+@interface SGHPerformanceAnalysisAndOptimizationVC : SHBaseTableViewController
 
 @end
 

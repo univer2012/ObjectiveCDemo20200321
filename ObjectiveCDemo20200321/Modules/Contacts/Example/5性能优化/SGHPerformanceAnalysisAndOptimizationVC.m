@@ -8,10 +8,7 @@
 
 #import "SGHPerformanceAnalysisAndOptimizationVC.h"
 
-@interface SGHPerformanceAnalysisAndOptimizationVC ()<UITableViewDelegate,UITableViewDataSource>
-@property(nonatomic,strong)UITableView *tableView;
-@property(nonatomic,strong)NSMutableArray *controllersArray;
-@property(nonatomic,strong)NSMutableArray *titlesArray;
+@interface SGHPerformanceAnalysisAndOptimizationVC ()
 
 @end
 
@@ -19,49 +16,59 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
-    self.tableView=({
-        UITableView *tableView=[UITableView new];
-        [self.view addSubview:tableView];
-        tableView.frame=CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame));
-        tableView.delegate=self;
-        tableView.dataSource=self;
-        tableView;
-    });
-    _controllersArray= [@[
-        
-    ] mutableCopy];
+    self.type = SHBaseTableTypeMethod;
     
-    self.titlesArray=[@[
-        
-    ] mutableCopy];
+    NSArray *tempTitleArray = @[
+        @"例子1：有cornerRadius，没有clipsToBounds",
+        @"例子2：有cornerRadius，有clipsToBounds",
+        @"例子3：有cornerRadius，有clipsToBounds，layer.contents上加图片",
+        @"例子4：有cornerRadius，有clipsToBounds，加了子view",
+        @"例子5：有cornerRadius，有clipsToBounds，没有子view，没有设置背景色、边框",
+        @"例子6：为UIButton设置一个图片，其实会添加一个UIImageView。UIButton切圆角，有离屏渲染",
+        @"例子7：UIButton切圆角，应该这样避免离屏渲染",
+    ];
+    NSArray *tempClassNameArray = @[
+        @"sec1demo1",
+        @"sec1demo2",
+        @"sec1demo3",
+        @"sec1demo4",
+        @"sec1demo5",
+        @"sec1demo6",
+        @"sec1demo7",
+    ];
+    
+    [self addSectionDataWithClassNameArray:tempClassNameArray titleArray:tempTitleArray title:@"1.iOS圆角的离屏渲染，你真的弄明白了吗"];
+    
+    [self.tableView reloadData];
 }
 
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+- (void)sec1demo7 {
+    [self pushToNewVCWith:@"SGHOffScreenRender_CornerRadiusVC" title:@"" inBookmarkStoryboard:NO selText:@"demo7"];
 }
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _controllersArray.count;
+
+- (void)sec1demo6 {
+    [self pushToNewVCWith:@"SGHOffScreenRender_CornerRadiusVC" title:@"" inBookmarkStoryboard:NO selText:@"demo6"];
 }
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 50;
+
+- (void)sec1demo5 {
+    [self pushToNewVCWith:@"SGHOffScreenRender_CornerRadiusVC" title:@"" inBookmarkStoryboard:NO selText:@"demo5"];
 }
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *cellIndentifier=@"CellIdentifier";
-    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:cellIndentifier];
-    if (cell == nil) {
-        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIndentifier];
-    }
-    cell.textLabel.text=_titlesArray[indexPath.row];
-    return cell;
+
+- (void)sec1demo4 {
+    [self pushToNewVCWith:@"SGHOffScreenRender_CornerRadiusVC" title:@"" inBookmarkStoryboard:NO selText:@"demo4"];
 }
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    Class cls=NSClassFromString(_controllersArray[indexPath.row]);
-    if (cls) {
-        UIViewController *vc = [cls new];
-        vc.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:vc animated:YES];
-    }
+
+- (void)sec1demo3 {
+    [self pushToNewVCWith:@"SGHOffScreenRender_CornerRadiusVC" title:@"" inBookmarkStoryboard:NO selText:@"demo3"];
 }
+
+- (void)sec1demo2 {
+    [self pushToNewVCWith:@"SGHOffScreenRender_CornerRadiusVC" title:@"" inBookmarkStoryboard:NO selText:@"demo2"];
+}
+
+- (void)sec1demo1 {
+    [self pushToNewVCWith:@"SGHOffScreenRender_CornerRadiusVC" title:@"" inBookmarkStoryboard:NO selText:@"demo1"];
+}
+
 
 @end
