@@ -1,5 +1,9 @@
 #source 'https://github.com/CocoaPods/Specs.git'
-source 'https://cdn.cocoapods.org/'
+#source 'https://cdn.cocoapods.org/'
+
+#第二行是为了保证公有库的正常使用
+source 'https://gitee.com/virgilsun2012/LXFBase.git'
+source 'https://github.com/CocoaPods/Specs.git'
 
 
 platform:ios, '8.0'
@@ -144,5 +148,8 @@ pod 'YYModel'
 
 
    ### ===============================以下是学习使用的代码
-   #pod 'LGUtils', :path => '../iOS_advanced_special_training_camp/10-iOS_local_private_library/LGLib/LGUtils/'
+#   pod 'LGUtils', :path => '../iOS_advanced_special_training_camp/10-iOS_local_private_library/LGLib/LGUtils/'
+
+   pod 'LXFBase', :git => 'git@gitee.com:virgilsun2012/LXFBase.git'
+#   pod 'LXFBase'
 end
