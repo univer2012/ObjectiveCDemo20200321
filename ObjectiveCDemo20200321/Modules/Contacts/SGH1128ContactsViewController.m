@@ -70,6 +70,7 @@
         @"SGHPrincipleOfInquiryViewController",
         @"SGHTechnologyExplorationViewController",
         @"SGH_CGAndQuartzCoreAnimationViewController",
+        @"SGHNaviteJSInteractionViewController",
     ] mutableCopy];
     
     self.titlesArray=[@[
@@ -83,6 +84,7 @@
         @"9原理探究",
         @"10技术探究与应用",
         @"11CoreGraphics_QuartzCore_动画",
+        @"12原生与H5的交互WKScriptMessageHandler",
     ] mutableCopy];
     
     
